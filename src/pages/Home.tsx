@@ -122,16 +122,18 @@ export function Home({
       </section>
 
       <div className="container">
-        {/* DESTAQUES */}
-        <section className="home-section">
-          <SectionHeader
-            eyebrow="Curadoria CursedRock"
-            title="Destaques da semana"
-            sub="Escolhidos a dedo. Instala, joga, sobrevive — se conseguir."
-            linkTo="/addons?sort=popular"
-          />
-          <AddonGrid addons={featured} favorites={favorites} onToggleFavorite={onToggleFavorite} />
-        </section>
+        {/* DESTAQUES — só aparece quando há addons marcados como featured */}
+        {featured.length > 0 && (
+          <section className="home-section">
+            <SectionHeader
+              eyebrow="Curadoria CursedRock"
+              title="Destaques da semana"
+              sub="Escolhidos a dedo. Instala, joga, sobrevive — se conseguir."
+              linkTo="/addons?sort=popular"
+            />
+            <AddonGrid addons={featured} favorites={favorites} onToggleFavorite={onToggleFavorite} />
+          </section>
+        )}
 
         <AdSlot label="Espaço do anunciante — leaderboard" />
 
