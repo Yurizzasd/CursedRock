@@ -1,0 +1,15 @@
+{
+  "id": "tree-capitator",
+  "name": "Tree Capitator",
+  "description": "Derrube árvores inteiras de uma vez: quebre um tronco e a copa toda cai junta.",
+  "longDescription": "Tree Capitator derruba a árvore inteira ao quebrar um único bloco de tronco — logs e folhas caem juntos, sem pilares flutuantes. Perfeito para farm de madeira e limpeza de terreno no survival. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conteúdo novo.",
+  "category": "utility",
+  "version": "1.0.0",
+  "minecraft_versions": ["1.21.0"],
+  "thumbnail": "/images/addons/tree-capitator/cover.webp",
+  "screenshots": ["/images/addons/tree-capitator/cover.webp"],
+  "download_url": "https://1024terabox.com/s/1Qo192WeBLPME5tIjk4RiHA",
+  "tags": ["Utility", "Tree Capitator", "Farming", "Survival"],
+  "featured": false,
+  "requirements": ["Minecraft 1.21+", "Ativar recursos experimentais"]
+}
