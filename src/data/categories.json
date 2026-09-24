@@ -1,0 +1,19 @@
+[
+  { "id": "adventure", "name": "Adventure", "description": "Biomas, dungeons, bosses e exploração.", "icon": "Compass", "accent": "#e5322d", "pattern": "grid" },
+  { "id": "weapons", "name": "Weapons", "description": "Espadas, armas de fogo e arsenais.", "icon": "Sword", "accent": "#ff4d42", "pattern": "diagonal" },
+  { "id": "mobs", "name": "Mobs", "description": "Criaturas novas, chefes e companheiros.", "icon": "Ghost", "accent": "#a78bfa", "pattern": "dots" },
+  { "id": "technology", "name": "Technology", "description": "Máquinas, redstone avançada e automação.", "icon": "Cpu", "accent": "#38bdf8", "pattern": "grid" },
+  { "id": "magic", "name": "Magic", "description": "Feitiços, rituais e artefatos arcanos.", "icon": "Sparkles", "accent": "#c084fc", "pattern": "runes" },
+  { "id": "survival", "name": "Survival", "description": "Sede, clima, dificuldade e realismo.", "icon": "Flame", "accent": "#fb923c", "pattern": "diagonal" },
+  { "id": "furniture", "name": "Furniture", "description": "Móveis, decoração e blocos funcionais.", "icon": "Armchair", "accent": "#facc15", "pattern": "dots" },
+  { "id": "vehicles", "name": "Vehicles", "description": "Carros, aviões, barcos e montarias.", "icon": "Car", "accent": "#34d399", "pattern": "grid" },
+  { "id": "optimization", "name": "Optimization", "description": "Performance, FPS e chunks.", "icon": "Gauge", "accent": "#22d3ee", "pattern": "grid" },
+  { "id": "utility", "name": "Utility", "description": "Minimap, inventário, UI e ferramentas.", "icon": "Wrench", "accent": "#94a3b8", "pattern": "dots" },
+  { "id": "world", "name": "World", "description": "Geração de mundo, cavernas e estruturas.", "icon": "Mountain", "accent": "#4ade80", "pattern": "diagonal" },
+  { "id": "horror", "name": "Horror", "description": "Entidades cursed, jumpscares e dread.", "icon": "Skull", "accent": "#dc2626", "pattern": "runes" },
+  { "id": "anime", "name": "Anime", "description": "Poderes, katanas e universos de anime.", "icon": "Zap", "accent": "#f472b6", "pattern": "dots" },
+  { "id": "pvp", "name": "PvP", "description": "Kits, arenas e combate competitivo.", "icon": "Swords", "accent": "#f87171", "pattern": "diagonal" },
+  { "id": "farming", "name": "Farming", "description": "Plantações, animais e colheita.", "icon": "Wheat", "accent": "#a3e635", "pattern": "grid" },
+  { "id": "lucky-block", "name": "Lucky Block", "description": "Blocos da sorte e caos garantido.", "icon": "Dices", "accent": "#fbbf24", "pattern": "dots" },
+  { "id": "other", "name": "Other", "description": "Todo o resto do underground.", "icon": "Package", "accent": "#71717a", "pattern": "grid" }
+]
