@@ -955,7 +955,9 @@
   },
   {
     "featured": false,
-    "screenshots": [],
+    "screenshots": [
+      "/images/addons/ultra-vein-miner/cover.webp"
+    ],
     "id": "ultra-vein-miner",
     "name": "Ultra Vein Miner",
     "author": "ncmine",
@@ -967,7 +969,7 @@
     "minecraft_versions": [
       "1.21.100"
     ],
-    "thumbnail": "/images/addons/ultra-vein-miner.svg",
+    "thumbnail": "/images/addons/ultra-vein-miner/cover.webp",
     "download_url": "https://1024terabox.com/s/1KWeMjkQ5FIkU2KIHGxpNpA",
     "tags": [
       "Utility",
