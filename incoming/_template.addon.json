@@ -1,0 +1,23 @@
+{
+  "id": "meu-addon-exemplo",
+  "name": "Meu Addon Exemplo",
+  "author": "hexforge",
+  "authorDisplay": "HexForge",
+  "description": "Descrição curta (1-2 linhas): aparece nos cards e no Google.",
+  "longDescription": "Descrição completa: aparece na página do addon. Se omitida, usa a curta.",
+  "category": "weapons",
+  "version": "1.0.0",
+  "minecraft_versions": ["1.21.1", "1.21.20"],
+  "thumbnail": "/images/addons/meu-addon-exemplo.svg",
+  "screenshots": [],
+  "download_url": "https://example.com/download/meu-addon-exemplo",
+  "fileSize": "12.0 MB",
+  "tags": ["Weapons", "Survival"],
+  "featured": false,
+  "downloads": 0,
+  "rating": 4.5,
+  "createdAt": "2026-09-25",
+  "updatedAt": "2026-09-25",
+  "changelog": ["Versão inicial"],
+  "requirements": ["Minecraft 1.21+"]
+}
