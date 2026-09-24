@@ -1,7 +1,17 @@
 # 📥 Pasta de novos addons
 
-Jogue aqui os arquivos JSON dos addons que você quer publicar. Depois é só me avisar
-que eu rodo a importação (ou rode você mesmo: `npm run import`).
+## Fluxo simplificado (atual)
+
+Você manda **só 2 coisas** (aqui no chat ou nesta pasta):
+
+1. **Link de download** do addon
+2. **Imagem de capa** (arquivo ou print)
+
+E eu preencho: nome, descrição, categoria, tags, versão, compatibilidade.
+**Autor desconhecido é o padrão** (`unknown` → ficha "Desconhecido") — se o autor
+aparecer depois, a ficha é transferida para ele.
+
+## Fluxo manual (JSON completo)
 
 ## Como funciona
 

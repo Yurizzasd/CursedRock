@@ -87,5 +87,14 @@
     "joinedAt": "2026-09-24",
     "verified": false,
     "socials": {}
+  },
+  {
+    "id": "unknown",
+    "name": "Desconhecido",
+    "avatarHue": 0,
+    "bio": "Autor original não identificado. Se você é o criador, chame a gente para assumir a ficha.",
+    "joinedAt": "2026-09-25",
+    "verified": false,
+    "socials": {}
   }
 ]

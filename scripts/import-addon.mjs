@@ -14,7 +14,10 @@ const INCOMING = join(root, 'incoming');
 const DONE = join(INCOMING, 'done');
 const ADDONS_JSON = join(root, 'src/data/addons.json');
 
-const REQUIRED = ['id', 'name', 'author', 'description', 'category', 'version', 'minecraft_versions', 'thumbnail', 'download_url', 'tags', 'downloads', 'createdAt', 'updatedAt'];
+const REQUIRED = ['id', 'name', 'description', 'category', 'version', 'minecraft_versions', 'thumbnail', 'download_url', 'tags'];
+// Opcionais com padrão automático: author → "unknown", downloads → 0,
+// createdAt/updatedAt → hoje. (Fluxo simplificado: você manda link + imagem,
+// o resto é preenchido na importação.)
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
 const ID_RE = /^[a-z0-9-]+$/;
 
@@ -118,6 +121,15 @@ async function main() {
       try {
         validate(a, file);
         if (ids.has(a.id)) throw new Error(`${file}: id duplicado (já existe): ${a.id}`);
+        // padrões do fluxo simplificado
+        const today = new Date().toISOString().slice(0, 10);
+        if (!a.author) {
+          a.author = 'unknown';
+          console.log(`  ~ autor ausente → "unknown" (Desconhecido)`);
+        }
+        if (a.downloads === undefined) a.downloads = 0;
+        if (!a.createdAt) a.createdAt = today;
+        if (!a.updatedAt) a.updatedAt = today;
         // 1) tenta imagens reais da origem; 2) senão, capa gerada
         const fetched = await fetchSourceImages(a);
         if (fetched.length > 0) {
