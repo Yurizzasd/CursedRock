@@ -1,0 +1,17 @@
+{
+  "id": "easy-netherite",
+  "name": "Easy Netherite",
+  "author": "ncmine",
+  "authorDisplay": "NCMINE",
+  "description": "Netherite sem sofrimento: formas mais fáceis de conseguir detritos e lingotes no survival.",
+  "longDescription": "Easy Netherite facilita a progressão até a netherite: obtenção de detritos antigos e lingotes menos grindada, mantendo o equilíbrio do survival. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conteúdo novo.",
+  "category": "survival",
+  "version": "1.0.0",
+  "minecraft_versions": ["1.21.0"],
+  "thumbnail": "/images/addons/easy-netherite/cover.webp",
+  "screenshots": ["/images/addons/easy-netherite/cover.webp"],
+  "download_url": "https://1024terabox.com/s/1NjTW7kEw0gRr-XeHjxjSGA",
+  "tags": ["Survival", "Netherite", "QoL"],
+  "featured": false,
+  "requirements": ["Minecraft 1.21+", "Ativar recursos experimentais"]
+}
