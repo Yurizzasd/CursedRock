@@ -987,5 +987,36 @@
       "Minecraft 1.21.100",
       "Ativar recursos experimentais"
     ]
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/vein-miner-3x3/cover.webp"
+    ],
+    "id": "vein-miner-3x3",
+    "name": "3x3 Vein Miner",
+    "description": "Quebre uma área 3x3 de uma vez: mineração rápida em veios e túneis com um só golpe de picareta.",
+    "longDescription": "3x3 Vein Miner expande cada bloco quebrado para uma área de 3x3, acelerando mineração de veios, escavação de túneis e limpeza de terreno. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conteúdo novo.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/vein-miner-3x3/cover.webp",
+    "download_url": "https://1024terabox.com/s/1Dyte3MPPPJceiYlMngE9OQ",
+    "tags": [
+      "Utility",
+      "Mining",
+      "Vein Miner",
+      "Survival"
+    ],
+    "requirements": [
+      "Minecraft 1.21+",
+      "Ativar recursos experimentais"
+    ],
+    "author": "unknown",
+    "downloads": 0,
+    "createdAt": "2026-09-24",
+    "updatedAt": "2026-09-24"
   }
 ]
