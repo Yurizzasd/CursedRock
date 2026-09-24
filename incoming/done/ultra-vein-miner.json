@@ -1,0 +1,21 @@
+{
+  "id": "ultra-vein-miner",
+  "name": "Ultra Vein Miner",
+  "author": "ncmine",
+  "authorDisplay": "NCMINE",
+  "description": "Minere veios inteiros de uma vez com UI de opções: instala direto pelo arquivo .mcaddon, sem programa extra.",
+  "longDescription": "Ultra Vein Miner adiciona mineração de veios ao Bedrock com interface de opções para ajustar o comportamento. A instalação é direta pelo arquivo .mcaddon, sem programa extra. Por ser um pacote de comportamento/recursos, ative as alternâncias experimentais no mundo antes de entrar. Testado em mundo novo na 1.21.100 com jogo estável. Duas ressalvas: conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conteúdo novo. Se o arquivo não abrir sozinho no celular, use o gerenciador de arquivos e escolha abrir com o Minecraft.",
+  "category": "utility",
+  "version": "1.0.0",
+  "minecraft_versions": ["1.21.100"],
+  "thumbnail": "/images/addons/ultra-vein-miner.svg",
+  "screenshots": [],
+  "download_url": "https://1024terabox.com/s/1KWeMjkQ5FIkU2KIHGxpNpA",
+  "tags": ["Utility", "Mining", "Vein Miner", "Survival"],
+  "featured": false,
+  "downloads": 0,
+  "createdAt": "2026-09-24",
+  "updatedAt": "2026-09-24",
+  "changelog": ["Versão inicial 1.0.0"],
+  "requirements": ["Minecraft 1.21.100", "Ativar recursos experimentais"]
+}

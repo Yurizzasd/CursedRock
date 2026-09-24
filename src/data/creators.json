@@ -78,5 +78,14 @@
     "joinedAt": "2024-05-21",
     "verified": false,
     "socials": { "youtube": "https://youtube.com" }
+  },
+  {
+    "id": "ncmine",
+    "name": "NCMINE",
+    "avatarHue": 190,
+    "bio": "Criador de utilidades práticas para Bedrock: mineração eficiente e qualidade de vida no survival.",
+    "joinedAt": "2026-09-24",
+    "verified": false,
+    "socials": {}
   }
 ]
