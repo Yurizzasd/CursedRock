@@ -24,6 +24,10 @@ const creators = read(join(root, 'src/data/creators.json'));
 const catById = new Map(categories.map((c) => [c.id, c]));
 const creatorIds = new Set(creators.map((c) => [c.id]).map(([id]) => id));
 
+// Origem padrão dos JSONs externos (ex: exports do mineaddonsnews.online).
+// Caminhos de imagem relativos ("/images/...") são resolvidos contra ela.
+const SOURCE_ORIGIN = 'https://mineaddonsnews.online';
+
 // ─── capa automática no padrão do site (cor da categoria) ───
 function autoCover(seed, accent, title) {
   let h = createHash('sha256').update(seed).digest();
@@ -44,8 +48,7 @@ function validate(a, file) {
   const errs = [];
   for (const f of REQUIRED) {
     if (a[f] === undefined || a[f] === null || a[f] === '') errs.push(`campo obrigatório ausente: ${f}`);
-  }
-  if (a.id && !ID_RE.test(a.id)) errs.push(`id inválido (use só a-z 0-9 -): ${a.id}`);
+  }  if (a.id && !ID_RE.test(a.id)) errs.push(`id inválido (use só a-z 0-9 -): ${a.id}`);
   if (a.category && !catById.has(a.category)) errs.push(`categoria inexistente: ${a.category}`);
   if (a.author && !creatorIds.has(a.author)) errs.push(`autor inexistente: ${a.author}`);
   if (a.minecraft_versions && (!Array.isArray(a.minecraft_versions) || a.minecraft_versions.length === 0)) errs.push('minecraft_versions deve ser um array não vazio');
@@ -57,7 +60,38 @@ function validate(a, file) {
   if (errs.length) throw new Error(`${file}:\n  - ${errs.join('\n  - ')}`);
 }
 
-function main() {
+// ─── busca imagens reais na origem ──────────────────────────────────────────
+// Se o JSON de entrada trouxer `images: { cover, icon }` (esquema externo),
+// tenta baixar os arquivos e hospedá-los localmente. Retorna a lista de
+// caminhos locais salvos ou [] se nada funcionou (aí vale a capa gerada).
+async function fetchSourceImages(a) {
+  const candidates = [];
+  if (a.images?.cover) candidates.push(['cover', a.images.cover]);
+  if (a.images?.icon && a.images.icon !== a.images?.cover) candidates.push(['icon', a.images.icon]);
+  const saved = [];
+  for (const [kind, src] of candidates) {
+    const url = src.startsWith('http') ? src : `${SOURCE_ORIGIN}${src.startsWith('/') ? '' : '/'}${src}`;
+    try {
+      const res = await fetch(url, { headers: { 'User-Agent': 'CursedRock-importer/1.0', Referer: `${SOURCE_ORIGIN}/` } });
+      const type = res.headers.get('content-type') ?? '';
+      if (!res.ok || !type.startsWith('image/')) throw new Error(`HTTP ${res.status}`);
+      const buf = Buffer.from(await res.arrayBuffer());
+      if (buf.length < 1024) throw new Error('arquivo pequeno demais');
+      const ext = type.includes('svg') ? 'svg' : type.includes('png') ? 'png' : type.includes('jpeg') ? 'jpg' : type.includes('gif') ? 'gif' : type.includes('webp') ? 'webp' : 'img';
+      const rel = `/images/addons/${a.id}/${a.id}-${kind}.${ext}`;
+      const dest = join(root, 'public', rel);
+      mkdirSync(dirname(dest), { recursive: true });
+      writeFileSync(dest, buf);
+      saved.push(rel);
+      console.log(`  + imagem da origem: ${rel} (${(buf.length / 1024).toFixed(0)} KB)`);
+    } catch (e) {
+      console.warn(`  ! imagem da origem indisponível (${kind}): ${e.message} — mantendo capa gerada`);
+    }
+  }
+  return saved;
+}
+
+async function main() {
   mkdirSync(DONE, { recursive: true });
   const addons = read(ADDONS_JSON);
   const ids = new Set(addons.map((a) => a.id));
@@ -84,8 +118,12 @@ function main() {
       try {
         validate(a, file);
         if (ids.has(a.id)) throw new Error(`${file}: id duplicado (já existe): ${a.id}`);
-        // capa automática se o thumbnail local não existir
-        if (a.thumbnail.startsWith('/') && !existsSync(join(root, 'public', a.thumbnail))) {
+        // 1) tenta imagens reais da origem; 2) senão, capa gerada
+        const fetched = await fetchSourceImages(a);
+        if (fetched.length > 0) {
+          a.thumbnail = fetched[0];
+          if (!a.screenshots || a.screenshots.length === 0) a.screenshots = fetched;
+        } else if (a.thumbnail.startsWith('/') && !existsSync(join(root, 'public', a.thumbnail))) {
           const cat = catById.get(a.category);
           const dest = join(root, 'public', a.thumbnail);
           mkdirSync(dirname(dest), { recursive: true });
