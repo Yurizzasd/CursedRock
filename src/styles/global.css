@@ -2329,66 +2329,65 @@ select:focus-visible {
   color: var(--faint);
 }
 
-/* ── selos de categoria (filtros runa) ── */
-.seal-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+/* ── lista simples de categorias (só as que têm addon) ── */
+.catlist {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.seal {
+.catrow {
   display: flex;
   align-items: center;
-  gap: 9px;
-  padding: 9px 10px;
+  gap: 10px;
+  padding: 10px 12px;
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 9px;
   color: var(--muted);
+  font-size: 13.5px;
+  font-weight: 600;
   text-align: left;
-  transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.15s;
-  min-width: 0;
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  width: 100%;
 }
 
-.seal svg {
+.catrow svg {
   width: 16px;
   height: 16px;
   color: var(--faint);
   flex-shrink: 0;
 }
 
-.seal b {
-  display: block;
-  font-size: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.seal div {
-  min-width: 0;
-}
-
-.seal div > span {
+.catrow .count {
+  margin-left: auto;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 11px;
+  font-weight: 500;
   color: var(--faint);
+  background: var(--surface-3);
+  border-radius: 99px;
+  padding: 2px 9px;
 }
 
-.seal:hover {
+.catrow:hover {
   border-color: var(--border-strong);
   color: var(--text);
-  transform: translateY(-1px);
 }
 
-.seal.active {
+.catrow.active {
   border-color: var(--red);
   background: var(--red-glow);
   color: var(--text);
 }
 
-.seal.active svg {
+.catrow.active svg {
   color: var(--red-bright);
+}
+
+.catrow.active .count {
+  background: var(--red);
+  color: #fff;
 }
 
 /* ── ficha de boss ── */

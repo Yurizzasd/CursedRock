@@ -30,33 +30,31 @@ export function FilterPanel({
       <SortBar vertical value={filters.sort} onChange={(sort) => onChange({ ...filters, sort })} options={SORTS} />
       <div className="filter-group">
         <label id="f-cat-label">Categoria</label>
-        <div className="seal-grid" role="group" aria-labelledby="f-cat-label">
+        <div className="catlist" role="group" aria-labelledby="f-cat-label">
           <button
-            className={`seal${filters.category === 'all' ? ' active' : ''}`}
+            className={`catrow${filters.category === 'all' ? ' active' : ''}`}
             onClick={() => onChange({ ...filters, category: 'all' })}
           >
             <Package />
-            <div>
-              <b>Todas</b>
-            </div>
+            Todas
           </button>
-          {categories.map((c) => {
-            const Icon = ICONS[c.icon] ?? Package;
-            return (
-              <button
-                key={c.id}
-                className={`seal${filters.category === c.id ? ' active' : ''}`}
-                onClick={() => onChange({ ...filters, category: c.id })}
-                title={c.description}
-              >
-                <Icon />
-                <div>
-                  <b>{c.name}</b>
-                  <span>{counts[c.id] ?? 0}</span>
-                </div>
-              </button>
-            );
-          })}
+          {categories
+            .filter((c) => (counts[c.id] ?? 0) > 0)
+            .map((c) => {
+              const Icon = ICONS[c.icon] ?? Package;
+              return (
+                <button
+                  key={c.id}
+                  className={`catrow${filters.category === c.id ? ' active' : ''}`}
+                  onClick={() => onChange({ ...filters, category: c.id })}
+                  title={c.description}
+                >
+                  <Icon />
+                  {c.name}
+                  <span className="count">{counts[c.id]}</span>
+                </button>
+              );
+            })}
         </div>
       </div>
       <div className="filter-group">
