@@ -2782,3 +2782,148 @@ select:focus-visible {
 .detail-banner img {
   view-transition-name: addon-hero;
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   v5 — intro de entrada (boot + wipe de tinta)
+   ═══════════════════════════════════════════════════════════════════ */
+
+.intro {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  background: #050506;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: opacity 0.35s ease;
+}
+
+.intro.done {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.intro-core {
+  text-align: center;
+  animation: introcore 0.5s ease both;
+  z-index: 2;
+}
+
+@keyframes introcore {
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+}
+
+.intro-mark {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 14px;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #1c1c24, #0e0e12);
+  border: 1px solid var(--border-strong);
+  display: grid;
+  place-items: center;
+  color: var(--red-bright);
+  box-shadow: 0 0 34px rgba(229, 50, 45, 0.35);
+  animation: markpulse 1.2s ease-in-out infinite;
+}
+
+.intro-mark svg {
+  width: 26px;
+  height: 26px;
+}
+
+.intro-name {
+  font-family: var(--font-pixel);
+  font-size: 26px;
+  letter-spacing: 0.06em;
+  margin: 0;
+  color: var(--text);
+}
+
+.intro-name::after {
+  content: '';
+  display: block;
+  width: 46px;
+  height: 3px;
+  background: var(--red);
+  margin: 12px auto 0;
+}
+
+.intro-sub {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  color: var(--faint);
+  margin: 12px 0 16px;
+}
+
+.intro-bar {
+  width: 210px;
+  height: 3px;
+  margin: 0 auto;
+  background: var(--surface-3);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.intro-bar i {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: var(--red);
+  animation: introfill 1s 0.1s ease forwards;
+}
+
+@keyframes introfill {
+  to {
+    width: 100%;
+  }
+}
+
+/* faixas de tinta que varrem e revelam o site */
+.intro-wipe {
+  position: absolute;
+  top: -12%;
+  bottom: -12%;
+  left: -50vw;
+  width: 42vw;
+  background: #efece4;
+  border-radius: 0 46% 54% 0 / 0 42% 58% 0;
+  transform: translateX(0) rotate(-3deg);
+  animation: wipe 0.85s cubic-bezier(0.7, 0, 0.3, 1) forwards;
+  z-index: 3;
+}
+
+.intro-wipe.w1 {
+  animation-delay: 0.55s;
+}
+
+.intro-wipe.w2 {
+  animation-delay: 0.64s;
+  width: 36vw;
+  opacity: 0.92;
+}
+
+.intro-wipe.w3 {
+  animation-delay: 0.73s;
+  width: 30vw;
+  opacity: 0.85;
+}
+
+.intro-wipe.red {
+  animation-delay: 0.86s;
+  width: 9vw;
+  background: var(--red);
+  opacity: 1;
+  animation-duration: 0.7s;
+}
+
+@keyframes wipe {
+  to {
+    transform: translateX(215vw) rotate(-3deg);
+  }
+}

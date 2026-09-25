@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { EmberField } from './components/chrome';
+import { BootIntro } from './components/BootIntro';
 import { Home } from './pages/Home';
 import { Addons } from './pages/Addons';
 import { AddonDetail } from './pages/AddonDetail';
@@ -49,6 +50,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
+      <BootIntro />
       <RouteTransitions />
       <EmberField />
       <Header favCount={favorites.length} />
