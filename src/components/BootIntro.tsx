@@ -1,48 +1,63 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { LogoMark } from './Logo';
 
-// Intro de entrada: boot rápido + wipe de tinta revelando o site.
+// Intro de entrada: LOADING 0→100% + revelação em íris + site nascendo junto.
 // Toca 1x por carregamento; respeita reduced-motion e sai no clique.
 export function BootIntro() {
-  const [gone, setGone] = useState(false);
+  const [progress, setProgress] = useState(0);
+  const [open, setOpen] = useState(false);
   const [dead, setDead] = useState(false);
+  const done = useRef(false);
 
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.body.classList.add('site-entered');
       setDead(true);
       return;
     }
-    const t1 = setTimeout(() => setGone(true), 1750);
-    const t2 = setTimeout(() => setDead(true), 2150);
+    let raf = 0;
+    const t0 = performance.now();
+    const DUR = 1200;
+    const finish = () => {
+      if (done.current) return;
+      done.current = true;
+      setProgress(100);
+      setOpen(true);
+      document.body.classList.add('site-entered');
+      setTimeout(() => setDead(true), 1000);
+    };
+    const tick = (t: number) => {
+      const p = Math.min(1, (t - t0) / DUR);
+      setProgress(Math.round(100 * (1 - Math.pow(1 - p, 3))));
+      if (p < 1) raf = requestAnimationFrame(tick);
+      else finish();
+    };
+    raf = requestAnimationFrame(tick);
+    (window as unknown as { __skipIntro?: () => void }).__skipIntro = finish;
     return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
+      cancelAnimationFrame(raf);
+      delete (window as unknown as { __skipIntro?: () => void }).__skipIntro;
     };
   }, []);
 
   if (dead) return null;
 
   const skip = () => {
-    setGone(true);
-    setTimeout(() => setDead(true), 250);
+    (window as unknown as { __skipIntro?: () => void }).__skipIntro?.();
   };
 
   return (
-    <div className={`intro${gone ? ' done' : ''}`} onClick={skip} aria-hidden="true">
+    <div className={`intro${open ? ' open' : ''}`} onClick={skip} aria-hidden="true">
       <div className="intro-core">
         <span className="intro-mark">
           <LogoMark />
         </span>
-        <p className="intro-name">CURSEDROCK</p>
-        <p className="intro-sub">INVOCANDO O UNDERGROUND…</p>
+        <p className="intro-loading">LOADING</p>
+        <p className="intro-pct">{progress}%</p>
         <div className="intro-bar">
-          <i />
+          <i style={{ width: `${progress}%` }} />
         </div>
       </div>
-      <span className="intro-wipe w1" />
-      <span className="intro-wipe w2" />
-      <span className="intro-wipe w3" />
-      <span className="intro-wipe red" />
     </div>
   );
 }
