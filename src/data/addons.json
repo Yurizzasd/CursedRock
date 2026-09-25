@@ -213,5 +213,37 @@
     "updatedAt": "2026-05-31",
     "downloads": 0,
     "longDescription": "Traga sistema de spawn e mecânicas do Minecraft Java Edition diretamente para o seu Minecraft Bedrock."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/fast-portal/cover.jpg"
+    ],
+    "id": "fast-portal",
+    "name": "Fast Portal",
+    "author": "ncmine",
+    "authorDisplay": "NCMINE",
+    "description": "Atravesse portais do Nether na hora: sem espera, sem anima��o � entrou, teleportou.",
+    "longDescription": "Fast Portal remove o tempo de espera dos portais do Nether: encostou, atravessou. Ideal para bases divididas entre Overworld e Nether e para quem transita o tempo todo. Instala��o direta pelo arquivo .mcpack/.mcaddon. Por ser pacote de comportamento, ative as altern�ncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conte�do novo.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/fast-portal/cover.jpg",
+    "download_url": "https://1024terabox.com/s/1SobDiOxdQPfxAdCnG0iGdA",
+    "tags": [
+      "Utility",
+      "Portal",
+      "Nether",
+      "QoL"
+    ],
+    "requirements": [
+      "Minecraft 1.21+",
+      "Ativar recursos experimentais"
+    ],
+    "downloads": 0,
+    "createdAt": "2026-09-25",
+    "updatedAt": "2026-09-25"
   }
 ]
