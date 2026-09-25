@@ -10,6 +10,8 @@
     "preview": "vite preview",
     "import": "node scripts/import-addon.mjs",
     "tb:upload": "node scripts/terabox-upload.mjs",
+    "tb:api": "node scripts/tb-api-upload.mjs",
+    "tb:transfer": "node scripts/tb-transfer.mjs",
     "scrape": "node scripts/scrape-source.mjs",
     "sitemap": "node scripts/generate-sitemap.mjs"
   },
