@@ -3022,7 +3022,6 @@ select:focus-visible {
   .tick-item {
     padding: 6px 14px 6px 0;
   }
-
   /* ── hero em dieta: direto ao assunto ── */
   .hero {
     padding: 28px 0 24px;
@@ -3045,6 +3044,198 @@ select:focus-visible {
 
   .hero-actions .btn-ghost {
     display: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   v9 — densidade mobile (compacto e prático)
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 760px) {
+  :root {
+    --header-h: 56px;
+  }
+
+  body {
+    font-size: 14.5px;
+  }
+
+  .container,
+  .header-inner {
+    padding: 0 14px;
+  }
+
+  .header-inner {
+    gap: 12px;
+  }
+
+  .page {
+    padding: 22px 0 44px;
+  }
+
+  .page-title {
+    font-size: clamp(24px, 7vw, 30px);
+  }
+
+  .page-sub {
+    margin-bottom: 18px;
+    font-size: 14px;
+  }
+
+  .breadcrumb {
+    margin-bottom: 4px;
+  }
+
+  .home-section {
+    padding: 18px 0;
+  }
+
+  .section-head {
+    margin-bottom: 14px;
+  }
+
+  .section-head h2 {
+    font-size: clamp(19px, 5.4vw, 24px);
+  }
+
+  .section-head p {
+    font-size: 13.5px;
+  }
+
+  .addon-grid {
+    gap: 12px;
+  }
+
+  .card-body {
+    padding: 11px 12px 12px;
+    gap: 6px;
+  }
+
+  .card-title {
+    font-size: 15px;
+  }
+
+  .card-flags {
+    top: 8px;
+    left: 8px;
+    right: 8px;
+  }
+
+  .card-foot {
+    padding-top: 8px;
+  }
+
+  .toolbar {
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .sortbar {
+    padding: 8px 10px;
+    gap: 8px;
+  }
+
+  .sortopt {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .filters {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .catrow {
+    padding: 8px 10px;
+    font-size: 13px;
+  }
+
+  .addon-row {
+    padding: 8px;
+    gap: 10px;
+  }
+
+  .tabs button {
+    padding: 8px 11px;
+  }
+
+  .detail-banner {
+    height: 150px;
+  }
+
+  .detail-side {
+    gap: 12px;
+  }
+
+  .kv {
+    padding: 7px 0;
+  }
+
+  .stat-row {
+    gap: 8px;
+  }
+
+  .stat-pill {
+    padding: 5px 10px;
+  }
+
+  .carousel,
+  .showcase-list {
+    gap: 8px;
+  }
+
+  .showcase-info {
+    padding: 14px;
+  }
+
+  .showcase-info h3 {
+    font-size: clamp(18px, 5.4vw, 24px);
+  }
+
+  .showcase-mini {
+    padding: 6px;
+  }
+
+  .showcase-mini img {
+    width: 54px;
+    height: 38px;
+  }
+
+  .creator-hero {
+    margin-bottom: 18px;
+  }
+
+  .empty {
+    padding: 44px 16px;
+  }
+
+  .rune-divider {
+    margin: 4px 0 18px;
+  }
+
+  .footer-grid {
+    padding: 32px 0 24px;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    padding: 14px 0;
+    font-size: 12px;
+  }
+
+  .mobile-menu {
+    padding: 8px 14px 12px;
+  }
+
+  .mobile-menu a {
+    padding: 9px 4px;
+  }
+
+  .lightbox {
+    padding: 12px;
+  }
+
+  .detail-hero {
+    margin-bottom: 18px;
   }
 }
 
