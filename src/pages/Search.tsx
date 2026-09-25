@@ -3,9 +3,10 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { EmptyState } from '../components/states';
+import { ViewToggle } from '../components/chrome';
 import { filterAddons } from '../data/repository';
 import type { SortKey } from '../types';
-import { useDebounce, useDocumentTitle } from '../hooks/hooks';
+import { useDebounce, useDocumentTitle, useViewMode } from '../hooks/hooks';
 
 export function SearchPage({
   favorites,
@@ -19,6 +20,7 @@ export function SearchPage({
   const [input, setInput] = useState(q);
   const debounced = useDebounce(input, 250);
   const [sort, setSort] = useState<SortKey>('popular');
+  const [view, setView] = useViewMode();
 
   useDocumentTitle(
     q ? `Busca por "${q}" — CursedRock` : 'Buscar addons — CursedRock',
@@ -67,6 +69,7 @@ export function SearchPage({
               {results.length} resultado{results.length === 1 ? '' : 's'} para “{term}”
             </span>
             <span className="spacer" />
+            <ViewToggle mode={view} onChange={setView} />
             <div className="sort-pills">
               {(
                 [
@@ -90,7 +93,7 @@ export function SearchPage({
               actionLabel="Ver catálogo completo"
             />
           ) : (
-            <AddonGrid addons={results} favorites={favorites} onToggleFavorite={onToggleFavorite} />
+            <AddonGrid addons={results} favorites={favorites} onToggleFavorite={onToggleFavorite} layout={view} />
           )}
         </>
       ) : (

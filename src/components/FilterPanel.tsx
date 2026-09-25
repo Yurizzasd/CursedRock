@@ -1,5 +1,7 @@
 import type { SortKey } from '../types';
-import { getAllCategories, getAllMinecraftVersions, getAllTags } from '../data/repository';
+import { countByCategory, getAllCategories, getAllMinecraftVersions, getAllTags } from '../data/repository';
+import { ICONS } from './CategoryCreator';
+import { Package } from 'lucide-react';
 
 const SORTS: { key: SortKey; label: string }[] = [
   { key: 'popular', label: 'Populares' },
@@ -26,6 +28,7 @@ export function FilterPanel({
   const categories = getAllCategories();
   const versions = getAllMinecraftVersions();
   const tags = getAllTags();
+  const counts = countByCategory();
 
   return (
     <aside className="filters" aria-label="Filtros">
@@ -42,20 +45,35 @@ export function FilterPanel({
         ))}
       </div>
       <div className="filter-group">
-        <label htmlFor="f-cat">Categoria</label>
-        <select
-          id="f-cat"
-          className="select"
-          value={filters.category}
-          onChange={(e) => onChange({ ...filters, category: e.target.value })}
-        >
-          <option value="all">Todas</option>
-          {categories.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.name}
-            </option>
-          ))}
-        </select>
+        <label id="f-cat-label">Categoria</label>
+        <div className="seal-grid" role="group" aria-labelledby="f-cat-label">
+          <button
+            className={`seal${filters.category === 'all' ? ' active' : ''}`}
+            onClick={() => onChange({ ...filters, category: 'all' })}
+          >
+            <Package />
+            <div>
+              <b>Todas</b>
+            </div>
+          </button>
+          {categories.map((c) => {
+            const Icon = ICONS[c.icon] ?? Package;
+            return (
+              <button
+                key={c.id}
+                className={`seal${filters.category === c.id ? ' active' : ''}`}
+                onClick={() => onChange({ ...filters, category: c.id })}
+                title={c.description}
+              >
+                <Icon />
+                <div>
+                  <b>{c.name}</b>
+                  <span>{counts[c.id] ?? 0}</span>
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
       <div className="filter-group">
         <label htmlFor="f-mc">Versão do Minecraft</label>

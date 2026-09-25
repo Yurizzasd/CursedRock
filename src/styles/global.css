@@ -2197,3 +2197,548 @@ select:focus-visible {
     animation: none;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   v3 — vitrine, selos, ficha de boss, lista, brasas
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ── vitrine "baú do tesouro" ── */
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+}
+
+.showcase-main {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  aspect-ratio: 16 / 10;
+  background: var(--bg-soft);
+}
+
+.showcase-main > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.showcase-main:hover > img {
+  transform: scale(1.05);
+}
+
+.showcase-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 28%, rgba(8, 8, 11, 0.92) 88%);
+  pointer-events: none;
+}
+
+.showcase-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 22px;
+}
+
+.showcase-info h3 {
+  font-size: clamp(20px, 2.6vw, 30px);
+  text-transform: uppercase;
+  margin: 6px 0;
+}
+
+.showcase-info h3 a:hover {
+  color: var(--red-bright);
+}
+
+.showcase-info p {
+  color: #c9c9d1;
+  font-size: 13.5px;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-width: 520px;
+}
+
+.showcase-hover {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(-6px);
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.showcase-main:hover .showcase-hover,
+.showcase-main:focus-within .showcase-hover {
+  opacity: 1;
+  transform: none;
+}
+
+.showcase-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.showcase-mini {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 8px;
+  min-width: 0;
+  transition: border-color 0.16s, transform 0.16s;
+}
+
+.showcase-mini:hover {
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+
+.showcase-mini img {
+  width: 62px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.showcase-mini b {
+  display: block;
+  font-size: 12.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.showcase-mini span {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--faint);
+}
+
+/* ── selos de categoria (filtros runa) ── */
+.seal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.seal {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--muted);
+  text-align: left;
+  transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.15s;
+  min-width: 0;
+}
+
+.seal svg {
+  width: 16px;
+  height: 16px;
+  color: var(--faint);
+  flex-shrink: 0;
+}
+
+.seal b {
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.seal div {
+  min-width: 0;
+}
+
+.seal div > span {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--faint);
+}
+
+.seal:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+  transform: translateY(-1px);
+}
+
+.seal.active {
+  border-color: var(--red);
+  background: var(--red-glow);
+  color: var(--text);
+}
+
+.seal.active svg {
+  color: var(--red-bright);
+}
+
+/* ── ficha de boss ── */
+.power {
+  margin: 4px 0 14px;
+}
+
+.power-top {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  margin-bottom: 6px;
+  letter-spacing: 0.08em;
+}
+
+.power-top b {
+  color: var(--red-bright);
+}
+
+.power-track {
+  height: 8px;
+  background: var(--surface-3);
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.power-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--red-deep), var(--red-bright));
+  border-radius: 99px;
+  transition: width 0.8s ease;
+}
+
+.creator-seal {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  background: linear-gradient(120deg, rgba(229, 50, 45, 0.09), transparent 65%);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  padding: 12px;
+  transition: border-color 0.16s;
+}
+
+.creator-seal:hover {
+  border-color: var(--red);
+}
+
+.creator-seal .avatar {
+  width: 48px;
+  height: 48px;
+  font-size: 17px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.creator-seal b {
+  font-family: var(--font-display);
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.creator-seal b svg {
+  width: 14px;
+  height: 14px;
+  color: var(--red-bright);
+}
+
+.creator-seal small {
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.carousel {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 4px;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel > button {
+  flex: 0 0 min(80%, 540px);
+  scroll-snap-align: start;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0;
+  background: var(--bg-soft);
+  aspect-ratio: 16 / 9;
+  transition: border-color 0.16s;
+}
+
+.carousel > button:hover {
+  border-color: var(--red);
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-nav {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.carousel-nav button {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  transition: all 0.15s;
+}
+
+.carousel-nav button:hover {
+  color: var(--text);
+  border-color: var(--red);
+}
+
+.dl-cta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dl-cta > span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* ── alternador grade/lista + modo lista ── */
+.view-toggle {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.view-toggle button {
+  background: transparent;
+  border: none;
+  color: var(--faint);
+  padding: 8px 11px;
+  display: grid;
+  place-items: center;
+  transition: all 0.15s;
+}
+
+.view-toggle button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.view-toggle button.active {
+  background: var(--surface-3);
+  color: var(--text);
+}
+
+.addon-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addon-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px;
+  transition: border-color 0.18s, transform 0.18s;
+  animation: rise 0.4s ease both;
+}
+
+.addon-row:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-2px);
+}
+
+.addon-row > a:first-child {
+  flex-shrink: 0;
+}
+
+.addon-row img {
+  width: 138px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 7px;
+  display: block;
+}
+
+.row-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.row-main h3 {
+  font-size: 15px;
+  font-family: var(--font-display);
+  margin: 2px 0;
+}
+
+.row-main h3 a:hover {
+  color: var(--red-bright);
+}
+
+.row-main .card-by {
+  margin-bottom: 4px;
+}
+
+.row-desc {
+  font-size: 12.5px;
+  color: var(--muted);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+}
+
+.row-fav {
+  position: static;
+  opacity: 1;
+  transform: none;
+}
+
+/* ── brasas (só desktop com mouse) ── */
+.embers {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  display: none;
+  overflow: hidden;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .embers {
+    display: block;
+  }
+}
+
+.ember {
+  position: absolute;
+  bottom: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 110, 70, 0.85), rgba(229, 50, 45, 0) 70%);
+  animation-name: emberup;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes emberup {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  12% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translateY(-108vh) translateX(34px);
+    opacity: 0;
+  }
+}
+
+/* ── logo pulsante ── */
+.logo-mark {
+  animation: markpulse 3.2s ease-in-out infinite;
+}
+
+@keyframes markpulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(229, 50, 45, 0);
+  }
+  50% {
+    box-shadow: 0 0 14px 0 rgba(229, 50, 45, 0.35);
+  }
+}
+
+@media (max-width: 760px) {
+  .showcase-list {
+    grid-template-columns: 1fr;
+  }
+  .addon-row {
+    flex-wrap: wrap;
+  }
+  .addon-row > a:first-child {
+    width: 100%;
+  }
+  .addon-row img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+  .row-side {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .row-desc {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerticker-track {
+    animation: none;
+  }
+  .embers {
+    display: none;
+  }
+  .logo-mark {
+    animation: none;
+  }
+}

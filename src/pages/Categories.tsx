@@ -3,9 +3,10 @@ import { Link, useParams } from 'react-router-dom';
 import { AddonGrid } from '../components/AddonCard';
 import { CategoryCard } from '../components/CategoryCreator';
 import { EmptyState } from '../components/states';
+import { ViewToggle } from '../components/chrome';
 import { countByCategory, filterAddons, getAllCategories, getCategoryById } from '../data/repository';
 import type { SortKey } from '../types';
-import { useDocumentTitle } from '../hooks/hooks';
+import { useDocumentTitle, useViewMode } from '../hooks/hooks';
 import { NotFound } from './NotFound';
 
 export function Categories() {
@@ -36,6 +37,7 @@ export function CategoryDetail({
   const { slug } = useParams();
   const category = slug ? getCategoryById(slug) : undefined;
   const [sort, setSort] = useState<SortKey>('popular');
+  const [view, setView] = useViewMode();
 
   useDocumentTitle(
     category ? `${category.name} — Addons | CursedRock` : 'Categoria não encontrada — CursedRock',
@@ -74,6 +76,8 @@ export function CategoryDetail({
             </button>
           ))}
         </div>
+        <span className="spacer" />
+        <ViewToggle mode={view} onChange={setView} />
       </div>
       {results.length === 0 ? (
         <EmptyState
@@ -83,7 +87,7 @@ export function CategoryDetail({
           actionLabel="Ver categorias"
         />
       ) : (
-        <AddonGrid addons={results} favorites={favorites} onToggleFavorite={onToggleFavorite} />
+        <AddonGrid addons={results} favorites={favorites} onToggleFavorite={onToggleFavorite} layout={view} />
       )}
     </div>
   );

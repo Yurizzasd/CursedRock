@@ -41,3 +41,24 @@ export function useScrolled(threshold = 8): boolean {
   }, [threshold]);
   return scrolled;
 }
+
+export type ViewMode = 'grid' | 'list';
+
+export function useViewMode(): [ViewMode, (m: ViewMode) => void] {
+  const [mode, setMode] = useState<ViewMode>(() => {
+    try {
+      return localStorage.getItem('cursedrock:view') === 'list' ? 'list' : 'grid';
+    } catch {
+      return 'grid';
+    }
+  });
+  const change = (m: ViewMode) => {
+    setMode(m);
+    try {
+      localStorage.setItem('cursedrock:view', m);
+    } catch {
+      /* ignora */
+    }
+  };
+  return [mode, change];
+}

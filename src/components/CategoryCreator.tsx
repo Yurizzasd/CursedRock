@@ -7,7 +7,7 @@ import {
 import type { Category, Creator } from '../types';
 import { getAddonsByCreator } from '../data/repository';
 
-const ICONS: Record<string, LucideIcon> = {
+export const ICONS: Record<string, LucideIcon> = {
   Compass, Sword, Ghost, Cpu, Sparkles, Flame, Armchair, Car, Gauge, Wrench,
   Mountain, Skull, Zap, Swords, Wheat, Dices, Package,
 };

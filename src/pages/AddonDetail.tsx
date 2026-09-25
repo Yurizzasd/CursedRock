@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
-  BadgeCheck, Calendar, Check, Cpu, Download, FileDown, Gamepad2, Info, Layers, Star, Tag, User, X,
+  BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Star, Tag, User, X,
 } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { AdSlot, SectionHeader } from '../components/chrome';
 import { DownloadButton, FavoriteButton } from '../components/DownloadFavorite';
-import { getAddonById, getCategoryById, getCreatorById, getRelatedAddons } from '../data/repository';
+import { getAddonById, getAddonsByCreator, getCategoryById, getCreatorById, getRelatedAddons } from '../data/repository';
 import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/format';
 import { useDocumentTitle } from '../hooks/hooks';
 import { NotFound } from './NotFound';
@@ -21,6 +21,7 @@ export function AddonDetail({
   const { slug } = useParams();
   const addon = slug ? getAddonById(slug) : undefined;
   const [lightbox, setLightbox] = useState<string | null>(null);
+  const railRef = useRef<HTMLDivElement>(null);
 
   // SEO por addon: title + description dinâmicos
   useDocumentTitle(
@@ -33,8 +34,14 @@ export function AddonDetail({
   const category = getCategoryById(addon.category);
   const creator = getCreatorById(addon.author);
   const related = getRelatedAddons(addon);
+  const creatorCount = creator ? getAddonsByCreator(creator.id).length : 0;
+  const power = Math.min(100, Math.round(22 * Math.log10(addon.downloads + 1)));
   const fav = favorites.includes(addon.id);
   const gallery = addon.screenshots.length > 0 ? addon.screenshots : [addon.thumbnail];
+
+  const scrollRail = (dir: 1 | -1) => {
+    railRef.current?.scrollBy({ left: dir * 420, behavior: 'smooth' });
+  };
 
   return (
     <div className="container page">
@@ -67,7 +74,10 @@ export function AddonDetail({
             </p>
           </div>
           <div className="detail-actions">
-            <DownloadButton addon={addon} />
+            <div className="dl-cta">
+              <DownloadButton addon={addon} big />
+              <span>{formatNumber(addon.downloads)} downloads</span>
+            </div>
             <FavoriteButton active={fav} onToggle={() => onToggleFavorite(addon.id)} />
           </div>
         </div>
@@ -110,13 +120,23 @@ export function AddonDetail({
             <h2 id="shots">
               <Layers /> Screenshots
             </h2>
-            <div className="gallery">
+            <div className="carousel" ref={railRef}>
               {gallery.map((src, i) => (
                 <button key={i} onClick={() => setLightbox(src)} aria-label={`Ampliar screenshot ${i + 1}`}>
                   <img src={src} alt={`${addon.name} — screenshot ${i + 1}`} loading="lazy" />
                 </button>
               ))}
             </div>
+            {gallery.length > 1 && (
+              <div className="carousel-nav">
+                <button onClick={() => scrollRail(-1)} aria-label="Anterior">
+                  <ChevronLeft size={17} />
+                </button>
+                <button onClick={() => scrollRail(1)} aria-label="Próxima">
+                  <ChevronRight size={17} />
+                </button>
+              </div>
+            )}
           </section>
 
           {addon.changelog && addon.changelog.length > 0 && (
@@ -142,6 +162,15 @@ export function AddonDetail({
             <h3>
               <FileDown /> Download
             </h3>
+            <div className="power" aria-label={`Nível de poder ${power} de 100`}>
+              <div className="power-top">
+                <span>Nível de poder</span>
+                <b>{power}/100</b>
+              </div>
+              <div className="power-track">
+                <div className="power-fill" style={{ width: `${power}%` }} />
+              </div>
+            </div>
             <p>
               Arquivo externo hospedado pelo criador. O CursedRock verifica o link antes de liberar.
             </p>
@@ -200,23 +229,24 @@ export function AddonDetail({
               <h3>
                 <User /> Criador
               </h3>
-              <Link to={`/creator/${creator.id}`} style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+              <Link to={`/creator/${creator.id}`} className="creator-seal">
                 <span
                   className="avatar"
                   style={{
-                    width: 48,
-                    height: 48,
-                    fontSize: 17,
-                    margin: 0,
                     background: `linear-gradient(145deg, hsl(${creator.avatarHue} 45% 32%), hsl(${creator.avatarHue} 55% 16%))`,
                   }}
                 >
                   {creator.name.slice(0, 2).toUpperCase()}
                 </span>
                 <span>
-                  <b style={{ fontFamily: 'var(--font-display)' }}>{creator.name}</b>
+                  <b>
+                    {creator.name}
+                    {creator.verified && <BadgeCheck aria-label="Verificado" />}
+                  </b>
                   <br />
-                  <small style={{ color: 'var(--faint)' }}>Ver perfil →</small>
+                  <small>
+                    {creatorCount} addon{creatorCount === 1 ? '' : 's'} • ver perfil →
+                  </small>
                 </span>
               </Link>
             </div>

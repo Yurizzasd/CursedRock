@@ -61,19 +61,65 @@ export function AddonGrid({
   favorites,
   onToggleFavorite,
   cols3 = false,
+  layout = 'grid',
 }: {
   addons: Addon[];
   favorites: string[];
   onToggleFavorite: (id: string) => void;
   cols3?: boolean;
+  layout?: 'grid' | 'list';
 }) {
   const set = new Set(favorites);
+  if (layout === 'list') {
+    return (
+      <div className="addon-list">
+        {addons.map((a, i) => (
+          <AddonRow key={a.id} addon={a} index={i} isFavorite={set.has(a.id)} onToggleFavorite={onToggleFavorite} />
+        ))}
+      </div>
+    );
+  }
   return (
     <div className={`addon-grid${cols3 ? ' cols-3' : ''}`}>
       {addons.map((a, i) => (
         <AddonCard key={a.id} addon={a} index={i} isFavorite={set.has(a.id)} onToggleFavorite={onToggleFavorite} />
       ))}
     </div>
+  );
+}
+
+function AddonRow({ addon, isFavorite, onToggleFavorite, index = 0 }: Props) {
+  const cat = getCategoryById(addon.category);
+  return (
+    <article className="addon-row" style={{ animationDelay: `${Math.min(index, 8) * 40}ms` }}>
+      <Link to={`/addon/${addon.id}`} aria-label={addon.name} tabIndex={-1}>
+        <img src={addon.thumbnail} alt="" loading="lazy" />
+      </Link>
+      <div className="row-main">
+        <span className="card-cat">{cat?.name ?? addon.category}</span>
+        <h3>
+          <Link to={`/addon/${addon.id}`}>{addon.name}</Link>
+        </h3>
+        <span className="card-by">
+          por <Link to={`/creator/${addon.author}`}>{addon.authorDisplay ?? addon.author}</Link>
+        </span>
+        <p className="row-desc">{addon.description}</p>
+      </div>
+      <div className="row-side">
+        <span>{addon.minecraft_versions[addon.minecraft_versions.length - 1]} • v{addon.version}</span>
+        <span className="dl">
+          <Download size={13} /> {formatDownloads(addon.downloads)}
+        </span>
+        <button
+          className={`fav-btn row-fav${isFavorite ? ' active' : ''}`}
+          onClick={() => onToggleFavorite(addon.id)}
+          aria-label={isFavorite ? `Remover ${addon.name} dos favoritos` : `Favoritar ${addon.name}`}
+          aria-pressed={isFavorite}
+        >
+          <Heart />
+        </button>
+      </div>
+    </article>
   );
 }
 

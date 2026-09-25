@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Download, Flame, HeartHandshake, TrendingUp } from 'lucide-react';
+import { ArrowRight, Flame, HeartHandshake, TrendingUp } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { CategoryCard } from '../components/CategoryCreator';
 import { AdSlot, RuneDivider, SectionHeader } from '../components/chrome';
+import { DownloadButton } from '../components/DownloadFavorite';
 import {
   countByCategory,
   getAllAddons,
@@ -20,6 +21,41 @@ import { useDocumentTitle } from '../hooks/hooks';
 
 type Tab = 'trending' | 'popular' | 'new' | 'updated';
 
+function Showcase() {
+  const items = useMemo(() => getTrendingAddons(4), []);
+  const [main, ...rest] = items;
+  if (!main) return null;
+  return (
+    <div className="showcase" aria-label="Vitrine">
+      <div className="showcase-main">
+        <img src={main.thumbnail} alt={`Capa de ${main.name}`} />
+        <div className="showcase-shade" />
+        <div className="showcase-hover">
+          <DownloadButton addon={main} />
+        </div>
+        <div className="showcase-info">
+          <span className="eyebrow">Em alta</span>
+          <h3>
+            <Link to={`/addon/${main.id}`}>{main.name}</Link>
+          </h3>
+          <p>{main.description}</p>
+        </div>
+      </div>
+      <div className="showcase-list">
+        {rest.map((a) => (
+          <Link key={a.id} to={`/addon/${a.id}`} className="showcase-mini">
+            <img src={a.thumbnail} alt="" loading="lazy" />
+            <span style={{ minWidth: 0 }}>
+              <b>{a.name}</b>
+              <span>v{a.version}</span>
+            </span>
+          </Link>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export function Home({
   favorites,
   onToggleFavorite,
@@ -34,7 +70,6 @@ export function Home({
   const [tab, setTab] = useState<Tab>('trending');
 
   const featured = useMemo(() => getFeaturedAddons().slice(0, 4), []);
-  const trending = useMemo(() => getTrendingAddons(5), []);
   const tabAddons = useMemo(() => {
     switch (tab) {
       case 'popular':
@@ -101,26 +136,7 @@ export function Home({
               </div>
             </div>
           </div>
-          <div className="hero-featured-side">
-            <div className="ticker" aria-label="Em alta agora">
-              <div className="ticker-head">
-                <span className="pulse-dot" /> Em alta agora
-              </div>
-              {trending.map((a, i) => (
-                <Link key={a.id} to={`/addon/${a.id}`} className="ticker-row">
-                  <span style={{ fontFamily: 'var(--font-mono)', color: 'var(--red-bright)', fontSize: 12 }}>
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
-                  <span className="t-name">{a.name}</span>
-                  <span className="t-meta">
-                    <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
-                      <Download size={12} /> {formatDownloads(a.downloads)}
-                    </span>
-                  </span>
-                </Link>
-              ))}
-            </div>
-          </div>
+          <Showcase />
         </div>
       </section>
 

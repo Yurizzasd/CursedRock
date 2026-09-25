@@ -3,9 +3,10 @@ import { useSearchParams } from 'react-router-dom';
 import { AddonGrid, CardSkeletons } from '../components/AddonCard';
 import { FilterPanel, type FilterState } from '../components/FilterPanel';
 import { EmptyState } from '../components/states';
+import { ViewToggle } from '../components/chrome';
 import { filterAddons } from '../data/repository';
 import type { SortKey } from '../types';
-import { useDocumentTitle } from '../hooks/hooks';
+import { useDocumentTitle, useViewMode } from '../hooks/hooks';
 
 const PAGE_SIZE = 12;
 
@@ -32,6 +33,7 @@ export function Addons({
   });
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
+  const [view, setView] = useViewMode();
 
   useEffect(() => {
     setFilters((f) => ({ ...f, sort: validSort(params.get('sort')) }));
@@ -78,6 +80,8 @@ export function Addons({
             <span className="result-count">
               {results.length} resultado{results.length === 1 ? '' : 's'} • pág. {current}/{pages}
             </span>
+            <span className="spacer" />
+            <ViewToggle mode={view} onChange={setView} />
           </div>
           {loading ? (
             <CardSkeletons count={8} />
@@ -85,7 +89,7 @@ export function Addons({
             <EmptyState actionTo="/addons" actionLabel="Limpar filtros" />
           ) : (
             <>
-              <AddonGrid addons={visible} favorites={favorites} onToggleFavorite={onToggleFavorite} cols3 />
+              <AddonGrid addons={visible} favorites={favorites} onToggleFavorite={onToggleFavorite} cols3={view === 'grid'} layout={view} />
               {current < pages ? (
                 <div className="load-more-wrap">
                   <button className="btn btn-ghost" onClick={() => setPage((p) => p + 1)}>
