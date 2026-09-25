@@ -4,6 +4,9 @@ node_modules/
 # build
 dist/
 
+# sessão do navegador (TeraBox) — NUNCA commitar
+.tb-profile/
+
 # env / segredos — NUNCA commitar tokens
 .env
 .env.*
