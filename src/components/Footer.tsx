@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Gem } from 'lucide-react';
+import { LogoMark } from './Logo';
 import { getAllCategories } from '../data/repository';
 
 export function Footer() {
@@ -11,7 +11,7 @@ export function Footer() {
           <div className="footer-brand">
             <Link to="/" className="logo" style={{ marginBottom: 14 }}>
               <span className="logo-mark">
-                <Gem />
+                <LogoMark />
               </span>
               <b>
                 CURSED<span>ROCK</span>

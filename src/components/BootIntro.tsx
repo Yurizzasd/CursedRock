@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Gem } from 'lucide-react';
+import { LogoMark } from './Logo';
 
 // Intro de entrada: boot rápido + wipe de tinta revelando o site.
 // Toca 1x por carregamento; respeita reduced-motion e sai no clique.
@@ -31,7 +31,7 @@ export function BootIntro() {
     <div className={`intro${gone ? ' done' : ''}`} onClick={skip} aria-hidden="true">
       <div className="intro-core">
         <span className="intro-mark">
-          <Gem />
+          <LogoMark />
         </span>
         <p className="intro-name">CURSEDROCK</p>
         <p className="intro-sub">INVOCANDO O UNDERGROUND…</p>

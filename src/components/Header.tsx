@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Gem, Menu, Search, X } from 'lucide-react';
+import { Menu, Search, X } from 'lucide-react';
+import { LogoMark } from './Logo';
 import { useScrolled } from '../hooks/hooks';
 import { getUpdatedAddons } from '../data/repository';
 import { timeAgo } from '../utils/format';
@@ -83,7 +84,7 @@ export function Header({ favCount }: { favCount: number }) {
         <div className="header-inner">
           <Link to="/" className="logo" aria-label="CursedRock — início">
             <span className="logo-mark">
-              <Gem />
+              <LogoMark />
             </span>
             <b>
               CURSED<span>ROCK</span>
