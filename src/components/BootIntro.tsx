@@ -3,6 +3,13 @@ import { LogoMark } from './Logo';
 
 // Intro de entrada: LOADING 0→100% + revelação em íris + site nascendo junto.
 // Toca 1x por carregamento; respeita reduced-motion e sai no clique.
+const LAVA_EMBERS = Array.from({ length: 12 }, (_, i) => ({
+  left: (i * 53 + 11) % 100,
+  size: 5 + ((i * 7) % 9),
+  dur: 2.6 + ((i * 13) % 30) / 10,
+  delay: -((i * 17) % 25) / 10,
+}));
+
 export function BootIntro() {
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
@@ -48,6 +55,28 @@ export function BootIntro() {
 
   return (
     <div className={`intro${open ? ' open' : ''}`} onClick={skip} aria-hidden="true">
+      <div className="lava" aria-hidden="true">
+        <div className="lava-glow" />
+        {LAVA_EMBERS.map((e, i) => (
+          <span
+            key={i}
+            className="lava-ember"
+            style={{
+              left: `${e.left}%`,
+              width: e.size,
+              height: e.size,
+              animationDuration: `${e.dur}s`,
+              animationDelay: `${e.delay}s`,
+            }}
+          />
+        ))}
+        <svg className="lava-waves back" viewBox="0 0 480 60" preserveAspectRatio="none">
+          <path d="M0,32 Q30,12 60,32 T120,32 T180,32 T240,32 T300,32 T360,32 T420,32 T480,32 V60 H0 Z" />
+        </svg>
+        <svg className="lava-waves front" viewBox="0 0 480 60" preserveAspectRatio="none">
+          <path d="M0,34 Q30,16 60,34 T120,34 T180,34 T240,34 T300,34 T360,34 T420,34 T480,34 V60 H0 Z" />
+        </svg>
+      </div>
       <div className="intro-core">
         <span className="intro-mark">
           <LogoMark />

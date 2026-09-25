@@ -3157,7 +3157,7 @@ select:focus-visible {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: #0e0c0d;
+  background: #0e0705;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -3290,4 +3290,122 @@ body.site-entered .hero-grid > div:nth-child(2) {
     opacity: 0;
     transform: translateY(26px);
   }
+}
+
+/* ── lago de lava do Nether (intro) ── */
+.lava {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.intro-core {
+  position: relative;
+  z-index: 2;
+}
+
+.lava-glow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55%;
+  background: radial-gradient(120% 100% at 50% 118%, rgba(255, 122, 43, 0.4), rgba(226, 60, 31, 0) 70%);
+  animation: lavabreathe 2.4s ease-in-out infinite;
+}
+
+@keyframes lavabreathe {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.lava-ember {
+  position: absolute;
+  bottom: -14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffd23f 0%, #ff7a2b 45%, rgba(226, 60, 31, 0) 72%);
+  filter: blur(1.5px);
+  animation-name: lavarise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes lavarise {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-48vh) translateX(22px);
+    opacity: 0;
+  }
+}
+
+.lava-waves {
+  position: absolute;
+  left: 0;
+  width: calc(100% + 120px);
+  animation: lavashift linear infinite;
+}
+
+.lava-waves.back {
+  bottom: 46px;
+  height: 84px;
+  fill: #ff7a2b;
+  opacity: 0.5;
+  animation-duration: 7s;
+}
+
+.lava-waves.front {
+  bottom: -6px;
+  height: 110px;
+  fill: #e23c1f;
+  filter: drop-shadow(0 -8px 22px rgba(255, 122, 43, 0.45));
+  animation-duration: 4.5s;
+}
+
+@keyframes lavashift {
+  to {
+    transform: translateX(-120px);
+  }
+}
+
+.intro-loading {
+  color: #ffb35c;
+  text-shadow:
+    0 0 18px rgba(255, 122, 43, 0.55),
+    0 0 46px rgba(226, 60, 31, 0.35);
+  animation: flick 1.6s ease-in-out infinite;
+}
+
+@keyframes flick {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 0.9;
+  }
+  60% {
+    opacity: 0.96;
+  }
+}
+
+.intro .intro-pct {
+  color: #ffb35c;
+}
+
+.intro .intro-bar i {
+  background: #ff7a2b;
+  box-shadow: 0 0 12px rgba(255, 122, 43, 0.7);
 }
