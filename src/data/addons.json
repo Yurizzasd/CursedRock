@@ -300,5 +300,32 @@
     "updatedAt": "2026-05-16",
     "downloads": 0,
     "longDescription": "Comandos e ferramentas essenciais: kits, teleporte, utilidades do dia a dia no survival."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/keep-inventory/cover.jpg"
+    ],
+    "id": "keep-inventory",
+    "name": "Keep Inventory",
+    "author": "unknown",
+    "description": "Mantenha seu inventário ao morrer: nada de voltar correndo para recuperar itens.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/keep-inventory/cover.jpg",
+    "download_url": "https://1024terabox.com/s/12HGEwKDnCqPk3Aocvdcz8w",
+    "tags": [
+      "Utility",
+      "Keep Inventory",
+      "QoL",
+      "Survival"
+    ],
+    "createdAt": "2026-05-23",
+    "updatedAt": "2026-05-23",
+    "downloads": 0,
+    "longDescription": "Mantenha seu inventário ao morrer: nada de voltar correndo para recuperar itens."
   }
 ]

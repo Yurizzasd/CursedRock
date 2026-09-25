@@ -1,0 +1,25 @@
+{
+  "id": "keep-inventory",
+  "name": "Keep Inventory",
+  "author": "unknown",
+  "description": "Mantenha seu inventário ao morrer: nada de voltar correndo para recuperar itens.",
+  "category": "utility",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/keep-inventory/cover.jpg",
+  "screenshots": [
+    "/images/addons/keep-inventory/cover.jpg"
+  ],
+  "download_url": "https://1024terabox.com/s/12HGEwKDnCqPk3Aocvdcz8w",
+  "tags": [
+    "Utility",
+    "Keep Inventory",
+    "QoL",
+    "Survival"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-23",
+  "updatedAt": "2026-05-23"
+}
