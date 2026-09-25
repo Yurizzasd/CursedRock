@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowDownAZ, ArrowUpDown, Flame, LayoutGrid, List, RefreshCw, Sparkles, Star } from 'lucide-react';
+import { ArrowDownAZ, ArrowRight, ArrowUpDown, Flame, LayoutGrid, List, RefreshCw, Sparkles, Star } from 'lucide-react';
 import { useMemo } from 'react';
 import type { ViewMode } from '../hooks/hooks';
 import type { SortKey } from '../types';
