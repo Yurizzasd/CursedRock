@@ -25,5 +25,14 @@
     "joinedAt": "2026-09-25",
     "verified": false,
     "socials": {}
+  },
+  {
+    "id": "blocklab",
+    "name": "BLOCKLAB",
+    "avatarHue": 20,
+    "bio": "Ferramentas cinematográficas e utilidades para criadores de conteúdo no Bedrock.",
+    "joinedAt": "2026-09-25",
+    "verified": false,
+    "socials": {}
   }
 ]
