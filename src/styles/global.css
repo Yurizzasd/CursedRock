@@ -5,26 +5,26 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 :root {
-  --bg: #08080b;
-  --bg-soft: #0d0d12;
-  --surface: #121218;
-  --surface-2: #18181f;
-  --surface-3: #1f1f28;
-  --border: #2a2a34;
-  --border-strong: #383844;
-  --text: #f0f0f3;
-  --muted: #a3a3ae;
-  --faint: #63636f;
-  --red: #e5322d;
-  --red-bright: #ff4b40;
-  --red-deep: #7c1310;
-  --red-glow: rgba(229, 50, 45, 0.14);
-  --moss: #9be15d;
-  --amber: #f5b942;
+  --bg: #141114;
+  --bg-soft: #1a1517;
+  --surface: #211b1e;
+  --surface-2: #2a2226;
+  --surface-3: #362b30;
+  --border: #3a3235;
+  --border-strong: #57484b;
+  --text: #ece3d2;
+  --muted: #b7a697;
+  --faint: #84716a;
+  --red: #c14a38;
+  --red-bright: #e06a4d;
+  --red-deep: #6e2318;
+  --red-glow: rgba(193, 74, 56, 0.14);
+  --moss: #a3c47c;
+  --amber: #d9a45b;
   --radius: 10px;
   --radius-sm: 6px;
-  --font-display: 'Chakra Petch', 'Inter', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Archivo Black', 'Arial Black', system-ui, sans-serif;
+  --font-body: 'Schibsted Grotesk', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-pixel: 'Silkscreen', 'JetBrains Mono', monospace;
   --header-h: 64px;
@@ -120,9 +120,22 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display);
+  font-weight: 400;
   line-height: 1.12;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   margin: 0;
+}
+
+/* Archivo Black só tem peso 400 — evita faux-bold embarcado */
+.card-title,
+.panel h2,
+.panel h3,
+.creator-seal b,
+.row-main h3,
+.modal h3,
+.empty h3,
+.hero-stat b {
+  font-weight: 400;
 }
 
 .eyebrow {
@@ -408,7 +421,7 @@ h4 {
 .btn-primary {
   background: var(--red);
   color: #fff;
-  border: 1px solid #ff6a60;
+  border: 1px solid #e88a72;
   /* canto pixelado sutil — assinatura cursed */
   clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
   border-radius: 0;
@@ -453,10 +466,11 @@ h4 {
 }
 
 .hero h1 {
-  font-size: clamp(38px, 6vw, 68px);
-  font-weight: 700;
+  font-size: clamp(34px, 5.4vw, 62px);
+  font-weight: 400;
   text-transform: uppercase;
   margin: 14px 0 16px;
+  letter-spacing: 0;
 }
 
 .hero h1 .stroke {
@@ -534,16 +548,16 @@ h4 {
   height: 8px;
   border-radius: 50%;
   background: var(--red-bright);
-  box-shadow: 0 0 0 0 rgba(229, 50, 45, 0.6);
+  box-shadow: 0 0 0 0 rgba(193, 74, 56, 0.6);
   animation: pulse 1.8s infinite;
 }
 
 @keyframes pulse {
   70% {
-    box-shadow: 0 0 0 9px rgba(229, 50, 45, 0);
+    box-shadow: 0 0 0 9px rgba(193, 74, 56, 0);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(229, 50, 45, 0);
+    box-shadow: 0 0 0 0 rgba(193, 74, 56, 0);
   }
 }
 
@@ -645,7 +659,7 @@ h4 {
 .card:hover {
   transform: translateY(-5px);
   border-color: var(--border-strong);
-  box-shadow: 0 20px 44px -18px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(229, 50, 45, 0.12);
+  box-shadow: 0 20px 44px -18px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(193, 74, 56, 0.12);
 }
 
 .card-thumb {
@@ -743,7 +757,7 @@ h4 {
 .fav-btn.active {
   color: var(--red-bright);
   border-color: var(--red);
-  background: rgba(229, 50, 45, 0.16);
+  background: rgba(193, 74, 56, 0.16);
 }
 
 .fav-btn svg {
@@ -2105,7 +2119,7 @@ select:focus-visible {
 }
 
 .card:hover .card-thumb::before {
-  border-color: rgba(229, 50, 45, 0.4);
+  border-color: rgba(193, 74, 56, 0.4);
 }
 
 /* ── painel de download: faixa industrial ── */
@@ -2122,7 +2136,7 @@ select:focus-visible {
   left: 0;
   right: 0;
   height: 5px;
-  background: repeating-linear-gradient(-45deg, var(--red) 0 12px, #160606 12px 24px);
+  background: repeating-linear-gradient(-45deg, var(--red) 0 12px, #201009 12px 24px);
 }
 
 /* ── footer: marca d'água ── */
@@ -2652,7 +2666,7 @@ select:focus-visible {
   position: absolute;
   bottom: -12px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 110, 70, 0.85), rgba(229, 50, 45, 0) 70%);
+  background: radial-gradient(circle, rgba(224, 120, 80, 0.8), rgba(193, 74, 56, 0) 70%);
   animation-name: emberup;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
@@ -2680,10 +2694,10 @@ select:focus-visible {
 @keyframes markpulse {
   0%,
   100% {
-    box-shadow: 0 0 0 0 rgba(229, 50, 45, 0);
+    box-shadow: 0 0 0 0 rgba(193, 74, 56, 0);
   }
   50% {
-    box-shadow: 0 0 14px 0 rgba(229, 50, 45, 0.35);
+    box-shadow: 0 0 14px 0 rgba(193, 74, 56, 0.35);
   }
 }
 
@@ -2734,7 +2748,7 @@ select:focus-visible {
 /* fita marquee divisória */
 .tape-div {
   background: var(--red);
-  color: #160606;
+  color: #22100b;
   overflow: hidden;
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
@@ -2753,6 +2767,7 @@ select:focus-visible {
   font-size: 12px;
   padding: 8px 0;
   white-space: nowrap;
+  color: #22100b;
 }
 
 /* número editorial das seções */
@@ -3179,7 +3194,7 @@ select:focus-visible {
   display: grid;
   place-items: center;
   color: var(--red-bright);
-  box-shadow: 0 0 34px rgba(229, 50, 45, 0.35);
+  box-shadow: 0 0 34px rgba(193, 74, 56, 0.35);
   animation: markpulse 1.2s ease-in-out infinite;
 }
 

@@ -1,5 +1,5 @@
 [
-  { "id": "adventure", "name": "Adventure", "description": "Biomas, dungeons, bosses e exploração.", "icon": "Compass", "accent": "#e5322d", "pattern": "grid" },
+  { "id": "adventure", "name": "Adventure", "description": "Biomas, dungeons, bosses e exploração.", "icon": "Compass", "accent": "#c14a38", "pattern": "grid" },
   { "id": "weapons", "name": "Weapons", "description": "Espadas, armas de fogo e arsenais.", "icon": "Sword", "accent": "#ff4d42", "pattern": "diagonal" },
   { "id": "mobs", "name": "Mobs", "description": "Criaturas novas, chefes e companheiros.", "icon": "Ghost", "accent": "#a78bfa", "pattern": "dots" },
   { "id": "technology", "name": "Technology", "description": "Máquinas, redstone avançada e automação.", "icon": "Cpu", "accent": "#38bdf8", "pattern": "grid" },
