@@ -63,6 +63,9 @@ export function Home({
     <div>
       {/* HERO */}
       <section className="hero">
+        <div className="hero-backdrop" aria-hidden="true">
+          CURSEDROCK
+        </div>
         <div className="container hero-grid">
           <div>
             <span className="eyebrow">Minecraft Bedrock — Addons</span>

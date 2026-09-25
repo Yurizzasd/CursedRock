@@ -26,6 +26,7 @@
   --font-display: 'Chakra Petch', 'Inter', system-ui, sans-serif;
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-pixel: 'Silkscreen', 'JetBrains Mono', monospace;
   --header-h: 64px;
   --max: 1200px;
   --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 32px -16px rgba(0, 0, 0, 0.7);
@@ -131,10 +132,10 @@ h4 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
-  font-size: 11.5px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--red-bright);
 }
@@ -257,6 +258,10 @@ h4 {
 
 .logo b {
   color: var(--text);
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .logo b span {
@@ -1971,5 +1976,224 @@ select:focus-visible {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DEEPSLATE SIGNAL — camada de identidade (v2)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* scrollbar com cara de inventário */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #34343f transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c2c36;
+  border-radius: 0;
+  border: 2px solid var(--bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red-deep);
+}
+
+/* ── ticker de novidades sob o header ── */
+.headerticker {
+  border-top: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+}
+
+.headerticker-track {
+  display: flex;
+  gap: 0;
+  width: max-content;
+  animation: tickmove 36s linear infinite;
+}
+
+.headerticker:hover .headerticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes tickmove {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.tick-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 20px 7px 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.tick-item + .tick-item::before {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: var(--red);
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.tick-item b {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.tick-item:hover b {
+  color: var(--red-bright);
+}
+
+.tick-item .tick-new {
+  color: var(--moss);
+}
+
+/* ── hero: marca d'água gigante + telemetria ── */
+.hero-backdrop {
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-pixel);
+  font-size: clamp(56px, 13vw, 176px);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.hero-stat {
+  border-left: 2px solid var(--red);
+  padding-left: 14px;
+}
+
+/* ── cards: fio vermelho no topo + moldura no thumb ── */
+.card {
+  position: relative;
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.28s ease;
+  z-index: 3;
+}
+
+.card:hover::after {
+  transform: none;
+}
+
+.card-thumb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 1px solid transparent;
+  transition: border-color 0.22s;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.card:hover .card-thumb::before {
+  border-color: rgba(229, 50, 45, 0.4);
+}
+
+/* ── painel de download: faixa industrial ── */
+.panel.dl {
+  position: relative;
+  overflow: hidden;
+  padding-top: 26px;
+}
+
+.panel.dl::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: repeating-linear-gradient(-45deg, var(--red) 0 12px, #160606 12px 24px);
+}
+
+/* ── footer: marca d'água ── */
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::after {
+  content: 'CURSEDROCK';
+  position: absolute;
+  right: -10px;
+  bottom: -24px;
+  font-family: var(--font-pixel);
+  font-size: clamp(60px, 10vw, 130px);
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── detalhe: ícone chanfrado + título com bloco ── */
+.detail-icon {
+  clip-path: polygon(14px 0, 100% 0, 100% calc(100% - 14px), calc(100% - 14px) 100%, 0 100%, 0 14px);
+  border-radius: 0;
+  border: none;
+}
+
+.detail-titleblock h1 {
+  text-wrap: balance;
+}
+
+/* chips de categoria com ponto de sinal */
+.card-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.card-cat::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+
+/* badges de versão com cara de terminal */
+.card-foot .dl {
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .headerticker-track {
+    animation: none;
   }
 }

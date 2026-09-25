@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { Gem, Menu, Search, X } from 'lucide-react';
 import { useScrolled } from '../hooks/hooks';
+import { getUpdatedAddons } from '../data/repository';
+import { timeAgo } from '../utils/format';
 
 export function SearchBar({ compact = false }: { compact?: boolean }) {
   const navigate = useNavigate();
@@ -42,10 +44,39 @@ export function SearchBar({ compact = false }: { compact?: boolean }) {
   );
 }
 
+function NewsTicker() {
+  const items = getUpdatedAddons(6);
+  if (items.length === 0) return null;
+  const row = (hidden: boolean) => (
+    <>
+      {items.map((a) => (
+        <Link
+          key={a.id}
+          to={`/addon/${a.id}`}
+          className="tick-item"
+          aria-hidden={hidden}
+          tabIndex={hidden ? -1 : undefined}
+        >
+          <b>{a.name}</b>
+          <span className="tick-new">v{a.version}</span>
+          <span>{timeAgo(a.updatedAt)}</span>
+        </Link>
+      ))}
+    </>
+  );
+  return (
+    <div className="headerticker" aria-label="Atualizações recentes">
+      <div className="headerticker-track">
+        {row(false)}
+        {row(true)}
+      </div>
+    </div>
+  );
+}
+
 export function Header({ favCount }: { favCount: number }) {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
-
   return (
     <>
       <header className={`header${scrolled ? ' scrolled' : ''}`}>
@@ -87,6 +118,7 @@ export function Header({ favCount }: { favCount: number }) {
             {open ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
+        <NewsTicker />
       </header>
       <div className={`mobile-menu${open ? ' open' : ''}`}>
         <div style={{ marginBottom: 10 }}>

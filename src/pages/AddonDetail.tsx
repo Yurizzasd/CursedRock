@@ -138,7 +138,7 @@ export function AddonDetail({
         </div>
 
         <aside className="detail-side">
-          <div className="panel">
+          <div className="panel dl">
             <h3>
               <FileDown /> Download
             </h3>
