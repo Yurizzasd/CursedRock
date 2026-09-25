@@ -1902,8 +1902,7 @@ button.tag:hover {
   .nav,
   .header-search {
     display: none;
-  }
-  .hamburger {
+  }  .hamburger {
     display: grid;
     margin-left: auto;
   }
@@ -2904,6 +2903,134 @@ select:focus-visible {
     opacity: 1;
     transform: none;
     transition: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   v8 — mobile: toque, legibilidade e respiro
+   ═══════════════════════════════════════════════════════════════════ */
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* sem hover no touch: ações sempre visíveis */
+@media (hover: none) {
+  .showcase-hover {
+    opacity: 1;
+    transform: none;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 760px) {
+  /* iOS dá zoom em inputs < 16px — trava o layout */
+  .searchbar input,
+  .select,
+  .toolbar input[type='search'] {
+    font-size: 16px;
+  }
+
+  /* alvos de toque mínimos */
+  .btn {
+    min-height: 44px;
+  }
+
+  .pill,
+  .sortopt,
+  .tabs button {
+    min-height: 40px;
+  }
+
+  /* cabeçalho de seção empilha em vez de espremer */
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .section-link {
+    align-self: flex-start;
+  }
+
+  /* botoes do hero em pilha cheia */
+  .hero-actions {
+    flex-direction: column;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  /* download da ficha em largura total */
+  .detail-actions {
+    width: 100%;
+  }
+
+  .dl-cta {
+    flex: 1;
+    width: 100%;
+  }
+
+  .dl-cta .btn {
+    width: 100%;
+  }
+
+  .detail-actions .btn-ghost {
+    flex: 1;
+  }
+
+  /* sortbar respira em tela estreita */
+  .sortbar {
+    width: 100%;
+  }
+
+  .toolbar .view-toggle {
+    margin-left: auto;
+  }
+
+  /* tabs com rolagem horizontal */
+  .tabs {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .tabs button {
+    white-space: nowrap;
+  }
+
+  /* vitrine: ações sempre ao alcance no touch */
+  .showcase-hover .btn {
+    min-height: 44px;
+  }
+
+  /* modal e painéis com menos padding */
+  .modal {
+    padding: 22px 18px;
+  }
+
+  .panel {
+    padding: 16px;
+  }
+
+  .creator-hero {
+    padding: 20px 16px;
+    gap: 14px;
+  }
+
+  .detail-bar {
+    gap: 12px;
+  }
+
+  /* ticker mais compacto */
+  .tick-item {
+    padding: 6px 14px 6px 0;
   }
 }
 
