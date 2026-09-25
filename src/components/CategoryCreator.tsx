@@ -40,7 +40,7 @@ export function CreatorCard({ creator }: { creator: Creator }) {
     <Link to={`/creator/${creator.id}`} className="creator-card">
       <span
         className="avatar"
-        style={{ background: `linear-gradient(145deg, hsl(${creator.avatarHue} 45% 32%), hsl(${creator.avatarHue} 55% 16%))` }}
+        style={{ background: `hsl(${creator.avatarHue} 38% 24%)` }}
       >
         {initials}
       </span>

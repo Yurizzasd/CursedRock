@@ -10,7 +10,7 @@
   --surface: #121218;
   --surface-2: #18181f;
   --surface-3: #1f1f28;
-  --border: #22222b;
+  --border: #2a2a34;
   --border-strong: #383844;
   --text: #f0f0f3;
   --muted: #a3a3ae;
@@ -59,10 +59,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background:
-    radial-gradient(900px 420px at 12% -80px, rgba(229, 50, 45, 0.09), transparent 60%),
-    radial-gradient(700px 380px at 88% 8%, rgba(124, 19, 16, 0.12), transparent 60%),
-    var(--bg);
+  background: var(--bg);
 }
 
 body::after {
@@ -195,12 +192,11 @@ h4 {
   z-index: 50;
   height: var(--header-h);
   border-bottom: 1px solid transparent;
-  transition: background 0.25s, border-color 0.25s, backdrop-filter 0.25s;
+  transition: background 0.25s, border-color 0.25s;
 }
 
 .header.scrolled {
-  background: rgba(8, 8, 11, 0.88);
-  backdrop-filter: blur(14px);
+  background: #0a0a0e;
   border-bottom-color: var(--border);
 }
 
@@ -229,25 +225,12 @@ h4 {
   width: 32px;
   height: 32px;
   border-radius: 8px;
-  background: linear-gradient(145deg, #1c1c24, #0e0e12);
+  background: #14141b;
   border: 1px solid var(--border-strong);
   display: grid;
   place-items: center;
   position: relative;
   overflow: hidden;
-}
-
-.logo-mark::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(120deg, transparent 30%, rgba(229, 50, 45, 0.35) 50%, transparent 70%);
-  transform: translateX(-100%);
-  transition: transform 0.5s;
-}
-
-.logo:hover .logo-mark::after {
-  transform: translateX(100%);
 }
 
 .logo-mark svg {
@@ -326,8 +309,7 @@ h4 {
 .mobile-menu {
   display: none;
   border-bottom: 1px solid var(--border);
-  background: rgba(10, 10, 14, 0.97);
-  backdrop-filter: blur(14px);
+  background: #0a0a0e;
   padding: 10px 20px 16px;
 }
 
@@ -426,7 +408,7 @@ h4 {
 .btn-primary {
   background: var(--red);
   color: #fff;
-  box-shadow: 0 8px 24px -8px rgba(229, 50, 45, 0.55), 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+  border: 1px solid #ff6a60;
   /* canto pixelado sutil — assinatura cursed */
   clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
   border-radius: 0;
@@ -436,7 +418,6 @@ h4 {
 
 .btn-primary:hover {
   background: var(--red-bright);
-  box-shadow: 0 10px 30px -8px rgba(229, 50, 45, 0.7);
   transform: translateY(-1px);
 }
 
@@ -617,11 +598,7 @@ h4 {
   content: '';
   height: 1px;
   flex: 1;
-  background: linear-gradient(90deg, transparent, var(--border-strong));
-}
-
-.rune-divider::after {
-  background: linear-gradient(90deg, var(--border-strong), transparent);
+  background: var(--border-strong);
 }
 
 .rune-divider span {
@@ -715,10 +692,9 @@ h4 {
   font-weight: 600;
   padding: 4px 9px;
   border-radius: 999px;
-  background: rgba(8, 8, 11, 0.78);
+  background: #0d0d12;
   border: 1px solid var(--border-strong);
   color: var(--text);
-  backdrop-filter: blur(6px);
   white-space: nowrap;
 }
 
@@ -744,10 +720,9 @@ h4 {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: rgba(8, 8, 11, 0.78);
+  background: #0d0d12;
   border: 1px solid var(--border-strong);
   color: var(--muted);
-  backdrop-filter: blur(6px);
   transition: color 0.16s, border-color 0.16s, transform 0.16s, background 0.16s;
   opacity: 0;
   transform: translateY(6px);
@@ -1405,8 +1380,7 @@ button.tag:hover {
   position: fixed;
   inset: 0;
   z-index: 90;
-  background: rgba(4, 4, 6, 0.8);
-  backdrop-filter: blur(4px);
+  background: rgba(4, 4, 6, 0.88);
   display: grid;
   place-items: center;
   padding: 20px;
@@ -1430,7 +1404,7 @@ button.tag:hover {
   height: 60px;
   margin: 0 auto 16px;
   border-radius: 16px;
-  background: var(--red-glow);
+  background: #170b0b;
   border: 1px solid var(--red);
   display: grid;
   place-items: center;
@@ -1487,7 +1461,7 @@ button.tag:hover {
 .dl-step.doing {
   color: var(--text);
   border-color: var(--red);
-  background: var(--red-glow);
+  background: #170b0b;
 }
 
 .dl-step.done {
@@ -1752,7 +1726,7 @@ button.tag:hover {
   border-radius: 16px;
   overflow: hidden;
   padding: 44px 40px;
-  background: linear-gradient(120deg, #150b0b 0%, var(--surface) 55%, #0d0d12 100%);
+  background: var(--surface);
   display: flex;
   gap: 24px;
   align-items: center;
@@ -2387,7 +2361,7 @@ select:focus-visible {
 
 .catrow.active {
   border-color: var(--red);
-  background: var(--red-glow);
+  background: #170b0b;
   color: var(--text);
 }
 
@@ -2429,7 +2403,7 @@ select:focus-visible {
 
 .power-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--red-deep), var(--red-bright));
+  background: var(--red);
   border-radius: 99px;
   transition: width 0.8s ease;
 }
@@ -2438,8 +2412,9 @@ select:focus-visible {
   display: flex;
   gap: 12px;
   align-items: center;
-  background: linear-gradient(120deg, rgba(229, 50, 45, 0.09), transparent 65%);
+  background: var(--surface-2);
   border: 1px solid var(--border-strong);
+  border-left: 3px solid var(--red);
   border-radius: 10px;
   padding: 12px;
   transition: border-color 0.16s;
@@ -2801,7 +2776,7 @@ select:focus-visible {
   border-radius: 4px;
   padding: 6px 12px;
   transform: rotate(-5deg);
-  background: rgba(8, 8, 11, 0.72);
+  background: #0d0d12;
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
   text-transform: uppercase;
 }
@@ -3102,7 +3077,6 @@ select:focus-visible {
   background: var(--red);
   border-color: var(--red-bright);
   color: #fff;
-  box-shadow: 0 6px 18px -6px rgba(229, 50, 45, 0.6);
 }
 
 .sortbar.vertical {
@@ -3200,7 +3174,7 @@ select:focus-visible {
   margin: 0 auto 14px;
   border-radius: 14px;
   overflow: hidden;
-  background: linear-gradient(145deg, #1c1c24, #0e0e12);
+  background: #14141b;
   border: 1px solid var(--border-strong);
   display: grid;
   place-items: center;

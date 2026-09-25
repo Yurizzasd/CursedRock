@@ -63,7 +63,7 @@ export function CreatorDetail({
       <div className="creator-hero">
         <span
           className="avatar"
-          style={{ background: `linear-gradient(145deg, hsl(${creator.avatarHue} 45% 32%), hsl(${creator.avatarHue} 55% 16%))` }}
+          style={{ background: `hsl(${creator.avatarHue} 38% 24%)` }}
         >
           {creator.name.slice(0, 2).toUpperCase()}
         </span>

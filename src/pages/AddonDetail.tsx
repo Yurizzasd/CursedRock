@@ -232,7 +232,7 @@ export function AddonDetail({
                 <span
                   className="avatar"
                   style={{
-                    background: `linear-gradient(145deg, hsl(${creator.avatarHue} 45% 32%), hsl(${creator.avatarHue} 55% 16%))`,
+                    background: `hsl(${creator.avatarHue} 38% 24%)`,
                   }}
                 >
                   {creator.name.slice(0, 2).toUpperCase()}
