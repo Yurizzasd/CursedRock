@@ -9,17 +9,22 @@ export function SectionHeader({
   sub,
   linkTo,
   linkLabel = 'Ver todos',
+  num,
 }: {
   eyebrow: string;
   title: string;
   sub?: string;
   linkTo?: string;
   linkLabel?: string;
+  num?: string;
 }) {
   return (
     <div className="section-head">
       <div>
-        <span className="eyebrow">{eyebrow}</span>
+        <span className="eyebrow">
+          {num && <span className="secnum">{num}</span>}
+          {eyebrow}
+        </span>
         <h2>{title}</h2>
         {sub && <p>{sub}</p>}
       </div>

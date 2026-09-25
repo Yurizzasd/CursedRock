@@ -2744,6 +2744,155 @@ select:focus-visible {
 }
 
 /* ═══════════════════════════════════════════════════════════════════
+   v6 — anti-template: fita, carimbos, trilho, números
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* fita marquee divisória */
+.tape-div {
+  background: var(--red);
+  color: #160606;
+  overflow: hidden;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-0.6deg) scale(1.01);
+  margin: 26px 0 6px;
+}
+
+.tape-track {
+  display: flex;
+  width: max-content;
+  animation: tickmove 26s linear infinite;
+}
+
+.tape-track span {
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  padding: 8px 0;
+  white-space: nowrap;
+}
+
+/* número editorial das seções */
+.secnum {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--red-bright);
+  margin-right: 10px;
+  letter-spacing: 0.05em;
+}
+
+/* carimbo rotacionado */
+.stamp {
+  display: inline-block;
+  font-family: var(--font-pixel);
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  color: var(--text);
+  border: 2px solid var(--red-bright);
+  border-radius: 4px;
+  padding: 6px 12px;
+  transform: rotate(-5deg);
+  background: rgba(8, 8, 11, 0.72);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.showcase-stamp {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 4;
+}
+
+/* fita adesiva nos cantos da vitrine */
+.showcase-main::before,
+.showcase-main::after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  width: 92px;
+  height: 28px;
+  background: rgba(214, 205, 180, 0.32);
+  border-left: 1px dashed rgba(0, 0, 0, 0.25);
+  border-right: 1px dashed rgba(0, 0, 0, 0.25);
+  z-index: 4;
+  pointer-events: none;
+}
+
+.showcase-main::before {
+  left: 34px;
+  transform: rotate(-42deg);
+}
+
+.showcase-main::after {
+  right: 34px;
+  transform: rotate(42deg);
+}
+
+/* trilho horizontal (categorias na home) */
+.rail {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px 2px 12px;
+}
+
+.rail > * {
+  flex: 0 0 250px;
+  scroll-snap-align: start;
+}
+
+/* flyer torto do CTA */
+.cta-flyer {
+  transform: rotate(-0.5deg);
+}
+
+.cta-flyer::after {
+  content: '';
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  width: 120px;
+  height: 26px;
+  transform: translateX(-50%) rotate(1.5deg);
+  background: rgba(214, 205, 180, 0.3);
+  border-left: 1px dashed rgba(0, 0, 0, 0.25);
+  border-right: 1px dashed rgba(0, 0, 0, 0.25);
+}
+
+.cta-band {
+  position: relative;
+}
+
+/* hero: filete lateral editorial */
+.hero-grid > div:first-child {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .hero-grid > div:first-child::before {
+    content: 'SCROLL // BEDROCK UNDERGROUND';
+    position: absolute;
+    left: -58px;
+    top: 50%;
+    transform: rotate(-90deg) translateX(50%);
+    transform-origin: left center;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    letter-spacing: 0.3em;
+    color: var(--faint);
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tape-track {
+    animation: none;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════════════
    v4 — transições de rota (View Transitions API + fallback)
    ═══════════════════════════════════════════════════════════════════ */
 

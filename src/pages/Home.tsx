@@ -28,6 +28,7 @@ function Showcase() {
   return (
     <div className="showcase" aria-label="Vitrine">
       <div className="showcase-main">
+        <span className="stamp showcase-stamp">★ testado no jogo</span>
         <img src={main.thumbnail} alt={`Capa de ${main.name}`} />
         <div className="showcase-shade" />
         <div className="showcase-hover">
@@ -141,6 +142,14 @@ export function Home({
       </section>
 
       <div className="container">
+        <div className="tape-div" aria-hidden="true">
+          <div className="tape-track">
+            {Array.from({ length: 10 }).map((_, i) => (
+              <span key={i}>CURSEDROCK ★ MINECRAFT BEDROCK ★ ADDONS ★&nbsp;</span>
+            ))}
+          </div>
+        </div>
+
         {/* DESTAQUES — só aparece quando há addons marcados como featured */}
         {featured.length > 0 && (
           <section className="home-section">
@@ -158,7 +167,7 @@ export function Home({
 
         {/* TABS */}
         <section className="home-section">
-          <SectionHeader eyebrow="Catálogo vivo" title="Explore por movimento" />
+          <SectionHeader num="01" eyebrow="Catálogo vivo" title="Explore por movimento" />
           <div className="tabs" role="tablist">
             {(
               [
@@ -187,12 +196,13 @@ export function Home({
         {/* CATEGORIAS */}
         <section className="home-section">
           <SectionHeader
+            num="02"
             eyebrow="Organize o caos"
             title="Categorias"
             linkTo="/categories"
             linkLabel="Todas as categorias"
           />
-          <div className="cat-grid">
+          <div className="rail">
             {cats.map((c) => (
               <CategoryCard key={c.id} category={c} count={counts[c.id] ?? 0} />
             ))}
@@ -202,6 +212,7 @@ export function Home({
         {/* RECENTES */}
         <section className="home-section">
           <SectionHeader
+            num="03"
             eyebrow="Acabou de sair do forno"
             title="Adicionados recentemente"
             linkTo="/addons?sort=recent"
@@ -211,7 +222,7 @@ export function Home({
 
         {/* CTA CRIADORES */}
         <section className="home-section">
-          <div className="cta-band">
+          <div className="cta-band cta-flyer">
             <div>
               <span className="eyebrow">Para criadores</span>
               <h2>
@@ -224,9 +235,12 @@ export function Home({
                 </span>
               </p>
             </div>
-            <Link to="/creators" className="btn btn-primary btn-lg">
-              Conhecer criadores <ArrowRight size={17} />
-            </Link>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 10, alignItems: 'stretch' }}>
+              <span className="stamp">★ vagas abertas</span>
+              <Link to="/creators" className="btn btn-primary btn-lg">
+                Conhecer criadores <ArrowRight size={17} />
+              </Link>
+            </div>
           </div>
         </section>
       </div>
