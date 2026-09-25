@@ -43,5 +43,14 @@
     "joinedAt": "2026-09-25",
     "verified": false,
     "socials": {}
+  },
+  {
+    "id": "unlinked",
+    "name": "Unlinked",
+    "avatarHue": 200,
+    "bio": "Utilidades essenciais e qualidade de vida para Minecraft Bedrock.",
+    "joinedAt": "2026-09-25",
+    "verified": false,
+    "socials": {}
   }
 ]

@@ -272,5 +272,33 @@
     "updatedAt": "2026-05-16",
     "downloads": 0,
     "longDescription": "MelonBP presents: Real Minimap! Always find your way with this working Minimap! See terrain, mobs, players, and point..."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/essentials/cover.webp"
+    ],
+    "id": "essentials",
+    "name": "Essentials",
+    "author": "unlinked",
+    "authorDisplay": "Unlinked",
+    "description": "Comandos e ferramentas essenciais: kits, teleporte, utilidades do dia a dia no survival.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/essentials/cover.webp",
+    "download_url": "https://1024terabox.com/s/12NWf5cI-6-g66tqKydDc5A",
+    "tags": [
+      "Utility",
+      "Essentials",
+      "QoL",
+      "Survival"
+    ],
+    "createdAt": "2026-05-16",
+    "updatedAt": "2026-05-16",
+    "downloads": 0,
+    "longDescription": "Comandos e ferramentas essenciais: kits, teleporte, utilidades do dia a dia no survival."
   }
 ]
