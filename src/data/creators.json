@@ -16,5 +16,14 @@
     "joinedAt": "2026-09-25",
     "verified": false,
     "socials": {}
+  },
+  {
+    "id": "ash-blast",
+    "name": "Ash Blast",
+    "avatarHue": 210,
+    "bio": "Efeitos visuais e auras para Bedrock: estilo anime, leve e sem derrubar o FPS.",
+    "joinedAt": "2026-09-25",
+    "verified": false,
+    "socials": {}
   }
 ]

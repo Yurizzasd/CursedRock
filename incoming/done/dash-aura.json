@@ -1,0 +1,17 @@
+{
+  "id": "dash-aura",
+  "name": "Dash Aura",
+  "author": "ash-blast",
+  "authorDisplay": "Ash Blast",
+  "description": "Aura de velocidade estilo anime ao correr e voar: rastro branco suave, leve e FPS friendly.",
+  "longDescription": "Dash Aura adiciona um rastro de movimento inspirado em anime: ao correr ou voar de Elytra, seu personagem ganha uma aura branca fluida com efeito de velocidade. Visual marcante sem pesar no jogo — feito para rodar liso até em celular. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento/recursos, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup antes de receber conteúdo novo.",
+  "category": "anime",
+  "version": "1.0.0",
+  "minecraft_versions": ["1.21.0"],
+  "thumbnail": "/images/addons/dash-aura/cover.png",
+  "screenshots": ["/images/addons/dash-aura/cover.png"],
+  "download_url": "https://1024terabox.com/s/1LqAMJt5cReYre2rEWnmKoA",
+  "tags": ["Anime", "Aura", "Visual", "FPS"],
+  "featured": false,
+  "requirements": ["Minecraft 1.21+", "Ativar recursos experimentais"]
+}
