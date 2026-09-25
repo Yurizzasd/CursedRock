@@ -3022,6 +3022,30 @@ select:focus-visible {
   .tick-item {
     padding: 6px 14px 6px 0;
   }
+
+  /* ── hero em dieta: direto ao assunto ── */
+  .hero {
+    padding: 28px 0 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 9vw, 40px);
+    margin: 10px 0 18px;
+  }
+
+  .hero-sub,
+  .hero-stats,
+  .hero-backdrop {
+    display: none;
+  }
+
+  .hero-actions {
+    margin-bottom: 0;
+  }
+
+  .hero-actions .btn-ghost {
+    display: none;
+  }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
