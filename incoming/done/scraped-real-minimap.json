@@ -1,0 +1,25 @@
+{
+  "id": "real-minimap",
+  "name": "Real Minimap",
+  "author": "melonbp",
+  "authorDisplay": "MelonBP",
+  "description": "MelonBP presents: Real Minimap! Always find your way with this working Minimap! See terrain, mobs, players, and point...",
+  "category": "utility",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/real-minimap/cover.jpg",
+  "screenshots": [
+    "/images/addons/real-minimap/cover.jpg"
+  ],
+  "download_url": "https://1024terabox.com/s/1n1SYYmfuKDUUC2DJeMSUng",
+  "tags": [
+    "Utility",
+    "Minimap",
+    "Map"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-16",
+  "updatedAt": "2026-05-16"
+}
