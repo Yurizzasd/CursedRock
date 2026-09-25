@@ -1,0 +1,25 @@
+{
+  "id": "mob-spawn-boost",
+  "name": "Mob Spawn Boost",
+  "author": "ncmine",
+  "authorDisplay": "NCMINE",
+  "description": "Traga sistema de spawn e mecânicas do Minecraft Java Edition diretamente para o seu Minecraft Bedrock.",
+  "category": "mobs",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/mob-spawn-boost/cover.png",
+  "screenshots": [
+    "/images/addons/mob-spawn-boost/cover.png"
+  ],
+  "download_url": "https://1024terabox.com/s/1Mbte50_iiArhu9rkk2aKxA",
+  "tags": [
+    "Mobs",
+    "Spawn",
+    "Survival"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-31",
+  "updatedAt": "2026-05-31"
+}
