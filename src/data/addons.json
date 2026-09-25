@@ -162,13 +162,7 @@
   {
     "featured": false,
     "screenshots": [
-      "/images/addons/cinecam/cover.png",
-      "/images/addons/cinecam/cinecam-1.png",
-      "/images/addons/cinecam/cinecam-2.jpg",
-      "/images/addons/cinecam/cinecam-3.jpg",
-      "/images/addons/cinecam/cinecam-4.png",
-      "/images/addons/cinecam/cinecam-5.jpg",
-      "/images/addons/cinecam/cinecam-6.jpg"
+      "/images/addons/cinecam/cover.png"
     ],
     "id": "cinecam",
     "name": "Cinecam",

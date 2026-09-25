@@ -70,16 +70,20 @@ async function main() {
 
   const foundCat = chips.map((c) => c.toLowerCase()).find((c) => CAT_MAP[c] && !['miscellaneous', 'cosmetics', 'skins', 'realistic'].includes(c)) ?? 'other';
 
-  // 4) imagens (JSON-LD + corpo), máx 6 — baixa p/ hospedagem local
+  // 4) imagens (JSON-LD + corpo ACIMA da seção de relacionados), máx 5.
+  // Corta o HTML no marcador de "relacionados" p/ não puxar capas de outros addons.
+  const cutAt = html.search(/gostou desse|olha esses|relacionad|tamb[eé]m/i);
+  const bodyHtml = cutAt > 0 ? html.slice(0, cutAt) : html;
   const imgSet = new Set();
   if (typeof ld.image === 'string' && ld.image.startsWith('http')) imgSet.add(ld.image);
-  for (const m of html.matchAll(/https:\/\/(?:media\.forgecdn\.net|i\.imgur\.com|images\.bedrockexplorer\.com)[^"'\s<>]+/g)) {
+  for (const m of bodyHtml.matchAll(/https:\/\/(?:media\.forgecdn\.net|i\.imgur\.com|images\.bedrockexplorer\.com)[^"'\s<>]+/g)) {
     imgSet.add(m[0]);
-    if (imgSet.size >= 6) break;
+    if (imgSet.size >= 8) break;
   }
   const dir = join(root, 'public', 'images', 'addons', id);
   mkdirSync(dir, { recursive: true });
   const local = [];
+  const seenHashes = new Set();
   let n = 0;
   for (const src of imgSet) {
     try {
@@ -88,6 +92,11 @@ async function main() {
       if (!r.ok || !type.startsWith('image/')) continue;
       const buf = Buffer.from(await r.arrayBuffer());
       if (buf.length < 1024) continue;
+      const { createHash } = await import('node:crypto');
+      const hash = createHash('sha256').update(buf).digest('hex');
+      if (seenHashes.has(hash)) { console.log('  ~ imagem duplicada, ignorada'); continue; }
+      seenHashes.add(hash);
+      if (local.length >= 5) break;
       const ext = type.includes('svg') ? 'svg' : type.includes('png') ? 'png' : type.includes('jpeg') ? 'jpg' : type.includes('gif') ? 'gif' : type.includes('webp') ? 'webp' : 'img';
       const rel = `/images/addons/${id}/${id}-${++n}.${ext}`;
       writeFileSync(join(root, 'public', rel), buf);
