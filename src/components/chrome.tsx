@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, LayoutGrid, List } from 'lucide-react';
+import { ArrowDownAZ, ArrowUpDown, Flame, LayoutGrid, List, RefreshCw, Sparkles, Star } from 'lucide-react';
 import { useMemo } from 'react';
 import type { ViewMode } from '../hooks/hooks';
+import type { SortKey } from '../types';
 
 export function SectionHeader({
   eyebrow,
@@ -74,8 +75,50 @@ export function ViewToggle({ mode, onChange }: { mode: ViewMode; onChange: (m: V
   );
 }
 
-export function EmberField() {
-  const embers = useMemo(
+const SORT_META: Record<SortKey, { label: string; icon: typeof Flame }> = {
+  popular: { label: 'Mais baixados', icon: Flame },
+  recent: { label: 'Novidades', icon: Sparkles },
+  updated: { label: 'Atualizados', icon: RefreshCw },
+  rating: { label: 'Bem avaliados', icon: Star },
+  name: { label: 'A–Z', icon: ArrowDownAZ },
+};
+
+export function SortBar({
+  value,
+  onChange,
+  options = ['popular', 'recent', 'updated', 'name'],
+  vertical = false,
+}: {
+  value: SortKey;
+  onChange: (s: SortKey) => void;
+  options?: SortKey[];
+  vertical?: boolean;
+}) {
+  return (
+    <div className={`sortbar${vertical ? ' vertical' : ''}`} role="group" aria-label="Ordenar por">
+      <span className="sortbar-label">
+        <ArrowUpDown /> Ordenar
+      </span>
+      <div className="sortbar-opts">
+        {options.map((key) => {
+          const { label, icon: Icon } = SORT_META[key];
+          return (
+            <button
+              key={key}
+              className={`sortopt${value === key ? ' active' : ''}`}
+              onClick={() => onChange(key)}
+              aria-pressed={value === key}
+            >
+              <Icon /> {label}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+export function EmberField() {  const embers = useMemo(
     () =>
       Array.from({ length: 16 }, (_, i) => ({
         left: (i * 61 + 7) % 100,

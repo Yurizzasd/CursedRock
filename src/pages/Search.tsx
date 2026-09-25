@@ -3,7 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { Search } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { EmptyState } from '../components/states';
-import { ViewToggle } from '../components/chrome';
+import { SortBar, ViewToggle } from '../components/chrome';
 import { filterAddons } from '../data/repository';
 import type { SortKey } from '../types';
 import { useDebounce, useDocumentTitle, useViewMode } from '../hooks/hooks';
@@ -70,20 +70,7 @@ export function SearchPage({
             </span>
             <span className="spacer" />
             <ViewToggle mode={view} onChange={setView} />
-            <div className="sort-pills">
-              {(
-                [
-                  ['popular', 'Populares'],
-                  ['recent', 'Recentes'],
-                  ['updated', 'Atualizados'],
-                  ['name', 'A–Z'],
-                ] as [SortKey, string][]
-              ).map(([key, label]) => (
-                <button key={key} className={`pill${sort === key ? ' active' : ''}`} onClick={() => setSort(key)}>
-                  {label}
-                </button>
-              ))}
-            </div>
+            <SortBar value={sort} onChange={setSort} />
           </div>
           {results.length === 0 ? (
             <EmptyState

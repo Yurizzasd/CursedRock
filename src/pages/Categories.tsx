@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { AddonGrid } from '../components/AddonCard';
 import { CategoryCard } from '../components/CategoryCreator';
 import { EmptyState } from '../components/states';
-import { ViewToggle } from '../components/chrome';
+import { SortBar, ViewToggle } from '../components/chrome';
 import { countByCategory, filterAddons, getAllCategories, getCategoryById } from '../data/repository';
 import type { SortKey } from '../types';
 import { useDocumentTitle, useViewMode } from '../hooks/hooks';
@@ -62,20 +62,7 @@ export function CategoryDetail({
         {category.description} — {results.length} addon{results.length === 1 ? '' : 's'}.
       </p>
       <div className="toolbar">
-        <div className="sort-pills">
-          {(
-            [
-              ['popular', 'Populares'],
-              ['recent', 'Recentes'],
-              ['updated', 'Atualizados'],
-              ['name', 'A–Z'],
-            ] as [SortKey, string][]
-          ).map(([key, label]) => (
-            <button key={key} className={`pill${sort === key ? ' active' : ''}`} onClick={() => setSort(key)}>
-              {label}
-            </button>
-          ))}
-        </div>
+        <SortBar value={sort} onChange={setSort} />
         <span className="spacer" />
         <ViewToggle mode={view} onChange={setView} />
       </div>

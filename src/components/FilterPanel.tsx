@@ -2,14 +2,9 @@ import type { SortKey } from '../types';
 import { countByCategory, getAllCategories, getAllMinecraftVersions, getAllTags } from '../data/repository';
 import { ICONS } from './CategoryCreator';
 import { Package } from 'lucide-react';
+import { SortBar } from './chrome';
 
-const SORTS: { key: SortKey; label: string }[] = [
-  { key: 'popular', label: 'Populares' },
-  { key: 'recent', label: 'Recentes' },
-  { key: 'updated', label: 'Atualizados' },
-  { key: 'rating', label: 'Avaliados' },
-  { key: 'name', label: 'A–Z' },
-];
+const SORTS: SortKey[] = ['popular', 'recent', 'updated', 'rating', 'name'];
 
 export interface FilterState {
   sort: SortKey;
@@ -32,18 +27,7 @@ export function FilterPanel({
 
   return (
     <aside className="filters" aria-label="Filtros">
-      <h3>Ordenar</h3>
-      <div className="sort-pills" role="group" aria-label="Ordenação">
-        {SORTS.map((s) => (
-          <button
-            key={s.key}
-            className={`pill${filters.sort === s.key ? ' active' : ''}`}
-            onClick={() => onChange({ ...filters, sort: s.key })}
-          >
-            {s.label}
-          </button>
-        ))}
-      </div>
+      <SortBar vertical value={filters.sort} onChange={(sort) => onChange({ ...filters, sort })} options={SORTS} />
       <div className="filter-group">
         <label id="f-cat-label">Categoria</label>
         <div className="seal-grid" role="group" aria-labelledby="f-cat-label">

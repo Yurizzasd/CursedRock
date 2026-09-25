@@ -2893,6 +2893,92 @@ select:focus-visible {
 }
 
 /* ═══════════════════════════════════════════════════════════════════
+   v7 — barra de ordenação
+   ═══════════════════════════════════════════════════════════════════ */
+
+.sortbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 9px 12px;
+  flex-wrap: wrap;
+}
+
+.sortbar-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-pixel);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--faint);
+  flex-shrink: 0;
+}
+
+.sortbar-label svg {
+  width: 14px;
+  height: 14px;
+  color: var(--red-bright);
+}
+
+.sortbar-opts {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.sortopt {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 9px 15px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  transition: all 0.15s;
+}
+
+.sortopt svg {
+  width: 15px;
+  height: 15px;
+}
+
+.sortopt:hover {
+  color: var(--text);
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.sortopt.active {
+  background: var(--red);
+  border-color: var(--red-bright);
+  color: #fff;
+  box-shadow: 0 6px 18px -6px rgba(229, 50, 45, 0.6);
+}
+
+.sortbar.vertical {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.sortbar.vertical .sortbar-opts {
+  display: flex;
+  flex-direction: column;
+}
+
+.sortbar.vertical .sortopt {
+  justify-content: flex-start;
+  width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
    v4 — transições de rota (View Transitions API + fallback)
    ═══════════════════════════════════════════════════════════════════ */
 
