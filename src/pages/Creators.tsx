@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { BadgeCheck, Calendar, Download, Globe, MapPin } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { CreatorCard } from '../components/CategoryCreator';
-import { SectionHeader } from '../components/chrome';
+import { Reveal, SectionHeader } from '../components/chrome';
 import { getAddonsByCreator, getAllCreators, getCreatorById } from '../data/repository';
 import { formatDate, formatDownloads, formatNumber } from '../utils/format';
 import { useDocumentTitle } from '../hooks/hooks';
@@ -24,11 +24,11 @@ export function Creators() {
       <p className="page-sub">
         Quem forja o underground. Siga, favorite e baixe direto de quem cria.
       </p>
-      <div className="creator-grid">
+      <Reveal className="creator-grid">
         {creators.map((c) => (
           <CreatorCard key={c.id} creator={c} />
         ))}
-      </div>
+      </Reveal>
     </div>
   );
 }

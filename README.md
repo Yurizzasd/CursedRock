@@ -76,5 +76,5 @@ scripts/       (generate-sitemap.mjs, make-art.py)
   `localStorage` por chamadas à API sem mudar componentes.
 - **Upload/painel admin**: `repository.ts` centraliza leitura; virar `fetch` + mutations.
 - **Avaliações/comentários**: campo `rating` já existe; criar tabela por `addon.id`.
-- **Anúncios (AdCash)**: componente `<AdSlot />` marca os espaços sem poluir UX.
+- **Anúncios**: removidos por decisão do dono — sem placeholders no layout.
 - **SEO**: titles/descriptions por página, OG/Twitter base, canonical, sitemap, robots.

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowDownAZ, ArrowRight, ArrowUpDown, Flame, LayoutGrid, List, RefreshCw, Sparkles, Star } from 'lucide-react';
-import { useMemo } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import type { ViewMode } from '../hooks/hooks';
 import type { SortKey } from '../types';
 
@@ -46,10 +46,101 @@ export function RuneDivider({ label = '◆ ◆ ◆' }: { label?: string }) {
   );
 }
 
-export function AdSlot({ label = 'Espaço do anunciante — 970×250' }: { label?: string }) {
-  // Placeholder para monetização futura (AdCash etc).
-  // Renderiza um bloco discreto que NÃO cobre conteúdo nem botões.
-  return <div className="ad-slot" aria-hidden="true">{label}</div>;
+// Reveal on scroll: acende ao entrar na tela (IntersectionObserver, 1x).
+export function Reveal({
+  children,
+  className = '',
+  style,
+  ...rest
+}: {
+  children: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
+} & React.HTMLAttributes<HTMLDivElement>) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInView(true);
+      return;
+    }
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          io.disconnect();
+        }
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -36px 0px' },
+    );
+    io.observe(el);
+    return () => io.disconnect();
+  }, []);
+
+  return (
+    <div ref={ref} className={`reveal${inView ? ' in' : ''}${className ? ` ${className}` : ''}`} style={style} {...rest}>
+      {children}
+    </div>
+  );
+}
+
+// Filete de progresso de leitura (topo da ficha do addon).
+export function ScrollProgress() {
+  const [p, setP] = useState(0);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const h = document.documentElement;
+      const max = h.scrollHeight - h.clientHeight;
+      setP(max > 0 ? Math.min(1, h.scrollTop / max) : 0);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  return <div className="scroll-progress" style={{ transform: `scaleX(${p})` }} aria-hidden="true" />;
+}
+
+// Contador animado (hero stats).
+export function CountUp({ value, format = (n: number) => String(Math.round(n)) }: { value: number; format?: (n: number) => string }) {
+  const ref = useRef<HTMLSpanElement>(null);
+  const [disp, setDisp] = useState(0);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setDisp(value);
+      return;
+    }
+    let raf = 0;
+    const io = new IntersectionObserver(
+      ([entry]) => {
+        if (!entry.isIntersecting) return;
+        io.disconnect();
+        const t0 = performance.now();
+        const DUR = 1300;
+        const tick = (t: number) => {
+          const p = Math.min(1, (t - t0) / DUR);
+          setDisp(value * (1 - Math.pow(1 - p, 3)));
+          if (p < 1) raf = requestAnimationFrame(tick);
+        };
+        raf = requestAnimationFrame(tick);
+      },
+      { threshold: 0.4 },
+    );
+    io.observe(el);
+    return () => {
+      io.disconnect();
+      cancelAnimationFrame(raf);
+    };
+  }, [value]);
+
+  return <span ref={ref}>{format(disp)}</span>;
 }
 
 export function ViewToggle({ mode, onChange }: { mode: ViewMode; onChange: (m: ViewMode) => void }) {

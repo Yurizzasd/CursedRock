@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import { AddonGrid } from '../components/AddonCard';
 import { CategoryCard } from '../components/CategoryCreator';
 import { EmptyState } from '../components/states';
-import { SortBar, ViewToggle } from '../components/chrome';
+import { Reveal, SortBar, ViewToggle } from '../components/chrome';
 import { countByCategory, filterAddons, getAllCategories, getCategoryById } from '../data/repository';
 import type { SortKey } from '../types';
 import { useDocumentTitle, useViewMode } from '../hooks/hooks';
@@ -18,11 +18,11 @@ export function Categories() {
       <span className="eyebrow">Organize o caos</span>
       <h1 className="page-title">Categorias</h1>
       <p className="page-sub">{cats.length} categorias para navegar no underground.</p>
-      <div className="cat-grid">
+      <Reveal className="cat-grid">
         {cats.map((c) => (
           <CategoryCard key={c.id} category={c} count={counts[c.id] ?? 0} />
         ))}
-      </div>
+      </Reveal>
     </div>
   );
 }

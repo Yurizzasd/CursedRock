@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Flame, HeartHandshake, TrendingUp } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { CategoryCard } from '../components/CategoryCreator';
-import { AdSlot, RuneDivider, SectionHeader } from '../components/chrome';
+import { CountUp, Reveal, RuneDivider, SectionHeader } from '../components/chrome';
 import { DownloadButton } from '../components/DownloadFavorite';
 import {
   countByCategory,
@@ -124,15 +124,21 @@ export function Home({
             </div>
             <div className="hero-stats">
               <div className="hero-stat">
-                <b>{stats.addons}</b>
+                <b>
+                  <CountUp value={stats.addons} />
+                </b>
                 <span>addons</span>
               </div>
               <div className="hero-stat">
-                <b>{stats.creators}</b>
+                <b>
+                  <CountUp value={stats.creators} />
+                </b>
                 <span>criadores</span>
               </div>
               <div className="hero-stat">
-                <b>{formatDownloads(stats.downloads)}</b>
+                <b>
+                  <CountUp value={stats.downloads} format={(n) => formatDownloads(n)} />
+                </b>
                 <span>downloads</span>
               </div>
             </div>
@@ -152,7 +158,7 @@ export function Home({
 
         {/* DESTAQUES — só aparece quando há addons marcados como featured */}
         {featured.length > 0 && (
-          <section className="home-section">
+          <Reveal className="home-section">
             <SectionHeader
               eyebrow="Curadoria CursedRock"
               title="Destaques da semana"
@@ -160,13 +166,11 @@ export function Home({
               linkTo="/addons?sort=popular"
             />
             <AddonGrid addons={featured} favorites={favorites} onToggleFavorite={onToggleFavorite} />
-          </section>
+          </Reveal>
         )}
 
-        <AdSlot label="Espaço do anunciante — leaderboard" />
-
         {/* TABS */}
-        <section className="home-section">
+        <Reveal className="home-section">
           <SectionHeader num="01" eyebrow="Catálogo vivo" title="Explore por movimento" />
           <div className="tabs" role="tablist">
             {(
@@ -189,12 +193,12 @@ export function Home({
             ))}
           </div>
           <AddonGrid addons={tabAddons} favorites={favorites} onToggleFavorite={onToggleFavorite} />
-        </section>
+        </Reveal>
 
         <RuneDivider label="■ ◆ ■" />
 
         {/* CATEGORIAS */}
-        <section className="home-section">
+        <Reveal className="home-section">
           <SectionHeader
             num="02"
             eyebrow="Organize o caos"
@@ -207,10 +211,10 @@ export function Home({
               <CategoryCard key={c.id} category={c} count={counts[c.id] ?? 0} />
             ))}
           </div>
-        </section>
+        </Reveal>
 
         {/* RECENTES */}
-        <section className="home-section">
+        <Reveal className="home-section">
           <SectionHeader
             num="03"
             eyebrow="Acabou de sair do forno"
@@ -218,10 +222,10 @@ export function Home({
             linkTo="/addons?sort=recent"
           />
           <AddonGrid addons={recent} favorites={favorites} onToggleFavorite={onToggleFavorite} />
-        </section>
+        </Reveal>
 
         {/* CTA CRIADORES */}
-        <section className="home-section">
+        <Reveal className="home-section">
           <div className="cta-band cta-flyer">
             <div>
               <span className="eyebrow">Para criadores</span>
@@ -242,7 +246,7 @@ export function Home({
               </Link>
             </div>
           </div>
-        </section>
+        </Reveal>
       </div>
     </div>
   );

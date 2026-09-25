@@ -4,7 +4,7 @@ import {
   BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Star, Tag, User, X,
 } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
-import { AdSlot, SectionHeader } from '../components/chrome';
+import { Reveal, ScrollProgress, SectionHeader } from '../components/chrome';
 import { DownloadButton, FavoriteButton } from '../components/DownloadFavorite';
 import { getAddonById, getAddonsByCreator, getCategoryById, getCreatorById, getRelatedAddons } from '../data/repository';
 import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/format';
@@ -45,6 +45,7 @@ export function AddonDetail({
 
   return (
     <div className="container page">
+      <ScrollProgress />
       <nav className="breadcrumb" aria-label="Trilha">
         <Link to="/">Home</Link> / <Link to="/addons">Addons</Link> /{' '}
         <Link to={`/category/${addon.category}`}>{category?.name ?? addon.category}</Link> /{' '}
@@ -102,7 +103,7 @@ export function AddonDetail({
 
       <div className="detail-cols">
         <div className="detail-main">
-          <section className="panel" aria-labelledby="about">
+          <Reveal className="panel" aria-labelledby="about">
             <h2 id="about">
               <Info /> Sobre este addon
             </h2>
@@ -114,9 +115,9 @@ export function AddonDetail({
                 </Link>
               ))}
             </div>
-          </section>
+          </Reveal>
 
-          <section className="panel" style={{ marginTop: 16 }} aria-labelledby="shots">
+          <Reveal className="panel" style={{ marginTop: 16 }} aria-labelledby="shots">
             <h2 id="shots">
               <Layers /> Screenshots
             </h2>
@@ -137,10 +138,10 @@ export function AddonDetail({
                 </button>
               </div>
             )}
-          </section>
+          </Reveal>
 
           {addon.changelog && addon.changelog.length > 0 && (
-            <section className="panel" style={{ marginTop: 16 }} aria-labelledby="changelog">
+            <Reveal className="panel" style={{ marginTop: 16 }} aria-labelledby="changelog">
               <h2 id="changelog">
                 <Check /> O que mudou na v{addon.version}
               </h2>
@@ -151,10 +152,8 @@ export function AddonDetail({
                   </li>
                 ))}
               </ul>
-            </section>
+            </Reveal>
           )}
-
-          <AdSlot label="Espaço do anunciante — in-article" />
         </div>
 
         <aside className="detail-side">
