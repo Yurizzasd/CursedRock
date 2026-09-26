@@ -1,0 +1,26 @@
+{
+  "id": "buckets-add-on",
+  "name": "Buckets+",
+  "author": "melonbp",
+  "authorDisplay": "MelonBP",
+  "description": "Baldes para tudo: colete novos líquidos, mobs e recursos com dezenas de baldes inéditos.",
+  "category": "utility",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/buckets-add-on/buckets-add-on-1.jpg",
+  "screenshots": [
+    "/images/addons/buckets-add-on/buckets-add-on-1.jpg"
+  ],
+  "download_url": "PENDENTE",
+  "tags": [
+    "Utility",
+    "Buckets",
+    "Items",
+    "Survival"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-19",
+  "updatedAt": "2026-05-19"
+}

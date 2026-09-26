@@ -29,8 +29,11 @@ function cookie() {
   process.exit(1);
 }
 
-const CK = cookie() + '; browserid=' + randomBytes(22).toString('base64');
+const CK_RAW = cookie();
+const CK = CK_RAW + '; browserid=' + randomBytes(22).toString('base64');
 const H = { 'User-Agent': UA, Cookie: CK, 'Content-Type': 'application/x-www-form-urlencoded', Referer: WHOST };
+// transferência e demais escritas usam cookie PURO (browserid aleatório quebra o verify)
+const H_PLAIN = { 'User-Agent': UA, Cookie: CK_RAW, 'Content-Type': 'application/x-www-form-urlencoded', Referer: WHOST };
 
 async function req(url, opts = {}, tries = 4) {
   for (let i = 0; i < tries; i++) {
@@ -42,7 +45,7 @@ async function req(url, opts = {}, tries = 4) {
     }
   }
 }
-const post = (p, f) => req(`${WHOST}${p}?${APP}`, { method: 'POST', headers: H, body: new URLSearchParams(f) }).then((r) => r.json());
+const post = (p, f, plain = false) => req(`${WHOST}${p}?${APP}`, { method: 'POST', headers: plain ? H_PLAIN : H, body: new URLSearchParams(f) }).then((r) => r.json());
 
 async function bootstrap() {
   const html = await (await req(`${WHOST}/main`, { headers: { 'User-Agent': UA, Cookie: CK } })).text();
@@ -76,24 +79,26 @@ async function main() {
   const f = info.list[0];
   console.log(`[tb] origem: ${f.server_filename} (${(f.size / 1024).toFixed(0)} KB)`);
 
-  const { js, bd, logid } = await bootstrap();
-  const q = `dp-logid=${encodeURIComponent(logid)}&jsToken=${encodeURIComponent(js)}${bd ? `&bdstoken=${encodeURIComponent(bd)}` : ''}`;
-
-  // 2) garante pasta destino
-  await post('/api/create', { path: dir, isdir: '1', rtype: '0' }).catch(() => {});
-
-  // 3) transfere
-  const tr = await post(`/share/transfer?${q}&ondup=newcopy&async=1&shareid=${info.shareid}&from=${info.uk}`, {
-    fsidlist: JSON.stringify([f.fs_id]),
-    path: dir,
-  });
+  // 3) transfere (com retry: errno 2 costuma ser transitório)
+  let tr = null;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const b = await bootstrap();
+    const qq = `dp-logid=${encodeURIComponent(b.logid)}&jsToken=${encodeURIComponent(b.js)}${b.bd ? `&bdstoken=${encodeURIComponent(b.bd)}` : ''}`;
+    tr = await post(`/share/transfer?${qq}&ondup=newcopy&async=1&shareid=${info.shareid}&from=${info.uk}`, {
+      fsidlist: JSON.stringify([f.fs_id]),
+      path: dir,
+    }, true);
+    if (tr.errno === 0) break;
+    console.log(`[tb] transfer tentativa ${attempt} → errno=${tr.errno}, tentando de novo…`);
+    await sleep(8000);
+  }
   if (tr.errno !== 0) throw new Error('transfer falhou: ' + JSON.stringify(tr).slice(0, 200));
   console.log('[tb] transferência aceita, aguardando chegada…');
 
   // 4) aguarda o arquivo
   let mine = null;
   for (let i = 0; i < 12 && !mine; i++) {
-    const l = await post('/api/list', { dir, order: 'name', desc: '0', num: '100', page: '1', showempty: '0' });
+    const l = await post('/api/list', { dir, order: 'name', desc: '0', num: '100', page: '1', showempty: '0' }, true);
     mine = (l.list ?? []).find((x) => x.server_filename === f.server_filename);
     if (!mine) await sleep(5000);
   }
@@ -101,7 +106,7 @@ async function main() {
   console.log('[tb] no seu drive: ' + mine.path);
 
   // 5) seu link público
-  const s = await post('/share/pset', { schannel: '0', channel_list: '[]', period: '0', path_list: JSON.stringify([mine.path]), pwd: '' });
+  const s = await post('/share/pset', { schannel: '0', channel_list: '[]', period: '0', path_list: JSON.stringify([mine.path]), pwd: '' }, true);
   if (s.errno !== 0 || !s.link) throw new Error('share falhou: ' + JSON.stringify(s).slice(0, 200));
   console.log('SHARE_URL=' + s.link);
 }

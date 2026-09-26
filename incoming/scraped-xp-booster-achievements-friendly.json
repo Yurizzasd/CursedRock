@@ -1,0 +1,27 @@
+{
+  "id": "xp-booster-achievements-friendly",
+  "name": "XP BOOSTER [ Achievements Friendly ]",
+  "author": "unknown",
+  "authorDisplay": "Bedrock Studio 1",
+  "description": "This add-on boosts XP drops from monsters and XP bottles, and also randomizes them.",
+  "category": "survival",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/xp-booster-achievements-friendly/xp-booster-achievements-friendly-1.png",
+  "screenshots": [
+    "/images/addons/xp-booster-achievements-friendly/xp-booster-achievements-friendly-1.png"
+  ],
+  "download_url": "PENDENTE",
+  "tags": [
+    "Performance",
+    "Data Packs",
+    "Roleplay",
+    "Survival",
+    "Mobs"
+  ],
+  "featured": false,
+  "createdAt": "2026-07-06",
+  "updatedAt": "2026-07-06"
+}
