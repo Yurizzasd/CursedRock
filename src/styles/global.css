@@ -5,7 +5,7 @@
    ═══════════════════════════════════════════════════════════════════ */
 
 :root {
-  --bg: #141114;
+  --bg: #171315;
   --bg-soft: #1a1517;
   --surface: #211b1e;
   --surface-2: #2a2226;
@@ -59,9 +59,7 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background-color: var(--bg);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect x='0' y='0' width='16' height='16' fill='%232b1a12' fill-opacity='0.55'/%3E%3Crect x='32' y='0' width='16' height='16' fill='%23241310' fill-opacity='0.6'/%3E%3Crect x='16' y='16' width='16' height='16' fill='%233a2115' fill-opacity='0.5'/%3E%3Crect x='48' y='16' width='16' height='16' fill='%232b1a12' fill-opacity='0.55'/%3E%3Crect x='0' y='32' width='16' height='16' fill='%23241310' fill-opacity='0.6'/%3E%3Crect x='32' y='32' width='16' height='16' fill='%23c14a38' fill-opacity='0.26'/%3E%3Crect x='48' y='32' width='8' height='8' fill='%23e06a4d' fill-opacity='0.3'/%3E%3Crect x='16' y='48' width='16' height='16' fill='%232b1a12' fill-opacity='0.55'/%3E%3Crect x='48' y='48' width='16' height='16' fill='%23241310' fill-opacity='0.6'/%3E%3Crect x='8' y='8' width='8' height='8' fill='%23e06a4d' fill-opacity='0.25'/%3E%3Crect x='40' y='40' width='8' height='8' fill='%23d9a45b' fill-opacity='0.3'/%3E%3Crect x='24' y='8' width='8' height='8' fill='%233a2115' fill-opacity='0.5'/%3E%3C/svg%3E");
-  background-size: 64px 64px;
+  background: var(--bg);
 }
 
 body::after {
