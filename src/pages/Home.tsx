@@ -21,9 +21,8 @@ import { useDocumentTitle } from '../hooks/hooks';
 
 type Tab = 'trending' | 'popular' | 'new' | 'updated';
 
-function Showcase() {
-  const items = useMemo(() => getTrendingAddons(4), []);
-  const [main, ...rest] = items;
+function Showcase({ items }: { items: ReturnType<typeof getTrendingAddons> }) {
+  const [main] = items;
   if (!main) return null;
   return (
     <div className="showcase" aria-label="Vitrine">
@@ -40,19 +39,32 @@ function Showcase() {
             <Link to={`/addon/${main.id}`}>{main.name}</Link>
           </h3>
           <p>{main.description}</p>
+          <Link to={`/addon/${main.id}`} className="showcase-more">
+            Ver detalhes <ArrowRight size={14} />
+          </Link>
         </div>
       </div>
-      <div className="showcase-list">
-        {rest.map((a) => (
-          <Link key={a.id} to={`/addon/${a.id}`} className="showcase-mini">
-            <img src={a.thumbnail} alt="" loading="lazy" />
-            <span style={{ minWidth: 0 }}>
-              <b>{a.name}</b>
-              <span>v{a.version}</span>
+    </div>
+  );
+}
+
+function ShowcaseStrip({ items }: { items: ReturnType<typeof getTrendingAddons> }) {
+  const rest = items.slice(1, 4);
+  if (rest.length === 0) return null;
+  return (
+    <div className="strip-minis">
+      {rest.map((a) => (
+        <Link key={a.id} to={`/addon/${a.id}`} className="strip-mini">
+          <img src={a.thumbnail} alt="" loading="lazy" />
+          <span>
+            <b>{a.name}</b>
+            <span className="strip-meta">
+              v{a.version} • {formatDownloads(a.downloads)}
             </span>
-          </Link>
-        ))}
-      </div>
+            <span className="strip-desc">{a.description}</span>
+          </span>
+        </Link>
+      ))}
     </div>
   );
 }
@@ -71,6 +83,7 @@ export function Home({
   const [tab, setTab] = useState<Tab>('trending');
 
   const featured = useMemo(() => getFeaturedAddons().slice(0, 4), []);
+  const vitrine = useMemo(() => getTrendingAddons(4), []);
   const tabAddons = useMemo(() => {
     switch (tab) {
       case 'popular':
@@ -145,18 +158,14 @@ export function Home({
               </div>
             </div>
           </div>
-          <Showcase />
+          <Showcase items={vitrine} />
         </div>
       </section>
 
       <div className="container">
-        <div className="tape-div" aria-hidden="true">
-          <div className="tape-track">
-            {Array.from({ length: 10 }).map((_, i) => (
-              <span key={i}>CURSEDROCK ★ MINECRAFT BEDROCK ★ ADDONS ★&nbsp;</span>
-            ))}
-          </div>
-        </div>
+        <section className="strip-section" aria-label="Em alta">
+          <ShowcaseStrip items={vitrine} />
+        </section>
 
         {/* DESTAQUES — só aparece quando há addons marcados como featured */}
         {featured.length > 0 && (
@@ -173,7 +182,7 @@ export function Home({
 
         {/* TABS */}
         <Reveal className="home-section">
-          <SectionHeader num="01" eyebrow="Catálogo vivo" title="Explore por movimento" />
+          <SectionHeader eyebrow="Catálogo vivo" title="Explore por movimento" />
           <div className="tabs" role="tablist">
             {(
               [
@@ -202,7 +211,6 @@ export function Home({
         {/* CATEGORIAS */}
         <Reveal className="home-section">
           <SectionHeader
-            num="02"
             eyebrow="Organize o caos"
             title="Categorias"
             linkTo="/categories"
@@ -218,7 +226,6 @@ export function Home({
         {/* RECENTES */}
         <Reveal className="home-section">
           <SectionHeader
-            num="03"
             eyebrow="Acabou de sair do forno"
             title="Adicionados recentemente"
             linkTo="/addons?sort=recent"

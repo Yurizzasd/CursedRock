@@ -2,7 +2,6 @@ import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
-import { EmberField } from './components/chrome';
 import { BootIntro } from './components/BootIntro';
 import { Home } from './pages/Home';
 import { Addons } from './pages/Addons';
@@ -52,7 +51,6 @@ export default function App() {
     <BrowserRouter>
       <BootIntro />
       <RouteTransitions />
-      <EmberField />
       <Header favCount={favorites.length} />
       <main style={{ flex: 1 }}>
         <Routes>

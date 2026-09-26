@@ -50,6 +50,9 @@ function NewsTicker() {
   if (items.length === 0) return null;
   const row = (hidden: boolean) => (
     <>
+      <span className="tick-label" aria-hidden={hidden}>
+        NOVOS ADDONS
+      </span>
       {items.map((a) => (
         <Link
           key={a.id}

@@ -27,7 +27,7 @@
   --font-body: 'Schibsted Grotesk', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
   --font-pixel: 'Silkscreen', 'JetBrains Mono', monospace;
-  --header-h: 64px;
+  --header-h: 68px;
   --max: 1200px;
   --shadow-card: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 12px 32px -16px rgba(0, 0, 0, 0.7);
 }
@@ -61,7 +61,8 @@ body::before {
   z-index: -2;
   background-image: url('/images/magma-bg.jpg');
   background-size: 480px 480px;
-  opacity: 0.05;
+  opacity: 0.02;
+  filter: brightness(0.55);
   pointer-events: none;
 }
 
@@ -238,8 +239,8 @@ h4 {
 }
 
 .logo-mark {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 8px;
   background: #14141b;
   border: 1px solid var(--border-strong);
@@ -258,7 +259,7 @@ h4 {
 .logo b {
   color: var(--text);
   font-family: var(--font-pixel);
-  font-size: 16.5px;
+  font-size: 18px;
   font-weight: 700;
   letter-spacing: 0.02em;
 }
@@ -270,15 +271,15 @@ h4 {
 .nav {
   display: flex;
   align-items: center;
-  gap: 6px;
-  margin-left: 10px;
+  gap: 10px;
+  margin-left: 12px;
 }
 
 .nav a {
   font-size: 14.5px;
   font-weight: 500;
   color: var(--muted);
-  padding: 9px 15px;
+  padding: 10px 16px;
   border-radius: 8px;
   transition: color 0.16s, background 0.16s;
   position: relative;
@@ -374,7 +375,7 @@ h4 {
   border-radius: 9px;
   height: 40px;
   padding: 0 14px 0 38px;
-  width: 230px;
+  width: 240px;
   font-size: 14px;
   outline: none;
   transition: border-color 0.18s, width 0.25s, box-shadow 0.18s;
@@ -387,7 +388,7 @@ h4 {
 .searchbar input:focus {
   border-color: var(--red);
   box-shadow: 0 0 0 3px var(--red-glow);
-  width: 260px;
+  width: 270px;
 }
 
 .searchbar kbd {
@@ -457,22 +458,22 @@ h4 {
 /* ── hero ───────────────────────────────────────────────────── */
 .hero {
   position: relative;
-  padding: 88px 0 60px;
+  padding: 110px 0 70px;
   overflow: hidden;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.05fr 0.95fr;
-  gap: 44px;
+  grid-template-columns: 1fr 1.02fr;
+  gap: 48px;
   align-items: center;
 }
 
 .hero h1 {
-  font-size: clamp(34px, 5.4vw, 62px);
+  font-size: clamp(30px, 4.4vw, 52px);
   font-weight: 400;
   text-transform: uppercase;
-  margin: 20px 0 24px;
+  margin: 26px 0 30px;
   letter-spacing: 0;
 }
 
@@ -494,7 +495,7 @@ h4 {
   font-size: 16.5px;
   line-height: 1.7;
   max-width: 520px;
-  margin: 0 0 34px;
+  margin: 0 0 40px;
 }
 
 .hero-sub strong {
@@ -505,7 +506,7 @@ h4 {
   display: flex;
   gap: 14px;
   flex-wrap: wrap;
-  margin-bottom: 38px;
+  margin-bottom: 44px;
 }
 
 .hero-actions .btn {
@@ -517,7 +518,7 @@ h4 {
   display: flex;
   gap: 32px;
   border-top: 1px solid var(--border);
-  padding-top: 24px;
+  padding-top: 28px;
 }
 
 .hero-stat b {
@@ -2050,11 +2051,20 @@ select:focus-visible {
   gap: 8px;
   padding: 6px 18px 6px 0;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   letter-spacing: 0.04em;
   color: var(--faint);
   white-space: nowrap;
-  opacity: 0.85;
+  opacity: 0.7;
+}
+
+.tick-label {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--red-bright);
+  padding: 6px 18px 6px 0;
+  white-space: nowrap;
 }
 
 .tick-item + .tick-item::before {
@@ -2232,6 +2242,7 @@ select:focus-visible {
   border: 1px solid var(--border-strong);
   box-shadow: 0 34px 70px -30px rgba(0, 0, 0, 0.85);
   aspect-ratio: 16 / 10;
+  min-height: 340px;
   background: var(--bg-soft);
 }
 
@@ -2249,7 +2260,7 @@ select:focus-visible {
 .showcase-shade {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 28%, rgba(8, 8, 11, 0.92) 88%);
+  background: linear-gradient(180deg, transparent 20%, rgba(8, 8, 11, 0.94) 88%);
   pointer-events: none;
 }
 
@@ -2258,7 +2269,7 @@ select:focus-visible {
   left: 0;
   right: 0;
   bottom: 0;
-  padding: 26px;
+  padding: 30px;
 }
 
 .showcase-info h3 {
@@ -2266,6 +2277,22 @@ select:focus-visible {
   text-transform: uppercase;
   margin: 8px 0 8px;
   letter-spacing: 0.01em;
+}
+
+.showcase-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--red-bright);
+}
+
+.showcase-more:hover {
+  color: var(--text);
 }
 
 .showcase-info h3 a:hover {
@@ -2300,56 +2327,74 @@ select:focus-visible {
   transform: none;
 }
 
-.showcase-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
+/* ── faixa de minis abaixo do hero ── */
+.strip-section {
+  padding: 4px 0 30px;
 }
 
-.showcase-mini {
+.strip-minis {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.strip-mini {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   align-items: center;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 12px;
+  padding: 12px;
   min-width: 0;
-  transition: border-color 0.22s, transform 0.22s;
+  transition: border-color 0.25s, transform 0.25s;
 }
 
-.showcase-mini:hover {
-  border-color: var(--red);
-  transform: translateY(-2px);
+.strip-mini:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-3px);
 }
 
-.showcase-mini img {
-  width: 76px;
-  height: 54px;
+.strip-mini img {
+  width: 132px;
+  height: 88px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 8px;
   flex-shrink: 0;
 }
 
-.showcase-mini b {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  font-size: 13.5px;
-  line-height: 1.35;
-  min-height: 2.7em;
-}
-
-.showcase-mini > span {
+.strip-mini > span {
   font-family: var(--font-body);
   min-width: 0;
 }
 
-.showcase-mini > span > span {
+.strip-mini b {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-family: var(--font-display);
+  font-size: 15.5px;
+  line-height: 1.3;
+  min-height: 2.6em;
+  margin-bottom: 4px;
+}
+
+.strip-meta {
+  display: block;
   font-family: var(--font-mono);
   font-size: 11px;
-  color: var(--faint);
+  color: var(--red-bright);
+  margin-bottom: 4px;
+}
+
+.strip-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 12.5px;
+  color: var(--muted);
 }
 
 /* ── lista simples de categorias (só as que têm addon) ── */
@@ -2671,63 +2716,8 @@ select:focus-visible {
   transform: none;
 }
 
-/* ── brasas (só desktop com mouse) ── */
-.embers {
-  position: fixed;
-  inset: 0;
-  z-index: 60;
-  pointer-events: none;
-  display: none;
-  overflow: hidden;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .embers {
-    display: block;
-  }
-}
-
-.ember {
-  position: absolute;
-  bottom: -12px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(224, 120, 80, 0.8), rgba(193, 74, 56, 0) 70%);
-  animation-name: emberup;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes emberup {
-  0% {
-    transform: translateY(0) translateX(0);
-    opacity: 0;
-  }
-  12% {
-    opacity: 0.65;
-  }
-  100% {
-    transform: translateY(-108vh) translateX(34px);
-    opacity: 0;
-  }
-}
-
-/* ── logo pulsante ── */
-.logo-mark {
-  animation: markpulse 3.2s ease-in-out infinite;
-}
-
-@keyframes markpulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(193, 74, 56, 0);
-  }
-  50% {
-    box-shadow: 0 0 14px 0 rgba(193, 74, 56, 0.35);
-  }
-}
-
 @media (max-width: 760px) {
-  .showcase-list {
+  .strip-minis {
     grid-template-columns: 1fr;
   }
   .addon-row {
@@ -2758,52 +2748,14 @@ select:focus-visible {
   .headerticker-track {
     animation: none;
   }
-  .embers {
-    display: none;
-  }
   .logo-mark {
     animation: none;
   }
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   v6 — anti-template: fita, carimbos, trilho, números
+   v6 — carimbos, trilho
    ═══════════════════════════════════════════════════════════════════ */
-
-/* fita marquee divisória */
-.tape-div {
-  background: var(--red);
-  color: #22100b;
-  overflow: hidden;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  transform: rotate(-0.6deg) scale(1.01);
-  margin: 26px 0 6px;
-}
-
-.tape-track {
-  display: flex;
-  width: max-content;
-  animation: tickmove 26s linear infinite;
-}
-
-.tape-track span {
-  font-family: var(--font-pixel);
-  font-size: 12px;
-  padding: 8px 0;
-  white-space: nowrap;
-  color: #22100b;
-}
-
-/* número editorial das seções */
-.secnum {
-  font-family: var(--font-pixel);
-  font-size: 13px;
-  color: transparent;
-  -webkit-text-stroke: 1px var(--red-bright);
-  margin-right: 10px;
-  letter-spacing: 0.05em;
-}
 
 /* carimbo rotacionado */
 .stamp {
@@ -2889,15 +2841,12 @@ select:focus-visible {
   position: relative;
 }
 
-/* hero: filete lateral editorial */
+/* hero: coluna de texto */
 .hero-grid > div:first-child {
   position: relative;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .tape-track {
-    animation: none;
-  }
   .reveal {
     opacity: 1;
     transform: none;
@@ -3187,26 +3136,34 @@ select:focus-visible {
     padding: 5px 10px;
   }
 
-  .carousel,
-  .showcase-list {
+  .carousel {
     gap: 8px;
   }
 
+  .strip-minis {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .strip-mini {
+    padding: 10px;
+  }
+
+  .strip-mini img {
+    width: 110px;
+    height: 74px;
+  }
+
   .showcase-info {
-    padding: 14px;
+    padding: 18px;
   }
 
   .showcase-info h3 {
-    font-size: clamp(18px, 5.4vw, 24px);
+    font-size: clamp(19px, 5.4vw, 24px);
   }
 
-  .showcase-mini {
-    padding: 6px;
-  }
-
-  .showcase-mini img {
-    width: 54px;
-    height: 38px;
+  .showcase-main {
+    min-height: 0;
   }
 
   .creator-hero {
