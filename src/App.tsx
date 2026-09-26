@@ -48,8 +48,9 @@ function RouteTransitions() {
         }, 540);
       }, 480);
     };
-    document.addEventListener('click', onClick);
-    return () => document.removeEventListener('click', onClick);
+    // capture: roda ANTES do React Router (que dá preventDefault nos links)
+    document.addEventListener('click', onClick, true);
+    return () => document.removeEventListener('click', onClick, true);
   }, [navigate, location.pathname, location.search]);
 
   return null;
