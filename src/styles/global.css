@@ -59,7 +59,10 @@ body::before {
   position: fixed;
   inset: 0;
   z-index: -2;
-  background: var(--bg);
+  background-image: url('/images/magma-bg.jpg');
+  background-size: 320px 320px;
+  opacity: 0.13;
+  pointer-events: none;
 }
 
 body::after {
