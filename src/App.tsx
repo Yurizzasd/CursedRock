@@ -75,7 +75,7 @@ export default function App() {
       <Header favCount={favorites.length} />
       <main style={{ flex: 1 }}>
         <Routes>
-          <Route path="/" element={<Home favorites={favorites} onToggleFavorite={toggle} />} />
+          <Route path="/" element={<Home />} />
           <Route path="/addons" element={<Addons favorites={favorites} onToggleFavorite={toggle} />} />
           <Route path="/addon/:slug" element={<AddonDetail favorites={favorites} onToggleFavorite={toggle} />} />
           <Route path="/search" element={<SearchPage favorites={favorites} onToggleFavorite={toggle} />} />
