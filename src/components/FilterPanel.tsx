@@ -2,9 +2,6 @@ import type { SortKey } from '../types';
 import { countByCategory, getAllCategories, getAllMinecraftVersions, getAllTags } from '../data/repository';
 import { ICONS } from './CategoryCreator';
 import { Package } from 'lucide-react';
-import { SortBar } from './chrome';
-
-const SORTS: SortKey[] = ['popular', 'recent', 'updated', 'rating', 'name'];
 
 export interface FilterState {
   sort: SortKey;
@@ -27,7 +24,6 @@ export function FilterPanel({
 
   return (
     <aside className="filters" aria-label="Filtros">
-      <SortBar vertical value={filters.sort} onChange={(sort) => onChange({ ...filters, sort })} options={SORTS} />
       <div className="filter-group">
         <label id="f-cat-label">Categoria</label>
         <div className="catlist" role="group" aria-labelledby="f-cat-label">

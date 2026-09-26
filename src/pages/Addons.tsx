@@ -1,12 +1,13 @@
 import { useEffect, useMemo, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { Search } from 'lucide-react';
 import { AddonGrid, CardSkeletons } from '../components/AddonCard';
 import { FilterPanel, type FilterState } from '../components/FilterPanel';
 import { EmptyState } from '../components/states';
-import { ViewToggle } from '../components/chrome';
+import { SortBar, ViewToggle } from '../components/chrome';
 import { filterAddons } from '../data/repository';
 import type { SortKey } from '../types';
-import { useDocumentTitle, useViewMode } from '../hooks/hooks';
+import { useDebounce, useDocumentTitle, useViewMode } from '../hooks/hooks';
 
 const PAGE_SIZE = 12;
 
@@ -34,6 +35,8 @@ export function Addons({
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useViewMode();
+  const [query, setQuery] = useState('');
+  const debouncedQuery = useDebounce(query, 250);
 
   useEffect(() => {
     setFilters((f) => ({ ...f, sort: validSort(params.get('sort')) }));
@@ -41,24 +44,25 @@ export function Addons({
 
   useEffect(() => {
     setPage(1);
-  }, [filters]);
+  }, [filters, debouncedQuery]);
 
   // skeleton simulado para demonstrar o estado de loading
   useEffect(() => {
     setLoading(true);
     const t = setTimeout(() => setLoading(false), 450);
     return () => clearTimeout(t);
-  }, [filters, page]);
+  }, [filters, debouncedQuery, page]);
 
   const results = useMemo(
     () =>
       filterAddons({
+        query: debouncedQuery || undefined,
         sort: filters.sort,
         category: filters.category === 'all' ? undefined : filters.category,
         mcVersion: filters.mcVersion === 'all' ? undefined : filters.mcVersion,
         tag: filters.tag === 'all' ? undefined : filters.tag,
       }),
-    [filters],
+    [filters, debouncedQuery],
   );
 
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
@@ -73,6 +77,22 @@ export function Addons({
         {results.length} addon{results.length === 1 ? '' : 's'} no underground. Filtre por categoria,
         versão do Minecraft ou tag.
       </p>
+      <form
+        className="searchbar"
+        style={{ maxWidth: 560, marginBottom: 18 }}
+        onSubmit={(e) => e.preventDefault()}
+        role="search"
+      >
+        <Search />
+        <input
+          type="search"
+          style={{ width: '100%' }}
+          placeholder="Filtrar por nome, criador, tag ou versão…"
+          aria-label="Filtrar addons"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
+      </form>
       <div className="layout-2col">
         <FilterPanel filters={filters} onChange={setFilters} />
         <div>
@@ -82,6 +102,7 @@ export function Addons({
             </span>
             <span className="spacer" />
             <ViewToggle mode={view} onChange={setView} />
+            <SortBar value={filters.sort} onChange={(sort) => setFilters((f) => ({ ...f, sort }))} />
           </div>
           {loading ? (
             <CardSkeletons count={8} />

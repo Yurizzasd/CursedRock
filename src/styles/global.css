@@ -3291,43 +3291,58 @@ select:focus-visible {
 }
 
 /* ═══════════════════════════════════════════════════════════════════
-   v4 — transições de rota (View Transitions API + fallback)
+   véu de lava — transição entre seções
    ═══════════════════════════════════════════════════════════════════ */
 
-::view-transition {
-  background: var(--bg);
+.lava-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  pointer-events: none;
+  visibility: hidden;
+  overflow: hidden;
 }
 
-::view-transition-old(root) {
-  animation: vt-out 0.26s ease both;
+.lava-veil.show {
+  visibility: visible;
+  pointer-events: auto;
 }
 
-::view-transition-new(root) {
-  animation: vt-in 0.34s ease both;
+.veil-lava {
+  position: absolute;
+  left: -4%;
+  right: -4%;
+  bottom: 0;
+  height: 0;
+  background-image: url('/images/magma-bg.jpg');
+  background-size: 260px 260px;
+  image-rendering: pixelated;
 }
 
-@keyframes vt-out {
-  to {
-    opacity: 0;
-    transform: scale(0.985) translateY(10px);
-  }
+.veil-lava.back {
+  opacity: 0.6;
+  filter: brightness(0.7);
 }
 
-@keyframes vt-in {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
+.veil-lava.front {
+  box-shadow: 0 -8px 30px rgba(224, 106, 77, 0.45);
 }
 
-/* a capa clicada morphs no banner da ficha */
-::view-transition-group(addon-hero) {
-  animation-duration: 0.45s;
-  animation-timing-function: cubic-bezier(0.22, 0.8, 0.3, 1);
+.lava-veil.rise .veil-lava.back {
+  transition: height 0.5s cubic-bezier(0.6, 0, 0.8, 0.4);
 }
 
-.detail-banner img {
-  view-transition-name: addon-hero;
+.lava-veil.rise .veil-lava.front {
+  transition: height 0.42s cubic-bezier(0.6, 0, 0.8, 0.4);
+}
+
+.lava-veil.rise .veil-lava {
+  height: 112%;
+}
+
+.lava-veil.fall .veil-lava {
+  transition: height 0.5s cubic-bezier(0.2, 0.7, 0.3, 1);
+  height: 0;
 }
 
 /* ═══════════════════════════════════════════════════════════════════

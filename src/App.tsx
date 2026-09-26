@@ -1,5 +1,5 @@
-import { BrowserRouter, Route, Routes, useNavigate } from 'react-router-dom';
-import { useEffect } from 'react';
+import { BrowserRouter, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { BootIntro } from './components/BootIntro';
@@ -13,14 +13,12 @@ import { Favorites } from './pages/Favorites';
 import { NotFound } from './pages/NotFound';
 import { useFavorites } from './hooks/useFavorites';
 
-type VTDocument = Document & {
-  startViewTransition?: (cb: () => void) => void;
-};
-
-// Transição de rota: a capa clicada morphs no banner da ficha (shared element)
-// + crossfade/deslize do resto. Fallback: navegação normal.
+// Transição de lava entre seções: o magma sobe cobrindo a tela,
+// navega no pico e desce revelando a nova página.
 function RouteTransitions() {
   const navigate = useNavigate();
+  const location = useLocation();
+  const busy = useRef(false);
 
   useEffect(() => {
     const onClick = (e: MouseEvent) => {
@@ -28,20 +26,42 @@ function RouteTransitions() {
       if (!a || e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const href = a.getAttribute('href') ?? '';
       if (!href.startsWith('/') || href.startsWith('//') || a.target === '_blank') return;
-      const doc = document as VTDocument;
-      if (!doc.startViewTransition) return; // sem suporte: Router resolve
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      if (href === location.pathname + location.search) return;
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; // Router resolve
       e.preventDefault();
-      // marca a capa clicada p/ morphar no banner da ficha
-      const card = a.closest('.card, .addon-row, .showcase-main, .showcase-mini');
-      card?.querySelector('img')?.style.setProperty('view-transition-name', 'addon-hero');
-      doc.startViewTransition(() => navigate(href));
+      if (busy.current) return;
+      const veil = document.getElementById('lava-veil');
+      if (!veil) {
+        navigate(href);
+        return;
+      }
+      busy.current = true;
+      veil.classList.add('show', 'rise');
+      window.setTimeout(() => {
+        navigate(href);
+        window.scrollTo({ top: 0 });
+        veil.classList.remove('rise');
+        veil.classList.add('fall');
+        window.setTimeout(() => {
+          veil.classList.remove('show', 'fall');
+          busy.current = false;
+        }, 540);
+      }, 480);
     };
     document.addEventListener('click', onClick);
     return () => document.removeEventListener('click', onClick);
-  }, [navigate]);
+  }, [navigate, location.pathname, location.search]);
 
   return null;
+}
+
+function LavaVeil() {
+  return (
+    <div id="lava-veil" className="lava-veil" aria-hidden="true">
+      <div className="veil-lava back" />
+      <div className="veil-lava front" />
+    </div>
+  );
 }
 
 export default function App() {
@@ -50,6 +70,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <BootIntro />
+      <LavaVeil />
       <RouteTransitions />
       <Header favCount={favorites.length} />
       <main style={{ flex: 1 }}>
