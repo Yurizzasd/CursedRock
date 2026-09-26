@@ -19,3 +19,6 @@ wrangler.toml
 Thumbs.db
 .vscode/
 *.log
+
+# perfil do navegador de raspagem
+.src-profile/
