@@ -106,12 +106,14 @@ export function Home({
           <div>
             <span className="eyebrow">Minecraft Bedrock — Addons</span>
             <h1>
-              <span className="stroke">Desenterre</span>
+              <span className="solid">Desenterre</span>
               <br />
-              <span className="solid">addons cursed.</span>
+              <span className="solid">addons</span>
+              <br />
+              <span className="ember">cursed.</span>
             </h1>
             <p className="hero-sub">
-              O catálogo underground de <strong>Minecraft Bedrock</strong>: weapons, mobs, magic,
+              O catálogo underground de <strong>Minecraft Bedrock</strong>: weapons, mobs, magia,
               horror e máquinas — curadoria manual, downloads diretos dos criadores.
             </p>
             <div className="hero-actions">
