@@ -131,6 +131,14 @@ function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () =
             </li>
           ))}
         </ol>
+        {addon.guideImage && (
+          <figure style={{ margin: '0 0 14px' }}>
+            <img src={addon.guideImage} alt="Onde ativar os experimentos no Minecraft" className="guide-img" style={{ marginBottom: 6 }} />
+            <figcaption style={{ fontSize: 11.5, color: 'var(--faint)', textAlign: 'center' }}>
+              Deixe como na imagem: Beta APIs ativado
+            </figcaption>
+          </figure>
+        )}
         {addon.requirements && addon.requirements.length > 0 && (
           <div className="tag-list" style={{ justifyContent: 'center', marginBottom: 18 }}>
             {addon.requirements.map((r) => (
