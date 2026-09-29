@@ -37,8 +37,8 @@ function lavaCells(seed: number, cols: number, rows: number, cell: number, palet
   return rects;
 }
 
-const LAVA_A = ['#e23c1f', '#e23c1f', '#ff7a2b', '#ff7a2b', '#ffd23f', '#a82812'];
-const LAVA_B = ['#7a1f12', '#7a1f12', '#a82812', '#e23c1f', '#5c150c'];
+const LAVA_A = ['#e0112b', '#e0112b', '#ff2244', '#ff2244', '#ff8a9a', '#7a0e1e'];
+const LAVA_B = ['#4d0812', '#4d0812', '#7a0e1e', '#a51226', '#2b0409'];
 
 export function BootIntro() {
   const [progress, setProgress] = useState(0);

@@ -18,11 +18,11 @@ const ROWS = [
 ];
 
 const COLORS: Record<string, string> = {
-  K: '#100d0e',
-  S: '#2b2426',
-  L: '#4a3f3c',
-  R: '#c14a38',
-  W: '#f0a184',
+  K: '#050505',
+  S: '#141414',
+  L: '#2e2e2e',
+  R: '#d40f28',
+  W: '#ff6b85',
 };
 
 export function LogoMark() {
