@@ -49,9 +49,9 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
         <div className="progress-track">
           <div className="progress-fill" style={{ width: `${progress}%` }} />
         </div>
-        {addon.guideImage && phase === 'steps' && (
+        {addon.guide?.image && phase === 'steps' && (
           <img
-            src={addon.guideImage}
+            src={addon.guide.image}
             alt={`Como instalar ${addon.name}`}
             className="guide-img"
             loading="lazy"
@@ -83,10 +83,13 @@ export function DownloadButton({ addon, big = false }: { addon: Addon; big?: boo
   const [stage, setStage] = useState<'idle' | 'guide' | 'download'>('idle');
   return (
     <>
-      <button className={`btn btn-primary${big ? ' btn-lg' : ''}`} onClick={() => setStage('guide')}>
+      <button
+        className={`btn btn-primary${big ? ' btn-lg' : ''}`}
+        onClick={() => setStage(addon.guide ? 'guide' : 'download')}
+      >
         <Download size={big ? 18 : 16} /> Download addon
       </button>
-      {stage === 'guide' && (
+      {stage === 'guide' && addon.guide && (
         <GuideModal addon={addon} onClose={() => setStage('idle')} onConfirm={() => setStage('download')} />
       )}
       {stage === 'download' && <DownloadModal addon={addon} onClose={() => setStage('idle')} />}
@@ -117,37 +120,55 @@ function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () =
         <button className="lightbox-close" onClick={onClose} aria-label="Fechar" style={{ position: 'absolute' }}>
           <X size={18} />
         </button>
-        <div className="modal-icon">
-          <BookOpenCheck />
-        </div>
-        <h3>Como instalar</h3>
-        <p>
-          {addon.name} v{addon.version} • Minecraft {addon.minecraft_versions.join(', ')}
-        </p>
-        <ol className="guide-steps">
-          {steps.map((s, i) => (
-            <li key={i}>
-              <span className="guide-num">{i + 1}</span> {s}
-            </li>
-          ))}
-        </ol>
-        {addon.guideImage && (
-          <figure style={{ margin: '0 0 14px' }}>
-            <img src={addon.guideImage} alt="Onde ativar os experimentos no Minecraft" className="guide-img" style={{ marginBottom: 6 }} />
-            <figcaption style={{ fontSize: 11.5, color: 'var(--faint)', textAlign: 'center' }}>
-              Deixe como na imagem: Beta APIs ativado
-            </figcaption>
-          </figure>
+        {addon.guide?.image ? (
+          <>
+            <img
+              src={addon.guide.image}
+              alt="Onde ativar os experimentos no Minecraft"
+              className="guide-img"
+              style={{ marginTop: 10 }}
+            />
+            <button className="btn btn-primary btn-lg" onClick={onConfirm} style={{ width: '100%' }}>
+              <Download size={17} /> Baixar agora
+            </button>
+          </>
+        ) : (
+          <>
+            <div className="modal-icon">
+              <BookOpenCheck />
+            </div>
+            <h3>Como instalar</h3>
+            <p>
+              {addon.name} v{addon.version} • Minecraft {addon.minecraft_versions.join(', ')}
+            </p>
+            <ol className="guide-steps">
+              {steps.map((s, i) => (
+                <li key={i}>
+                  <span className="guide-num">{i + 1}</span> {s}
+                </li>
+              ))}
+            </ol>
+            {addon.requirements && addon.requirements.length > 0 && (
+              <div className="tag-list" style={{ justifyContent: 'center', marginBottom: 18 }}>
+                {addon.requirements.map((r) => (
+                  <span key={r} className="tag">
+                    {r}
+                  </span>
+                ))}
+              </div>
+            )}
+            <button className="btn btn-primary btn-lg" onClick={onConfirm} style={{ width: '100%' }}>
+              <Download size={17} /> Entendi, baixar agora
+            </button>
+            <button className="btn btn-ghost" onClick={onClose} style={{ width: '100%', marginTop: 8 }}>
+              Voltar
+            </button>
+          </>
         )}
-        {addon.requirements && addon.requirements.length > 0 && (
-          <div className="tag-list" style={{ justifyContent: 'center', marginBottom: 18 }}>
-            {addon.requirements.map((r) => (
-              <span key={r} className="tag">
-                {r}
-              </span>
-            ))}
-          </div>
-        )}
+      </div>
+    </div>
+  );
+}
         <button className="btn btn-primary" onClick={onConfirm} style={{ width: '100%' }}>
           <Download size={16} /> Entendi, baixar agora
         </button>

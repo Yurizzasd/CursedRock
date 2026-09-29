@@ -17,6 +17,7 @@
   "downloads": 0,
   "rating": 4.5,
   "videos": [{ "title": "Trailer oficial", "youtubeId": "hGBROjRqyDM" }],
+  "guide": { "image": "/images/addons/meu-addon-exemplo-guia.png" },
   "createdAt": "2026-09-25",
   "updatedAt": "2026-09-25",
   "changelog": ["Versão inicial"],

@@ -40,6 +40,10 @@ export interface Addon {
   };
   /** Imagem de guia exibida durante o carregamento do download. */
   guideImage?: string;
+  /** Se presente, mostra o modal "Como instalar" antes do download (opt-in por addon). */
+  guide?: {
+    image?: string;
+  };
   tags: string[];
   featured?: boolean;
   downloads: number;

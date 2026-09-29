@@ -79,7 +79,11 @@ function validate(a, file) {
   if (a.credit !== undefined) {
     if (!a.credit.channelUrl || !a.credit.channelUrl.startsWith('http')) errs.push('credit exige channelUrl http(s)');
   }
-  if (a.guideImage !== undefined && typeof a.guideImage !== 'string') errs.push('guideImage deve ser string');
+  if (a.guide !== undefined) {
+    if (typeof a.guide !== 'object' || (a.guide.image !== undefined && typeof a.guide.image !== 'string')) {
+      errs.push('guide deve ser objeto, com image opcional em string');
+    }
+  }
   if (a.download_url && /PENDENTE|PREENCHER|example\.com\/download\/$/i.test(a.download_url)) {
     errs.push('download_url é placeholder — preencha o link real antes de importar');
   }
