@@ -11,6 +11,11 @@ export interface AddonFile {
   fileSize?: string;
 }
 
+export interface AddonVideo {
+  title: string;
+  youtubeId: string; // 11 chars, ex: "hGBROjRqyDM"
+}
+
 export interface Addon {
   id: string; // slug, ex: "bloodmoon-weapons"
   name: string;
@@ -27,6 +32,12 @@ export interface Addon {
   fileSize?: string;
   /** Arquivos alternativos (outras versões). Se houver 2+, a ficha vira seletor. */
   files?: AddonFile[];
+  /** Vídeos (trailers/gameplays). Renderiza embeds leves. */
+  videos?: AddonVideo[];
+  /** Se presente, exibe pop-up de crédito ao abrir a ficha (só p/ addons designados). */
+  credit?: {
+    channelUrl: string;
+  };
   tags: string[];
   featured?: boolean;
   downloads: number;

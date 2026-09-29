@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
-  BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Star, Tag, User, X,
+  BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Play, Star, Tag, User, X,
 } from 'lucide-react';
-import type { AddonFile } from '../types';
+import type { AddonFile, AddonVideo } from '../types';
 import { AddonGrid } from '../components/AddonCard';
 import { Reveal, ScrollProgress, SectionHeader } from '../components/chrome';
 import { DownloadButton } from '../components/DownloadFavorite';
@@ -12,14 +12,42 @@ import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/for
 import { useDocumentTitle } from '../hooks/hooks';
 import { NotFound } from './NotFound';
 
-function VersionPicker({
-  files,
+function CreditModal({ addonName, creatorName, channelUrl }: { addonName: string; creatorName: string; channelUrl: string }) {
+  const [open, setOpen] = useState(true);
+  if (!open) return null;
+  return (
+    <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Aviso de crédito">
+      <div className="modal">
+        <div className="modal-icon">
+          <BadgeCheck />
+        </div>
+        <h3>Antes de continuar</h3>
+        <p>
+          <strong>{addonName}</strong> — como qualquer addon aqui — <strong>não é de posse da
+          CursedRock</strong>. Ele foi criado por <strong>{creatorName}</strong>.
+        </p>
+        <p className="credit-note">
+          “Vai até o criador dar uma moral ao trabalho incrível dele.” — CursedRock
+        </p>
+        <div style={{ display: 'flex', gap: 10, flexDirection: 'column' }}>
+          <a className="btn btn-primary" href={channelUrl} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} style={{ width: '100%' }}>
+            Visitar canal de {creatorName}
+          </a>
+          <button className="btn btn-ghost" onClick={() => setOpen(false)} style={{ width: '100%' }}>
+            Entendi, ir para o addon
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function VersionPicker({  files,
   render,
 }: {
   files: AddonFile[];
   render: (file: AddonFile) => React.ReactNode;
-}) {
-  const [sel, setSel] = useState(0);
+}) {  const [sel, setSel] = useState(0);
   const file = files[Math.min(sel, files.length - 1)];
   return (
     <div>
@@ -48,6 +76,16 @@ export function AddonDetail() {
   const { slug } = useParams();
   const addon = slug ? getAddonById(slug) : undefined;
   const [lightbox, setLightbox] = useState<string | null>(null);
+  const [playing, setPlaying] = useState<string | null>(null);
+  const [showCredit] = useState(() => {
+    try {
+      if (!addon?.credit || sessionStorage.getItem(`cursedrock:credit:${addon.id}`)) return false;
+      sessionStorage.setItem(`cursedrock:credit:${addon.id}`, '1');
+      return true;
+    } catch {
+      return Boolean(addon?.credit);
+    }
+  });
   const railRef = useRef<HTMLDivElement>(null);
 
   // SEO por addon: title + description dinâmicos
@@ -72,6 +110,13 @@ export function AddonDetail() {
   return (
     <div className="container page">
       <ScrollProgress />
+      {showCredit && addon.credit && (
+        <CreditModal
+          addonName={addon.name}
+          creatorName={creator?.name ?? addon.authorDisplay ?? addon.author}
+          channelUrl={addon.credit.channelUrl}
+        />
+      )}
       <nav className="breadcrumb" aria-label="Trilha">
         <Link to="/">Home</Link> / <Link to="/addons">Addons</Link> /{' '}
         <span>{category?.name ?? addon.category}</span> / <span>{addon.name}</span>
@@ -160,6 +205,40 @@ export function AddonDetail() {
               </div>
             )}
           </Reveal>
+
+          {addon.videos && addon.videos.length > 0 && (
+            <section className="panel" style={{ marginTop: 16 }} aria-labelledby="videos">
+              <h2 id="videos">
+                <Play /> Vídeos
+              </h2>
+              <div className="video-grid">
+                {addon.videos.map((v: AddonVideo) => (
+                  <div key={v.youtubeId} className="video-card">
+                    {playing === v.youtubeId ? (
+                      <iframe
+                        src={`https://www.youtube.com/embed/${v.youtubeId}?autoplay=1&rel=0`}
+                        title={v.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      />
+                    ) : (
+                      <button onClick={() => setPlaying(v.youtubeId)} aria-label={`Assistir ${v.title}`}>
+                        <img
+                          src={`https://i.ytimg.com/vi/${v.youtubeId}/hqdefault.jpg`}
+                          alt={v.title}
+                          loading="lazy"
+                        />
+                        <span className="video-play">
+                          <Play />
+                        </span>
+                        <span className="video-title">{v.title}</span>
+                      </button>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
 
           {addon.changelog && addon.changelog.length > 0 && (
             <Reveal className="panel" style={{ marginTop: 16 }} aria-labelledby="changelog">

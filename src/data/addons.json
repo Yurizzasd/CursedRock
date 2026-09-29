@@ -331,14 +331,18 @@
   {
     "featured": false,
     "screenshots": [
-      "/images/addons/verity/shot-4.png"
+      "/images/addons/verity/shot-4.png",
+      "/images/addons/verity/vid-1.jpg",
+      "/images/addons/verity/vid-2.jpg",
+      "/images/addons/verity/vid-3.jpg",
+      "/images/addons/verity/vid-4.jpg"
     ],
     "id": "verity",
     "name": "Verity",
     "author": "pntmc",
     "authorDisplay": "PnTMC",
     "description": "Terror psicológico no Bedrock: entidades, eventos e uma atmosfera que pune quem explora sozinho.",
-    "longDescription": "Verity, de PnTMC (inspirado no Verity de ThatMob), transforma o survival em horror: presenças que observam, sons que vêm do escuro e eventos que escalam conforme você avança. Versão 4.0.0 com Behavior + Resource inclusos. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup.",
+    "longDescription": "Verity, de PnTMC (inspirado no Verity de ThatMob), é um amigo pessoal que não pode morrer: converse com ele no chat, peça ajuda com qualquer coisa — matemática, minérios, músicas — mas não o deixe bravo e não se afaste demais. Versão 4.0.0 com Behavior + Resource inclusos. OBRIGATÓRIO: Minecraft V26.10 ou acima, experimentos ativados (APIs Beta) e configuração inicial pelo guia do criador (chat de voz, TTS e IA precisam de setup). Instalação direta pelo arquivo .mcaddon. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup.",
     "category": "horror",
     "version": "4.0.0",
     "minecraft_versions": [
@@ -353,11 +357,33 @@
       "Survival"
     ],
     "requirements": [
-      "Minecraft 1.21+",
-      "Ativar recursos experimentais"
+      "Minecraft V26.10+",
+      "Experimentos ativados (APIs Beta)",
+      "Configuração inicial pelo guia do criador"
     ],
     "downloads": 0,
     "createdAt": "2026-09-29",
-    "updatedAt": "2026-09-29"
+    "updatedAt": "2026-09-29",
+    "videos": [
+      {
+        "title": "Something is Knocking at Your Door...",
+        "youtubeId": "hGBROjRqyDM"
+      },
+      {
+        "title": "Something is Knocking at My Door in Minecraft Bedrock...",
+        "youtubeId": "4NL46-oRmRU"
+      },
+      {
+        "title": "Something is Out There...",
+        "youtubeId": "zFaj5UxTPm4"
+      },
+      {
+        "title": "Something Won't Let You Leave in Minecraft Bedrock...",
+        "youtubeId": "bQJcCsUwHxY"
+      }
+    ],
+    "credit": {
+      "channelUrl": "https://www.youtube.com/@PnTMCvn"
+    }
   }
 ]

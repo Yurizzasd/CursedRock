@@ -16,6 +16,7 @@
   "featured": false,
   "downloads": 0,
   "rating": 4.5,
+  "videos": [{ "title": "Trailer oficial", "youtubeId": "hGBROjRqyDM" }],
   "createdAt": "2026-09-25",
   "updatedAt": "2026-09-25",
   "changelog": ["Versão inicial"],

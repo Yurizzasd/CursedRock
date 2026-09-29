@@ -68,6 +68,17 @@ function validate(a, file) {
       });
     }
   }
+  if (a.videos !== undefined) {
+    if (!Array.isArray(a.videos)) errs.push('videos deve ser um array');
+    else {
+      a.videos.forEach((v, i) => {
+        if (!v.title || !/^[A-Za-z0-9_-]{11}$/.test(v.youtubeId || '')) errs.push(`videos[${i}]: exige title e youtubeId de 11 chars`);
+      });
+    }
+  }
+  if (a.credit !== undefined) {
+    if (!a.credit.channelUrl || !a.credit.channelUrl.startsWith('http')) errs.push('credit exige channelUrl http(s)');
+  }
   if (a.download_url && /PENDENTE|PREENCHER|example\.com\/download\/$/i.test(a.download_url)) {
     errs.push('download_url é placeholder — preencha o link real antes de importar');
   }
