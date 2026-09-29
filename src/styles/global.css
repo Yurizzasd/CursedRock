@@ -3365,7 +3365,19 @@ select:focus-visible {
   place-items: center;
   color: var(--red-bright);
   box-shadow: 0 0 34px rgba(255, 46, 77, 0.35);
-  animation: markpulse 1.2s ease-in-out infinite;
+  animation: breathe 1.6s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 22px rgba(255, 46, 77, 0.25);
+  }
+  50% {
+    transform: scale(1.07);
+    box-shadow: 0 0 44px rgba(255, 46, 77, 0.5);
+  }
 }
 
 .intro-mark svg {
@@ -3409,12 +3421,68 @@ select:focus-visible {
 }
 
 .intro-bar {
-  width: 210px;
-  height: 3px;
+  width: 240px;
+  height: 5px;
   margin: 0 auto;
   background: var(--surface-3);
   border-radius: 3px;
   overflow: hidden;
+}
+
+.intro-tip {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  color: var(--faint);
+  margin: 14px 0 0;
+  min-height: 15px;
+  animation: tipin 0.3s ease both;
+}
+
+@keyframes tipin {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+}
+
+.intro-flash {
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  background: radial-gradient(circle at 50% 45%, rgba(255, 255, 255, 0.9), rgba(255, 46, 77, 0.55) 45%, transparent 75%);
+  animation: flashfade 0.35s ease both;
+  pointer-events: none;
+}
+
+@keyframes flashfade {
+  0% {
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.lava-ember.converge {
+  animation-name: converge;
+}
+
+@keyframes converge {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(var(--tx, 0vw), -34vh);
+    opacity: 0;
+  }
 }
 
 .intro-bar i {
@@ -3517,15 +3585,15 @@ body.site-entered .hero-grid > div:nth-child(2) {
 }
 
 .lava-waves.back {
-  bottom: 46px;
-  height: 84px;
-  opacity: 0.85;
-  animation-duration: 7s;
+  bottom: 72px;
+  height: 96px;
+  opacity: 0.7;
+  animation-duration: 8s;
 }
 
 .lava-waves.front {
   bottom: -6px;
-  height: 110px;
+  height: 118px;
   filter: drop-shadow(0 -8px 22px rgba(255, 46, 77, 0.45));
   animation-duration: 4.5s;
 }
@@ -3562,7 +3630,7 @@ body.site-entered .hero-grid > div:nth-child(2) {
 }
 
 .intro .intro-bar i {
-  background: #ff2244;
-  box-shadow: 0 0 12px rgba(255, 46, 77, 0.7);
+  background: linear-gradient(90deg, var(--red) 0%, #ff2e4d 70%, #ffffff 100%);
+  box-shadow: 0 0 14px rgba(255, 46, 77, 0.8);
 }
 

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, type CSSProperties } from 'react';
 import { LogoMark } from './Logo';
 
 // Intro de entrada: LOADING 0→100% + revelação em íris + site nascendo junto.
@@ -40,10 +40,25 @@ function lavaCells(seed: number, cols: number, rows: number, cell: number, palet
 const LAVA_A = ['#e0112b', '#e0112b', '#ff2244', '#ff2244', '#ff8a9a', '#7a0e1e'];
 const LAVA_B = ['#4d0812', '#4d0812', '#7a0e1e', '#a51226', '#2b0409'];
 
+const TIPS = [
+  'DICA: filtre addons pela sua versão do Minecraft',
+  'DICA: ative comportamento + recursos juntos no mundo',
+  'DICA: faça backup do mundo antes de instalar',
+  'DICA: conquistas desligam com pacotes ativos',
+];
+
+const CONVERGE = Array.from({ length: 6 }, (_, i) => ({
+  left: 8 + i * 16,
+  size: 4 + ((i * 3) % 4),
+  dur: 1.6 + ((i * 7) % 10) / 10,
+  delay: -((i * 11) % 16) / 10,
+}));
+
 export function BootIntro() {
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
   const [dead, setDead] = useState(false);
+  const [tip, setTip] = useState(0);
   const done = useRef(false);
 
   useEffect(() => {
@@ -70,9 +85,11 @@ export function BootIntro() {
       else finish();
     };
     raf = requestAnimationFrame(tick);
+    const tipTimer = window.setInterval(() => setTip((t) => (t + 1) % TIPS.length), 650);
     (window as unknown as { __skipIntro?: () => void }).__skipIntro = finish;
     return () => {
       cancelAnimationFrame(raf);
+      window.clearInterval(tipTimer);
       delete (window as unknown as { __skipIntro?: () => void }).__skipIntro;
     };
   }, []);
@@ -85,6 +102,7 @@ export function BootIntro() {
 
   return (
     <div className={`intro${open ? ' open' : ''}`} onClick={skip} aria-hidden="true">
+      {open && <div className="intro-flash" />}
       <svg width="0" height="0" style={{ position: 'absolute' }} aria-hidden="true">
         <defs>
           <pattern id="lavaTileA" width="120" height="40" patternUnits="userSpaceOnUse">
@@ -126,6 +144,22 @@ export function BootIntro() {
             }}
           />
         ))}
+        {CONVERGE.map((e, i) => (
+          <span
+            key={`c${i}`}
+            className="lava-ember converge"
+            style={
+              {
+                left: `${e.left}%`,
+                '--tx': `${50 - e.left}vw`,
+                width: e.size,
+                height: e.size,
+                animationDuration: `${e.dur}s`,
+                animationDelay: `${e.delay}s`,
+              } as CSSProperties
+            }
+          />
+        ))}
         <svg className="lava-waves back" viewBox="0 0 480 60" preserveAspectRatio="none">
           <path
             fill="url(#lavaTileB)"
@@ -148,6 +182,9 @@ export function BootIntro() {
         <div className="intro-bar">
           <i style={{ width: `${progress}%` }} />
         </div>
+        <p className="intro-tip" key={tip}>
+          {TIPS[tip]}
+        </p>
       </div>
     </div>
   );
