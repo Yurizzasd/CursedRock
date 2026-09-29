@@ -26,11 +26,12 @@ async function main() {
       const v = document.getElementById('lava-veil');
       if (!v) return { missing: true };
       const cs = getComputedStyle(v);
-      const lava = v.querySelector('.veil-lava.front');
+      const stage = v.querySelector('.fire-stage');
       return {
         classes: v.className,
         visibility: cs.visibility,
-        lavaHeight: lava ? getComputedStyle(lava).height : '?',
+        stageTransform: stage ? getComputedStyle(stage).transform : '?',
+        cols: v.querySelectorAll('.fire-col').length,
         url: location.href,
       };
     });

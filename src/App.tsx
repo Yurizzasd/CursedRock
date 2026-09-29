@@ -52,10 +52,43 @@ function RouteTransitions() {
 }
 
 function LavaVeil() {
+  const cols = Array.from({ length: 26 }, (_, i) => ({
+    delay: ((i * 37) % 10) / 20,
+    dur: 0.34 + ((i * 53) % 20) / 100,
+  }));
+  const embers = Array.from({ length: 10 }, (_, i) => ({
+    left: (i * 47 + 9) % 100,
+    size: 4 + ((i * 5) % 7),
+    dur: 1.8 + ((i * 11) % 14) / 10,
+    delay: -((i * 13) % 18) / 10,
+  }));
   return (
     <div id="lava-veil" className="lava-veil" aria-hidden="true">
-      <div className="veil-lava back" />
-      <div className="veil-lava front" />
+      <div className="fire-stage">
+        <div className="fire-cols">
+          {cols.map((c, i) => (
+            <span
+              key={i}
+              className="fire-col"
+              style={{ animationDelay: `${c.delay}s`, animationDuration: `${c.dur}s` }}
+            />
+          ))}
+        </div>
+        <div className="fire-grid" />
+        {embers.map((e, i) => (
+          <span
+            key={i}
+            className="fire-ember"
+            style={{
+              left: `${e.left}%`,
+              width: e.size,
+              height: e.size,
+              animationDuration: `${e.dur}s`,
+              animationDelay: `${e.delay}s`,
+            }}
+          />
+        ))}
+      </div>
     </div>
   );
 }

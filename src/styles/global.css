@@ -3236,44 +3236,76 @@ select:focus-visible {
 .lava-veil.show {
   visibility: visible;
   pointer-events: auto;
+  background: #000;
 }
 
-.veil-lava {
+.fire-stage {
   position: absolute;
-  left: -4%;
-  right: -4%;
-  bottom: 0;
-  height: 0;
-  background-image: url('/images/magma-bg.jpg');
-  background-size: 260px 260px;
-  image-rendering: pixelated;
-  filter: hue-rotate(-22deg) saturate(1.25);
+  inset: 0;
+  transform: translateY(103%);
 }
 
-.veil-lava.back {
-  opacity: 0.6;
-  filter: brightness(0.7);
+.lava-veil.rise .fire-stage {
+  transition: transform 0.45s cubic-bezier(0.6, 0, 0.8, 0.4);
+  transform: translateY(0);
 }
 
-.veil-lava.front {
-  box-shadow: 0 -8px 30px rgba(224, 106, 77, 0.45);
+.lava-veil.fall .fire-stage {
+  transition: transform 0.55s cubic-bezier(0.2, 0.7, 0.3, 1);
+  transform: translateY(103%);
 }
 
-.lava-veil.rise .veil-lava.back {
-  transition: height 0.5s cubic-bezier(0.6, 0, 0.8, 0.4);
+.fire-cols {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: stretch;
 }
 
-.lava-veil.rise .veil-lava.front {
-  transition: height 0.42s cubic-bezier(0.6, 0, 0.8, 0.4);
+.fire-col {
+  flex: 1;
+  transform-origin: bottom;
+  background: linear-gradient(
+    to top,
+    #5c0d00 0%,
+    #e63c00 32%,
+    #ff9100 58%,
+    #ffe23b 80%,
+    rgba(255, 226, 59, 0) 100%
+  );
+  border-radius: 50% 50% 0 0 / 14% 14% 0 0;
+  filter: blur(6px);
+  opacity: 0.92;
+  animation: fireflick 0.4s ease-in-out infinite alternate;
 }
 
-.lava-veil.rise .veil-lava {
-  height: 112%;
+@keyframes fireflick {
+  from {
+    transform: scaleY(0.82);
+  }
+  to {
+    transform: scaleY(1.04);
+  }
 }
 
-.lava-veil.fall .veil-lava {
-  transition: height 0.5s cubic-bezier(0.2, 0.7, 0.3, 1);
-  height: 0;
+.fire-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.28) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.28) 2px, transparent 2px);
+  background-size: 14px 14px;
+}
+
+.fire-ember {
+  position: absolute;
+  bottom: -14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #ffe23b 0%, #ff9100 45%, rgba(230, 60, 0, 0) 72%);
+  filter: blur(1.5px);
+  animation-name: lavarise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 /* ═══════════════════════════════════════════════════════════════════
