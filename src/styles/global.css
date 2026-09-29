@@ -1213,6 +1213,10 @@ h4 {
   font-weight: 600;
 }
 
+.detail-by strong {
+  color: var(--red-bright);
+}
+
 .detail-actions {
   display: flex;
   gap: 10px;

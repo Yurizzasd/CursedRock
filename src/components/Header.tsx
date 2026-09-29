@@ -12,7 +12,7 @@ export function SearchBar({ compact = false }: { compact?: boolean }) {
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
-    navigate(`/search?q=${encodeURIComponent(value.trim())}`);
+    navigate(`/addons?q=${encodeURIComponent(value.trim())}`);
   };
 
   if (compact) {
@@ -78,7 +78,7 @@ function NewsTicker() {
   );
 }
 
-export function Header({ favCount }: { favCount: number }) {
+export function Header() {
   const scrolled = useScrolled();
   const [open, setOpen] = useState(false);
   return (
@@ -99,15 +99,6 @@ export function Header({ favCount }: { favCount: number }) {
             </NavLink>
             <NavLink to="/addons" className={({ isActive }) => (isActive ? 'active' : '')}>
               Addons
-            </NavLink>
-            <NavLink to="/categories" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Categorias
-            </NavLink>
-            <NavLink to="/creators" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Criadores
-            </NavLink>
-            <NavLink to="/favorites" className={({ isActive }) => (isActive ? 'active' : '')}>
-              Favoritos{favCount > 0 ? ` (${favCount})` : ''}
             </NavLink>
           </nav>
           <div className="header-search">
@@ -133,15 +124,6 @@ export function Header({ favCount }: { favCount: number }) {
         </NavLink>
         <NavLink to="/addons" onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
           Addons
-        </NavLink>
-        <NavLink to="/categories" onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
-          Categorias
-        </NavLink>
-        <NavLink to="/creators" onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
-          Criadores
-        </NavLink>
-        <NavLink to="/favorites" onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
-          Favoritos{favCount > 0 ? ` (${favCount})` : ''}
         </NavLink>
       </div>
     </>

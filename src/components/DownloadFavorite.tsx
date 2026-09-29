@@ -1,27 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Check, Download, Heart, Loader2, ShieldCheck, X } from 'lucide-react';
+import { Check, Download, Loader2, ShieldCheck, X } from 'lucide-react';
 import type { Addon } from '../types';
 
 type Phase = 'steps' | 'ready';
 
 const STEP_LABELS = ['Preparing download…', 'Checking addon…', 'Ready!'];
-
-export function FavoriteButton({
-  active,
-  onToggle,
-  label,
-}: {
-  active: boolean;
-  onToggle: () => void;
-  label?: string;
-}) {
-  return (
-    <button className={`btn btn-ghost${active ? ' active' : ''}`} onClick={onToggle} aria-pressed={active}>
-      <Heart size={16} style={active ? { fill: 'currentColor', color: 'var(--red-bright)' } : undefined} />
-      {label ?? (active ? 'Favoritado' : 'Favoritar')}
-    </button>
-  );
-}
 
 export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () => void }) {
   const [step, setStep] = useState(0);

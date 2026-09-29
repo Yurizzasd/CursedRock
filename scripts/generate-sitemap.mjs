@@ -9,17 +9,10 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const BASE = 'https://cursedrock.gg';
 
 const addons = JSON.parse(readFileSync(join(root, 'src/data/addons.json'), 'utf8'));
-const categories = JSON.parse(readFileSync(join(root, 'src/data/categories.json'), 'utf8'));
-const creators = JSON.parse(readFileSync(join(root, 'src/data/creators.json'), 'utf8'));
 
 const urls = [
   { loc: `${BASE}/`, changefreq: 'daily', priority: '1.0' },
   { loc: `${BASE}/addons`, changefreq: 'daily', priority: '0.9' },
-  { loc: `${BASE}/categories`, changefreq: 'weekly', priority: '0.7' },
-  { loc: `${BASE}/creators`, changefreq: 'weekly', priority: '0.7' },
-  { loc: `${BASE}/favorites`, changefreq: 'monthly', priority: '0.3' },
-  ...categories.map((c) => ({ loc: `${BASE}/category/${c.id}`, changefreq: 'weekly', priority: '0.8' })),
-  ...creators.map((c) => ({ loc: `${BASE}/creator/${c.id}`, changefreq: 'weekly', priority: '0.6' })),
   ...addons.map((a) => ({ loc: `${BASE}/addon/${a.id}`, changefreq: 'weekly', priority: '0.9', lastmod: a.updatedAt })),
 ];
 

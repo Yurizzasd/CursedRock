@@ -5,19 +5,13 @@ import {
 } from 'lucide-react';
 import { AddonGrid } from '../components/AddonCard';
 import { Reveal, ScrollProgress, SectionHeader } from '../components/chrome';
-import { DownloadButton, FavoriteButton } from '../components/DownloadFavorite';
+import { DownloadButton } from '../components/DownloadFavorite';
 import { getAddonById, getAddonsByCreator, getCategoryById, getCreatorById, getRelatedAddons } from '../data/repository';
 import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/format';
 import { useDocumentTitle } from '../hooks/hooks';
 import { NotFound } from './NotFound';
 
-export function AddonDetail({
-  favorites,
-  onToggleFavorite,
-}: {
-  favorites: string[];
-  onToggleFavorite: (id: string) => void;
-}) {
+export function AddonDetail() {
   const { slug } = useParams();
   const addon = slug ? getAddonById(slug) : undefined;
   const [lightbox, setLightbox] = useState<string | null>(null);
@@ -36,7 +30,6 @@ export function AddonDetail({
   const related = getRelatedAddons(addon);
   const creatorCount = creator ? getAddonsByCreator(creator.id).length : 0;
   const power = Math.min(100, Math.round(22 * Math.log10(addon.downloads + 1)));
-  const fav = favorites.includes(addon.id);
   const gallery = addon.screenshots.length > 0 ? addon.screenshots : [addon.thumbnail];
 
   const scrollRail = (dir: 1 | -1) => {
@@ -48,8 +41,7 @@ export function AddonDetail({
       <ScrollProgress />
       <nav className="breadcrumb" aria-label="Trilha">
         <Link to="/">Home</Link> / <Link to="/addons">Addons</Link> /{' '}
-        <Link to={`/category/${addon.category}`}>{category?.name ?? addon.category}</Link> /{' '}
-        <span>{addon.name}</span>
+        <span>{category?.name ?? addon.category}</span> / <span>{addon.name}</span>
       </nav>
 
       <div className="detail-hero">
@@ -64,10 +56,7 @@ export function AddonDetail({
             <span className="eyebrow">{category?.name}</span>
             <h1>{addon.name}</h1>
             <p className="detail-by">
-              por{' '}
-              <Link to={`/creator/${addon.author}`}>
-                {creator?.name ?? addon.authorDisplay ?? addon.author}
-              </Link>{' '}
+              por <strong>{creator?.name ?? addon.authorDisplay ?? addon.author}</strong>{' '}
               {creator?.verified && (
                 <BadgeCheck size={14} style={{ display: 'inline', verticalAlign: -2, color: 'var(--red-bright)' }} />
               )}{' '}
@@ -79,7 +68,6 @@ export function AddonDetail({
               <DownloadButton addon={addon} big />
               <span>{formatNumber(addon.downloads)} downloads</span>
             </div>
-            <FavoriteButton active={fav} onToggle={() => onToggleFavorite(addon.id)} />
           </div>
         </div>
       </div>
@@ -110,7 +98,7 @@ export function AddonDetail({
             <p>{addon.longDescription ?? addon.description}</p>
             <div className="tag-list" style={{ marginTop: 12 }}>
               {addon.tags.map((t) => (
-                <Link key={t} to={`/search?q=${encodeURIComponent(t)}`} className="tag">
+                <Link key={t} to={`/addons?q=${encodeURIComponent(t)}`} className="tag">
                   #{t}
                 </Link>
               ))}
@@ -228,7 +216,7 @@ export function AddonDetail({
               <h3>
                 <User /> Criador
               </h3>
-              <Link to={`/creator/${creator.id}`} className="creator-seal">
+              <div className="creator-seal">
                 <span
                   className="avatar"
                   style={{
@@ -244,10 +232,10 @@ export function AddonDetail({
                   </b>
                   <br />
                   <small>
-                    {creatorCount} addon{creatorCount === 1 ? '' : 's'} • ver perfil →
+                    {creatorCount} addon{creatorCount === 1 ? '' : 's'} no catálogo
                   </small>
                 </span>
-              </Link>
+              </div>
             </div>
           )}
         </aside>
@@ -256,7 +244,7 @@ export function AddonDetail({
       {related.length > 0 && (
         <section style={{ marginTop: 40 }}>
           <SectionHeader eyebrow="Continue descendo" title="Addons relacionados" />
-          <AddonGrid addons={related} favorites={favorites} onToggleFavorite={onToggleFavorite} />
+          <AddonGrid addons={related} />
         </section>
       )}
 

@@ -17,13 +17,7 @@ function validSort(s: string | null): SortKey {
     : 'popular';
 }
 
-export function Addons({
-  favorites,
-  onToggleFavorite,
-}: {
-  favorites: string[];
-  onToggleFavorite: (id: string) => void;
-}) {
+export function Addons() {
   useDocumentTitle('Addons — CursedRock', 'Todos os addons para Minecraft Bedrock: filtre por categoria, versão e popularidade.');
   const [params] = useSearchParams();
   const [filters, setFilters] = useState<FilterState>({
@@ -35,11 +29,13 @@ export function Addons({
   const [page, setPage] = useState(1);
   const [loading, setLoading] = useState(true);
   const [view, setView] = useViewMode();
-  const [query, setQuery] = useState('');
+  const [query, setQuery] = useState(() => params.get('q') ?? '');
   const debouncedQuery = useDebounce(query, 250);
 
   useEffect(() => {
     setFilters((f) => ({ ...f, sort: validSort(params.get('sort')) }));
+    const q = params.get('q');
+    if (q !== null) setQuery(q);
   }, [params]);
 
   useEffect(() => {
@@ -110,7 +106,7 @@ export function Addons({
             <EmptyState actionTo="/addons" actionLabel="Limpar filtros" />
           ) : (
             <>
-              <AddonGrid addons={visible} favorites={favorites} onToggleFavorite={onToggleFavorite} cols3={view === 'grid'} layout={view} />
+              <AddonGrid addons={visible} cols3={view === 'grid'} layout={view} />
               {current < pages ? (
                 <div className="load-more-wrap">
                   <button className="btn btn-ghost" onClick={() => setPage((p) => p + 1)}>
