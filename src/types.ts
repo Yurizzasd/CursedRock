@@ -38,6 +38,8 @@ export interface Addon {
   credit?: {
     channelUrl: string;
   };
+  /** Imagem de guia exibida durante o carregamento do download. */
+  guideImage?: string;
   tags: string[];
   featured?: boolean;
   downloads: number;

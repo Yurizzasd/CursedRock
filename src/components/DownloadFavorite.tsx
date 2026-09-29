@@ -49,6 +49,14 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
         <div className="progress-track">
           <div className="progress-fill" style={{ width: `${progress}%` }} />
         </div>
+        {addon.guideImage && phase === 'steps' && (
+          <img
+            src={addon.guideImage}
+            alt={`Como instalar ${addon.name}`}
+            className="guide-img"
+            loading="lazy"
+          />
+        )}
         <div className="dl-steps">
           {STEP_LABELS.map((label, i) => (
             <div key={label} className={`dl-step${i < step || phase === 'ready' ? ' done' : i === step ? ' doing' : ''}`}>
