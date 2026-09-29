@@ -2551,6 +2551,54 @@ select:focus-visible {
   letter-spacing: 0.06em;
 }
 
+/* ── seletor de versão (ficha do addon) ── */
+.verpick {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.veropt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  text-align: left;
+  padding: 10px 13px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  color: var(--muted);
+  transition: border-color 0.15s, background 0.15s, color 0.15s;
+  width: 100%;
+}
+
+.veropt b {
+  font-size: 13.5px;
+}
+
+.veropt span {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--faint);
+}
+
+.veropt:hover {
+  border-color: var(--border-strong);
+  color: var(--text);
+}
+
+.veropt.active {
+  border-color: var(--red);
+  background: #170b0b;
+  color: var(--text);
+}
+
+.veropt.active b {
+  color: var(--red-bright);
+}
+
 /* ── alternador grade/lista + modo lista ── */
 .view-toggle {
   display: inline-flex;

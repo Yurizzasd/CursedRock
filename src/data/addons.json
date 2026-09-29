@@ -331,10 +331,7 @@
   {
     "featured": false,
     "screenshots": [
-      "/images/addons/verity/shot-4.png",
-      "/images/addons/verity/shot-1.png",
-      "/images/addons/verity/shot-2.png",
-      "/images/addons/verity/shot-3.png"
+      "/images/addons/verity/shot-4.png"
     ],
     "id": "verity",
     "name": "Verity",

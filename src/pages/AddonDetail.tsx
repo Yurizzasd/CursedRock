@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import {
   BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Star, Tag, User, X,
 } from 'lucide-react';
+import type { AddonFile } from '../types';
 import { AddonGrid } from '../components/AddonCard';
 import { Reveal, ScrollProgress, SectionHeader } from '../components/chrome';
 import { DownloadButton } from '../components/DownloadFavorite';
@@ -10,6 +11,38 @@ import { getAddonById, getAddonsByCreator, getCategoryById, getCreatorById, getR
 import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/format';
 import { useDocumentTitle } from '../hooks/hooks';
 import { NotFound } from './NotFound';
+
+function VersionPicker({
+  files,
+  render,
+}: {
+  files: AddonFile[];
+  render: (file: AddonFile) => React.ReactNode;
+}) {
+  const [sel, setSel] = useState(0);
+  const file = files[Math.min(sel, files.length - 1)];
+  return (
+    <div>
+      <div className="verpick" role="group" aria-label="Escolher versão">
+        {files.map((f, i) => (
+          <button
+            key={f.label}
+            className={`veropt${i === sel ? ' active' : ''}`}
+            onClick={() => setSel(i)}
+            aria-pressed={i === sel}
+          >
+            <b>{f.label}</b>
+            <span>
+              v{f.version} • {f.minecraft_versions.join(', ')}
+              {f.fileSize ? ` • ${f.fileSize}` : ''}
+            </span>
+          </button>
+        ))}
+      </div>
+      {render(file)}
+    </div>
+  );
+}
 
 export function AddonDetail() {
   const { slug } = useParams();
@@ -161,21 +194,52 @@ export function AddonDetail() {
             <p>
               Arquivo externo hospedado pelo criador. O CursedRock verifica o link antes de liberar.
             </p>
-            <DownloadButton addon={addon} />
-            <dl style={{ margin: '14px 0 0' }}>
-              <div className="kv">
-                <dt>Versão</dt>
-                <dd>v{addon.version}</dd>
-              </div>
-              <div className="kv">
-                <dt>Tamanho</dt>
-                <dd>{addon.fileSize ?? '—'}</dd>
-              </div>
-              <div className="kv">
-                <dt>Downloads</dt>
-                <dd>{formatDownloads(addon.downloads)}</dd>
-              </div>
-            </dl>
+            {addon.files && addon.files.length > 1 ? (
+              <VersionPicker
+                files={addon.files}
+                render={(file) => (
+                  <>
+                    <DownloadButton addon={{ ...addon, version: file.version, fileSize: file.fileSize, download_url: file.download_url, minecraft_versions: file.minecraft_versions }} />
+                    <dl style={{ margin: '14px 0 0' }}>
+                      <div className="kv">
+                        <dt>Versão</dt>
+                        <dd>v{file.version}</dd>
+                      </div>
+                      <div className="kv">
+                        <dt>Minecraft</dt>
+                        <dd>{file.minecraft_versions.join(', ')}</dd>
+                      </div>
+                      <div className="kv">
+                        <dt>Tamanho</dt>
+                        <dd>{file.fileSize ?? '—'}</dd>
+                      </div>
+                      <div className="kv">
+                        <dt>Downloads</dt>
+                        <dd>{formatDownloads(addon.downloads)}</dd>
+                      </div>
+                    </dl>
+                  </>
+                )}
+              />
+            ) : (
+              <>
+                <DownloadButton addon={addon} />
+                <dl style={{ margin: '14px 0 0' }}>
+                  <div className="kv">
+                    <dt>Versão</dt>
+                    <dd>v{addon.version}</dd>
+                  </div>
+                  <div className="kv">
+                    <dt>Tamanho</dt>
+                    <dd>{addon.fileSize ?? '—'}</dd>
+                  </div>
+                  <div className="kv">
+                    <dt>Downloads</dt>
+                    <dd>{formatDownloads(addon.downloads)}</dd>
+                  </div>
+                </dl>
+              </>
+            )}
           </div>
 
           <div className="panel">

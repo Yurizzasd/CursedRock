@@ -57,6 +57,17 @@ function validate(a, file) {
   if (a.minecraft_versions && (!Array.isArray(a.minecraft_versions) || a.minecraft_versions.length === 0)) errs.push('minecraft_versions deve ser um array não vazio');
   if (a.tags && !Array.isArray(a.tags)) errs.push('tags deve ser um array');
   if (a.downloads !== undefined && typeof a.downloads !== 'number') errs.push('downloads deve ser número');
+  if (a.files !== undefined) {
+    if (!Array.isArray(a.files) || a.files.length === 0) errs.push('files deve ser um array não vazio');
+    else {
+      a.files.forEach((f, i) => {
+        if (!f.label || !f.version || !Array.isArray(f.minecraft_versions) || !f.download_url) {
+          errs.push(`files[${i}]: exige label, version, minecraft_versions[] e download_url`);
+        }
+        if (f.download_url && /PENDENTE|PREENCHER/i.test(f.download_url)) errs.push(`files[${i}]: download_url é placeholder`);
+      });
+    }
+  }
   if (a.download_url && /PENDENTE|PREENCHER|example\.com\/download\/$/i.test(a.download_url)) {
     errs.push('download_url é placeholder — preencha o link real antes de importar');
   }

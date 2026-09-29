@@ -3,6 +3,14 @@
 // Hoje os dados vivem em JSON estático; amanhã podem vir de fetch() sem
 // quebrar os componentes (ver src/data/repository.ts).
 
+export interface AddonFile {
+  label: string; // ex: "v4.0.0 — MC 26.50"
+  version: string; // versão do addon
+  minecraft_versions: string[];
+  download_url: string;
+  fileSize?: string;
+}
+
 export interface Addon {
   id: string; // slug, ex: "bloodmoon-weapons"
   name: string;
@@ -17,6 +25,8 @@ export interface Addon {
   screenshots: string[];
   download_url: string;
   fileSize?: string;
+  /** Arquivos alternativos (outras versões). Se houver 2+, a ficha vira seletor. */
+  files?: AddonFile[];
   tags: string[];
   featured?: boolean;
   downloads: number;
