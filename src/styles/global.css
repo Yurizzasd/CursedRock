@@ -3236,7 +3236,6 @@ select:focus-visible {
 .lava-veil.show {
   visibility: visible;
   pointer-events: auto;
-  background: #000;
 }
 
 .fire-stage {
