@@ -12,12 +12,40 @@ import { formatDate, formatDownloads, formatNumber, timeAgo } from '../utils/for
 import { useDocumentTitle } from '../hooks/hooks';
 import { NotFound } from './NotFound';
 
+function plin() {
+  try {
+    const Ctx = window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext;
+    if (!Ctx) return;
+    const ctx = new Ctx();
+    const t = ctx.currentTime;
+    [[880, 0], [1318.5, 0.09]].forEach(([f, dt]) => {
+      const o = ctx.createOscillator();
+      const g = ctx.createGain();
+      o.type = 'sine';
+      o.frequency.value = f;
+      g.gain.setValueAtTime(0.0001, t + dt);
+      g.gain.exponentialRampToValueAtTime(0.16, t + dt + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + dt + 0.5);
+      o.connect(g);
+      g.connect(ctx.destination);
+      o.start(t + dt);
+      o.stop(t + dt + 0.55);
+    });
+    window.setTimeout(() => ctx.close().catch(() => {}), 1200);
+  } catch {
+    /* áudio indisponível — segue silencioso */
+  }
+}
+
 function CreditModal({ addonName, creatorName, channelUrl }: { addonName: string; creatorName: string; channelUrl: string }) {
   const [open, setOpen] = useState(true);
+  useEffect(() => {
+    plin();
+  }, []);
   if (!open) return null;
   return (
     <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Aviso de crédito">
-      <div className="modal">
+      <div className="modal credit-pop">
         <div className="modal-icon">
           <BadgeCheck />
         </div>
@@ -77,15 +105,7 @@ export function AddonDetail() {
   const addon = slug ? getAddonById(slug) : undefined;
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [playing, setPlaying] = useState<string | null>(null);
-  const [showCredit] = useState(() => {
-    try {
-      if (!addon?.credit || sessionStorage.getItem(`cursedrock:credit:${addon.id}`)) return false;
-      sessionStorage.setItem(`cursedrock:credit:${addon.id}`, '1');
-      return true;
-    } catch {
-      return Boolean(addon?.credit);
-    }
-  });
+  const showCredit = Boolean(addon?.credit);
   const railRef = useRef<HTMLDivElement>(null);
 
   // SEO por addon: title + description dinâmicos
