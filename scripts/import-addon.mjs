@@ -57,6 +57,9 @@ function validate(a, file) {
   if (a.minecraft_versions && (!Array.isArray(a.minecraft_versions) || a.minecraft_versions.length === 0)) errs.push('minecraft_versions deve ser um array não vazio');
   if (a.tags && !Array.isArray(a.tags)) errs.push('tags deve ser um array');
   if (a.downloads !== undefined && typeof a.downloads !== 'number') errs.push('downloads deve ser número');
+  if (a.download_url && /PENDENTE|PREENCHER|example\.com\/download\/$/i.test(a.download_url)) {
+    errs.push('download_url é placeholder — preencha o link real antes de importar');
+  }
   for (const d of ['createdAt', 'updatedAt']) {
     if (a[d] && !DATE_RE.test(a[d])) errs.push(`${d} deve ser AAAA-MM-DD`);
   }
