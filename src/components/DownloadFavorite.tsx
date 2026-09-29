@@ -132,8 +132,8 @@ function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () =
             ))}
           </div>
         )}
-        <button className="btn btn-primary btn-lg" onClick={onConfirm} style={{ width: '100%' }}>
-          <Download size={17} /> Entendi, baixar agora
+        <button className="btn btn-primary" onClick={onConfirm} style={{ width: '100%' }}>
+          <Download size={16} /> Entendi, baixar agora
         </button>
         <button className="btn btn-ghost" onClick={onClose} style={{ width: '100%', marginTop: 8 }}>
           Voltar

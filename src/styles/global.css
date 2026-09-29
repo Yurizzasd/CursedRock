@@ -1424,16 +1424,16 @@ button.tag:hover {
   background: var(--surface);
   border: 1px solid var(--border-strong);
   border-radius: 14px;
-  padding: 30px;
+  padding: 24px 24px 22px;
   text-align: center;
   box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.9);
 }
 
 .modal-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 16px;
-  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 12px;
+  border-radius: 13px;
   background: #170b0b;
   border: 1px solid var(--red);
   display: grid;
@@ -1442,8 +1442,13 @@ button.tag:hover {
 }
 
 .modal-icon svg {
-  width: 26px;
-  height: 26px;
+  width: 22px;
+  height: 22px;
+}
+
+.modal h3 {
+  font-size: 18px;
+  margin-bottom: 4px;
 }
 
 .modal-icon.spin svg {
@@ -1487,24 +1492,24 @@ button.tag:hover {
 
 .guide-steps {
   list-style: none;
-  margin: 0 0 18px;
+  margin: 0 0 14px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   counter-reset: guide;
 }
 
 .guide-steps li {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   align-items: flex-start;
-  font-size: 13.5px;
+  font-size: 13px;
   color: var(--muted);
   background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 9px;
-  padding: 10px 12px;
+  padding: 9px 11px;
 }
 
 .guide-num {
