@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Check, Download, Loader2, ShieldCheck, X } from 'lucide-react';
+import { BookOpenCheck, Check, Download, Loader2, ShieldCheck, X } from 'lucide-react';
 import type { Addon } from '../types';
 
 type Phase = 'steps' | 'ready';
@@ -72,13 +72,73 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
 }
 
 export function DownloadButton({ addon, big = false }: { addon: Addon; big?: boolean }) {
-  const [open, setOpen] = useState(false);
+  const [stage, setStage] = useState<'idle' | 'guide' | 'download'>('idle');
   return (
     <>
-      <button className={`btn btn-primary${big ? ' btn-lg' : ''}`} onClick={() => setOpen(true)}>
+      <button className={`btn btn-primary${big ? ' btn-lg' : ''}`} onClick={() => setStage('guide')}>
         <Download size={big ? 18 : 16} /> Download addon
       </button>
-      {open && <DownloadModal addon={addon} onClose={() => setOpen(false)} />}
+      {stage === 'guide' && (
+        <GuideModal addon={addon} onClose={() => setStage('idle')} onConfirm={() => setStage('download')} />
+      )}
+      {stage === 'download' && <DownloadModal addon={addon} onClose={() => setStage('idle')} />}
     </>
+  );
+}
+
+function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () => void; onConfirm: () => void }) {
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  const steps = [
+    'Baixe o arquivo (.mcaddon / .mcpack) pelo botão de download',
+    'Abra o arquivo — o Minecraft importa o pacote sozinho',
+    'No seu mundo, ative o pacote em Comportamento e em Recursos',
+    'Ligue as alternâncias experimentais (Beta APIs) nas configurações do mundo',
+    'Entre no mundo e confirme que o conteúdo apareceu',
+  ];
+
+  return (
+    <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={`Como instalar ${addon.name}`}>
+      <div className="modal modal-guide" onClick={(e) => e.stopPropagation()}>
+        <button className="lightbox-close" onClick={onClose} aria-label="Fechar" style={{ position: 'absolute' }}>
+          <X size={18} />
+        </button>
+        <div className="modal-icon">
+          <BookOpenCheck />
+        </div>
+        <h3>Como instalar</h3>
+        <p>
+          {addon.name} v{addon.version} • Minecraft {addon.minecraft_versions.join(', ')}
+        </p>
+        <ol className="guide-steps">
+          {steps.map((s, i) => (
+            <li key={i}>
+              <span className="guide-num">{i + 1}</span> {s}
+            </li>
+          ))}
+        </ol>
+        {addon.requirements && addon.requirements.length > 0 && (
+          <div className="tag-list" style={{ justifyContent: 'center', marginBottom: 18 }}>
+            {addon.requirements.map((r) => (
+              <span key={r} className="tag">
+                {r}
+              </span>
+            ))}
+          </div>
+        )}
+        <button className="btn btn-primary btn-lg" onClick={onConfirm} style={{ width: '100%' }}>
+          <Download size={17} /> Entendi, baixar agora
+        </button>
+        <button className="btn btn-ghost" onClick={onClose} style={{ width: '100%', marginTop: 8 }}>
+          Voltar
+        </button>
+      </div>
+    </div>
   );
 }
