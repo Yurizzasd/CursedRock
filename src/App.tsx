@@ -52,7 +52,7 @@ function RouteTransitions() {
 }
 
 function LavaVeil() {
-  const cols = Array.from({ length: 26 }, (_, i) => ({
+  const cols = Array.from({ length: 34 }, (_, i) => ({
     delay: ((i * 37) % 10) / 20,
     dur: 0.34 + ((i * 53) % 20) / 100,
   }));

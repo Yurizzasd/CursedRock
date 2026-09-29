@@ -3267,15 +3267,15 @@ select:focus-visible {
   transform-origin: bottom;
   background: linear-gradient(
     to top,
-    #5c0d00 0%,
-    #e63c00 32%,
-    #ff9100 58%,
-    #ffe23b 80%,
-    rgba(255, 226, 59, 0) 100%
+    #000000 0%,
+    #5c0916 30%,
+    #d40f28 58%,
+    #ff2e4d 80%,
+    #ffffff 100%
   );
-  border-radius: 50% 50% 0 0 / 14% 14% 0 0;
-  filter: blur(6px);
-  opacity: 0.92;
+  border-radius: 50% 50% 0 0 / 8% 8% 0 0;
+  filter: blur(3px);
+  opacity: 0.95;
   animation: fireflick 0.4s ease-in-out infinite alternate;
 }
 
@@ -3301,8 +3301,8 @@ select:focus-visible {
   position: absolute;
   bottom: -14px;
   border-radius: 50%;
-  background: radial-gradient(circle, #ffe23b 0%, #ff9100 45%, rgba(230, 60, 0, 0) 72%);
-  filter: blur(1.5px);
+  background: radial-gradient(circle, #ffffff 0%, #ff2e4d 45%, rgba(92, 9, 22, 0) 72%);
+  filter: blur(1px);
   animation-name: lavarise;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
