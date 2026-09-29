@@ -327,5 +327,97 @@
     "updatedAt": "2026-05-23",
     "downloads": 0,
     "longDescription": "Mantenha seu inventário ao morrer: nada de voltar correndo para recuperar itens."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/buckets-add-on/buckets-add-on-1.jpg"
+    ],
+    "id": "buckets-add-on",
+    "name": "Buckets+",
+    "author": "melonbp",
+    "authorDisplay": "MelonBP",
+    "description": "Baldes para tudo: colete novos líquidos, mobs e recursos com dezenas de baldes inéditos.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/buckets-add-on/buckets-add-on-1.jpg",
+    "download_url": "PENDENTE",
+    "tags": [
+      "Utility",
+      "Buckets",
+      "Items",
+      "Survival"
+    ],
+    "createdAt": "2026-05-19",
+    "updatedAt": "2026-05-19",
+    "downloads": 0,
+    "longDescription": "Baldes para tudo: colete novos líquidos, mobs e recursos com dezenas de baldes inéditos."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/xp-booster-achievements-friendly/xp-booster-achievements-friendly-1.png"
+    ],
+    "id": "xp-booster-achievements-friendly",
+    "name": "XP BOOSTER [ Achievements Friendly ]",
+    "author": "unknown",
+    "authorDisplay": "Bedrock Studio 1",
+    "description": "This add-on boosts XP drops from monsters and XP bottles, and also randomizes them.",
+    "category": "survival",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/xp-booster-achievements-friendly/xp-booster-achievements-friendly-1.png",
+    "download_url": "PENDENTE",
+    "tags": [
+      "Performance",
+      "Data Packs",
+      "Roleplay",
+      "Survival",
+      "Mobs"
+    ],
+    "createdAt": "2026-07-06",
+    "updatedAt": "2026-07-06",
+    "downloads": 0,
+    "longDescription": "This add-on boosts XP drops from monsters and XP bottles, and also randomizes them."
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/verity/shot-4.png",
+      "/images/addons/verity/shot-1.png",
+      "/images/addons/verity/shot-2.png",
+      "/images/addons/verity/shot-3.png"
+    ],
+    "id": "verity",
+    "name": "Verity",
+    "author": "pntmc",
+    "authorDisplay": "PnTMC",
+    "description": "Terror psicológico no Bedrock: entidades, eventos e uma atmosfera que pune quem explora sozinho.",
+    "longDescription": "Verity, de PnTMC (inspirado no Verity de ThatMob), transforma o survival em horror: presenças que observam, sons que vêm do escuro e eventos que escalam conforme você avança. Versão 4.0.0 com Behavior + Resource inclusos. Instalação direta pelo arquivo .mcaddon. Por ser pacote de comportamento, ative as alternâncias experimentais no mundo antes de entrar. Conquistas ficam desativadas no mundo com o pacote ativo e mundos antigos pedem backup.",
+    "category": "horror",
+    "version": "4.0.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/verity/shot-4.png",
+    "download_url": "https://1024terabox.com/s/1qne1eBfGFdhrpsLmCJ1-mw",
+    "fileSize": "36.8 MB",
+    "tags": [
+      "Horror",
+      "Entity",
+      "Survival"
+    ],
+    "requirements": [
+      "Minecraft 1.21+",
+      "Ativar recursos experimentais"
+    ],
+    "downloads": 0,
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29"
   }
 ]

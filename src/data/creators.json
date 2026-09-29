@@ -52,5 +52,14 @@
     "joinedAt": "2026-09-25",
     "verified": false,
     "socials": {}
+  },
+  {
+    "id": "pntmc",
+    "name": "PnTMC",
+    "avatarHue": 280,
+    "bio": "Addons de terror e sobrevivência para Bedrock — criador do Verity.",
+    "joinedAt": "2026-09-26",
+    "verified": false,
+    "socials": {}
   }
 ]
