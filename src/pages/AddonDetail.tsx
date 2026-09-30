@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, useParams } from 'react-router-dom';
 import {
   BadgeCheck, Calendar, Check, ChevronLeft, ChevronRight, Cpu, Download, FileDown, Gamepad2, Info, Layers, Play, Star, Tag, User, X,
@@ -43,7 +44,7 @@ function CreditModal({ addonName, creatorName, channelUrl }: { addonName: string
     plin();
   }, []);
   if (!open) return null;
-  return (
+  return createPortal(
     <div className="modal-backdrop" role="dialog" aria-modal="true" aria-label="Aviso de crédito">
       <div className="modal credit-pop">
         <div className="modal-icon">
@@ -66,7 +67,8 @@ function CreditModal({ addonName, creatorName, channelUrl }: { addonName: string
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 

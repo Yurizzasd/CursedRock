@@ -33,7 +33,7 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
 
   const progress = phase === 'ready' ? 100 : [18, 55, 88][step];
 
-  return (
+  return createPortal(
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={`Download de ${addon.name}`}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
         <button className="lightbox-close" onClick={onClose} aria-label="Fechar" style={{ position: 'absolute' }}>
@@ -75,7 +75,8 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
           </button>
         )}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
@@ -114,7 +115,7 @@ function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () =
     'Entre no mundo e confirme que o conteúdo apareceu',
   ];
 
-  return (
+  return createPortal(
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={`Como instalar ${addon.name}`}>
       <div className="modal modal-guide" onClick={(e) => e.stopPropagation()}>
         <button className="lightbox-close" onClick={onClose} aria-label="Fechar" style={{ position: 'absolute' }}>
@@ -166,6 +167,7 @@ function GuideModal({ addon, onClose, onConfirm }: { addon: Addon; onClose: () =
           </>
         )}
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
