@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { BookOpenCheck, Check, Download, Loader2, ShieldCheck, X } from 'lucide-react';
 import type { Addon } from '../types';
 
