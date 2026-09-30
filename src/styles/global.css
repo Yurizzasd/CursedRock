@@ -3138,6 +3138,10 @@ select:focus-visible {
     font-size: 12.5px;
   }
 
+  .showcase-stamp {
+    display: none;
+  }
+
   /* modal e painéis com menos padding */
   .modal {
     padding: 22px 18px;
