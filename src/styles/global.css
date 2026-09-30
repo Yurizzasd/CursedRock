@@ -3907,3 +3907,101 @@ body.site-entered .hero-grid > div:nth-child(2) {
   box-shadow: 0 0 14px rgba(255, 46, 77, 0.8);
 }
 
+/* ═══════════════════════════════════════════════════════════════════
+   v10 — mobile estilo app-store (fileiras compactas)
+   ═══════════════════════════════════════════════════════════════════ */
+@media (max-width: 760px) {
+  .addon-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* card vira fileira: ícone quadrado + textos */
+  .card {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .card-thumb {
+    width: 74px;
+    height: 74px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .card-thumb::after {
+    display: none;
+  }
+
+  .card-flags {
+    display: none;
+  }
+
+  .card-body {
+    padding: 0;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .card-cat {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 14.5px;
+  }
+
+  .card-by {
+    font-size: 11.5px;
+  }
+
+  .card-desc {
+    display: none;
+  }
+
+  .card-foot {
+    border-top: 0;
+    padding-top: 2px;
+    font-size: 11px;
+  }
+
+  /* lista também vira fileira (sem banner full-width) */
+  .addon-row {
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 10px;
+    gap: 12px;
+  }
+
+  .addon-row > a:first-child {
+    width: 74px;
+    flex-shrink: 0;
+  }
+
+  .addon-row img {
+    width: 74px;
+    height: 74px;
+    aspect-ratio: 1 / 1;
+  }
+
+  .row-main h3 {
+    font-size: 14.5px;
+  }
+
+  .row-desc {
+    display: none;
+  }
+
+  .row-side {
+    flex-direction: column;
+    align-items: flex-end;
+    width: auto;
+    justify-content: center;
+    margin-left: auto;
+    gap: 4px;
+  }
+}
+
