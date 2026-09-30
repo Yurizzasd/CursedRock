@@ -1527,10 +1527,13 @@ button.tag:hover {
 
 .guide-img {
   width: 100%;
+  max-width: 100%;
+  height: auto;
   border-radius: 9px;
   border: 1px solid var(--border-strong);
   margin-bottom: 16px;
   display: block;
+  object-fit: contain;
 }
 
 .credit-pop {
