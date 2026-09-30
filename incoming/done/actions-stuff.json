@@ -1,0 +1,17 @@
+{
+  "id": "actions-stuff",
+  "name": "Actions & Stuff",
+  "author": "unknown",
+  "description": "Animações refeitas: andar, correr, nadar, voar e interagir com vida nova no Bedrock.",
+  "longDescription": "Actions & Stuff substitui as animações do jogador por versões fluidas e expressivas: caminhada, corrida, nado, voo de Elytra, agachar e interações ganham movimento de verdade. Pacote de recursos (RP) — funciona em mundos e servidores sem travar conquistas. Versão 2.0 do arquivo, pacote interno 1.1.24, motor mínimo 1.21.120. Instalação direta pelo arquivo .mcpack: abra e ative nos recursos globais ou do mundo.",
+  "category": "other",
+  "version": "2.0",
+  "minecraft_versions": ["1.21.120"],
+  "thumbnail": "/images/addons/actions-stuff/cover.jpg",
+  "screenshots": ["/images/addons/actions-stuff/cover.jpg"],
+  "download_url": "https://1024terabox.com/s/1dKwK_zKYkO2nUar2KoZQTA",
+  "fileSize": "20.2 MB",
+  "tags": ["Animation", "Player", "Visual", "RP"],
+  "featured": false,
+  "requirements": ["Minecraft 1.21.120+"]
+}
