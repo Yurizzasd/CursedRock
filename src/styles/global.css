@@ -1991,15 +1991,18 @@ button.tag:hover {
   }
   .nav a {
     font-size: 13px;
-    padding: 8px 10px;
+    padding: 8px 7px;
   }
   .nav a.active::after {
-    left: 10px;
-    right: 10px;
+    left: 7px;
+    right: 7px;
   }
   .hamburger {
     display: grid;
     margin-left: 2px;
+  }
+  .logo {
+    gap: 8px;
   }
   .addon-grid,
   .addon-grid.cols-3 {
@@ -3128,6 +3131,11 @@ select:focus-visible {
   /* vitrine: ações sempre ao alcance no touch */
   .showcase-hover .btn {
     min-height: 44px;
+  }
+
+  .showcase-hover .btn:not(.btn-lg) {
+    padding: 8px 12px;
+    font-size: 12.5px;
   }
 
   /* modal e painéis com menos padding */
