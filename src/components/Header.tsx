@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
-import { Menu, Search, X } from 'lucide-react';
+import { Search, X } from 'lucide-react';
 import { LogoMark } from './Logo';
 import { useScrolled } from '../hooks/hooks';
 import { getUpdatedAddons } from '../data/repository';
 import { timeAgo } from '../utils/format';
 
-export function SearchBar({ compact = false }: { compact?: boolean }) {
+export function SearchBar({ compact = false, onDone }: { compact?: boolean; onDone?: () => void }) {
   const navigate = useNavigate();
   const [value, setValue] = useState('');
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     navigate(`/addons?q=${encodeURIComponent(value.trim())}`);
+    onDone?.();
   };
 
   if (compact) {
@@ -107,24 +108,16 @@ export function Header() {
           <button
             className="hamburger"
             onClick={() => setOpen((o) => !o)}
-            aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+            aria-label={open ? 'Fechar busca' : 'Buscar'}
             aria-expanded={open}
           >
-            {open ? <X size={20} /> : <Menu size={20} />}
+            {open ? <X size={20} /> : <Search size={20} />}
           </button>
         </div>
         <NewsTicker />
       </header>
       <div className={`mobile-menu${open ? ' open' : ''}`}>
-        <div style={{ marginBottom: 10 }}>
-          <SearchBar />
-        </div>
-        <NavLink to="/" end onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
-          Home
-        </NavLink>
-        <NavLink to="/addons" onClick={() => setOpen(false)} className={({ isActive }) => (isActive ? 'active' : '')}>
-          Addons
-        </NavLink>
+        <SearchBar compact onDone={() => setOpen(false)} />
       </div>
     </>
   );

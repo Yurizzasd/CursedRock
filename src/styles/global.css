@@ -1980,12 +1980,26 @@ button.tag:hover {
 }
 
 @media (max-width: 760px) {
-  .nav,
   .header-search {
     display: none;
-  }  .hamburger {
-    display: grid;
+  }
+  /* nav igual ao PC, compacta */
+  .nav {
+    display: flex;
     margin-left: auto;
+    gap: 0;
+  }
+  .nav a {
+    font-size: 13px;
+    padding: 8px 10px;
+  }
+  .nav a.active::after {
+    left: 10px;
+    right: 10px;
+  }
+  .hamburger {
+    display: grid;
+    margin-left: 2px;
   }
   .addon-grid,
   .addon-grid.cols-3 {
@@ -3333,7 +3347,40 @@ select:focus-visible {
   }
 
   .mobile-menu {
-    padding: 8px 14px 12px;
+    padding: 10px 14px 14px;
+  }
+
+  .mobile-menu .searchbar input {
+    width: 100%;
+  }
+
+  /* ── mobile: animações baratas (sem blur, sem clip-path) ── */
+  .intro {
+    clip-path: none !important;
+    transition: opacity 0.35s ease;
+  }
+
+  .intro.open {
+    opacity: 0;
+  }
+
+  .lava-ember,
+  .lava-glow,
+  .fire-ember {
+    display: none;
+  }
+
+  .lava-waves.front {
+    filter: none;
+  }
+
+  .fire-col {
+    filter: none;
+    border-radius: 0;
+  }
+
+  .fire-grid {
+    background-size: 10px 10px;
   }
 
   .mobile-menu a {
