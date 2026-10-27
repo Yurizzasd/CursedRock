@@ -744,5 +744,211 @@
     "download_url": "https://1024terabox.com/s/1PkIYorJnGHCNPx5rfG5UfQ",
     "fileSize": "0.4 MB",
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/anime-jutsu/anime-jutsu-1.webp",
+      "/images/addons/anime-jutsu/anime-jutsu-2.webp",
+      "/images/addons/anime-jutsu/anime-jutsu-3.webp"
+    ],
+    "id": "anime-jutsu",
+    "name": "Anime Jutsu Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Ninja no Bedrock: jutsus secretos, novas armas e habilidades de batalha estilo anime.",
+    "longDescription": "O Anime Jutsu Mod coloca você na pele de um ninja com técnicas secretas: aprenda jutsus, ataque com novas armas e mostre todo o seu poder em batalha — estilo anime para o survival e o PvP do Minecraft PE. Behavior + Resource num pacote só (9,4 MB), versão 1.0.4, exige Minecraft 1.21.0+; ative as experimentações do mundo.",
+    "category": "anime",
+    "version": "1.0.4",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/anime-jutsu/anime-jutsu-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-12-08",
+    "updatedAt": "2024-12-08",
+    "sourceUrl": "https://mcpedl.org/anime-jutsu-mod-minecraft-pe/",
+    "sourceId": "anime-jutsu-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1RptvE2i293Y6xdUAtNv6iQ",
+    "fileSize": "9.4 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/farming/farming-1.webp",
+      "/images/addons/farming/farming-2.webp",
+      "/images/addons/farming/farming-3.webp"
+    ],
+    "id": "farming",
+    "name": "Farming Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Agricultura pra valer: máquinas de campo, cultivos avançados e um sistema completo de fazenda.",
+    "longDescription": "O Farming Mod expande a agricultura do Minecraft Bedrock: cultivos avançados, máquinas de lavoura e uma cadeia completa de fazenda automática — plantio, colheita e processamento no seu mundo. O arquivo .mcaddon vem com Behavior e Resource embalados (packs aninhados), considerados na validação do pacote; compatível desde o Minecraft 1.14.0 (versão 1.0.0). As variantes da fonte seguem com o link oficial da página.",
+    "category": "farming",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.14.0"
+    ],
+    "thumbnail": "/images/addons/farming/farming-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-04-19",
+    "updatedAt": "2026-04-19",
+    "sourceUrl": "https://mcpedl.org/farming-mod-minecraft-pe/",
+    "sourceId": "farming-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1VtELWLCOt6Ata8crbw3zQg",
+    "fileSize": "9.8 MB",
+    "files": [
+      {
+        "label": "Ultra Farming",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/17-11-2022/ultra-farming-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Farming 3D",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/19-04-2026/farming-3d-mod.mcpack",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/gundam/gundam-1.webp",
+      "/images/addons/gundam/gundam-2.webp",
+      "/images/addons/gundam/gundam-3.webp"
+    ],
+    "id": "gundam",
+    "name": "Gundam Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Mobile Suits pilotáveis do universo Gundam: voo a jato e armas de mão trocáveis em combate.",
+    "longDescription": "O Gundam Mod transforma Mobile Suits do universo Gundam em máquinas completamente pilotáveis: entre no cockpit, voe com propulsores a jato e troque de arma de mão conforme a batalha pedir — mecha completo pra exploração aérea e combate demorado no Bedrock. 9,4 MB, versão 2.0 Beta (0.0.1), Minecraft 1.21.94+.",
+    "category": "technology",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.21.94"
+    ],
+    "thumbnail": "/images/addons/gundam/gundam-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-03",
+    "updatedAt": "2026-08-03",
+    "sourceUrl": "https://mcpedl.org/gundam-mod-minecraft-pe/",
+    "sourceId": "gundam-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1uNQhaF6o0IqG0CHsvpU67w",
+    "fileSize": "9.4 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/horror-creatures/horror-creatures-1.webp",
+      "/images/addons/horror-creatures/horror-creatures-2.webp",
+      "/images/addons/horror-creatures/horror-creatures-3.webp"
+    ],
+    "id": "horror-creatures",
+    "name": "Horror Creatures Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Versões assustadoras dos mobs clássicos, com guia incluso pra montar seu mundo de terror.",
+    "longDescription": "O Horror Creatures Mod não junta monstros de novo: ele reescreve mobs conhecidos em versões aterrorizantes e inclui um guia pra transformar o mundo num survival de horror completo. Trilha noturna tensa, atmosfera de asilo abandonado e criaturas que você evita quando o sol se esconde. 12,9 MB com Behavior + Resource, versão 1.0.24, Minecraft 1.21.120+.",
+    "category": "horror",
+    "version": "1.0.24",
+    "minecraft_versions": [
+      "1.21.120"
+    ],
+    "thumbnail": "/images/addons/horror-creatures/horror-creatures-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-11-01",
+    "updatedAt": "2025-11-01",
+    "sourceUrl": "https://mcpedl.org/horror-creatures-mod-minecraft-pe/",
+    "sourceId": "horror-creatures-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/16zlFgoeDseJKSsH3PQxZoQ",
+    "fileSize": "12.9 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/java-combat-evolved/java-combat-evolved-1.webp",
+      "/images/addons/java-combat-evolved/java-combat-evolved-2.webp",
+      "/images/addons/java-combat-evolved/java-combat-evolved-3.webp"
+    ],
+    "id": "java-combat-evolved",
+    "name": "Java Combat Evolved Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Combate estilo Java no Bedrock: cooldowns, golpes varredos, críticos, combos e escudo de machado.",
+    "longDescription": "O Java Combat Evolved traz para o Minecraft Bedrock o esquema de combate da edição Java: cooldown de golpe, varredura (sweep), acertos críticos, combos, stun com escudo de machado, estatísticas de luta e regras de combate configuráveis. Feito pra quem sente falta do feel do Java no PvP e no survival. Versão 2.1.0, Minecraft 1.21.0+, arquivo .mcpack pequeno e leve.",
+    "category": "pvp",
+    "version": "2.1.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/java-combat-evolved/java-combat-evolved-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-10",
+    "updatedAt": "2026-09-10",
+    "sourceUrl": "https://mcpedl.org/java-combat-evolved-mod-minecraft-pe/",
+    "sourceId": "java-combat-evolved-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1RCg8K8FrumuFwdoKzxEWhw",
+    "fileSize": "0.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/myth-and-dragons/myth-and-dragons-1.webp",
+      "/images/addons/myth-and-dragons/myth-and-dragons-2.webp",
+      "/images/addons/myth-and-dragons/myth-and-dragons-3.webp"
+    ],
+    "id": "myth-and-dragons",
+    "name": "Myth and Dragons Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Criaturas míticas pra domar e criar: dragões e amigos lendários que você faz crescer no seu mundo.",
+    "longDescription": "O Myth and Dragons Mod traz criaturas míticas ao Minecraft Bedrock: faça amizade, dome e veja crescer dragões e monstros lendários — criaturas únicas feitas pra quem curte aventura épica no survival. Pacote com Behavior + Resource (6,5 MB), versão 1.0.14, exige Minecraft 1.20.60+; instale o .mcaddon e ative as experimentações do mundo.",
+    "category": "mobs",
+    "version": "1.0.14",
+    "minecraft_versions": [
+      "1.20.60"
+    ],
+    "thumbnail": "/images/addons/myth-and-dragons/myth-and-dragons-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-05-07",
+    "updatedAt": "2025-05-07",
+    "sourceUrl": "https://mcpedl.org/myth-and-dragons-mod-minecraft-pe/",
+    "sourceId": "myth-and-dragons-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1ojJDCrcM4jf4orvG696ytQ",
+    "fileSize": "6.5 MB",
+    "downloads": 0
   }
 ]

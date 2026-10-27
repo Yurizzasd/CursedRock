@@ -1,0 +1,30 @@
+{
+  "id": "java-combat-evolved",
+  "name": "Java Combat Evolved Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Combate estilo Java no Bedrock: cooldowns, golpes varredos, críticos, combos e escudo de machado.",
+  "longDescription": "O Java Combat Evolved traz para o Minecraft Bedrock o esquema de combate da edição Java: cooldown de golpe, varredura (sweep), acertos críticos, combos, stun com escudo de machado, estatísticas de luta e regras de combate configuráveis. Feito pra quem sente falta do feel do Java no PvP e no survival. Versão 2.1.0, Minecraft 1.21.0+, arquivo .mcpack pequeno e leve.",
+  "category": "pvp",
+  "version": "2.1.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/java-combat-evolved/java-combat-evolved-1.webp",
+  "screenshots": [
+    "/images/addons/java-combat-evolved/java-combat-evolved-1.webp",
+    "/images/addons/java-combat-evolved/java-combat-evolved-2.webp",
+    "/images/addons/java-combat-evolved/java-combat-evolved-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-09-10",
+  "updatedAt": "2026-09-10",
+  "sourceUrl": "https://mcpedl.org/java-combat-evolved-mod-minecraft-pe/",
+  "sourceId": "java-combat-evolved-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1RCg8K8FrumuFwdoKzxEWhw",
+  "fileSize": "0.0 MB"
+}

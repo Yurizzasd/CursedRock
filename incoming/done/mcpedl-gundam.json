@@ -1,0 +1,30 @@
+{
+  "id": "gundam",
+  "name": "Gundam Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Mobile Suits pilotáveis do universo Gundam: voo a jato e armas de mão trocáveis em combate.",
+  "longDescription": "O Gundam Mod transforma Mobile Suits do universo Gundam em máquinas completamente pilotáveis: entre no cockpit, voe com propulsores a jato e troque de arma de mão conforme a batalha pedir — mecha completo pra exploração aérea e combate demorado no Bedrock. 9,4 MB, versão 2.0 Beta (0.0.1), Minecraft 1.21.94+.",
+  "category": "technology",
+  "version": "0.0.1",
+  "minecraft_versions": [
+    "1.21.94"
+  ],
+  "thumbnail": "/images/addons/gundam/gundam-1.webp",
+  "screenshots": [
+    "/images/addons/gundam/gundam-1.webp",
+    "/images/addons/gundam/gundam-2.webp",
+    "/images/addons/gundam/gundam-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-08-03",
+  "updatedAt": "2026-08-03",
+  "sourceUrl": "https://mcpedl.org/gundam-mod-minecraft-pe/",
+  "sourceId": "gundam-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1uNQhaF6o0IqG0CHsvpU67w",
+  "fileSize": "9.4 MB"
+}

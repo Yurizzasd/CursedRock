@@ -166,4 +166,3 @@ export declare class McpedlAPI {
 }
 export default McpedlAPI;
 export declare const createMcpedl: (config?: McpedlConfig) => McpedlAPI;
-//# sourceMappingURL=index.d.ts.map

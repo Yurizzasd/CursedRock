@@ -52,13 +52,20 @@ const cheerio = __importStar(require("cheerio"));
 const p_retry_1 = __importDefault(require("p-retry"));
 const bottleneck_1 = __importDefault(require("bottleneck"));
 class McpedlError extends Error {
+    code;
+    status;
+    originalError;
     constructor(message, code, status, originalError) {
         super(message);
         this.name = 'McpedlError';
         this.code = code;
         this.status = status;
         this.originalError = originalError;
-        Error.captureStackTrace(this, McpedlError);
+        // 2026 fix (lote 2): captureStackTrace só existe no runtime V8/Node — sem
+        // @types/node no ambiente de build o TS reclama; guard por cast.
+        const err = Error;
+        if (typeof err.captureStackTrace === 'function')
+            err.captureStackTrace(this, McpedlError);
     }
 }
 exports.McpedlError = McpedlError;
@@ -66,6 +73,9 @@ exports.McpedlError = McpedlError;
  * Main MCPEDL API class
  */
 class McpedlAPI {
+    client;
+    limiter;
+    config;
     constructor(config = {}) {
         this.config = {
             baseURL: config.baseURL || 'https://mcpedl.org',
@@ -348,8 +358,15 @@ class McpedlAPI {
             const data = await this.makeRequest(() => this.client.post('/show_file.php', new URLSearchParams({ file_id: String(id) }).toString(), { headers: { 'Content-Type': 'application/x-www-form-urlencoded' } }));
             const html = typeof data === 'string' ? data : String(data);
             const $ = cheerio.load(html);
-            const url = $('a.button:not(#download-link)').attr('href') ||
-                html.match(/https?:\/\/[^"'\s<>]+\.(?:mcaddon|mcpack|zip|rar)[^"'\s<>]*/i)?.[0];
+            // 2026 fix (lote 2): alguns uploads têm espaço no nome do arquivo
+            // (ex. "myth -and-dragons.mcaddon"). Regex antiga parava em \s; esta versão
+            // tolera até 3 espaços no nome e é LINEAR (sem quantificadores aninhados —
+            // a forma (A+B*)+? cravou hang síncrono em HTML grande).
+            const mUpload = html.match(/https?:\/\/[^\s"'<>]+\/uploads_files\/[^\s"'<>]*(?:[ \t][^\s"'<>]*){0,3}\.(?:mcaddon|mcpack|zip|rar)/i);
+            const url = $('a[href*="uploads_files"]').attr('href') ||
+                $('a.button:not(#download-link)').attr('href') ||
+                (mUpload?.[0] ?? '')?.replace(/&amp;/g, '&') ||
+                '';
             if (!url || url.includes('show_file')) {
                 throw new McpedlError('Download URL not found', 'DOWNLOAD_URL_NOT_FOUND');
             }
@@ -443,4 +460,3 @@ const createMcpedl = (config) => {
     return new McpedlAPI(config);
 };
 exports.createMcpedl = createMcpedl;
-//# sourceMappingURL=index.js.map

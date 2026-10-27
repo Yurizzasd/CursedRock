@@ -1,0 +1,30 @@
+{
+  "id": "anime-jutsu",
+  "name": "Anime Jutsu Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Ninja no Bedrock: jutsus secretos, novas armas e habilidades de batalha estilo anime.",
+  "longDescription": "O Anime Jutsu Mod coloca você na pele de um ninja com técnicas secretas: aprenda jutsus, ataque com novas armas e mostre todo o seu poder em batalha — estilo anime para o survival e o PvP do Minecraft PE. Behavior + Resource num pacote só (9,4 MB), versão 1.0.4, exige Minecraft 1.21.0+; ative as experimentações do mundo.",
+  "category": "anime",
+  "version": "1.0.4",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/anime-jutsu/anime-jutsu-1.webp",
+  "screenshots": [
+    "/images/addons/anime-jutsu/anime-jutsu-1.webp",
+    "/images/addons/anime-jutsu/anime-jutsu-2.webp",
+    "/images/addons/anime-jutsu/anime-jutsu-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2024-12-08",
+  "updatedAt": "2024-12-08",
+  "sourceUrl": "https://mcpedl.org/anime-jutsu-mod-minecraft-pe/",
+  "sourceId": "anime-jutsu-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1RptvE2i293Y6xdUAtNv6iQ",
+  "fileSize": "9.4 MB"
+}

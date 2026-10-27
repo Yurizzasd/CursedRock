@@ -10,6 +10,16 @@ Fonte upstream MIT: https://github.com/terastudio-org/mcpedl (commit 2026-10, ta
 3. O parser de busca/listas procurava `h2 a` (markup antigo); o site agora usa
    `.entry-title a` — corrigido para `search()` e `mclatest()`.
 4. O parser da tabela de downloads não lia o `input[name="file_id"]` oculto (devolvia id 0).
+5. **Lote 2 (2026-10-27)**: alguns uploads têm ESPAÇO no nome do arquivo (ex.
+   `myth -and-dragons.mcaddon`) e a regex antiga quebrava no espaço. A extração agora
+   aceita `a[href*=uploads_files]` + regex linear tolerante a espaços (a forma anterior
+   com quantificadores aninhados causava hang síncrono em HTML grande).
+6. **Lote 2 (2026-10-27)**: `McpedlError` sem acesso direto a `Error.captureStackTrace`
+   (não existe tipado sem @types/node no ambiente de build). Build limpo com
+   `tsc src/index.ts --outDir dist --module commonjs --moduleResolution node
+   --target es2022 --lib es2022,dom --esModuleInterop --skipLibCheck --declaration`
+   e o `dist/index.js` renomeado para `index.cjs` (repo root é `"type": "module"`).
+   Lembre: apagar o `index.js` do tsc antes de mover, senão o dist velho fica em uso.
 
 ## Conteúdo
 - `src/index.ts` — fonte upstream com os 4 patches acima (marcados com comentários `2026 fix`).

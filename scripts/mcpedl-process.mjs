@@ -122,13 +122,27 @@ function zipReadEntry(buf, e) {
 function validarPacote(buf) {
   // manifest.json padrão; pack_manifest.json = alias de addons antigos (aceito pelo Bedrock)
   const entries = zipScan(buf).filter((e) => /(?:pack_)?manifest\.json$/i.test(e.name));
-  if (entries.length === 0) throw new Error('ZIP válido, mas sem manifest.json');
   const manifests = [];
   for (const e of entries) {
     try { manifests.push(JSON.parse(zipReadEntry(buf, e).toString('utf8'))); } catch { /* manifest ilegível */ }
   }
-  const header = manifests.map((m) => m?.header).find(Boolean);
-  if (!header?.uuid) throw new Error('manifest.json sem header.uuid');
+  // 2026 fix (lote 2): .mcaddon-casulo — arquivo shipa packs .mcpack ANINHADOS
+  // (ex. Farming Mod: BP_AdvancedFarming.mcpack + RP_AdvancedFarming.mcpack) sem
+  // manifest na raíz. O Bedrock importa os packs internos; aqui validamos cada um.
+  if (manifests.length === 0) {
+    for (const e of zipScan(buf).filter((n) => /\.mcpack$/i.test(n.name))) {
+      try {
+        const inner = zipReadEntry(buf, e);
+        for (const m of zipScan(inner).filter((i) => /(?:pack_)?manifest\.json$/i.test(i.name))) {
+          try { manifests.push(JSON.parse(zipReadEntry(inner, m).toString('utf8'))); } catch { /* manifest interno ilegível */ }
+        }
+      } catch { /* .mcpack interno quebrado — ignora */ }
+    }
+  }
+  const header = manifests.map((m) => m?.header).find((h) => h?.uuid);
+  if (!header) {
+    throw new Error(manifests.length ? 'manifest.json sem header.uuid' : 'ZIP válido, mas sem manifest.json');
+  }
   const isRp = manifests.some((m) => m?.modules?.[0]?.type === 'resources');
   const isBp = manifests.some((m) => m?.modules?.[0]?.type === 'data') || isRp === false;
   const ext = isBp && !isRp ? '.mcpack' : '.mcaddon';
@@ -137,7 +151,7 @@ function validarPacote(buf) {
     version: Array.isArray(header.version) ? header.version.join('.') : String(header.version ?? ''),
     minecraft: Array.isArray(header.min_engine_version) ? header.min_engine_version.join('.') : '',
     ext,
-    packs: entries.length,
+    packs: manifests.length,
   };
 }
 

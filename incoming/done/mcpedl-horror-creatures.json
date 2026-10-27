@@ -1,0 +1,30 @@
+{
+  "id": "horror-creatures",
+  "name": "Horror Creatures Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Versões assustadoras dos mobs clássicos, com guia incluso pra montar seu mundo de terror.",
+  "longDescription": "O Horror Creatures Mod não junta monstros de novo: ele reescreve mobs conhecidos em versões aterrorizantes e inclui um guia pra transformar o mundo num survival de horror completo. Trilha noturna tensa, atmosfera de asilo abandonado e criaturas que você evita quando o sol se esconde. 12,9 MB com Behavior + Resource, versão 1.0.24, Minecraft 1.21.120+.",
+  "category": "horror",
+  "version": "1.0.24",
+  "minecraft_versions": [
+    "1.21.120"
+  ],
+  "thumbnail": "/images/addons/horror-creatures/horror-creatures-1.webp",
+  "screenshots": [
+    "/images/addons/horror-creatures/horror-creatures-1.webp",
+    "/images/addons/horror-creatures/horror-creatures-2.webp",
+    "/images/addons/horror-creatures/horror-creatures-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-11-01",
+  "updatedAt": "2025-11-01",
+  "sourceUrl": "https://mcpedl.org/horror-creatures-mod-minecraft-pe/",
+  "sourceId": "horror-creatures-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/16zlFgoeDseJKSsH3PQxZoQ",
+  "fileSize": "12.9 MB"
+}

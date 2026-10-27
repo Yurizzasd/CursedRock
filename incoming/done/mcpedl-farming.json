@@ -1,0 +1,50 @@
+{
+  "id": "farming",
+  "name": "Farming Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Agricultura pra valer: máquinas de campo, cultivos avançados e um sistema completo de fazenda.",
+  "longDescription": "O Farming Mod expande a agricultura do Minecraft Bedrock: cultivos avançados, máquinas de lavoura e uma cadeia completa de fazenda automática — plantio, colheita e processamento no seu mundo. O arquivo .mcaddon vem com Behavior e Resource embalados (packs aninhados), considerados na validação do pacote; compatível desde o Minecraft 1.14.0 (versão 1.0.0). As variantes da fonte seguem com o link oficial da página.",
+  "category": "farming",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.14.0"
+  ],
+  "thumbnail": "/images/addons/farming/farming-1.webp",
+  "screenshots": [
+    "/images/addons/farming/farming-1.webp",
+    "/images/addons/farming/farming-2.webp",
+    "/images/addons/farming/farming-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-04-19",
+  "updatedAt": "2026-04-19",
+  "sourceUrl": "https://mcpedl.org/farming-mod-minecraft-pe/",
+  "sourceId": "farming-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1VtELWLCOt6Ata8crbw3zQg",
+  "fileSize": "9.8 MB",
+  "files": [
+    {
+      "label": "Ultra Farming",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/17-11-2022/ultra-farming-mod.mcpack",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Farming 3D",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/19-04-2026/farming-3d-mod.mcpack",
+      "downloadProvider": "original"
+    }
+  ]
+}

@@ -122,8 +122,11 @@ export class McpedlError extends Error implements McpedlError {
     this.code = code;
     this.status = status;
     this.originalError = originalError;
-    
-    Error.captureStackTrace(this, McpedlError);
+
+    // 2026 fix (lote 2): captureStackTrace só existe no runtime V8/Node — sem
+    // @types/node no ambiente de build o TS reclama; guard por cast.
+    const err = Error as unknown as { captureStackTrace?: (o: object, c?: object) => void };
+    if (typeof err.captureStackTrace === 'function') err.captureStackTrace(this, McpedlError);
   }
 }
 
@@ -486,9 +489,18 @@ export class McpedlAPI {
 
       const html = typeof data === 'string' ? data : String(data);
       const $ = cheerio.load(html);
+      // 2026 fix (lote 2): alguns uploads têm espaço no nome do arquivo
+      // (ex. "myth -and-dragons.mcaddon"). Regex antiga parava em \s; esta versão
+      // tolera até 3 espaços no nome e é LINEAR (sem quantificadores aninhados —
+      // a forma (A+B*)+? cravou hang síncrono em HTML grande).
+      const mUpload = html.match(
+        /https?:\/\/[^\s"'<>]+\/uploads_files\/[^\s"'<>]*(?:[ \t][^\s"'<>]*){0,3}\.(?:mcaddon|mcpack|zip|rar)/i
+      );
       const url =
+        $('a[href*="uploads_files"]').attr('href') ||
         $('a.button:not(#download-link)').attr('href') ||
-        html.match(/https?:\/\/[^"'\s<>]+\.(?:mcaddon|mcpack|zip|rar)[^"'\s<>]*/i)?.[0];
+        (mUpload?.[0] ?? '')?.replace(/&amp;/g, '&') ||
+        '';
 
       if (!url || url.includes('show_file')) {
         throw new McpedlError('Download URL not found', 'DOWNLOAD_URL_NOT_FOUND');

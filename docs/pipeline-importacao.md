@@ -131,6 +131,13 @@ Ajustes no validador do worker (`mcpedl-process.mjs`) depois do 1º lote real (8
   ⇒ sem upload, ricochete pro link oficial da fonte (foi o caso do Lucky Hardcore,
   que ficou com downloadProvider `original`).
 
+**Lote 2 (2026-10-27)** acrescentou duas regras:
+- `.mcaddon`-casulo com packs `.mcpack` ANINHADOS (ex. Farming Mod, BP+RP dentro do
+  zip) agora valida olhando os manifests de cada pack interno — mantido o requisito
+  de `header.uuid` em cada um;
+- `mc.download()` tolera nome de arquivo com espaço (ex. `myth -and-dragons.mcaddon`),
+  patch documentado no PATCHES.md do vendor.
+
 ## O que está pendente por decisão/configuração EXTERNA
 
 - **Autorização de redistribuição**: ninguém aqui decide isso por você — sem

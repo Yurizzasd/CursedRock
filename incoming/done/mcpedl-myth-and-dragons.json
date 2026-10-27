@@ -1,0 +1,30 @@
+{
+  "id": "myth-and-dragons",
+  "name": "Myth and Dragons Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Criaturas míticas pra domar e criar: dragões e amigos lendários que você faz crescer no seu mundo.",
+  "longDescription": "O Myth and Dragons Mod traz criaturas míticas ao Minecraft Bedrock: faça amizade, dome e veja crescer dragões e monstros lendários — criaturas únicas feitas pra quem curte aventura épica no survival. Pacote com Behavior + Resource (6,5 MB), versão 1.0.14, exige Minecraft 1.20.60+; instale o .mcaddon e ative as experimentações do mundo.",
+  "category": "mobs",
+  "version": "1.0.14",
+  "minecraft_versions": [
+    "1.20.60"
+  ],
+  "thumbnail": "/images/addons/myth-and-dragons/myth-and-dragons-1.webp",
+  "screenshots": [
+    "/images/addons/myth-and-dragons/myth-and-dragons-1.webp",
+    "/images/addons/myth-and-dragons/myth-and-dragons-2.webp",
+    "/images/addons/myth-and-dragons/myth-and-dragons-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-05-07",
+  "updatedAt": "2025-05-07",
+  "sourceUrl": "https://mcpedl.org/myth-and-dragons-mod-minecraft-pe/",
+  "sourceId": "myth-and-dragons-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1ojJDCrcM4jf4orvG696ytQ",
+  "fileSize": "6.5 MB"
+}
