@@ -362,7 +362,7 @@ class McpedlAPI {
             // (ex. "myth -and-dragons.mcaddon"). Regex antiga parava em \s; esta versão
             // tolera até 3 espaços no nome e é LINEAR (sem quantificadores aninhados —
             // a forma (A+B*)+? cravou hang síncrono em HTML grande).
-            const mUpload = html.match(/https?:\/\/[^\s"'<>]+\/uploads_files\/[^\s"'<>]*(?:[ \t][^\s"'<>]*){0,3}\.(?:mcaddon|mcpack|zip|rar)/i);
+            const mUpload = html.match(/https?:\/\/[^\s"'<>]+\/uploads_files\/[^\s"'<>]*(?:[ \t][^\s"'<>]*){0,3}\.(?:mcaddon|mcpack|zip|rar|mctemplate)/i);
             const url = $('a[href*="uploads_files"]').attr('href') ||
                 $('a.button:not(#download-link)').attr('href') ||
                 (mUpload?.[0] ?? '')?.replace(/&amp;/g, '&') ||

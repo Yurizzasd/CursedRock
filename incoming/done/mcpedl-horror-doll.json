@@ -1,0 +1,32 @@
+{
+  "id": "horror-doll",
+  "name": "Horror Doll Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Mundo pronto de horror: o asilo abandonado da boneca, onde silêncio e observação viram tensão.",
+  "longDescription": "O Horror Doll Mod imerge você no asilo abandonado: atmosfera feita de silêncio, observação e medo — com a boneca como presença constante. O arquivo .mctemplate importa como MUNDO PRONTO no Minecraft (10,5 MB), versão 1.0.1, Minecraft 1.21.0+: não precisa ativar experimentações, basta instalar e jogar.",
+  "category": "world",
+  "version": "1.0.1",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/horror-doll/horror-doll-1.webp",
+  "screenshots": [
+    "/images/addons/horror-doll/horror-doll-1.webp",
+    "/images/addons/horror-doll/horror-doll-2.webp",
+    "/images/addons/horror-doll/horror-doll-3.webp"
+  ],
+  "tags": [
+    "Bedrock",
+    "Mundo",
+    "Horror"
+  ],
+  "featured": false,
+  "createdAt": "2026-01-04",
+  "updatedAt": "2026-01-04",
+  "sourceUrl": "https://mcpedl.org/horror-doll-mod-minecraft-pe/",
+  "sourceId": "horror-doll-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1dGtXZdIgOMvvdwi24tBiag",
+  "fileSize": "10.5 MB"
+}

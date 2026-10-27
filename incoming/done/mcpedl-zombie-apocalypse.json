@@ -1,0 +1,95 @@
+{
+  "id": "zombie-apocalypse",
+  "name": "Zombie Apocalypse Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Apocalipse zumbi no mundo: hordas de infectados agressivos, armas avançadas e sobrevivência hostil.",
+  "longDescription": "O Zombie Apocalypse Mod reseta o desafio do Minecraft PE: infectados agressivos e imprevisíveis, armas avançadas pra encará-los e um mundo hostil onde cada encontro importa — feitos pra quem acha os mobs vanilla previsíveis demais. Versão 1.0.0, compatível desde o Minecraft 1.13.0; variantes da fonte seguem com o link oficial.",
+  "category": "survival",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.13.0"
+  ],
+  "thumbnail": "/images/addons/zombie-apocalypse/zombie-apocalypse-1.webp",
+  "screenshots": [
+    "/images/addons/zombie-apocalypse/zombie-apocalypse-1.webp",
+    "/images/addons/zombie-apocalypse/zombie-apocalypse-2.webp",
+    "/images/addons/zombie-apocalypse/zombie-apocalypse-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-04-02",
+  "updatedAt": "2026-04-02",
+  "sourceUrl": "https://mcpedl.org/zombie-apocalypse-mod-minecraft-pe/",
+  "sourceId": "zombie-apocalypse-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1FzosGWRnBh1rs5ZR-DJnSA",
+  "fileSize": "0.3 MB",
+  "files": [
+    {
+      "label": "Fighting zombies",
+      "version": "1.17.0",
+      "minecraft_versions": [
+        "1.17.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/fighting-zombies-mod.mcpack",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Apocalypse",
+      "version": "1.18.0",
+      "minecraft_versions": [
+        "1.18.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/apocalypse.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Raboys Apocalypse",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/07-07-2023/Raboys-Apocalypse-mod.mcpack",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Cordyceps",
+      "version": "1.20.30",
+      "minecraft_versions": [
+        "1.20.30"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/22-02-2024/cordyceps.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "TSZA",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/17-11-2025/TSZA-mod.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Zombie Apocalypse",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/31-01-2026/zombie-apocalypse.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Winter Zombie Outbreak",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/02-05-2026/winter-zombie-outbreak.mcaddon",
+      "downloadProvider": "original"
+    }
+  ]
+}

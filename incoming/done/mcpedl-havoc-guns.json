@@ -1,0 +1,30 @@
+{
+  "id": "havoc-guns",
+  "name": "Havoc Guns Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Armas de fogo animadas com recuo real: recarga realista, mira com luneta, sons próprios e combate tático.",
+  "longDescription": "O Havoc Guns Mod adiciona um sistema de armas de fogo completo ao Minecraft Bedrock: armas animadas, recargas realistas, recuo, mira com luneta, sons personalizados e ferramentas de combate tático. Versão 4.7.0, Minecraft 1.21.0+; arquivo .mcpack leve pra quem quer firepower sem encher o mundo.",
+  "category": "weapons",
+  "version": "4.7.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/havoc-guns/havoc-guns-1.webp",
+  "screenshots": [
+    "/images/addons/havoc-guns/havoc-guns-1.webp",
+    "/images/addons/havoc-guns/havoc-guns-2.webp",
+    "/images/addons/havoc-guns/havoc-guns-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-08-04",
+  "updatedAt": "2026-08-04",
+  "sourceUrl": "https://mcpedl.org/havoc-guns-mod-minecraft-pe/",
+  "sourceId": "havoc-guns-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1Ue9MBnrtOM8NS4DDS_lFhA",
+  "fileSize": "0.0 MB"
+}

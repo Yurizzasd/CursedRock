@@ -1,0 +1,30 @@
+{
+  "id": "block-pets",
+  "name": "Block Pets Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Pets de bolso com habilidades próprias: novos amigos que te ajudam no lugar dos bichos vanilla.",
+  "longDescription": "O Block Pets Mod deixa de lado a domesticação padrão de animais: ele traz pets de bolso com habilidades exclusivas, que aprendem a te ajudar no mundo. Novos amigos feitos pra acompanhar a exploração e o combate — cada um com a sua própria utilidade. Versão 0.8 Beta (0.0.1), Minecraft 1.21.0+, arquivo leve (0,4 MB).",
+  "category": "mobs",
+  "version": "0.0.1",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/block-pets/block-pets-1.webp",
+  "screenshots": [
+    "/images/addons/block-pets/block-pets-1.webp",
+    "/images/addons/block-pets/block-pets-2.webp",
+    "/images/addons/block-pets/block-pets-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-08-25",
+  "updatedAt": "2025-08-25",
+  "sourceUrl": "https://mcpedl.org/block-pets-mod-minecraft-pe/",
+  "sourceId": "block-pets-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1zrd92-XTyWG7StoJYAZMEg",
+  "fileSize": "0.4 MB"
+}

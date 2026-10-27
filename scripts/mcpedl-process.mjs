@@ -118,7 +118,7 @@ function zipReadEntry(buf, e) {
   const raw = buf.subarray(dataStart, dataStart + e.csize);
   return e.method === 0 ? raw : inflateRawSync(raw);
 }
-// valida .mcaddon/.mcpack e extrai manifest (BP/RP) → uuid, versão, min_engine
+// valida .mcaddon/.mcpack/.mctemplate e extrai manifest (BP/RP) → uuid, versão, min_engine
 function validarPacote(buf) {
   // manifest.json padrão; pack_manifest.json = alias de addons antigos (aceito pelo Bedrock)
   const entries = zipScan(buf).filter((e) => /(?:pack_)?manifest\.json$/i.test(e.name));
@@ -277,7 +277,8 @@ async function processar(job) {
     const temp = join(tempDir(job.key), 'pacote.zip');
     const bytes = await baixarArquivo(dl.url, temp, url);
     const estrutura = validarPacote(bufSync(temp));
-    const ext = /\.(mcaddon|mcpack)/i.exec(dl.url)?.[1]?.toLowerCase() ?? estrutura.ext;
+    // 2026 fix (lote 3): .mctemplate preservado do URL da origem (mundo pronto)
+    const ext = /\.(mcaddon|mcpack|mctemplate)/i.exec(dl.url)?.[1]?.toLowerCase() ?? estrutura.ext;
     mensagens.push(`pacote validado: ${(bytes / 1048576).toFixed(1)} MB · ${estrutura.packs} manifest(s) · manifest ${estrutura.name || '?'} v${estrutura.version || '?'} · MC ${estrutura.minecraft || minMc || '?'}`);
     const finalName = `${siteId}-v${(estrutura.version || parseRangeMin(range) || '1.0.0').replace(/[^\w.-]+/g, '-')}${ext}`;
     const finalFile = join(tempDir(job.key), finalName);

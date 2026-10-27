@@ -1,0 +1,30 @@
+{
+  "id": "pyro-mage",
+  "name": "Pyro Mage Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Magia de fogo direta ao ponto: projéteis explosivos, aura de queimadura e feitiços de combate poderosos.",
+  "longDescription": "O Pyro Mage Mod é pra quem quer combate mágico direto: magia de fogo agressiva, projéteis explosivos, dano por aura de queimadura e feitiços de combate fortes. Em vez de magia defensiva, chama total — explosões, incêndio em área e feitiços que resolvem a briga. Versão 1.0.0, Minecraft 1.20.30+.",
+  "category": "magic",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.20.30"
+  ],
+  "thumbnail": "/images/addons/pyro-mage/pyro-mage-1.webp",
+  "screenshots": [
+    "/images/addons/pyro-mage/pyro-mage-1.webp",
+    "/images/addons/pyro-mage/pyro-mage-2.webp",
+    "/images/addons/pyro-mage/pyro-mage-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-07-14",
+  "updatedAt": "2026-07-14",
+  "sourceUrl": "https://mcpedl.org/pyro-mage-mod-minecraft-pe/",
+  "sourceId": "pyro-mage-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1xnMQSM4GVOcocUqP-lQLhQ",
+  "fileSize": "0.3 MB"
+}

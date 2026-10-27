@@ -1,0 +1,80 @@
+{
+  "id": "dungeons",
+  "name": "Dungeons Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Masmorras subterrâneas perigosas, mobs reforçados, loot raro e equipamento estilo dungeon crawler.",
+  "longDescription": "O Dungeons Mod transforma o subsolo do Minecraft Bedrock num dungeon crawler de verdade: estruturas subterrâneas perigosas, mobs reforçados pra enfrentar, loot raro pra coletar e armas e equipamentos feitos pra sobrevivência estilo masmorra. Cada descida vira uma raid própria, com salas, hordas e recompensas que valem a exploração. 1,4 MB com Behavior + Resource, versão 1.0.0, Minecraft 1.19.50+.",
+  "category": "world",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.19.50"
+  ],
+  "requirements": [
+    "Faixa de versões declarada na origem: 1.19.80 - 1.26.50"
+  ],
+  "thumbnail": "/images/addons/dungeons/dungeons-1.webp",
+  "screenshots": [
+    "/images/addons/dungeons/dungeons-1.webp",
+    "/images/addons/dungeons/dungeons-2.webp",
+    "/images/addons/dungeons/dungeons-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-24",
+  "updatedAt": "2026-05-24",
+  "sourceUrl": "https://mcpedl.org/dungeons-mod-minecraft-pe/",
+  "sourceId": "dungeons-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1NITqWFXz0Jk08Kt6-cbMWg",
+  "fileSize": "1.4 MB",
+  "files": [
+    {
+      "label": "Weapons from Dungeons",
+      "version": "1.19.80",
+      "minecraft_versions": [
+        "1.19.80"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/weapons-from-minecraft-dungeons-mod.mcpack",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Dungeon Craft",
+      "version": "1.19.80",
+      "minecraft_versions": [
+        "1.19.80"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeon-craft.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Dungeons Content Addon",
+      "version": "1.19.80",
+      "minecraft_versions": [
+        "1.19.80"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-addon.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Dungeons Content Plus",
+      "version": "1.19.80",
+      "minecraft_versions": [
+        "1.19.80"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-plus.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Infinity Dungeons",
+      "version": "1.19.80",
+      "minecraft_versions": [
+        "1.19.80"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/24-05-2026/infinity-dungeons.mcaddon",
+      "downloadProvider": "original"
+    }
+  ]
+}

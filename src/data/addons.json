@@ -950,5 +950,308 @@
     "download_url": "https://1024terabox.com/s/1ojJDCrcM4jf4orvG696ytQ",
     "fileSize": "6.5 MB",
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/block-pets/block-pets-1.webp",
+      "/images/addons/block-pets/block-pets-2.webp",
+      "/images/addons/block-pets/block-pets-3.webp"
+    ],
+    "id": "block-pets",
+    "name": "Block Pets Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Pets de bolso com habilidades próprias: novos amigos que te ajudam no lugar dos bichos vanilla.",
+    "longDescription": "O Block Pets Mod deixa de lado a domesticação padrão de animais: ele traz pets de bolso com habilidades exclusivas, que aprendem a te ajudar no mundo. Novos amigos feitos pra acompanhar a exploração e o combate — cada um com a sua própria utilidade. Versão 0.8 Beta (0.0.1), Minecraft 1.21.0+, arquivo leve (0,4 MB).",
+    "category": "mobs",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/block-pets/block-pets-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-08-25",
+    "updatedAt": "2025-08-25",
+    "sourceUrl": "https://mcpedl.org/block-pets-mod-minecraft-pe/",
+    "sourceId": "block-pets-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1zrd92-XTyWG7StoJYAZMEg",
+    "fileSize": "0.4 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/dungeons/dungeons-1.webp",
+      "/images/addons/dungeons/dungeons-2.webp",
+      "/images/addons/dungeons/dungeons-3.webp"
+    ],
+    "id": "dungeons",
+    "name": "Dungeons Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Masmorras subterrâneas perigosas, mobs reforçados, loot raro e equipamento estilo dungeon crawler.",
+    "longDescription": "O Dungeons Mod transforma o subsolo do Minecraft Bedrock num dungeon crawler de verdade: estruturas subterrâneas perigosas, mobs reforçados pra enfrentar, loot raro pra coletar e armas e equipamentos feitos pra sobrevivência estilo masmorra. Cada descida vira uma raid própria, com salas, hordas e recompensas que valem a exploração. 1,4 MB com Behavior + Resource, versão 1.0.0, Minecraft 1.19.50+.",
+    "category": "world",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.19.50"
+    ],
+    "requirements": [
+      "Faixa de versões declarada na origem: 1.19.80 - 1.26.50"
+    ],
+    "thumbnail": "/images/addons/dungeons/dungeons-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-05-24",
+    "updatedAt": "2026-05-24",
+    "sourceUrl": "https://mcpedl.org/dungeons-mod-minecraft-pe/",
+    "sourceId": "dungeons-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1NITqWFXz0Jk08Kt6-cbMWg",
+    "fileSize": "1.4 MB",
+    "files": [
+      {
+        "label": "Weapons from Dungeons",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/weapons-from-minecraft-dungeons-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Dungeon Craft",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeon-craft.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Dungeons Content Addon",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-addon.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Dungeons Content Plus",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-plus.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Infinity Dungeons",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/24-05-2026/infinity-dungeons.mcaddon",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/havoc-guns/havoc-guns-1.webp",
+      "/images/addons/havoc-guns/havoc-guns-2.webp",
+      "/images/addons/havoc-guns/havoc-guns-3.webp"
+    ],
+    "id": "havoc-guns",
+    "name": "Havoc Guns Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas de fogo animadas com recuo real: recarga realista, mira com luneta, sons próprios e combate tático.",
+    "longDescription": "O Havoc Guns Mod adiciona um sistema de armas de fogo completo ao Minecraft Bedrock: armas animadas, recargas realistas, recuo, mira com luneta, sons personalizados e ferramentas de combate tático. Versão 4.7.0, Minecraft 1.21.0+; arquivo .mcpack leve pra quem quer firepower sem encher o mundo.",
+    "category": "weapons",
+    "version": "4.7.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/havoc-guns/havoc-guns-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-04",
+    "updatedAt": "2026-08-04",
+    "sourceUrl": "https://mcpedl.org/havoc-guns-mod-minecraft-pe/",
+    "sourceId": "havoc-guns-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1Ue9MBnrtOM8NS4DDS_lFhA",
+    "fileSize": "0.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/horror-doll/horror-doll-1.webp",
+      "/images/addons/horror-doll/horror-doll-2.webp",
+      "/images/addons/horror-doll/horror-doll-3.webp"
+    ],
+    "id": "horror-doll",
+    "name": "Horror Doll Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Mundo pronto de horror: o asilo abandonado da boneca, onde silêncio e observação viram tensão.",
+    "longDescription": "O Horror Doll Mod imerge você no asilo abandonado: atmosfera feita de silêncio, observação e medo — com a boneca como presença constante. O arquivo .mctemplate importa como MUNDO PRONTO no Minecraft (10,5 MB), versão 1.0.1, Minecraft 1.21.0+: não precisa ativar experimentações, basta instalar e jogar.",
+    "category": "world",
+    "version": "1.0.1",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/horror-doll/horror-doll-1.webp",
+    "tags": [
+      "Bedrock",
+      "Mundo",
+      "Horror"
+    ],
+    "createdAt": "2026-01-04",
+    "updatedAt": "2026-01-04",
+    "sourceUrl": "https://mcpedl.org/horror-doll-mod-minecraft-pe/",
+    "sourceId": "horror-doll-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1dGtXZdIgOMvvdwi24tBiag",
+    "fileSize": "10.5 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/pyro-mage/pyro-mage-1.webp",
+      "/images/addons/pyro-mage/pyro-mage-2.webp",
+      "/images/addons/pyro-mage/pyro-mage-3.webp"
+    ],
+    "id": "pyro-mage",
+    "name": "Pyro Mage Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Magia de fogo direta ao ponto: projéteis explosivos, aura de queimadura e feitiços de combate poderosos.",
+    "longDescription": "O Pyro Mage Mod é pra quem quer combate mágico direto: magia de fogo agressiva, projéteis explosivos, dano por aura de queimadura e feitiços de combate fortes. Em vez de magia defensiva, chama total — explosões, incêndio em área e feitiços que resolvem a briga. Versão 1.0.0, Minecraft 1.20.30+.",
+    "category": "magic",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.20.30"
+    ],
+    "thumbnail": "/images/addons/pyro-mage/pyro-mage-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-14",
+    "updatedAt": "2026-07-14",
+    "sourceUrl": "https://mcpedl.org/pyro-mage-mod-minecraft-pe/",
+    "sourceId": "pyro-mage-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1xnMQSM4GVOcocUqP-lQLhQ",
+    "fileSize": "0.3 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/zombie-apocalypse/zombie-apocalypse-1.webp",
+      "/images/addons/zombie-apocalypse/zombie-apocalypse-2.webp",
+      "/images/addons/zombie-apocalypse/zombie-apocalypse-3.webp"
+    ],
+    "id": "zombie-apocalypse",
+    "name": "Zombie Apocalypse Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Apocalipse zumbi no mundo: hordas de infectados agressivos, armas avançadas e sobrevivência hostil.",
+    "longDescription": "O Zombie Apocalypse Mod reseta o desafio do Minecraft PE: infectados agressivos e imprevisíveis, armas avançadas pra encará-los e um mundo hostil onde cada encontro importa — feitos pra quem acha os mobs vanilla previsíveis demais. Versão 1.0.0, compatível desde o Minecraft 1.13.0; variantes da fonte seguem com o link oficial.",
+    "category": "survival",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.13.0"
+    ],
+    "thumbnail": "/images/addons/zombie-apocalypse/zombie-apocalypse-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-04-02",
+    "updatedAt": "2026-04-02",
+    "sourceUrl": "https://mcpedl.org/zombie-apocalypse-mod-minecraft-pe/",
+    "sourceId": "zombie-apocalypse-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1FzosGWRnBh1rs5ZR-DJnSA",
+    "fileSize": "0.3 MB",
+    "files": [
+      {
+        "label": "Fighting zombies",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/fighting-zombies-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Apocalypse",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/apocalypse.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Raboys Apocalypse",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/07-07-2023/Raboys-Apocalypse-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Cordyceps",
+        "version": "1.20.30",
+        "minecraft_versions": [
+          "1.20.30"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/22-02-2024/cordyceps.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "TSZA",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/17-11-2025/TSZA-mod.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Zombie Apocalypse",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/31-01-2026/zombie-apocalypse.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Winter Zombie Outbreak",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/02-05-2026/winter-zombie-outbreak.mcaddon",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
   }
 ]
