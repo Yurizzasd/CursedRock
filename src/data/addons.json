@@ -419,5 +419,330 @@
     "downloads": 0,
     "createdAt": "2026-09-30",
     "updatedAt": "2026-09-30"
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/acd-shader/acd-shader-1.webp",
+      "/images/addons/acd-shader/acd-shader-2.webp",
+      "/images/addons/acd-shader/acd-shader-3.webp"
+    ],
+    "id": "acd-shader",
+    "name": "ACD Shaders",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Iluminação realista, água animada, sombras suaves e nuvens volumétricas com renderização otimizada pro celular.",
+    "longDescription": "O ACD Shaders eleva o visual do Minecraft PE com iluminação realista, água animada, sombras suaves, nuvens volumétricas e color grading cinematográfico — tudo otimizado pra hardware de celular, mantendo o FPS no sobrevivência e no criativo. O pacote aposta no equilíbrio entre beleza e desempenho pra rodar bem até em aparelhos modestos. Versão 1.7.1, exige Minecraft 1.21.120+; importe o .mcpack e ative o Resource Pack no mundo.",
+    "category": "optimization",
+    "version": "1.7.1",
+    "minecraft_versions": [
+      "1.21.120"
+    ],
+    "thumbnail": "/images/addons/acd-shader/acd-shader-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-06",
+    "updatedAt": "2026-09-06",
+    "sourceUrl": "https://mcpedl.org/acd-shader-minecraft-pe/",
+    "sourceId": "acd-shader-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1ndNQrw8uj0_dN6wqaW404Q",
+    "fileSize": "1.2 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/avengers/avengers-1.webp",
+      "/images/addons/avengers/avengers-2.webp",
+      "/images/addons/avengers/avengers-3.webp"
+    ],
+    "id": "avengers",
+    "name": "Avengers Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Heróis da Marvel no Bedrock: invoque os Avengers, desbloqueie poderes, equipe armas icônicas e enfrente o Thanos.",
+    "longDescription": "O Avengers Mod traz os super-heróis da Marvel pro Minecraft Bedrock: invoque os Avengers lendários, desbloqueie habilidades poderosas pra cada herói e equipe as armas icônicas pra enfrentar o Thanos — incluindo o duelo cinematográfico entre Thor e Doctor Doom. Arquivo pesado (55,4 MB), com conteúdo de combate, personagens e visual de cinema; compatível desde o Minecraft 1.8.0.",
+    "category": "adventure",
+    "version": "1.8.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/avengers/avengers-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-17",
+    "updatedAt": "2026-10-17",
+    "sourceUrl": "https://mcpedl.org/avengers-mod-minecraft-pe/",
+    "sourceId": "avengers-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1UsW7l6emDBs1KLpyVTMmoQ",
+    "fileSize": "55.4 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/lucky-block/lucky-block-1.webp",
+      "/images/addons/lucky-block/lucky-block-2.webp",
+      "/images/addons/lucky-block/lucky-block-3.webp"
+    ],
+    "id": "lucky-block",
+    "name": "Lucky Blocks Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Blocos da sorte que liberam eventos aleatórios ao serem quebrados: de tesouros a armadilhas. Variantes Original, Hardcore, Mini Chefes e Rainbow.",
+    "longDescription": "Quebre um bloco e teste a sorte: cada Lucky Block libera um evento totalmente aleatório ao ser destruído, de recompensas valiosas a armadilhas mortais. A fonte traz quatro variantes — Original (equilibrada), Hardcore (rosa e traiçoeira: mobs, explosões e lava na maioria das quebras), Mini Chefes (derrote Bob e Peter pra farmar barras de sorte e forjar armaduras) e Rainbow (exploratória e colorida). O arquivo principal usa formato moderno; a variante Hardcore é de formato legado (pack_manifest.json) e pode não importar no Minecraft atual — baixe por conta e risco.",
+    "category": "lucky-block",
+    "version": "1.21.0",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/lucky-block/lucky-block-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-01-27",
+    "updatedAt": "2026-01-27",
+    "sourceUrl": "https://mcpedl.org/lucky-block-mod-minecraft-pe/",
+    "sourceId": "lucky-block-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://file.mcpedl.org/uploads_files/27-01-2026/lucky-blocks.mcaddon",
+    "files": [
+      {
+        "label": "Original",
+        "version": "1.9.0",
+        "minecraft_versions": [
+          "1.9.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/original-lucky-block.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Mini Chefes",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/lucky-blocks-mini-bosses.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Hardcore (formato legado)",
+        "version": "0.0.1",
+        "minecraft_versions": [
+          "1.10.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/hardcore-lucky-block-mod.mcpack",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/magical-warfare/magical-warfare-1.webp",
+      "/images/addons/magical-warfare/magical-warfare-2.webp",
+      "/images/addons/magical-warfare/magical-warfare-3.webp"
+    ],
+    "id": "magical-warfare",
+    "name": "Magical Warfare Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Magia de combate avançada: feitiços poderosos e habilidades arcanas pra dominar batalhas quando armas comuns já não resolvem.",
+    "longDescription": "Quando as armas tradicionais deixam de ser suficientes, a magia assume o comando. O Magical Warfare Mod adiciona um sistema de magia de combate ao Minecraft Bedrock, com feitiços ofensivos e habilidades arcanas pra dominar mobs e jogadores em batalha. Escolha os feitiços certos, administre seus recursos de magia e transforme cada confronto num duelo de magos. Versão 1.0.13, exige Minecraft 1.19.0+, arquivo .mcaddon.",
+    "category": "magic",
+    "version": "1.0.13",
+    "minecraft_versions": [
+      "1.19.0"
+    ],
+    "thumbnail": "/images/addons/magical-warfare/magical-warfare-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-01-18",
+    "updatedAt": "2026-01-18",
+    "sourceUrl": "https://mcpedl.org/magical-warfare-mod-minecraft-pe/",
+    "sourceId": "magical-warfare-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1hjryuXuodypTn4oncKuh-Q",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Soul Magic",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/02-06-2023/soul-magic-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "New Magical Warfare",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/18-08-2025/new-magical-warfare.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Dark Magic",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/18-01-2026/dark-magic.mcaddon",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/rpg-weapons/rpg-weapons-1.webp",
+      "/images/addons/rpg-weapons/rpg-weapons-2.webp",
+      "/images/addons/rpg-weapons/rpg-weapons-3.webp"
+    ],
+    "id": "rpg-weapons",
+    "name": "RPG Weapons Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas de RPG com efeitos táticos: katana veloz, maça que atordoa, foice de dano em área, arco gélido e armaduras com bônus.",
+    "longDescription": "O RPG Weapons Mod adiciona um arsenal com efeitos ao Minecraft Bedrock: a katana golpeia em série rápida, a maça atordoa os inimigos por alguns segundos e a foice acerta vários alvos de frente ao mesmo tempo. Tudo ainda vem com efeitos especiais — o arco gélido congela mobs no lugar e os machados mágicos liberam ondas explosivas no impacto. Os conjuntos de armadura dão vantagem real na batalha, como recuperar vida ao derrotar inimigos, aumentar o dano e ganhar resistência ao fogo. Versão 1.0.0, exige Minecraft 1.20.0+, arquivo .mcaddon com experimentações do mundo ativadas.",
+    "category": "weapons",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.20.0"
+    ],
+    "thumbnail": "/images/addons/rpg-weapons/rpg-weapons-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-07-22",
+    "updatedAt": "2025-07-22",
+    "sourceUrl": "https://mcpedl.org/rpg-weapons-mod-minecraft-pe/",
+    "sourceId": "rpg-weapons-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1AOZcnh1PbQpHkO6eFrOj5w",
+    "fileSize": "0.3 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/stone-age/stone-age-1.webp",
+      "/images/addons/stone-age/stone-age-2.webp",
+      "/images/addons/stone-age/stone-age-3.webp"
+    ],
+    "id": "stone-age",
+    "name": "Stone Age Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Sobrevivência primitiva de verdade: comece na idade da pedra, colete rochas, crie ferramentas de sílex e evolua sem socar árvores.",
+    "longDescription": "O Stone Age Mod reconstrói o comecinho do Minecraft Bedrock com uma sobrevivência mais dura e realista: você começa na idade da pedra, coleta pedras e madeira caída, cria ferramentas de sílex e destrava a progressão aos poucos — sem socar árvores até cansar. Feito pra quem acha a abertura do jogo fácil demais e quer desafio primitivo de verdade. Versão 0.0.1, exige Minecraft 1.21.80+ com experimentações ligadas.",
+    "category": "survival",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.21.80"
+    ],
+    "thumbnail": "/images/addons/stone-age/stone-age-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-05-25",
+    "updatedAt": "2026-05-25",
+    "sourceUrl": "https://mcpedl.org/stone-age-mod-minecraft-pe/",
+    "sourceId": "stone-age-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1mJYoyP-9lJWAK_wrieB-_g",
+    "fileSize": "0.2 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/submarine/submarine-1.webp",
+      "/images/addons/submarine/submarine-2.webp",
+      "/images/addons/submarine/submarine-3.webp"
+    ],
+    "id": "submarine",
+    "name": "Submarine Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Submarino funcional pra explorar os mares: mergulhe até o fundo do oceano com um transporte aquático próprio.",
+    "longDescription": "O Submarine Mod adiciona um transporte aquático único ao Minecraft Bedrock: um submarino comandável pra mergulhar até o fundo de oceanos e explorar ruínas, biomas e tesouros submersos com calma. Arquivo leve (0,1 MB) e compatível até com versões antigas do jogo (1.8.0+) — ideal pra quem gosta de viagem pela água e exploração submersa.",
+    "category": "vehicles",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/submarine/submarine-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-02-04",
+    "updatedAt": "2025-02-04",
+    "sourceUrl": "https://mcpedl.org/submarine-mod-minecraft-pe/",
+    "sourceId": "submarine-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1sd5044viN7ChxJNzsNexpA",
+    "fileSize": "0.1 MB",
+    "files": [
+      {
+        "label": "Summer Vehicles",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/13-02-2024/summer-vehicles.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Mhafy Ship",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/04-02-2025/mhafy-ship-mod.mcpack",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/unusual-furniture/unusual-furniture-1.webp",
+      "/images/addons/unusual-furniture/unusual-furniture-2.webp",
+      "/images/addons/unusual-furniture/unusual-furniture-3.webp"
+    ],
+    "id": "unusual-furniture",
+    "name": "Unusual Furniture Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Mobília estilosa pra decorar a casa: móveis craftáveis que levam a decoração do seu mundo a outro nível.",
+    "longDescription": "Para quem se sente preso entre camas, baús e blocos simples, o Unusual Furniture Mod traz móveis craftáveis cheios de estilo ao Minecraft Bedrock — poltronas, mesas e decorações que transformam qualquer interior. Tudo entra no modo sobrevivência pela bancada, sem quebrar o clima vanilla. Versão 1.3.2, exige Minecraft 1.21.80+; instale pelo arquivo .mcaddon e ative as experimentações do mundo.",
+    "category": "furniture",
+    "version": "1.3.2",
+    "minecraft_versions": [
+      "1.21.80"
+    ],
+    "thumbnail": "/images/addons/unusual-furniture/unusual-furniture-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-12-05",
+    "updatedAt": "2025-12-05",
+    "sourceUrl": "https://mcpedl.org/unusual-furniture-mod-minecraft-pe/",
+    "sourceId": "unusual-furniture-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1PkIYorJnGHCNPx5rfG5UfQ",
+    "fileSize": "0.4 MB",
+    "downloads": 0
   }
 ]

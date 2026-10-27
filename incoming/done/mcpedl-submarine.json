@@ -1,0 +1,50 @@
+{
+  "id": "submarine",
+  "name": "Submarine Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Submarino funcional pra explorar os mares: mergulhe até o fundo do oceano com um transporte aquático próprio.",
+  "longDescription": "O Submarine Mod adiciona um transporte aquático único ao Minecraft Bedrock: um submarino comandável pra mergulhar até o fundo de oceanos e explorar ruínas, biomas e tesouros submersos com calma. Arquivo leve (0,1 MB) e compatível até com versões antigas do jogo (1.8.0+) — ideal pra quem gosta de viagem pela água e exploração submersa.",
+  "category": "vehicles",
+  "version": "0.0.1",
+  "minecraft_versions": [
+    "1.8.0"
+  ],
+  "thumbnail": "/images/addons/submarine/submarine-1.webp",
+  "screenshots": [
+    "/images/addons/submarine/submarine-1.webp",
+    "/images/addons/submarine/submarine-2.webp",
+    "/images/addons/submarine/submarine-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-02-04",
+  "updatedAt": "2025-02-04",
+  "sourceUrl": "https://mcpedl.org/submarine-mod-minecraft-pe/",
+  "sourceId": "submarine-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1sd5044viN7ChxJNzsNexpA",
+  "fileSize": "0.1 MB",
+  "files": [
+    {
+      "label": "Summer Vehicles",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/13-02-2024/summer-vehicles.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Mhafy Ship",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/04-02-2025/mhafy-ship-mod.mcpack",
+      "downloadProvider": "original"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "magical-warfare",
+  "name": "Magical Warfare Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Magia de combate avançada: feitiços poderosos e habilidades arcanas pra dominar batalhas quando armas comuns já não resolvem.",
+  "longDescription": "Quando as armas tradicionais deixam de ser suficientes, a magia assume o comando. O Magical Warfare Mod adiciona um sistema de magia de combate ao Minecraft Bedrock, com feitiços ofensivos e habilidades arcanas pra dominar mobs e jogadores em batalha. Escolha os feitiços certos, administre seus recursos de magia e transforme cada confronto num duelo de magos. Versão 1.0.13, exige Minecraft 1.19.0+, arquivo .mcaddon.",
+  "category": "magic",
+  "version": "1.0.13",
+  "minecraft_versions": [
+    "1.19.0"
+  ],
+  "thumbnail": "/images/addons/magical-warfare/magical-warfare-1.webp",
+  "screenshots": [
+    "/images/addons/magical-warfare/magical-warfare-1.webp",
+    "/images/addons/magical-warfare/magical-warfare-2.webp",
+    "/images/addons/magical-warfare/magical-warfare-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-01-18",
+  "updatedAt": "2026-01-18",
+  "sourceUrl": "https://mcpedl.org/magical-warfare-mod-minecraft-pe/",
+  "sourceId": "magical-warfare-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1hjryuXuodypTn4oncKuh-Q",
+  "fileSize": "0.2 MB",
+  "files": [
+    {
+      "label": "Soul Magic",
+      "version": "1.19.0",
+      "minecraft_versions": [
+        "1.19.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/02-06-2023/soul-magic-mod.mcpack",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "New Magical Warfare",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/18-08-2025/new-magical-warfare.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Dark Magic",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/18-01-2026/dark-magic.mcaddon",
+      "downloadProvider": "original"
+    }
+  ]
+}

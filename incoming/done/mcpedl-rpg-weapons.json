@@ -1,0 +1,30 @@
+{
+  "id": "rpg-weapons",
+  "name": "RPG Weapons Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Armas de RPG com efeitos táticos: katana veloz, maça que atordoa, foice de dano em área, arco gélido e armaduras com bônus.",
+  "longDescription": "O RPG Weapons Mod adiciona um arsenal com efeitos ao Minecraft Bedrock: a katana golpeia em série rápida, a maça atordoa os inimigos por alguns segundos e a foice acerta vários alvos de frente ao mesmo tempo. Tudo ainda vem com efeitos especiais — o arco gélido congela mobs no lugar e os machados mágicos liberam ondas explosivas no impacto. Os conjuntos de armadura dão vantagem real na batalha, como recuperar vida ao derrotar inimigos, aumentar o dano e ganhar resistência ao fogo. Versão 1.0.0, exige Minecraft 1.20.0+, arquivo .mcaddon com experimentações do mundo ativadas.",
+  "category": "weapons",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.20.0"
+  ],
+  "thumbnail": "/images/addons/rpg-weapons/rpg-weapons-1.webp",
+  "screenshots": [
+    "/images/addons/rpg-weapons/rpg-weapons-1.webp",
+    "/images/addons/rpg-weapons/rpg-weapons-2.webp",
+    "/images/addons/rpg-weapons/rpg-weapons-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-07-22",
+  "updatedAt": "2025-07-22",
+  "sourceUrl": "https://mcpedl.org/rpg-weapons-mod-minecraft-pe/",
+  "sourceId": "rpg-weapons-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1AOZcnh1PbQpHkO6eFrOj5w",
+  "fileSize": "0.3 MB"
+}

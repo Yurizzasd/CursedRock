@@ -1,0 +1,58 @@
+{
+  "id": "lucky-block",
+  "name": "Lucky Blocks Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Blocos da sorte que liberam eventos aleatórios ao serem quebrados: de tesouros a armadilhas. Variantes Original, Hardcore, Mini Chefes e Rainbow.",
+  "longDescription": "Quebre um bloco e teste a sorte: cada Lucky Block libera um evento totalmente aleatório ao ser destruído, de recompensas valiosas a armadilhas mortais. A fonte traz quatro variantes — Original (equilibrada), Hardcore (rosa e traiçoeira: mobs, explosões e lava na maioria das quebras), Mini Chefes (derrote Bob e Peter pra farmar barras de sorte e forjar armaduras) e Rainbow (exploratória e colorida). O arquivo principal usa formato moderno; a variante Hardcore é de formato legado (pack_manifest.json) e pode não importar no Minecraft atual — baixe por conta e risco.",
+  "category": "lucky-block",
+  "version": "1.21.0",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/lucky-block/lucky-block-1.webp",
+  "screenshots": [
+    "/images/addons/lucky-block/lucky-block-1.webp",
+    "/images/addons/lucky-block/lucky-block-2.webp",
+    "/images/addons/lucky-block/lucky-block-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-01-27",
+  "updatedAt": "2026-01-27",
+  "sourceUrl": "https://mcpedl.org/lucky-block-mod-minecraft-pe/",
+  "sourceId": "lucky-block-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://file.mcpedl.org/uploads_files/27-01-2026/lucky-blocks.mcaddon",
+  "files": [
+    {
+      "label": "Original",
+      "version": "1.9.0",
+      "minecraft_versions": [
+        "1.9.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/original-lucky-block.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Mini Chefes",
+      "version": "1.20.0",
+      "minecraft_versions": [
+        "1.20.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/lucky-blocks-mini-bosses.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Hardcore (formato legado)",
+      "version": "0.0.1",
+      "minecraft_versions": [
+        "1.10.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/hardcore-lucky-block-mod.mcpack",
+      "downloadProvider": "original"
+    }
+  ]
+}

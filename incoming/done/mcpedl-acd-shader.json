@@ -1,0 +1,30 @@
+{
+  "id": "acd-shader",
+  "name": "ACD Shaders",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Iluminação realista, água animada, sombras suaves e nuvens volumétricas com renderização otimizada pro celular.",
+  "longDescription": "O ACD Shaders eleva o visual do Minecraft PE com iluminação realista, água animada, sombras suaves, nuvens volumétricas e color grading cinematográfico — tudo otimizado pra hardware de celular, mantendo o FPS no sobrevivência e no criativo. O pacote aposta no equilíbrio entre beleza e desempenho pra rodar bem até em aparelhos modestos. Versão 1.7.1, exige Minecraft 1.21.120+; importe o .mcpack e ative o Resource Pack no mundo.",
+  "category": "optimization",
+  "version": "1.7.1",
+  "minecraft_versions": [
+    "1.21.120"
+  ],
+  "thumbnail": "/images/addons/acd-shader/acd-shader-1.webp",
+  "screenshots": [
+    "/images/addons/acd-shader/acd-shader-1.webp",
+    "/images/addons/acd-shader/acd-shader-2.webp",
+    "/images/addons/acd-shader/acd-shader-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-09-06",
+  "updatedAt": "2026-09-06",
+  "sourceUrl": "https://mcpedl.org/acd-shader-minecraft-pe/",
+  "sourceId": "acd-shader-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1ndNQrw8uj0_dN6wqaW404Q",
+  "fileSize": "1.2 MB"
+}

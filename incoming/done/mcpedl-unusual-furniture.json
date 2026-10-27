@@ -1,0 +1,30 @@
+{
+  "id": "unusual-furniture",
+  "name": "Unusual Furniture Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Mobília estilosa pra decorar a casa: móveis craftáveis que levam a decoração do seu mundo a outro nível.",
+  "longDescription": "Para quem se sente preso entre camas, baús e blocos simples, o Unusual Furniture Mod traz móveis craftáveis cheios de estilo ao Minecraft Bedrock — poltronas, mesas e decorações que transformam qualquer interior. Tudo entra no modo sobrevivência pela bancada, sem quebrar o clima vanilla. Versão 1.3.2, exige Minecraft 1.21.80+; instale pelo arquivo .mcaddon e ative as experimentações do mundo.",
+  "category": "furniture",
+  "version": "1.3.2",
+  "minecraft_versions": [
+    "1.21.80"
+  ],
+  "thumbnail": "/images/addons/unusual-furniture/unusual-furniture-1.webp",
+  "screenshots": [
+    "/images/addons/unusual-furniture/unusual-furniture-1.webp",
+    "/images/addons/unusual-furniture/unusual-furniture-2.webp",
+    "/images/addons/unusual-furniture/unusual-furniture-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-12-05",
+  "updatedAt": "2025-12-05",
+  "sourceUrl": "https://mcpedl.org/unusual-furniture-mod-minecraft-pe/",
+  "sourceId": "unusual-furniture-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1PkIYorJnGHCNPx5rfG5UfQ",
+  "fileSize": "0.4 MB"
+}

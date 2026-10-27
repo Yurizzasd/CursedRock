@@ -118,6 +118,19 @@ se qualquer etapa (API→file→upload→link→cadastro→dev server→dedupe) 
 8. dedupe: mesma origem reprocessada é bloqueada pelo worker sem rede e sem duplicar.
 Ao final o addon de teste é removido (repo limpo). Falha em qualquer etapa ⇒ exit 1.
 
+## Regras de validação de pacote (atualizado 2026-10-27)
+
+Ajustes no validador do worker (`mcpedl-process.mjs`) depois do 1º lote real (8 addons):
+
+- aceita `manifest.json` **OU** `pack_manifest.json` (alias de arquivos muito antigos
+  do Bedrock — ex. Lucky Blocks, era 1.10);
+- leitor ZIP (central directory) aceita o 1º arquivo com offset local `0` — antes,
+  manifest na posição 0 do zip falhava com "sem manifest.json";
+- `header.uuid` segue OBRIGATÓRIO: se o manifest só tem `pack_id`/`packs_version`
+  (formato legado sem uuid), o arquivo provavelmente não importa no Minecraft atual
+  ⇒ sem upload, ricochete pro link oficial da fonte (foi o caso do Lucky Hardcore,
+  que ficou com downloadProvider `original`).
+
 ## O que está pendente por decisão/configuração EXTERNA
 
 - **Autorização de redistribuição**: ninguém aqui decide isso por você — sem

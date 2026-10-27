@@ -97,13 +97,16 @@ function zipScan(buf) {
     if (buf.readUInt32LE(p) !== 0x02014b50) break;
     const method = buf.readUInt16LE(p + 10);
     const csize = buf.readUInt32LE(p + 20);
+    // offsets do central directory: sig(4) verMade(2) verNeed(2) flags(2) método(2)
+    // hora(2) data(2) crc(4) csize(4) usize(4) → nameLen=p+28, extraLen=p+30,
+    // commLen=p+32, lho=p+42, nome em p+46
     const nameLen = buf.readUInt16LE(p + 28);
     const extraLen = buf.readUInt16LE(p + 30);
     const commLen = buf.readUInt16LE(p + 32);
     const lho = buf.readUInt32LE(p + 42);
     const name = buf.subarray(p + 46, p + 46 + nameLen).toString('utf8');
     p += 46 + nameLen + extraLen + commLen;
-    if (lho === 0) continue;
+    // lho pode ser 0 no primeiro arquivo — NÃO pular
     entries.push({ name, method, csize, lho });
   }
   return entries;
@@ -117,7 +120,8 @@ function zipReadEntry(buf, e) {
 }
 // valida .mcaddon/.mcpack e extrai manifest (BP/RP) → uuid, versão, min_engine
 function validarPacote(buf) {
-  const entries = zipScan(buf).filter((e) => /manifest\.json$/i.test(e.name));
+  // manifest.json padrão; pack_manifest.json = alias de addons antigos (aceito pelo Bedrock)
+  const entries = zipScan(buf).filter((e) => /(?:pack_)?manifest\.json$/i.test(e.name));
   if (entries.length === 0) throw new Error('ZIP válido, mas sem manifest.json');
   const manifests = [];
   for (const e of entries) {

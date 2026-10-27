@@ -1,0 +1,30 @@
+{
+  "id": "stone-age",
+  "name": "Stone Age Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Sobrevivência primitiva de verdade: comece na idade da pedra, colete rochas, crie ferramentas de sílex e evolua sem socar árvores.",
+  "longDescription": "O Stone Age Mod reconstrói o comecinho do Minecraft Bedrock com uma sobrevivência mais dura e realista: você começa na idade da pedra, coleta pedras e madeira caída, cria ferramentas de sílex e destrava a progressão aos poucos — sem socar árvores até cansar. Feito pra quem acha a abertura do jogo fácil demais e quer desafio primitivo de verdade. Versão 0.0.1, exige Minecraft 1.21.80+ com experimentações ligadas.",
+  "category": "survival",
+  "version": "0.0.1",
+  "minecraft_versions": [
+    "1.21.80"
+  ],
+  "thumbnail": "/images/addons/stone-age/stone-age-1.webp",
+  "screenshots": [
+    "/images/addons/stone-age/stone-age-1.webp",
+    "/images/addons/stone-age/stone-age-2.webp",
+    "/images/addons/stone-age/stone-age-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-25",
+  "updatedAt": "2026-05-25",
+  "sourceUrl": "https://mcpedl.org/stone-age-mod-minecraft-pe/",
+  "sourceId": "stone-age-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1mJYoyP-9lJWAK_wrieB-_g",
+  "fileSize": "0.2 MB"
+}

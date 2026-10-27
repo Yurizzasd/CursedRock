@@ -1,0 +1,30 @@
+{
+  "id": "avengers",
+  "name": "Avengers Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Heróis da Marvel no Bedrock: invoque os Avengers, desbloqueie poderes, equipe armas icônicas e enfrente o Thanos.",
+  "longDescription": "O Avengers Mod traz os super-heróis da Marvel pro Minecraft Bedrock: invoque os Avengers lendários, desbloqueie habilidades poderosas pra cada herói e equipe as armas icônicas pra enfrentar o Thanos — incluindo o duelo cinematográfico entre Thor e Doctor Doom. Arquivo pesado (55,4 MB), com conteúdo de combate, personagens e visual de cinema; compatível desde o Minecraft 1.8.0.",
+  "category": "adventure",
+  "version": "1.8.0",
+  "minecraft_versions": [
+    "1.8.0"
+  ],
+  "thumbnail": "/images/addons/avengers/avengers-1.webp",
+  "screenshots": [
+    "/images/addons/avengers/avengers-1.webp",
+    "/images/addons/avengers/avengers-2.webp",
+    "/images/addons/avengers/avengers-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-10-17",
+  "updatedAt": "2026-10-17",
+  "sourceUrl": "https://mcpedl.org/avengers-mod-minecraft-pe/",
+  "sourceId": "avengers-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1UsW7l6emDBs1KLpyVTMmoQ",
+  "fileSize": "55.4 MB"
+}
