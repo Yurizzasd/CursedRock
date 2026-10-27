@@ -34,8 +34,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/13-02-2024/summer-vehicles.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1IkqURt-1e_QQ7WNfe1fqZg",
+      "downloadProvider": "terabox",
+      "fileSize": "8.6 MB"
     },
     {
       "label": "Mhafy Ship",
@@ -43,8 +44,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/04-02-2025/mhafy-ship-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1cKqU0m7Hnt8i1QHyKccM5w",
+      "downloadProvider": "terabox",
+      "fileSize": "0.2 MB"
     }
   ]
 }

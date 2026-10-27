@@ -81,8 +81,33 @@ painel não é servido pelo Cloudflare e não lê credenciais (ndus nunca passa 
 | importedAt | `importedAt` | data da importação |
 
 Campos opcionais novos; nada quebra os itens atuais. O modal de download mostra
-"Verificado pelo CursedRock" só para itens hospedados por nós; itens `original`
-mostram "Arquivo da fonte original".
+o selo **derivado do host do link que o botão abre** (lote 4): `terabox`
+("Verificado pelo CursedRock") para nós, "Arquivo da fonte original" para links
+da origem — herança de provider não entra em cena, selo nunca mente sobre o
+destino. As escolhas de versão (variantes) passam o `downloadProvider` do
+próprio arquivo (2026 fix: `AddonFile.downloadProvider` em `src/types.ts`).
+
+## Regra "sempre TeraBox" (lote 4)
+
+Pedido do dono: todo download do site deve levar ao TeraBox. Duas pontas:
+
+1. **Lotes novos** (`mcpedl-process.mjs`, caminho autorizado): além do pacote
+   principal, cada **variante** da tabela da origem também é baixada, validada
+   (`validarPacote` com `exigirUuid:false` — variantes legadas sem `header.uuid`
+   passam) e enviada pro `/CursedRock`. Variante que falhar em qualquer etapa
+   caí de volta pro link oficial da origem com aviso no log, sem invalidar o
+   registro. Cada variante ganha `fileSize` calculado do upload.
+2. **Fichas antigas** (`scripts/variants-to-terabox.mjs`): migrador retro.
+   Baixa cada link "original" (principal ou variante) da `src/data/addons.json`,
+   valida, sobe pro TeraBox com `SHARE_URL` + resposta 200 confirmadas ao vivo
+   **antes** de trocar o link, e espelha a mudança em `incoming/done/*.json`.
+   Modo `--audit` só faz a contagem: quantos principais/variantes estão em
+   terabox vs. original. Falha ⇒ link mantido na origem com aviso (`✕`).
+
+Validação e leitura de ZIP vivem em `scripts/package-lib.mjs` (compartilhado
+entre worker e migrador): `pack_manifest.json` aceito, ZIPs aninhados
+(`.mcpack` dentro de `.mcaddon`), offsets do central directory corrigidos,
+`header.uuid` exigível por opção (`exigirUuid`).
 
 ## Estado em disco (gitignored)
 

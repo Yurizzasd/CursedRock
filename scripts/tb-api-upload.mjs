@@ -155,12 +155,27 @@ async function main() {
   if (pre.return_type === 2 || pre.uploadid) {
     for (let i = 0; i < chunks.length; i++) {
       const url = `${UHOST}/rest/2.0/pcs/superfile2?method=upload&${APP}&path=${encodeURIComponent(remotePath)}&uploadid=${encodeURIComponent(pre.uploadid)}&partseq=${i}`;
-      const fd = new FormData();
-      fd.append('file', new Blob([chunks[i]]), 'blob');
-      const r = await fetch(url, { method: 'POST', headers: { 'User-Agent': UA, Cookie: CK }, body: fd });
-      const j = await r.json().catch(() => ({}));
-      if (!r.ok || (j.errno !== undefined && j.errno !== 0 && j.error_code)) {
-        throw new Error(`chunk ${i} → HTTP ${r.status} ${JSON.stringify(j).slice(0, 160)}`);
+      const fd = () => {
+        const f = new FormData();
+        f.append('file', new Blob([chunks[i]]), 'blob');
+        return f;
+      };
+      // 2026 fix (lote 4): fetch failed / resets no meio de uploads grandes
+      // (142 MB: Dungeons Content) — 3 tentativas por chunk, pausa crecentes.
+      let j = null;
+      let r = null;
+      for (let tent = 1; tent <= 3; tent++) {
+        try {
+          r = await fetch(url, { method: 'POST', headers: { 'User-Agent': UA, Cookie: CK }, body: fd() });
+          j = await r.json().catch(() => ({}));
+          if (r.ok && !(j.errno !== undefined && j.errno !== 0 && j.error_code)) break;
+        } catch (e) {
+          if (tent === 3) throw new Error(`chunk ${i} após 3 tentativas: ${e.message}`);
+        }
+        await new Promise((x) => setTimeout(x, 2000 * tent));
+      }
+      if (!r?.ok || (j.errno !== undefined && j.errno !== 0 && j.error_code)) {
+        throw new Error(`chunk ${i} → HTTP ${r?.status} ${JSON.stringify(j ?? {}).slice(0, 160)}`);
       }
       console.log(`[tb] chunk ${i + 1}/${chunks.length} ok`);
     }

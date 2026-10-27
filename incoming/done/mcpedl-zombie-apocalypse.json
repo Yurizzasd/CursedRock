@@ -34,8 +34,9 @@
       "minecraft_versions": [
         "1.17.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/fighting-zombies-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1yA9QoXDbanCpthMzXrjCcA",
+      "downloadProvider": "terabox",
+      "fileSize": "1.2 MB"
     },
     {
       "label": "Apocalypse",
@@ -43,8 +44,9 @@
       "minecraft_versions": [
         "1.18.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/apocalypse.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1bkD_HT-04_5rvzH10pJChQ",
+      "downloadProvider": "terabox",
+      "fileSize": "23.8 MB"
     },
     {
       "label": "Raboys Apocalypse",
@@ -52,8 +54,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/07-07-2023/Raboys-Apocalypse-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1WtGVLwziBNOmQhiIjSSv6A",
+      "downloadProvider": "terabox",
+      "fileSize": "0.3 MB"
     },
     {
       "label": "Cordyceps",
@@ -61,8 +64,9 @@
       "minecraft_versions": [
         "1.20.30"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/22-02-2024/cordyceps.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1abHAar7itw45-vIbBw8y_g",
+      "downloadProvider": "terabox",
+      "fileSize": "46.0 MB"
     },
     {
       "label": "TSZA",
@@ -70,8 +74,9 @@
       "minecraft_versions": [
         "1.21.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/17-11-2025/TSZA-mod.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1hlNYgLPNirwIoLTH3ZIXjg",
+      "downloadProvider": "terabox",
+      "fileSize": "0.9 MB"
     },
     {
       "label": "Zombie Apocalypse",
@@ -79,8 +84,9 @@
       "minecraft_versions": [
         "1.21.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/31-01-2026/zombie-apocalypse.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1tebFmOzFEEknNcgHIDABYw",
+      "downloadProvider": "terabox",
+      "fileSize": "19.5 MB"
     },
     {
       "label": "Winter Zombie Outbreak",
@@ -88,8 +94,9 @@
       "minecraft_versions": [
         "1.21.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/02-05-2026/winter-zombie-outbreak.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1m5LIxi6wf6kCMVbVwx1jlw",
+      "downloadProvider": "terabox",
+      "fileSize": "3.1 MB"
     }
   ]
 }

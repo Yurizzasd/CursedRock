@@ -37,8 +37,9 @@
       "minecraft_versions": [
         "1.19.80"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/weapons-from-minecraft-dungeons-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1691KUZAHWJzr3nT0BJFB7A",
+      "downloadProvider": "terabox",
+      "fileSize": "0.3 MB"
     },
     {
       "label": "Dungeon Craft",
@@ -46,8 +47,9 @@
       "minecraft_versions": [
         "1.19.80"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeon-craft.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1dsXLrOcsGedRcucF8X6vOA",
+      "downloadProvider": "terabox",
+      "fileSize": "1.8 MB"
     },
     {
       "label": "Dungeons Content Addon",
@@ -55,8 +57,9 @@
       "minecraft_versions": [
         "1.19.80"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-addon.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1mtJEEyTXdsun3D9KUj_uhw",
+      "downloadProvider": "terabox",
+      "fileSize": "142.8 MB"
     },
     {
       "label": "Dungeons Content Plus",
@@ -64,8 +67,9 @@
       "minecraft_versions": [
         "1.19.80"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/13-04-2026/dungeons-content-plus.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1E7cGHe6oT-2jU2RYv_YIbA",
+      "downloadProvider": "terabox",
+      "fileSize": "4.6 MB"
     },
     {
       "label": "Infinity Dungeons",
@@ -73,8 +77,9 @@
       "minecraft_versions": [
         "1.19.80"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/24-05-2026/infinity-dungeons.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1MYyp06UQLG-62IlyLPXUTg",
+      "downloadProvider": "terabox",
+      "fileSize": "6.7 MB"
     }
   ]
 }

@@ -17,10 +17,10 @@
 import { spawn } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from 'node:fs';
-import { inflateRawSync } from 'node:zlib';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { McpedlAPI } from './vendor/mcpedl/dist/index.cjs';
+import { validarPacote } from './package-lib.mjs';
 import {
   sleep, readQueue, writeQueue, readControl, readState, writeState, logState,
   UA, mapCategory, dedupeDouble, parseDataEn, parseRangeMin, takeId,
@@ -85,75 +85,9 @@ async function baixarArquivo(url, dest, referer) {
   return buf.length;
 }
 
-// leitor ZIP pelo central directory (confiável mesmo com data descriptors)
-function zipScan(buf) {
-  let i = buf.length - 22;
-  while (i >= 0 && buf.readUInt32LE(i) !== 0x06054b50) i--;
-  if (i < 0) throw new Error('ZIP sem fim de central directory');
-  const count = buf.readUInt16LE(i + 10);
-  let p = buf.readUInt32LE(i + 16);
-  const entries = [];
-  for (let k = 0; k < count; k++) {
-    if (buf.readUInt32LE(p) !== 0x02014b50) break;
-    const method = buf.readUInt16LE(p + 10);
-    const csize = buf.readUInt32LE(p + 20);
-    // offsets do central directory: sig(4) verMade(2) verNeed(2) flags(2) método(2)
-    // hora(2) data(2) crc(4) csize(4) usize(4) → nameLen=p+28, extraLen=p+30,
-    // commLen=p+32, lho=p+42, nome em p+46
-    const nameLen = buf.readUInt16LE(p + 28);
-    const extraLen = buf.readUInt16LE(p + 30);
-    const commLen = buf.readUInt16LE(p + 32);
-    const lho = buf.readUInt32LE(p + 42);
-    const name = buf.subarray(p + 46, p + 46 + nameLen).toString('utf8');
-    p += 46 + nameLen + extraLen + commLen;
-    // lho pode ser 0 no primeiro arquivo — NÃO pular
-    entries.push({ name, method, csize, lho });
-  }
-  return entries;
-}
-function zipReadEntry(buf, e) {
-  const nameLen = buf.readUInt16LE(e.lho + 26);
-  const extraLen = buf.readUInt16LE(e.lho + 28);
-  const dataStart = e.lho + 30 + nameLen + extraLen;
-  const raw = buf.subarray(dataStart, dataStart + e.csize);
-  return e.method === 0 ? raw : inflateRawSync(raw);
-}
-// valida .mcaddon/.mcpack/.mctemplate e extrai manifest (BP/RP) → uuid, versão, min_engine
-function validarPacote(buf) {
-  // manifest.json padrão; pack_manifest.json = alias de addons antigos (aceito pelo Bedrock)
-  const entries = zipScan(buf).filter((e) => /(?:pack_)?manifest\.json$/i.test(e.name));
-  const manifests = [];
-  for (const e of entries) {
-    try { manifests.push(JSON.parse(zipReadEntry(buf, e).toString('utf8'))); } catch { /* manifest ilegível */ }
-  }
-  // 2026 fix (lote 2): .mcaddon-casulo — arquivo shipa packs .mcpack ANINHADOS
-  // (ex. Farming Mod: BP_AdvancedFarming.mcpack + RP_AdvancedFarming.mcpack) sem
-  // manifest na raíz. O Bedrock importa os packs internos; aqui validamos cada um.
-  if (manifests.length === 0) {
-    for (const e of zipScan(buf).filter((n) => /\.mcpack$/i.test(n.name))) {
-      try {
-        const inner = zipReadEntry(buf, e);
-        for (const m of zipScan(inner).filter((i) => /(?:pack_)?manifest\.json$/i.test(i.name))) {
-          try { manifests.push(JSON.parse(zipReadEntry(inner, m).toString('utf8'))); } catch { /* manifest interno ilegível */ }
-        }
-      } catch { /* .mcpack interno quebrado — ignora */ }
-    }
-  }
-  const header = manifests.map((m) => m?.header).find((h) => h?.uuid);
-  if (!header) {
-    throw new Error(manifests.length ? 'manifest.json sem header.uuid' : 'ZIP válido, mas sem manifest.json');
-  }
-  const isRp = manifests.some((m) => m?.modules?.[0]?.type === 'resources');
-  const isBp = manifests.some((m) => m?.modules?.[0]?.type === 'data') || isRp === false;
-  const ext = isBp && !isRp ? '.mcpack' : '.mcaddon';
-  return {
-    name: header.name ?? '',
-    version: Array.isArray(header.version) ? header.version.join('.') : String(header.version ?? ''),
-    minecraft: Array.isArray(header.min_engine_version) ? header.min_engine_version.join('.') : '',
-    ext,
-    packs: manifests.length,
-  };
-}
+// leitor/validador de pacotes agora em scripts/package-lib.mjs (compartilhado
+// com o migrador de variantes). Mesmas regras: manifest.json OU pack_manifest
+// (alias antigo), packs aninhados, header.uuid obrigatório no principal.
 
 // upload via ferramenta real (tb-api-upload.mjs) e validação do link
 async function subirParaTeraBox(file) {
@@ -294,22 +228,53 @@ async function processar(job) {
     if (estrutura.minecraft) registro.minecraft_versions = [estrutura.minecraft];
     if (estrutura.version) registro.version = estrutura.version;
 
-    // demais versões da tabela continuam com o link oficial da origem
+    // demais versões da tabela: 2026 (lote 4) — com autorização, as variantes
+    // TAMBÉM sobem pro TeraBox (pedido do dono: "sempre garanta que leve ao
+    // TeraBox"). Variante que falhar no download/upload/validação cai de volta
+    // pro link oficial da origem (honesto), sem invalidar o registro.
     const extras = [];
     for (let fi = 1; fi < d.list.length; fi++) {
       const item = d.list[fi];
       const fid = item.files?.[0]?.id ?? 0;
       if (!fid) continue;
+      let extra = null;
       try {
         const dl2 = await mc.download(fid);
-        extras.push({
-          label: item.name ?? `arquivo ${fi + 1}`,
-          version: parseRangeMin(item.version) || '—',
-          minecraft_versions: [parseRangeMin(item.version) || '1.21.0'],
-          download_url: dl2.url,
-          downloadProvider: 'original',
-        });
+        const label = item.name ?? `arquivo ${fi + 1}`;
+        const vers = parseRangeMin(item.version) || '1.21.0';
+        let subiu = null;
+        try {
+          mkdirSync(tempDir(job.key), { recursive: true });
+          const extOk = /\.(mcaddon|mcpack|mctemplate)/i.exec(dl2.url)?.[1]?.toLowerCase() ?? '.mcaddon';
+          const seg = `${siteId}-${String(label).toLowerCase().replace(/[^\w]+/g, '-')}-v${vers.replace(/[^\w.-]+/g, '-')}${extOk}`;
+          const destT = join(tempDir(job.key), seg);
+          const bytes2 = await baixarArquivo(dl2.url, destT, url);
+          validarPacote(bufSync(destT), { exigirUuid: false });
+          const up2 = await subirParaTeraBox(destT);
+          if (!up2.ok || !up2.share) throw new Error('upload sem SHARE_URL validado');
+          mensagens.push(`variante "${label}" no TeraBox: ${up2.share}`);
+          subiu = { share: up2.share, bytes: bytes2 };
+        } catch (e2) {
+          mensagens.push(`variante "${label}" ficou no link da origem (${e2.message})`);
+        }
+        extra = subiu
+          ? {
+              label,
+              version: vers,
+              minecraft_versions: [vers],
+              download_url: subiu.share,
+              downloadProvider: 'terabox',
+              fileSize: `${(subiu.bytes / 1048576).toFixed(1)} MB`,
+            }
+          : {
+              label,
+              version: vers,
+              minecraft_versions: [vers],
+              download_url: dl2.url,
+              downloadProvider: 'original',
+            };
       } catch { /* arquivo sem URL */ }
+      if (extra) extras.push(extra);
       await sleep(1200);
     }
     if (extras.length > 0) registro.files = extras;

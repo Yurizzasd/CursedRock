@@ -34,8 +34,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/02-06-2023/soul-magic-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1QNJM1u5Z1HvoICfh0s3RXA",
+      "downloadProvider": "terabox",
+      "fileSize": "0.0 MB"
     },
     {
       "label": "New Magical Warfare",
@@ -43,8 +44,9 @@
       "minecraft_versions": [
         "1.21.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/18-08-2025/new-magical-warfare.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1G98CWJhZAdGNAzKLbuNK5Q",
+      "downloadProvider": "terabox",
+      "fileSize": "7.1 MB"
     },
     {
       "label": "Dark Magic",
@@ -52,8 +54,9 @@
       "minecraft_versions": [
         "1.21.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/18-01-2026/dark-magic.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/14_44fvK99DYEhwTZm3mJ3Q",
+      "downloadProvider": "terabox",
+      "fileSize": "0.3 MB"
     }
   ]
 }

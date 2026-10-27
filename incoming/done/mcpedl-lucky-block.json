@@ -25,7 +25,7 @@
   "sourceUrl": "https://mcpedl.org/lucky-block-mod-minecraft-pe/",
   "sourceId": "lucky-block-mod-minecraft-pe",
   "importedAt": "2026-10-27",
-  "download_url": "https://file.mcpedl.org/uploads_files/27-01-2026/lucky-blocks.mcaddon",
+  "download_url": "https://1024terabox.com/s/1U-Q2QOrRXsrahdaJP9DslQ",
   "files": [
     {
       "label": "Original",
@@ -33,8 +33,9 @@
       "minecraft_versions": [
         "1.9.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/original-lucky-block.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/10WtTU9msYEhh6vM2qJfijQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
     },
     {
       "label": "Mini Chefes",
@@ -42,8 +43,9 @@
       "minecraft_versions": [
         "1.20.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/lucky-blocks-mini-bosses.mcaddon",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1qvvTpy9tZ9F7UoviDiLWig",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
     },
     {
       "label": "Hardcore (formato legado)",
@@ -51,8 +53,11 @@
       "minecraft_versions": [
         "1.10.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/15-06-2023/hardcore-lucky-block-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1KMOFuI4zgUa0VALcZwsNmQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
     }
-  ]
+  ],
+  "downloadProvider": "terabox",
+  "fileSize": "0.9 MB"
 }

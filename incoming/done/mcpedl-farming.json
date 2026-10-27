@@ -34,8 +34,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/17-11-2022/ultra-farming-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1OrjbX32lS73QS_WK08Gisg",
+      "downloadProvider": "terabox",
+      "fileSize": "0.5 MB"
     },
     {
       "label": "Farming 3D",
@@ -43,8 +44,9 @@
       "minecraft_versions": [
         "1.19.0"
       ],
-      "download_url": "https://file.mcpedl.org/uploads_files/19-04-2026/farming-3d-mod.mcpack",
-      "downloadProvider": "original"
+      "download_url": "https://1024terabox.com/s/1yX8du3At6xDs50v801l9rA",
+      "downloadProvider": "terabox",
+      "fileSize": "0.2 MB"
     }
   ]
 }
