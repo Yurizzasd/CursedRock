@@ -1586,6 +1586,25 @@ button.tag:hover {
   flex-shrink: 0;
 }
 
+.dl-link {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  color: var(--faint);
+  margin: 10px 0 0;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.dl-link a {
+  color: var(--moss);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.dl-link a:hover {
+  color: var(--red);
+}
+
 .progress-track {
   height: 6px;
   background: var(--surface-3);

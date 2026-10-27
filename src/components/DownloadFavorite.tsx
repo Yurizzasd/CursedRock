@@ -5,7 +5,7 @@ import type { Addon } from '../types';
 
 type Phase = 'steps' | 'ready';
 
-const STEP_LABELS = ['Preparing download…', 'Checking addon…', 'Ready!'];
+const STEP_LABELS = ['Preparando download…', 'Verificando addon…', 'Pronto!'];
 
 export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () => void }) {
   const [step, setStep] = useState(0);
@@ -67,9 +67,25 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
           ))}
         </div>
         {phase === 'ready' ? (
-          <a className="btn btn-primary btn-lg" href={addon.download_url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
-            <Download size={17} /> Download agora
-          </a>
+          <>
+            <a className="btn btn-primary btn-lg" href={addon.download_url} target="_blank" rel="noopener noreferrer" style={{ width: '100%' }}>
+              <Download size={17} /> Download agora
+            </a>
+            {/* 2026: transparência — o destino sempre visível (TeraBox ou fonte original) */}
+            <p className="dl-link">
+              {addon.downloadProvider === 'original' ? 'Fonte original — ' : 'Hospedado no TeraBox — '}
+              <a href={addon.download_url} target="_blank" rel="noopener noreferrer">
+                {(() => {
+                  try {
+                    const u = new URL(addon.download_url);
+                    return `${u.host}${u.pathname.length > 20 ? u.pathname.slice(0, 20) + '…' : u.pathname}`;
+                  } catch {
+                    return addon.download_url.slice(0, 46);
+                  }
+                })()}
+              </a>
+            </p>
+          </>
         ) : (
           <button className="btn btn-ghost" onClick={onClose} style={{ width: '100%' }}>
             Cancelar
