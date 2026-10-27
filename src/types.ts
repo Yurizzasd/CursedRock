@@ -9,6 +9,7 @@ export interface AddonFile {
   minecraft_versions: string[];
   download_url: string;
   fileSize?: string;
+  downloadProvider?: 'terabox' | 'original'; // de onde vem o arquivo da variante
 }
 
 export interface AddonVideo {
