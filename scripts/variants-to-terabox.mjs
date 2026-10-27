@@ -104,7 +104,7 @@ for (const r of addons) {
     const dest = join(t0base, `${r.id}-${createHash('sha1').update(job.url).digest('hex').slice(0, 8)}-${seg}`);
     try {
       const bytes = await baixar(job.url, dest);
-      const estrutura = validarPacote(bufOf(dest), { exigirUuid: false });
+      const estrutura = validarPacote(bufOf(dest), { exigirUuid: false, aceitarLegado: true });
       const up = await subirParaTeraBox(dest);
       if (!up.ok || !up.share) throw new Error('upload sem SHARE_URL validado');
       const cke = await fetch(up.share, { headers: { 'User-Agent': UA } }).catch(() => null);

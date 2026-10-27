@@ -1277,5 +1277,370 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/backpack/backpack-1.webp",
+      "/images/addons/backpack/backpack-2.webp",
+      "/images/addons/backpack/backpack-3.webp"
+    ],
+    "id": "backpack",
+    "name": "Backpacks Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Cinco sistemas de mochila completos pro Bedrock: tamanho ajustável, guardagem de líquidos em barril portátil, craft com couro e tintas e sacos de até 60 slots.",
+    "longDescription": "Coleção com cinco mochilas diferentes, cada uma com sua mecânica. O padrão (OTG Backpack, MC 1.20.50+) aceita qualquer item — de ovo de galinha a bloco de terra — tem três tamanhos ajustáveis a qualquer momento e o pulo do gato: líquidos. Pegue um balde de água ou lava, aponte pro saco e use Put Away: a mochila vira barril portátil, e o líquido volta à mesa quando quiser. Segurança conta com cinto especial que impede outros jogadores de abrir seu saco. O Advanced vira item de craft (couro + qualquer tinta, a cor segue o dye), o Bean entrega 8 sacos de 60 slots, o True tem níveis por material com pintura e indicador visual de equipado, e a variante Sophisticangel fecha a coleção com versões avançadas. Todos os arquivos da página estão no TeraBox.",
+    "category": "utility",
+    "version": "1.0.6",
+    "minecraft_versions": [
+      "1.20.50"
+    ],
+    "thumbnail": "/images/addons/backpack/backpack-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-05-20",
+    "updatedAt": "2026-05-20",
+    "sourceUrl": "https://mcpedl.org/backpack-mod-minecraft-pe/",
+    "sourceId": "backpack-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1Xi0Fj6-fYv3f5g6c649NlA",
+    "fileSize": "1.3 MB",
+    "files": [
+      {
+        "label": "Backpacks",
+        "version": "1.14.0",
+        "minecraft_versions": [
+          "1.14.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1J6m-9HtO2TPTDp8UKm04jw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Advanced",
+        "version": "1.14.0",
+        "minecraft_versions": [
+          "1.14.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1vOm648exk7uf_7DCGYa_Mg",
+        "downloadProvider": "terabox",
+        "fileSize": "3.9 MB"
+      },
+      {
+        "label": "Bean",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/17zhH8aERgtNfzNxq6ZxEsQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "True",
+        "version": "1.20.15",
+        "minecraft_versions": [
+          "1.20.15"
+        ],
+        "download_url": "https://1024terabox.com/s/1Tyr2ibzSoWIJeKVfi465QQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Sophisticangel",
+        "version": "1.21.20",
+        "minecraft_versions": [
+          "1.21.20"
+        ],
+        "download_url": "https://1024terabox.com/s/1TyDvxTfcYnR9oAU4XBTPSw",
+        "downloadProvider": "terabox",
+        "fileSize": "24.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/boss-demon-king/boss-demon-king-1.webp",
+      "/images/addons/boss-demon-king/boss-demon-king-2.webp",
+      "/images/addons/boss-demon-king/boss-demon-king-3.webp"
+    ],
+    "id": "boss-demon-king",
+    "name": "Boss Demon King",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Enfrente o Rei Demônio com arsenal próprio — katana, espada e adaga — numa luta de chefe que rende recursos exclusivos se você sobreviver.",
+    "longDescription": "O addon solta um novo chefe no mundo: o Rei Demônio, feito pra batalha épica e não pra enfeite. Pra enfrentar de igual pra igual, o pack traz arsenal dedicado — katana, espada e adaga — e derrotar o boss rende recursos que não se conseguem de outro jeito. A página indica: quem não quiser encarar sozinho junte amigos e divida os riscos. Arquivo principal validado pra MC 1.19.71+ (manifest v6.0.0), com a variante General Demon também hospedada no TeraBox.",
+    "category": "mobs",
+    "version": "6.0.0",
+    "minecraft_versions": [
+      "1.19.71"
+    ],
+    "thumbnail": "/images/addons/boss-demon-king/boss-demon-king-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-04-25",
+    "updatedAt": "2025-04-25",
+    "sourceUrl": "https://mcpedl.org/boss-demon-king-mod-minecraft-pe/",
+    "sourceId": "boss-demon-king-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1cPNqjyIYzExtuX_lAwMADA",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "General Demon",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1is2WoZNZ3B9_3EROr5GNTQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/nether-generator/nether-generator-1.webp",
+      "/images/addons/nether-generator/nether-generator-2.webp",
+      "/images/addons/nether-generator/nether-generator-3.webp"
+    ],
+    "id": "nether-generator",
+    "name": "Nether Generator Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Trás as estruturas do Nether direto pro Overworld: construções temáticas e ferramentas de geração — sem portal, sem expedição.",
+    "longDescription": "A atmosfera sombria do Nether e suas construções icônicas agora cabem na sua superfície: o mod gera estruturas inspiradas na dimensão direto no Overworld, com ferramentas pra posicionar e montar o ambiente onde você quiser — nada de atravessar portal ou caçar fortaleza por horas. O arquivo principal v2.0.0 foi validado pra MC 1.21.60+ e está hospedado no TeraBox.",
+    "category": "world",
+    "version": "2.0.0",
+    "minecraft_versions": [
+      "1.21.60"
+    ],
+    "thumbnail": "/images/addons/nether-generator/nether-generator-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-01-20",
+    "updatedAt": "2026-01-20",
+    "sourceUrl": "https://mcpedl.org/nether-generator-mod-minecraft-pe/",
+    "sourceId": "nether-generator-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1OtPwetabj8h4hhDyL_9M6A",
+    "fileSize": "0.2 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/teleport/teleport-1.webp",
+      "/images/addons/teleport/teleport-2.webp",
+      "/images/addons/teleport/teleport-3.webp"
+    ],
+    "id": "teleport",
+    "name": "Teleport Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Teletransportes instantâneos pro Bedrock: abertura de portais, pedras de vínculo, teleporte com veículos e clássica Portal Gun.",
+    "longDescription": "Kit de viagem rápida em quatro sabores. O principal (Teleporting Ride, MC 1.17.0+) cria portais de fuga instantânea — escape de inimigos na hora — e ainda translada itens num clique. As variantes da página, todas no TeraBox: Teleport Stone (pedras de vínculo pra viagens longas), Teleporter (transporte direto) e Portal Gun (a arma clássica de portais). Economia de tempo é o recurso que o pack protege.",
+    "category": "magic",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.17.0"
+    ],
+    "thumbnail": "/images/addons/teleport/teleport-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-05-12",
+    "updatedAt": "2025-05-12",
+    "sourceUrl": "https://mcpedl.org/teleport-mod-minecraft-pe/",
+    "sourceId": "teleport-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1AgE7Xf7zlFFoH0GeqvvsoQ",
+    "fileSize": "0.3 MB",
+    "files": [
+      {
+        "label": "Teleport Stone",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1VgPZE2g4OaOHoteAhL4I8g",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Teleporter",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1fDy327LiiqV361h1XOsr9A",
+        "downloadProvider": "terabox",
+        "fileSize": "1.1 MB"
+      },
+      {
+        "label": "Portal Gun",
+        "version": "1.21.20",
+        "minecraft_versions": [
+          "1.21.20"
+        ],
+        "download_url": "https://1024terabox.com/s/1gWbJKzbPfNjDWKzhithq4g",
+        "downloadProvider": "terabox",
+        "fileSize": "5.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/tnt/tnt-1.webp",
+      "/images/addons/tnt/tnt-2.webp",
+      "/images/addons/tnt/tnt-3.webp"
+    ],
+    "id": "tnt",
+    "name": "TNT Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Demolição com potência controlada: ferramentas explosivas de projeção pra limpar terreno na marra e remodelar o mundo à velocidade épica.",
+    "longDescription": "Limpar terreno na mão no survival força você a repetir minerar-plantar-quebrar até a insanidade — este addon resolve com ferramentas explosivas de potência e efeitos ajustáveis, do recorte rápido de área até destruição decorativa. O principal (Explosive Projectiles v2, manifest pra MC 1.2.0+) lança TNT como projétil. Variantes da página — TNT Destructive, More TNT, Best TNT e TNT Addon — todas espelhadas no TeraBox.",
+    "category": "weapons",
+    "version": "2.0.0",
+    "minecraft_versions": [
+      "1.2.0"
+    ],
+    "thumbnail": "/images/addons/tnt/tnt-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-01-17",
+    "updatedAt": "2026-01-17",
+    "sourceUrl": "https://mcpedl.org/tnt-mod-minecraft-pe/",
+    "sourceId": "tnt-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1wMFMlb5UaqGaYxk03BJ0rg",
+    "fileSize": "0.1 MB",
+    "files": [
+      {
+        "label": "TNT Destructive",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1rABdHRAvRuKfj3n_TrRexw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.9 MB"
+      },
+      {
+        "label": "More TNT",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1m6uTw4j09bU6C9kNictatw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "Best TNT",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1IEpYR3O7NLqDMEg1oCBZEQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "TNT Addon",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1ffmfv41niLTl4lvpMKuqdQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/train/train-1.webp",
+      "/images/addons/train/train-2.webp",
+      "/images/addons/train/train-3.webp"
+    ],
+    "id": "train",
+    "name": "Train Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Ferrovias completas no Bedrock: locomotivas e vagões dirigíveis pro transporte industrial que nem cavalo nem minecart entregam.",
+    "longDescription": "O arquivo principal (Trains, MC 1.21.0+) adiciona trens de verdade: ferrovias com locomotivas e vagões pilotáveis — o transporte de peso industrial que montaria e minecart não cobrem. A página traz variantes temáticas, todas hospedadas no TeraBox: Philippine National Railway, Train (MC 1.16+) e Subway; a linha Locomotive original continua no link da fonte (arquivo antigo sem UUID, que o Bedrock moderno não importa).",
+    "category": "vehicles",
+    "version": "1.0.7",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/train/train-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-12-01",
+    "updatedAt": "2025-12-01",
+    "sourceUrl": "https://mcpedl.org/train-mod-minecraft-pe/",
+    "sourceId": "train-mod-minecraft-pe",
+    "importedAt": "2026-10-27",
+    "download_url": "https://1024terabox.com/s/1QhWw3sqTpRGt5B1QMfgvyw",
+    "fileSize": "5.4 MB",
+    "files": [
+      {
+        "label": "Locomotive",
+        "version": "1.6.0",
+        "minecraft_versions": [
+          "1.6.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/11-06-2023/locomotive.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Philippine National Railway",
+        "version": "1.9.0",
+        "minecraft_versions": [
+          "1.9.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1DlvIHyINUW1UR3BlVw9GcQ",
+        "downloadProvider": "terabox",
+        "fileSize": "1.7 MB"
+      },
+      {
+        "label": "Train",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1o67Vsu6m6MzGwI2-l9ksdw",
+        "downloadProvider": "terabox",
+        "fileSize": "1.4 MB"
+      },
+      {
+        "label": "Subway",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1gaqG3PCyCCxB1AWV5R4ukQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.7 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

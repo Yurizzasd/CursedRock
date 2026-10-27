@@ -1,0 +1,30 @@
+{
+  "id": "nether-generator",
+  "name": "Nether Generator Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Trás as estruturas do Nether direto pro Overworld: construções temáticas e ferramentas de geração — sem portal, sem expedição.",
+  "longDescription": "A atmosfera sombria do Nether e suas construções icônicas agora cabem na sua superfície: o mod gera estruturas inspiradas na dimensão direto no Overworld, com ferramentas pra posicionar e montar o ambiente onde você quiser — nada de atravessar portal ou caçar fortaleza por horas. O arquivo principal v2.0.0 foi validado pra MC 1.21.60+ e está hospedado no TeraBox.",
+  "category": "world",
+  "version": "2.0.0",
+  "minecraft_versions": [
+    "1.21.60"
+  ],
+  "thumbnail": "/images/addons/nether-generator/nether-generator-1.webp",
+  "screenshots": [
+    "/images/addons/nether-generator/nether-generator-1.webp",
+    "/images/addons/nether-generator/nether-generator-2.webp",
+    "/images/addons/nether-generator/nether-generator-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-01-20",
+  "updatedAt": "2026-01-20",
+  "sourceUrl": "https://mcpedl.org/nether-generator-mod-minecraft-pe/",
+  "sourceId": "nether-generator-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1OtPwetabj8h4hhDyL_9M6A",
+  "fileSize": "0.2 MB"
+}

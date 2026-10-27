@@ -1,0 +1,82 @@
+{
+  "id": "backpack",
+  "name": "Backpacks Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Cinco sistemas de mochila completos pro Bedrock: tamanho ajustável, guardagem de líquidos em barril portátil, craft com couro e tintas e sacos de até 60 slots.",
+  "longDescription": "Coleção com cinco mochilas diferentes, cada uma com sua mecânica. O padrão (OTG Backpack, MC 1.20.50+) aceita qualquer item — de ovo de galinha a bloco de terra — tem três tamanhos ajustáveis a qualquer momento e o pulo do gato: líquidos. Pegue um balde de água ou lava, aponte pro saco e use Put Away: a mochila vira barril portátil, e o líquido volta à mesa quando quiser. Segurança conta com cinto especial que impede outros jogadores de abrir seu saco. O Advanced vira item de craft (couro + qualquer tinta, a cor segue o dye), o Bean entrega 8 sacos de 60 slots, o True tem níveis por material com pintura e indicador visual de equipado, e a variante Sophisticangel fecha a coleção com versões avançadas. Todos os arquivos da página estão no TeraBox.",
+  "category": "utility",
+  "version": "1.0.6",
+  "minecraft_versions": [
+    "1.20.50"
+  ],
+  "thumbnail": "/images/addons/backpack/backpack-1.webp",
+  "screenshots": [
+    "/images/addons/backpack/backpack-1.webp",
+    "/images/addons/backpack/backpack-2.webp",
+    "/images/addons/backpack/backpack-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-05-20",
+  "updatedAt": "2026-05-20",
+  "sourceUrl": "https://mcpedl.org/backpack-mod-minecraft-pe/",
+  "sourceId": "backpack-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1Xi0Fj6-fYv3f5g6c649NlA",
+  "fileSize": "1.3 MB",
+  "files": [
+    {
+      "label": "Backpacks",
+      "version": "1.14.0",
+      "minecraft_versions": [
+        "1.14.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1J6m-9HtO2TPTDp8UKm04jw",
+      "downloadProvider": "terabox",
+      "fileSize": "0.2 MB"
+    },
+    {
+      "label": "Advanced",
+      "version": "1.14.0",
+      "minecraft_versions": [
+        "1.14.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1vOm648exk7uf_7DCGYa_Mg",
+      "downloadProvider": "terabox",
+      "fileSize": "3.9 MB"
+    },
+    {
+      "label": "Bean",
+      "version": "1.20.0",
+      "minecraft_versions": [
+        "1.20.0"
+      ],
+      "download_url": "https://1024terabox.com/s/17zhH8aERgtNfzNxq6ZxEsQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
+    },
+    {
+      "label": "True",
+      "version": "1.20.15",
+      "minecraft_versions": [
+        "1.20.15"
+      ],
+      "download_url": "https://1024terabox.com/s/1Tyr2ibzSoWIJeKVfi465QQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.0 MB"
+    },
+    {
+      "label": "Sophisticangel",
+      "version": "1.21.20",
+      "minecraft_versions": [
+        "1.21.20"
+      ],
+      "download_url": "https://1024terabox.com/s/1TyDvxTfcYnR9oAU4XBTPSw",
+      "downloadProvider": "terabox",
+      "fileSize": "24.6 MB"
+    }
+  ]
+}

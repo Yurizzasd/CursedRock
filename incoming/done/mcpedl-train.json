@@ -1,0 +1,71 @@
+{
+  "id": "train",
+  "name": "Train Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Ferrovias completas no Bedrock: locomotivas e vagões dirigíveis pro transporte industrial que nem cavalo nem minecart entregam.",
+  "longDescription": "O arquivo principal (Trains, MC 1.21.0+) adiciona trens de verdade: ferrovias com locomotivas e vagões pilotáveis — o transporte de peso industrial que montaria e minecart não cobrem. A página traz variantes temáticas, todas hospedadas no TeraBox: Philippine National Railway, Train (MC 1.16+) e Subway; a linha Locomotive original continua no link da fonte (arquivo antigo sem UUID, que o Bedrock moderno não importa).",
+  "category": "vehicles",
+  "version": "1.0.7",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/train/train-1.webp",
+  "screenshots": [
+    "/images/addons/train/train-1.webp",
+    "/images/addons/train/train-2.webp",
+    "/images/addons/train/train-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-12-01",
+  "updatedAt": "2025-12-01",
+  "sourceUrl": "https://mcpedl.org/train-mod-minecraft-pe/",
+  "sourceId": "train-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1QhWw3sqTpRGt5B1QMfgvyw",
+  "fileSize": "5.4 MB",
+  "files": [
+    {
+      "label": "Locomotive",
+      "version": "1.6.0",
+      "minecraft_versions": [
+        "1.6.0"
+      ],
+      "download_url": "https://file.mcpedl.org/uploads_files/11-06-2023/locomotive.mcaddon",
+      "downloadProvider": "original"
+    },
+    {
+      "label": "Philippine National Railway",
+      "version": "1.9.0",
+      "minecraft_versions": [
+        "1.9.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1DlvIHyINUW1UR3BlVw9GcQ",
+      "downloadProvider": "terabox",
+      "fileSize": "1.7 MB"
+    },
+    {
+      "label": "Train",
+      "version": "1.16.0",
+      "minecraft_versions": [
+        "1.16.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1o67Vsu6m6MzGwI2-l9ksdw",
+      "downloadProvider": "terabox",
+      "fileSize": "1.4 MB"
+    },
+    {
+      "label": "Subway",
+      "version": "1.16.0",
+      "minecraft_versions": [
+        "1.16.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1gaqG3PCyCCxB1AWV5R4ukQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.7 MB"
+    }
+  ]
+}

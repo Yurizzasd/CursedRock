@@ -1,0 +1,62 @@
+{
+  "id": "teleport",
+  "name": "Teleport Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Teletransportes instantâneos pro Bedrock: abertura de portais, pedras de vínculo, teleporte com veículos e clássica Portal Gun.",
+  "longDescription": "Kit de viagem rápida em quatro sabores. O principal (Teleporting Ride, MC 1.17.0+) cria portais de fuga instantânea — escape de inimigos na hora — e ainda translada itens num clique. As variantes da página, todas no TeraBox: Teleport Stone (pedras de vínculo pra viagens longas), Teleporter (transporte direto) e Portal Gun (a arma clássica de portais). Economia de tempo é o recurso que o pack protege.",
+  "category": "magic",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.17.0"
+  ],
+  "thumbnail": "/images/addons/teleport/teleport-1.webp",
+  "screenshots": [
+    "/images/addons/teleport/teleport-1.webp",
+    "/images/addons/teleport/teleport-2.webp",
+    "/images/addons/teleport/teleport-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-05-12",
+  "updatedAt": "2025-05-12",
+  "sourceUrl": "https://mcpedl.org/teleport-mod-minecraft-pe/",
+  "sourceId": "teleport-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1AgE7Xf7zlFFoH0GeqvvsoQ",
+  "fileSize": "0.3 MB",
+  "files": [
+    {
+      "label": "Teleport Stone",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1VgPZE2g4OaOHoteAhL4I8g",
+      "downloadProvider": "terabox",
+      "fileSize": "0.0 MB"
+    },
+    {
+      "label": "Teleporter",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1fDy327LiiqV361h1XOsr9A",
+      "downloadProvider": "terabox",
+      "fileSize": "1.1 MB"
+    },
+    {
+      "label": "Portal Gun",
+      "version": "1.21.20",
+      "minecraft_versions": [
+        "1.21.20"
+      ],
+      "download_url": "https://1024terabox.com/s/1gWbJKzbPfNjDWKzhithq4g",
+      "downloadProvider": "terabox",
+      "fileSize": "5.1 MB"
+    }
+  ]
+}

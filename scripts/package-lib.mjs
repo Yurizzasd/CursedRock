@@ -77,9 +77,13 @@ export function parseManifestJson(bytes) {
 // - manifest.json OU pack_manifest.json (alias antigo), em qualquer pasta
 // - artefatos aninhados: .mcpack (packs), .mcworld/.mctemplate (mundos, exigem
 //   level.dat/levelname.txt) — o Bedrock importa todos os formatos
-// - manifest legado (pack_id/packs_version, pré-1.13) é aceito só em modo
-//   relaxado (exigirUuid=false) — usado em variantes/legacy
-export function validarPacote(buf, { exigirUuid = true } = {}) {
+// - aceitarLegado: manifest pré-1.13 (pack_id/packs_version, sem header) é
+//   hospedável — o Bedrock importa e converte (regra "sempre TeraBox", lote 4).
+//   Mas manifest ESTILO novo SEM header.uuid continua reprovado: o jogo
+//   rejeita, e o selo "Verificado" não mente.
+// - exigirUuid=false (só variantes/migrador): além do legado, aceita mundos
+//   aninhados (bundle sem manifest raíz).
+export function validarPacote(buf, { exigirUuid = true, aceitarLegado = false } = {}) {
   const entries = zipScan(buf);
   const manifests = [];
   for (const e of entries.filter((x) => /(?:pack_)?manifest\.json$/i.test(x.name))) {
@@ -108,10 +112,11 @@ export function validarPacote(buf, { exigirUuid = true } = {}) {
       } catch { /* artefato interno quebrado — ignora */ }
     }
   }
-  const header = manifests.map((m) => m?.header).find((h) => h && (h.uuid || !exigirUuid));
-  if (!header && !exigirUuid) {
-    // legado pré-1.13: manifest com pack_id, sem header
-    const legado = manifests.find((m) => m?.pack_id);
+  // formatos modernos: uuid é obrigatório em TODOS os modos
+  const header = manifests.map((m) => m?.header).find((h) => h?.uuid);
+  if (!header) {
+    // legado pré-1.13: manifest com pack_id, sem header — importável pelo jogo
+    const legado = aceitarLegado ? manifests.find((m) => m?.pack_id) : undefined;
     if (legado) {
       return {
         name: String(legado.pack_id),
@@ -123,7 +128,7 @@ export function validarPacote(buf, { exigirUuid = true } = {}) {
       };
     }
     // bundle Bedrock sem manifest direto mas com mundo aninhado válido
-    const mundo = manifests.find((m) => m?.mundo);
+    const mundo = !exigirUuid ? manifests.find((m) => m?.mundo) : undefined;
     if (mundo) {
       return {
         name: String(mundo.header.name ?? 'mundo'),

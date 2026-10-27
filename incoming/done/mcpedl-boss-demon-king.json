@@ -1,0 +1,42 @@
+{
+  "id": "boss-demon-king",
+  "name": "Boss Demon King",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Enfrente o Rei Demônio com arsenal próprio — katana, espada e adaga — numa luta de chefe que rende recursos exclusivos se você sobreviver.",
+  "longDescription": "O addon solta um novo chefe no mundo: o Rei Demônio, feito pra batalha épica e não pra enfeite. Pra enfrentar de igual pra igual, o pack traz arsenal dedicado — katana, espada e adaga — e derrotar o boss rende recursos que não se conseguem de outro jeito. A página indica: quem não quiser encarar sozinho junte amigos e divida os riscos. Arquivo principal validado pra MC 1.19.71+ (manifest v6.0.0), com a variante General Demon também hospedada no TeraBox.",
+  "category": "mobs",
+  "version": "6.0.0",
+  "minecraft_versions": [
+    "1.19.71"
+  ],
+  "thumbnail": "/images/addons/boss-demon-king/boss-demon-king-1.webp",
+  "screenshots": [
+    "/images/addons/boss-demon-king/boss-demon-king-1.webp",
+    "/images/addons/boss-demon-king/boss-demon-king-2.webp",
+    "/images/addons/boss-demon-king/boss-demon-king-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2025-04-25",
+  "updatedAt": "2025-04-25",
+  "sourceUrl": "https://mcpedl.org/boss-demon-king-mod-minecraft-pe/",
+  "sourceId": "boss-demon-king-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1cPNqjyIYzExtuX_lAwMADA",
+  "fileSize": "0.0 MB",
+  "files": [
+    {
+      "label": "General Demon",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1is2WoZNZ3B9_3EROr5GNTQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.0 MB"
+    }
+  ]
+}

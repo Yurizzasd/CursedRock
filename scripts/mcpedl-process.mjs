@@ -1,7 +1,12 @@
 // Worker do pipeline: processa um lote da fila imports/queue.json.
 // Uso:
 //   node scripts/mcpedl-process.mjs [--jobs=3] [--authorized=<postId,postId2>] [--publish]
+//   node scripts/mcpedl-process.mjs --only=<id,id2>  [com --authorized/--jobs]
 //   node scripts/mcpedl-process.mjs --retry-failed   (reprocessa falhadas)
+//
+// --only restringe o lote a esses ids de origem: obrigatório quando a fila
+// tem pendentes de VÁRIOS pools (2026: sem --only, --jobs=N pegava os N
+// primeiros pendentes — nem sempre os autorizados do lote).
 //
 // Regras dadas pelo dono do projeto:
 //  · Arquivo de TERCEIROS NÃO sobe para a nossa conta TeraBox sem autorização
@@ -35,6 +40,10 @@ const UPLOAD_DIR = lb('dir', '/CursedRock');
 const PUBLISH = process.argv.includes('--publish');
 const RETRY_FAILED = process.argv.includes('--retry-failed');
 const AUTH = `${lb('authorized', '')}`.split(',').map((s) => s.trim()).filter(Boolean);
+// 2026 fix (lote 4): --only=<ids> restringe o lote a esses ids — com a fila
+// cheia de pendentes de vários pools, --jobs=N pegava "os primeiros N"
+// (provavelmente NÃO autorizados). Com --only, o lote é exatamente o escolhido.
+const ONLY = `${lb('only', '')}`.split(',').map((s) => s.trim()).filter(Boolean);
 
 const queue = readQueue();
 const control = readControl();
@@ -158,6 +167,15 @@ async function processar(job) {
     err.permanent = true;
     throw err;
   }
+  // 2026 fix (lote 4): --principal-row=N (1-based) reordena a tabela — algumas
+  // fichas têm a PRIMEIRA linha quebrada/legada e o addon de verdade só nas
+  // últimas (Train Mod: linha 1 era .mcaddon de 10KB sem uuid). Padrão: linha 1.
+  const PRINCIPAL_ROW = Math.max(1, parseInt(lb('principal-row', '0')) || 0);
+  if (PRINCIPAL_ROW > 1) {
+    if (!d.list[PRINCIPAL_ROW - 1]) throw new Error(`--principal-row=${PRINCIPAL_ROW} fora da tabela (${d.list.length} linhas)`);
+    d.list = [d.list[PRINCIPAL_ROW - 1], ...d.list.slice(0, PRINCIPAL_ROW - 1), ...d.list.slice(PRINCIPAL_ROW)];
+    console.log(`  · principal passou a ser a linha ${PRINCIPAL_ROW} da tabela (${d.list[0].name})`);
+  }
 
   const nome = (d.title || job.name || '').replace(/\s+(for\s+)?Minecraft\s+(PE|Bedrock).*$/i, '').trim() || job.name || job.postId;
   const autorDisplay = dedupeDouble(d.info?.game_author || d.info?.author || '');
@@ -210,7 +228,7 @@ async function processar(job) {
     mkdirSync(tempDir(job.key), { recursive: true });
     const temp = join(tempDir(job.key), 'pacote.zip');
     const bytes = await baixarArquivo(dl.url, temp, url);
-    const estrutura = validarPacote(bufSync(temp));
+    const estrutura = validarPacote(bufSync(temp), { aceitarLegado: true });
     // 2026 fix (lote 3): .mctemplate preservado do URL da origem (mundo pronto)
     const ext = /\.(mcaddon|mcpack|mctemplate)/i.exec(dl.url)?.[1]?.toLowerCase() ?? estrutura.ext;
     mensagens.push(`pacote validado: ${(bytes / 1048576).toFixed(1)} MB · ${estrutura.packs} manifest(s) · manifest ${estrutura.name || '?'} v${estrutura.version || '?'} · MC ${estrutura.minecraft || minMc || '?'}`);
@@ -249,7 +267,7 @@ async function processar(job) {
           const seg = `${siteId}-${String(label).toLowerCase().replace(/[^\w]+/g, '-')}-v${vers.replace(/[^\w.-]+/g, '-')}${extOk}`;
           const destT = join(tempDir(job.key), seg);
           const bytes2 = await baixarArquivo(dl2.url, destT, url);
-          validarPacote(bufSync(destT), { exigirUuid: false });
+          validarPacote(bufSync(destT), { exigirUuid: false, aceitarLegado: true });
           const up2 = await subirParaTeraBox(destT);
           if (!up2.ok || !up2.share) throw new Error('upload sem SHARE_URL validado');
           mensagens.push(`variante "${label}" no TeraBox: ${up2.share}`);
@@ -328,7 +346,15 @@ function bufSync(path) {
 
 // ─── main ──────────────────────────────────────────────────────────────────
 const total = queue.length;
-const lote = queue.filter((j) => j.status === 'pending').slice(0, JOBS);
+const candidatos = ONLY.length
+  ? queue.filter((j) => j.status === 'pending' && ONLY.includes(j.key) === true)
+  : queue.filter((j) => j.status === 'pending');
+const lote = candidatos.slice(0, JOBS);
+
+if (ONLY.length && lote.length < Math.min(JOBS, ONLY.length)) {
+  const faltando = ONLY.filter((id) => !lote.some((j) => j.key === id));
+  console.warn(`⚠ --only: não achei pendente(s): ${faltando.join(', ')}`);
+}
 const counters = { processed: 0, tb: 0, original: 0, failed: 0 };
 console.log(`Fila: ${total} tarefas · lote de ${lote.length} (--jobs=${JOBS}) · #autorizados neste lote: ${lote.filter(isAuthorized).length}`);
 

@@ -1,0 +1,72 @@
+{
+  "id": "tnt",
+  "name": "TNT Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Demolição com potência controlada: ferramentas explosivas de projeção pra limpar terreno na marra e remodelar o mundo à velocidade épica.",
+  "longDescription": "Limpar terreno na mão no survival força você a repetir minerar-plantar-quebrar até a insanidade — este addon resolve com ferramentas explosivas de potência e efeitos ajustáveis, do recorte rápido de área até destruição decorativa. O principal (Explosive Projectiles v2, manifest pra MC 1.2.0+) lança TNT como projétil. Variantes da página — TNT Destructive, More TNT, Best TNT e TNT Addon — todas espelhadas no TeraBox.",
+  "category": "weapons",
+  "version": "2.0.0",
+  "minecraft_versions": [
+    "1.2.0"
+  ],
+  "thumbnail": "/images/addons/tnt/tnt-1.webp",
+  "screenshots": [
+    "/images/addons/tnt/tnt-1.webp",
+    "/images/addons/tnt/tnt-2.webp",
+    "/images/addons/tnt/tnt-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-01-17",
+  "updatedAt": "2026-01-17",
+  "sourceUrl": "https://mcpedl.org/tnt-mod-minecraft-pe/",
+  "sourceId": "tnt-mod-minecraft-pe",
+  "importedAt": "2026-10-27",
+  "download_url": "https://1024terabox.com/s/1wMFMlb5UaqGaYxk03BJ0rg",
+  "fileSize": "0.1 MB",
+  "files": [
+    {
+      "label": "TNT Destructive",
+      "version": "1.16.0",
+      "minecraft_versions": [
+        "1.16.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1rABdHRAvRuKfj3n_TrRexw",
+      "downloadProvider": "terabox",
+      "fileSize": "0.9 MB"
+    },
+    {
+      "label": "More TNT",
+      "version": "1.20.0",
+      "minecraft_versions": [
+        "1.20.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1m6uTw4j09bU6C9kNictatw",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
+    },
+    {
+      "label": "Best TNT",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1IEpYR3O7NLqDMEg1oCBZEQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.2 MB"
+    },
+    {
+      "label": "TNT Addon",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1ffmfv41niLTl4lvpMKuqdQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.4 MB"
+    }
+  ]
+}

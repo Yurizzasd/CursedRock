@@ -107,7 +107,12 @@ Pedido do dono: todo download do site deve levar ao TeraBox. Duas pontas:
 Validação e leitura de ZIP vivem em `scripts/package-lib.mjs` (compartilhado
 entre worker e migrador): `pack_manifest.json` aceito, ZIPs aninhados
 (`.mcpack` dentro de `.mcaddon`), offsets do central directory corrigidos,
-`header.uuid` exigível por opção (`exigirUuid`).
+`header.uuid` exigível por opção (`exigirUuid`). Manifests com **comentários
+`//`/`/* */`, BOM e números com zero à esquerda** (`[4, 07, 19]`) também são
+aceitos — o parser do próprio Bedrock é leniente igual (casos reais: Ultra
+Farming no bridge.editor, Dungeons Content). Uploads grandes sofreram resets
+de conexão: `tb-api-upload.mjs` repete cada chunk de 4 MB até 3× com pausa
+crescente antes de desistir.
 
 ## Estado em disco (gitignored)
 
@@ -125,9 +130,12 @@ catálogo · `import-addon.mjs` bloqueia `id` duplicado (fluxo já existente).
 ## Limites configuráveis do worker
 
 `--jobs=N` tamanho do lote (default 3) · `--images=N` imagens por ficha (default 3) ·
-`--max-file-mb=N` limite de upload (default 150) · `--dir=/CursedRock` pasta destino da conta.
-Antes de ampliar lotes: rodar `npm run imports:test` — ele falha e interrompe o plano
-se qualquer etapa (API→file→upload→link→cadastro→dev server→dedupe) não passar.
+`--max-file-mb=N` limite de upload (default 150) · `--dir=/CursedRock` pasta destino da conta ·
+`--only=<id,id>` exatamente os pendentes desse lote (usar quando a fila tem pendentes
+de vários pools — 2026: sem `--only`, `--jobs=N` pega os N primeiros pendentes, nem
+sempre os autorizados). Antes de ampliar lotes: rodar `npm run imports:test` — ele
+falha e interrompe o plano se qualquer etapa (API→file→upload→link→cadastro→dev
+server→dedupe) não passar.
 
 ## Testes (o que cada etapa prova)
 
