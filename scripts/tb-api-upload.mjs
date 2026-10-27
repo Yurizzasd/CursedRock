@@ -21,12 +21,19 @@ function cookie() {
     const v = process.env.TB_NDUS;
     return v.startsWith('ndus=') ? v : `ndus=${v}`;
   }
+  // 2026: ndus sozinho não sustenta mais a sessão em toda conta — jar completo
+  // (exportado do perfil .tb-profile) tem prioridade quando existir.
+  const jar = join(homedir(), 'AppData', 'Roaming', 'CursedRock', 'tb-jar.txt');
+  if (existsSync(jar)) {
+    const v = readFileSync(jar, 'utf8').trim();
+    if (v) return v.replace(/\r?\n/g, '; ');
+  }
   const f = join(homedir(), 'AppData', 'Roaming', 'CursedRock', 'tb-cookie.txt');
   if (existsSync(f)) {
     const v = readFileSync(f, 'utf8').trim();
     return v.startsWith('ndus=') ? v : `ndus=${v}`;
   }
-  console.error('Sem cookie. Passe --cookie=<ndus>, $TB_NDUS ou salve em %APPDATA%/CursedRock/tb-cookie.txt');
+  console.error('Sem cookie. Passe --cookie=<ndus>, $TB_NDUS ou exporte o jar: node scripts/tb-session.mjs --export');
   process.exit(1);
 }
 

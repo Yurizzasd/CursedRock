@@ -45,7 +45,7 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
         </div>
         <h3>{phase === 'steps' ? STEP_LABELS[step] : 'Seu download está pronto'}</h3>
         <p>
-          {addon.name} v{addon.version} • {addon.fileSize ?? '—'} • Verificado pelo CursedRock
+          {addon.name} v{addon.version} • {addon.fileSize ?? '—'} • {addon.downloadProvider === 'original' ? 'Arquivo da fonte original' : 'Verificado pelo CursedRock'}
         </p>
         <div className="progress-track">
           <div className="progress-fill" style={{ width: `${progress}%` }} />

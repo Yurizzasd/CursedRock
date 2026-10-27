@@ -1,13 +1,14 @@
-// Diagnóstico + importação de sessão para o perfil .tb-profile.
+// Diagnóstico + importação/exportação de sessão para o perfil .tb-profile.
 // Uso:
 //   node scripts/tb-session.mjs <arquivo.json>   → importa cookies e testa o disco
-//   node scripts/tb-session.mjs --headed          → só testa (janela visível)
+//   node scripts/tb-session.mjs --export         → grava o jar completo em %APPDATA%/CursedRock/tb-jar.txt
+//   node scripts/tb-session.mjs --headed         → só testa (janela visível, p/ login humano)
 // O JSON é um array: [{ "name": "ndus", "value": "..." }]
 import { chromium } from 'playwright-core';
-import { mkdirSync, readFileSync } from 'node:fs';
+import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { tmpdir } from 'node:os';
+import { homedir, tmpdir } from 'node:os';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 mkdirSync(join(tmpdir(), 'tb-debug'), { recursive: true });
@@ -47,6 +48,16 @@ async function main() {
     await page.waitForTimeout(10000);
     console.log('cookies agora:', (await context.cookies()).map((c) => c.name).join(',') || '(nenhum)');
     console.log('url:', page.url());
+
+    if (process.argv.includes('--export')) {
+      const cookieList = (await context.cookies()).filter((c) => /\.terabox\.com$/.test(c.domain));
+      const jar = cookieList.map((c) => `${c.name}=${c.value}`).join('; ');
+      const dest = join(homedir(), 'AppData', 'Roaming', 'CursedRock', 'tb-jar.txt');
+      mkdirSync(dirname(dest), { recursive: true });
+      writeFileSync(dest, jar);
+      const ndus = (cookieList.find((c) => c.name === 'ndus') ?? {}).value ?? '';
+      console.log(`jar exportado: ${cookieList.length} cookies → ${dest} (ndus ${ndus ? 'ok' : 'AUSENTE'})`);
+    }
     console.log('titulo:', await page.title().catch(() => '(?)'));
     try {
       const info = await page.evaluate(() => ({

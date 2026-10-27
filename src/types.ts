@@ -52,6 +52,16 @@ export interface Addon {
   updatedAt: string; // ISO
   changelog?: string[];
   requirements?: string[];
+  /** Proveniência do pipeline (opcional): origem MCPEDL do registro. */
+  sourceUrl?: string; // página original do addon
+  /** Identificador do registro na fonte — usado pra dedupe na importação. */
+  sourceId?: string;
+  /** Data (YYYY-MM-DD) em que entrou no catálogo via pipeline. */
+  importedAt?: string;
+  /** 'terabox' = hospedado por nós (arquivo autorizado); 'original' = link oficial da origem. */
+  downloadProvider?: 'terabox' | 'original';
+  /** Dono declarou redistribuição autorizada p/ este registro. */
+  redistributionAuthorized?: boolean;
 }
 
 export interface Category {

@@ -3,9 +3,11 @@ node_modules/
 
 # build
 dist/
+!scripts/vendor/mcpedl/dist/
 
 # sessão do navegador (TeraBox) — NUNCA commitar
 .tb-profile/
+.tb-jar.txt
 
 # env / segredos — NUNCA commitar tokens
 .env
@@ -22,3 +24,6 @@ Thumbs.db
 
 # perfil do navegador de raspagem
 .src-profile/
+
+# estado do pipeline de importação (fila, downloads temporários, logs)
+imports/
