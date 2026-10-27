@@ -300,7 +300,7 @@ export function AddonDetail() {
                 files={addon.files}
                 render={(file) => (
                   <>
-                    <DownloadButton addon={{ ...addon, version: file.version, fileSize: file.fileSize, download_url: file.download_url, minecraft_versions: file.minecraft_versions }} />
+                    <DownloadButton addon={{ ...addon, version: file.version, fileSize: file.fileSize, download_url: file.download_url, minecraft_versions: file.minecraft_versions, downloadProvider: file.downloadProvider ?? addon.downloadProvider }} />
                     <dl style={{ margin: '14px 0 0' }}>
                       <div className="kv">
                         <dt>Versão</dt>

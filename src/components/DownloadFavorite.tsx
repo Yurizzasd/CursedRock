@@ -34,6 +34,18 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
 
   const progress = phase === 'ready' ? 100 : [18, 55, 88][step];
 
+  // 2026 fix: o destino que o botão abre decide o selo — nunca o contrário.
+  // (Assim uma variante com link da fonte não exibe "Verificado pelo CursedRock".)
+  const isTeraBox = (() => {
+    try {
+      return /terabox|1024tera/i.test(new URL(addon.download_url).host);
+    } catch {
+      return false;
+    }
+  })();
+  const providerLabel = isTeraBox ? 'Verificado pelo CursedRock' : 'Arquivo da fonte original';
+  const destinoLabel = isTeraBox ? 'Hospedado no TeraBox' : 'Fonte original';
+
   return createPortal(
     <div className="modal-backdrop" onClick={onClose} role="dialog" aria-modal="true" aria-label={`Download de ${addon.name}`}>
       <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -45,7 +57,7 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
         </div>
         <h3>{phase === 'steps' ? STEP_LABELS[step] : 'Seu download está pronto'}</h3>
         <p>
-          {addon.name} v{addon.version} • {addon.fileSize ?? '—'} • {addon.downloadProvider === 'original' ? 'Arquivo da fonte original' : 'Verificado pelo CursedRock'}
+          {addon.name} v{addon.version} • {addon.fileSize ?? '—'} • {providerLabel}
         </p>
         <div className="progress-track">
           <div className="progress-fill" style={{ width: `${progress}%` }} />
@@ -73,7 +85,7 @@ export function DownloadModal({ addon, onClose }: { addon: Addon; onClose: () =>
             </a>
             {/* 2026: transparência — o destino sempre visível (TeraBox ou fonte original) */}
             <p className="dl-link">
-              {addon.downloadProvider === 'original' ? 'Fonte original — ' : 'Hospedado no TeraBox — '}
+              {destinoLabel} —{' '}
               <a href={addon.download_url} target="_blank" rel="noopener noreferrer">
                 {(() => {
                   try {
