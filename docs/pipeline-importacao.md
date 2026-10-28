@@ -133,9 +133,11 @@ catálogo · `import-addon.mjs` bloqueia `id` duplicado (fluxo já existente).
 `--max-file-mb=N` limite de upload (default 150) · `--dir=/CursedRock` pasta destino da conta ·
 `--only=<id,id>` exatamente os pendentes desse lote (usar quando a fila tem pendentes
 de vários pools — 2026: sem `--only`, `--jobs=N` pega os N primeiros pendentes, nem
-sempre os autorizados). Antes de ampliar lotes: rodar `npm run imports:test` — ele
-falha e interrompe o plano se qualquer etapa (API→file→upload→link→cadastro→dev
-server→dedupe) não passar.
+sempre os autorizados) · `--principal-row=N` reordena a tabela da ficha e elege a
+linha N como pacote principal (lote 5: Train Mod tinha a linha 1 quebrada de 10KB e
+o addon de verdade na linha 5 — default é a linha 1). Antes de ampliar lotes: rodar
+`npm run imports:test` — ele falha e interrompe o plano se qualquer etapa
+(API→file→upload→link→cadastro→dev server→dedupe) não passar.
 
 ## Testes (o que cada etapa prova)
 

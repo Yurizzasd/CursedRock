@@ -1,0 +1,52 @@
+{
+  "id": "metro",
+  "name": "Metro Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Metrô completo pro Bedrock: trilhos no subsolo, trens pilotáveis e estações — com variantes Nova York e Moscou no TeraBox.",
+  "longDescription": "O METROPACK (arquivo principal, MC 1.16+) entrega o transporte de capital que faltava: deite trilhos no subsolo, pilote os trens e construa estações à vontade. No criativo, o ovo de invocação monta tudo em segundos; no multiplayer, o dono do mundo ativa o addon e chama os amigos pra rodar a linha. Variantes da página, no TeraBox: New York Subway e Moscow Metro — essa última um casulo com quatro vagões (81-717, 81-717b, 81-765 e 81-775) no mesmo arquivo.",
+  "category": "vehicles",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.16.0"
+  ],
+  "thumbnail": "/images/addons/metro/metro-1.webp",
+  "screenshots": [
+    "/images/addons/metro/metro-1.webp",
+    "/images/addons/metro/metro-2.webp",
+    "/images/addons/metro/metro-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2023-12-22",
+  "updatedAt": "2023-12-22",
+  "sourceUrl": "https://mcpedl.org/metro-mod-minecraft-pe/",
+  "sourceId": "metro-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1ydrtuZfLSPcZI06CdpbJ1A",
+  "fileSize": "0.7 MB",
+  "files": [
+    {
+      "label": "New York Subway",
+      "version": "1.17.0",
+      "minecraft_versions": [
+        "1.17.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1lUSX0382s0pLf8P3HGutDQ",
+      "downloadProvider": "terabox",
+      "fileSize": "1.8 MB"
+    },
+    {
+      "label": "Moscow Metro",
+      "version": "1.17.30",
+      "minecraft_versions": [
+        "1.17.30"
+      ],
+      "download_url": "https://1024terabox.com/s/1pCw7GcQZW5WWBCJVYWrAdg",
+      "downloadProvider": "terabox",
+      "fileSize": "7.1 MB"
+    }
+  ]
+}

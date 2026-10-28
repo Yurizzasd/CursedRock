@@ -1,0 +1,30 @@
+{
+  "id": "kitsune-boss",
+  "name": "Kitsune Boss Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Enfrente a raposa de nove caudas: chefe de visual anime com arsenal de ataque, barras de vida próprias e armas novas como loot.",
+  "longDescription": "O Kitsune Boss entra no mundo como oponente de verdade: textura estilo anime, barras de vida e de ataque próprias e golpes com armas variadas. Vencer rende armas novas como loot — o que dá motivo pra caçar o chefe de novo. No criativo, spawne pelo ovo de invocação e pegue os itens extras do pack. Manifest v6.5.0 pra MC 1.20+, hospedado no TeraBox.",
+  "category": "mobs",
+  "version": "6.5.0",
+  "minecraft_versions": [
+    "1.20.0"
+  ],
+  "thumbnail": "/images/addons/kitsune-boss/kitsune-boss-1.webp",
+  "screenshots": [
+    "/images/addons/kitsune-boss/kitsune-boss-1.webp",
+    "/images/addons/kitsune-boss/kitsune-boss-2.webp",
+    "/images/addons/kitsune-boss/kitsune-boss-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2024-10-13",
+  "updatedAt": "2024-10-13",
+  "sourceUrl": "https://mcpedl.org/kitsune-boss-mod-minecraft-pe/",
+  "sourceId": "kitsune-boss-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1FnCkNtHBGVKs5EP3ajOmdw",
+  "fileSize": "1.4 MB"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ores-dimension",
+  "name": "Ores Dimension Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Minérios raros onde nunca houve: diamante, ouro e esmeralda espalhados em Nether e End pra turbinar o survival.",
+  "longDescription": "O Ores Dimension muda a economia de recursos do jogo: diamante, ouro, esmeralda e mais aparecem nos territórios de Nether e End — dimensões que antes entregavam pouca coisa útil. Vira expedição de caça ao tesouro em grupo (multiplayer suportado; ative o modo experimental). Manifest v1.0.1 pra MC 1.14+, hospedado no TeraBox.",
+  "category": "world",
+  "version": "1.0.1",
+  "minecraft_versions": [
+    "1.14.0"
+  ],
+  "thumbnail": "/images/addons/ores-dimension/ores-dimension-1.webp",
+  "screenshots": [
+    "/images/addons/ores-dimension/ores-dimension-1.webp",
+    "/images/addons/ores-dimension/ores-dimension-2.webp",
+    "/images/addons/ores-dimension/ores-dimension-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2024-09-26",
+  "updatedAt": "2024-09-26",
+  "sourceUrl": "https://mcpedl.org/ores-dimension-mod-minecraft-pe/",
+  "sourceId": "ores-dimension-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1FLb2MSVGYMUfWNlcgU6xrg",
+  "fileSize": "0.0 MB"
+}

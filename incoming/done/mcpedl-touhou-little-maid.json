@@ -1,0 +1,30 @@
+{
+  "id": "touhou-little-maid",
+  "name": "Touhou Little Maid Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Maids do universo Touhou no Bedrock: mobs fofas que ajudam em batalha, farm e afazeres, com guidebook completo incluído.",
+  "longDescription": "O addon Java consagrado, porte oficial pro Bedrock: as Touhou Little Maid adicionam mobs de maid com skins variadas que ajudam o jogador em combate, agricultura e tarefas do cotidiano. O guidebook embutido documenta cada mecânica — sem depender de wiki externa. Manifest v1.3.3 pra MC 1.21+, hospedado no TeraBox.",
+  "category": "anime",
+  "version": "1.3.3",
+  "minecraft_versions": [
+    "1.21.0"
+  ],
+  "thumbnail": "/images/addons/touhou-little-maid/touhou-little-maid-1.webp",
+  "screenshots": [
+    "/images/addons/touhou-little-maid/touhou-little-maid-1.webp",
+    "/images/addons/touhou-little-maid/touhou-little-maid-2.webp",
+    "/images/addons/touhou-little-maid/touhou-little-maid-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2024-09-11",
+  "updatedAt": "2024-09-11",
+  "sourceUrl": "https://mcpedl.org/touhou-little-maid-mod-minecraft-pe/",
+  "sourceId": "touhou-little-maid-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1Utv-n-NU-_vZAAyMiPIhTA",
+  "fileSize": "6.3 MB"
+}

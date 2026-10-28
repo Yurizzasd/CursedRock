@@ -1,0 +1,45 @@
+{
+  "id": "transformers",
+  "name": "Transformers Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "Autobots e Decepticons no mundo cúbico: aliens que viram carros, caminhões e helicópteros — amigo ou inimigo, você escolhe o lado.",
+  "longDescription": "A saga dos transformáveis chega ao Bedrock: os Transformers se dividem entre Autobots aliados e Decepticons hostis, e todos se convertem em veículos — carros, caminhões e até helicópteros. Manifest v2.6.1 (MC 1.2.0+) com a variante Rise of the Beasts da página também no TeraBox.",
+  "category": "technology",
+  "version": "2.6.1",
+  "minecraft_versions": [
+    "1.2.0"
+  ],
+  "requirements": [
+    "Faixa de versões declarada na origem: 1.2.0 - 1.26.50"
+  ],
+  "thumbnail": "/images/addons/transformers/transformers-1.webp",
+  "screenshots": [
+    "/images/addons/transformers/transformers-1.webp",
+    "/images/addons/transformers/transformers-2.webp",
+    "/images/addons/transformers/transformers-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2024-05-17",
+  "updatedAt": "2024-05-17",
+  "sourceUrl": "https://mcpedl.org/transformers-mod-minecraft-pe/",
+  "sourceId": "transformers-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1xAxFCS7BA5ld1iX4ATVYxA",
+  "fileSize": "0.2 MB",
+  "files": [
+    {
+      "label": "Rise of the Beasts",
+      "version": "1.18.0",
+      "minecraft_versions": [
+        "1.18.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1GygnjNfacv1sTZ38ZxGbYQ",
+      "downloadProvider": "terabox",
+      "fileSize": "0.1 MB"
+    }
+  ]
+}

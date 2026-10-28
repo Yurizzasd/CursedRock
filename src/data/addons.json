@@ -1642,5 +1642,270 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/herobrine/herobrine-1.webp",
+      "/images/addons/herobrine/herobrine-2.webp",
+      "/images/addons/herobrine/herobrine-3.webp"
+    ],
+    "id": "herobrine",
+    "name": "Herobrine Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "A creepypasta mais antiga do Minecraft vira ameaça real: ritual de invocação, eventos paranormais no mundo e entidades com até 9999 de vida.",
+    "longDescription": "O Herobrine chega pro Bedrock em formato coleção: o arquivo principal (Herobrine's Rebirth, MC 1.8.0+) traz o ritual de invocação do mito, e a página reuniu quatro variantes — Herobrine Experience, Walzzyjrs, Official e Herobrine Lurking — todas espelhadas no TeraBox. A assinatura da lenda continua: olhos brancos vigiando no nevoeiro, pirâmides de areia que ninguém construiu, florestas desfolhadas. Eventos paranormais e chefes com HP absurdo fecham o pacote de terror.",
+    "category": "horror",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/herobrine/herobrine-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-21",
+    "updatedAt": "2026-07-21",
+    "sourceUrl": "https://mcpedl.org/herobrine-mod-minecraft-pe/",
+    "sourceId": "herobrine-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1svY21ylWOLhXeqtoyyJ_Xg",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Herobrine Experience",
+        "version": "1.14.0",
+        "minecraft_versions": [
+          "1.14.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Me65IyPAq-hK7rRfqsMwlw",
+        "downloadProvider": "terabox",
+        "fileSize": "2.4 MB"
+      },
+      {
+        "label": "Walzzyjrs Herobrine",
+        "version": "1.19.20",
+        "minecraft_versions": [
+          "1.19.20"
+        ],
+        "download_url": "https://1024terabox.com/s/1s8d-rVFjax0l1pIughYC9w",
+        "downloadProvider": "terabox",
+        "fileSize": "0.6 MB"
+      },
+      {
+        "label": "Official Herobrine",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1nl1m0HP3GZihaPg0pFDydA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Herobrine Lurking",
+        "version": "1.21.70",
+        "minecraft_versions": [
+          "1.21.70"
+        ],
+        "download_url": "https://1024terabox.com/s/1Te4Ms6kInIxP07N3q6pogg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/kitsune-boss/kitsune-boss-1.webp",
+      "/images/addons/kitsune-boss/kitsune-boss-2.webp",
+      "/images/addons/kitsune-boss/kitsune-boss-3.webp"
+    ],
+    "id": "kitsune-boss",
+    "name": "Kitsune Boss Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Enfrente a raposa de nove caudas: chefe de visual anime com arsenal de ataque, barras de vida próprias e armas novas como loot.",
+    "longDescription": "O Kitsune Boss entra no mundo como oponente de verdade: textura estilo anime, barras de vida e de ataque próprias e golpes com armas variadas. Vencer rende armas novas como loot — o que dá motivo pra caçar o chefe de novo. No criativo, spawne pelo ovo de invocação e pegue os itens extras do pack. Manifest v6.5.0 pra MC 1.20+, hospedado no TeraBox.",
+    "category": "mobs",
+    "version": "6.5.0",
+    "minecraft_versions": [
+      "1.20.0"
+    ],
+    "thumbnail": "/images/addons/kitsune-boss/kitsune-boss-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-10-13",
+    "updatedAt": "2024-10-13",
+    "sourceUrl": "https://mcpedl.org/kitsune-boss-mod-minecraft-pe/",
+    "sourceId": "kitsune-boss-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1FnCkNtHBGVKs5EP3ajOmdw",
+    "fileSize": "1.4 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/metro/metro-1.webp",
+      "/images/addons/metro/metro-2.webp",
+      "/images/addons/metro/metro-3.webp"
+    ],
+    "id": "metro",
+    "name": "Metro Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Metrô completo pro Bedrock: trilhos no subsolo, trens pilotáveis e estações — com variantes Nova York e Moscou no TeraBox.",
+    "longDescription": "O METROPACK (arquivo principal, MC 1.16+) entrega o transporte de capital que faltava: deite trilhos no subsolo, pilote os trens e construa estações à vontade. No criativo, o ovo de invocação monta tudo em segundos; no multiplayer, o dono do mundo ativa o addon e chama os amigos pra rodar a linha. Variantes da página, no TeraBox: New York Subway e Moscow Metro — essa última um casulo com quatro vagões (81-717, 81-717b, 81-765 e 81-775) no mesmo arquivo.",
+    "category": "vehicles",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.16.0"
+    ],
+    "thumbnail": "/images/addons/metro/metro-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2023-12-22",
+    "updatedAt": "2023-12-22",
+    "sourceUrl": "https://mcpedl.org/metro-mod-minecraft-pe/",
+    "sourceId": "metro-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1ydrtuZfLSPcZI06CdpbJ1A",
+    "fileSize": "0.7 MB",
+    "files": [
+      {
+        "label": "New York Subway",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1lUSX0382s0pLf8P3HGutDQ",
+        "downloadProvider": "terabox",
+        "fileSize": "1.8 MB"
+      },
+      {
+        "label": "Moscow Metro",
+        "version": "1.17.30",
+        "minecraft_versions": [
+          "1.17.30"
+        ],
+        "download_url": "https://1024terabox.com/s/1pCw7GcQZW5WWBCJVYWrAdg",
+        "downloadProvider": "terabox",
+        "fileSize": "7.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/ores-dimension/ores-dimension-1.webp",
+      "/images/addons/ores-dimension/ores-dimension-2.webp",
+      "/images/addons/ores-dimension/ores-dimension-3.webp"
+    ],
+    "id": "ores-dimension",
+    "name": "Ores Dimension Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Minérios raros onde nunca houve: diamante, ouro e esmeralda espalhados em Nether e End pra turbinar o survival.",
+    "longDescription": "O Ores Dimension muda a economia de recursos do jogo: diamante, ouro, esmeralda e mais aparecem nos territórios de Nether e End — dimensões que antes entregavam pouca coisa útil. Vira expedição de caça ao tesouro em grupo (multiplayer suportado; ative o modo experimental). Manifest v1.0.1 pra MC 1.14+, hospedado no TeraBox.",
+    "category": "world",
+    "version": "1.0.1",
+    "minecraft_versions": [
+      "1.14.0"
+    ],
+    "thumbnail": "/images/addons/ores-dimension/ores-dimension-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-09-26",
+    "updatedAt": "2024-09-26",
+    "sourceUrl": "https://mcpedl.org/ores-dimension-mod-minecraft-pe/",
+    "sourceId": "ores-dimension-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1FLb2MSVGYMUfWNlcgU6xrg",
+    "fileSize": "0.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/touhou-little-maid/touhou-little-maid-1.webp",
+      "/images/addons/touhou-little-maid/touhou-little-maid-2.webp",
+      "/images/addons/touhou-little-maid/touhou-little-maid-3.webp"
+    ],
+    "id": "touhou-little-maid",
+    "name": "Touhou Little Maid Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Maids do universo Touhou no Bedrock: mobs fofas que ajudam em batalha, farm e afazeres, com guidebook completo incluído.",
+    "longDescription": "O addon Java consagrado, porte oficial pro Bedrock: as Touhou Little Maid adicionam mobs de maid com skins variadas que ajudam o jogador em combate, agricultura e tarefas do cotidiano. O guidebook embutido documenta cada mecânica — sem depender de wiki externa. Manifest v1.3.3 pra MC 1.21+, hospedado no TeraBox.",
+    "category": "anime",
+    "version": "1.3.3",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/touhou-little-maid/touhou-little-maid-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-09-11",
+    "updatedAt": "2024-09-11",
+    "sourceUrl": "https://mcpedl.org/touhou-little-maid-mod-minecraft-pe/",
+    "sourceId": "touhou-little-maid-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1Utv-n-NU-_vZAAyMiPIhTA",
+    "fileSize": "6.3 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/transformers/transformers-1.webp",
+      "/images/addons/transformers/transformers-2.webp",
+      "/images/addons/transformers/transformers-3.webp"
+    ],
+    "id": "transformers",
+    "name": "Transformers Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Autobots e Decepticons no mundo cúbico: aliens que viram carros, caminhões e helicópteros — amigo ou inimigo, você escolhe o lado.",
+    "longDescription": "A saga dos transformáveis chega ao Bedrock: os Transformers se dividem entre Autobots aliados e Decepticons hostis, e todos se convertem em veículos — carros, caminhões e até helicópteros. Manifest v2.6.1 (MC 1.2.0+) com a variante Rise of the Beasts da página também no TeraBox.",
+    "category": "technology",
+    "version": "2.6.1",
+    "minecraft_versions": [
+      "1.2.0"
+    ],
+    "requirements": [
+      "Faixa de versões declarada na origem: 1.2.0 - 1.26.50"
+    ],
+    "thumbnail": "/images/addons/transformers/transformers-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-05-17",
+    "updatedAt": "2024-05-17",
+    "sourceUrl": "https://mcpedl.org/transformers-mod-minecraft-pe/",
+    "sourceId": "transformers-mod-minecraft-pe",
+    "importedAt": "2026-10-28",
+    "download_url": "https://1024terabox.com/s/1xAxFCS7BA5ld1iX4ATVYxA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Rise of the Beasts",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1GygnjNfacv1sTZ38ZxGbYQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

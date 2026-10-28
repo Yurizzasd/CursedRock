@@ -1,0 +1,72 @@
+{
+  "id": "herobrine",
+  "name": "Herobrine Mod",
+  "author": "unknown",
+  "authorDisplay": "Brandon Taylor",
+  "description": "A creepypasta mais antiga do Minecraft vira ameaça real: ritual de invocação, eventos paranormais no mundo e entidades com até 9999 de vida.",
+  "longDescription": "O Herobrine chega pro Bedrock em formato coleção: o arquivo principal (Herobrine's Rebirth, MC 1.8.0+) traz o ritual de invocação do mito, e a página reuniu quatro variantes — Herobrine Experience, Walzzyjrs, Official e Herobrine Lurking — todas espelhadas no TeraBox. A assinatura da lenda continua: olhos brancos vigiando no nevoeiro, pirâmides de areia que ninguém construiu, florestas desfolhadas. Eventos paranormais e chefes com HP absurdo fecham o pacote de terror.",
+  "category": "horror",
+  "version": "1.0.0",
+  "minecraft_versions": [
+    "1.8.0"
+  ],
+  "thumbnail": "/images/addons/herobrine/herobrine-1.webp",
+  "screenshots": [
+    "/images/addons/herobrine/herobrine-1.webp",
+    "/images/addons/herobrine/herobrine-2.webp",
+    "/images/addons/herobrine/herobrine-3.webp"
+  ],
+  "tags": [
+    "Bedrock"
+  ],
+  "featured": false,
+  "createdAt": "2026-07-21",
+  "updatedAt": "2026-07-21",
+  "sourceUrl": "https://mcpedl.org/herobrine-mod-minecraft-pe/",
+  "sourceId": "herobrine-mod-minecraft-pe",
+  "importedAt": "2026-10-28",
+  "download_url": "https://1024terabox.com/s/1svY21ylWOLhXeqtoyyJ_Xg",
+  "fileSize": "0.0 MB",
+  "files": [
+    {
+      "label": "Herobrine Experience",
+      "version": "1.14.0",
+      "minecraft_versions": [
+        "1.14.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1Me65IyPAq-hK7rRfqsMwlw",
+      "downloadProvider": "terabox",
+      "fileSize": "2.4 MB"
+    },
+    {
+      "label": "Walzzyjrs Herobrine",
+      "version": "1.19.20",
+      "minecraft_versions": [
+        "1.19.20"
+      ],
+      "download_url": "https://1024terabox.com/s/1s8d-rVFjax0l1pIughYC9w",
+      "downloadProvider": "terabox",
+      "fileSize": "0.6 MB"
+    },
+    {
+      "label": "Official Herobrine",
+      "version": "1.21.0",
+      "minecraft_versions": [
+        "1.21.0"
+      ],
+      "download_url": "https://1024terabox.com/s/1nl1m0HP3GZihaPg0pFDydA",
+      "downloadProvider": "terabox",
+      "fileSize": "0.0 MB"
+    },
+    {
+      "label": "Herobrine Lurking",
+      "version": "1.21.70",
+      "minecraft_versions": [
+        "1.21.70"
+      ],
+      "download_url": "https://1024terabox.com/s/1Te4Ms6kInIxP07N3q6pogg",
+      "downloadProvider": "terabox",
+      "fileSize": "0.6 MB"
+    }
+  ]
+}

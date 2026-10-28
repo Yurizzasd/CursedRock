@@ -92,9 +92,10 @@ export function validarPacote(buf, { exigirUuid = true, aceitarLegado = false } 
   }
   // 2026 fix (lote 2): .mcaddon-casulo — packs .mcpack ANINHADOS sem manifest
   // na raíz (ex. Farming Mod). 2026 fix (lote 4): também .mcworld/.mctemplate
-  // aninhados (Dungeons Content: 3 .mcpack dentro da .mcaddon).
+  // aninhados (Dungeons Content: 3 .mcpack dentro da .mcaddon). 2026 fix (lote
+  // 6): .mcaddon aninhado também (Moscow Metro: 4 vagões .mcaddon dentro).
   if (manifests.length === 0) {
-    const aninhados = entries.filter((x) => /\.(?:mcpack|mcworld|mctemplate)$/i.test(x.name));
+    const aninhados = entries.filter((x) => /\.(?:mcpack|mcworld|mctemplate|mcaddon)$/i.test(x.name));
     for (const e of aninhados) {
       try {
         const inner = zipReadEntry(buf, e);
