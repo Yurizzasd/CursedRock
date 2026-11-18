@@ -1,0 +1,62 @@
+{
+ "id": "mutant-creatures",
+ "name": "Mutant Creatures Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Zumbis, creepers e esqueletos mutantes: monstros enormes com centenas de corações, explosões devastadoras e flechas em rajada.",
+ "longDescription": "O Mutant Creatures transforma os hostis de sempre em mini-chefes: são nove criaturas, todas maiores e muito mais resistentes que o original. O Mutant Zombie tem 130 corações e invoca reforços; o Mutant Creeper chega a 180 de vida, explode muito mais e não tem medo de gato; os esqueletos atiram cinco flechas de uma vez e, na segunda fase, disparam TNT. Armadura boa e escudo são obrigatórios — ou um Iron Golem do seu lado. No TeraBox também estão Rhex Mutant Creatures, New Mutant Creatures e Classic Mutants Extended.",
+ "category": "mobs",
+ "version": "1.14.0",
+ "minecraft_versions": [
+  "1.2.0"
+ ],
+ "thumbnail": "/images/addons/mutant-creatures/mutant-creatures-1.webp",
+ "screenshots": [
+  "/images/addons/mutant-creatures/mutant-creatures-1.webp",
+  "/images/addons/mutant-creatures/mutant-creatures-2.webp",
+  "/images/addons/mutant-creatures/mutant-creatures-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-11-18",
+ "updatedAt": "2026-11-18",
+ "sourceUrl": "https://mcpedl.org/mutant-creatures-mod-minecraft-pe/",
+ "sourceId": "mutant-creatures-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1lOsOC_GM6vbsPEbQt9Yuqw",
+ "fileSize": "8.2 MB",
+ "files": [
+  {
+   "label": "Rhex Mutant Creatures",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1xKbUzmyjrO3WlUREorWxLA",
+   "downloadProvider": "terabox",
+   "fileSize": "7.6 MB"
+  },
+  {
+   "label": "New Mutant Creatures",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/13M_Mu4F3hBeoKtgg8D0bjA",
+   "downloadProvider": "terabox",
+   "fileSize": "10.9 MB"
+  },
+  {
+   "label": "Classic Mutants Extended",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1Xcx44RDo2x6ACds67C5csw",
+   "downloadProvider": "terabox",
+   "fileSize": "10.3 MB"
+  }
+ ]
+}

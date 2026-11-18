@@ -33,3 +33,10 @@ const mc = new McpedlAPI({ rateLimit: { minTime: 2000, maxConcurrent: 1 } });
 ```
 
 Deps de runtime (instaladas no package.json raiz): `axios`, `cheerio`, `bottleneck`, `p-retry`.
+
+7. **Lote 7 (2026-11-18)**: o parser da galeria classificava o poster do vídeo
+   genérico de instalação (`mods-video-600x400`) como `image`, porque o
+   `itemtype` do vídeo fica no `<a itemprop="embedUrl">` e não no `<div>`.
+   Agora `isVideo` também olha `[itemprop=embedUrl]` e links do YouTube, então
+   o worker não baixa mais esse poster como screenshot. Addons importados antes
+   disso foram corrigidos por `scripts/fix-gallery-placeholder.mjs`.

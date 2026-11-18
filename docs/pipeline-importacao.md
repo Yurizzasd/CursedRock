@@ -67,7 +67,7 @@ painel não é servido pelo Cloudflare e não lê credenciais (ndus nunca passa 
 | id | `id` (slug curto) | derivado do postId da origem (sufixos -mod-minecraft-pe removidos) |
 | title | `name` | página da origem |
 | description / longDescription | `description` / `longDescription` | texto da ficha |
-| thumbnail | `thumbnail` + `screenshots` (até 3) | imagem da origem (hash dedupe) |
+| thumbnail | `thumbnail` + `screenshots` (até 3) | imagem da origem (hash dedupe; vídeos de instalação são descartados) |
 | creator | `author` + `authorDisplay` | `author` = "unknown" (mantém consistência), `authorDisplay` = nome da origem |
 | category | `category` | mapa de palavras-chave → categorias do catálogo; sem match → `other` |
 | version | `version` | `manifest.json` do arquivo (quando autorizado) OU início da faixa declarada na página |
@@ -86,6 +86,13 @@ o selo **derivado do host do link que o botão abre** (lote 4): `terabox`
 da origem — herança de provider não entra em cena, selo nunca mente sobre o
 destino. As escolhas de versão (variantes) passam o `downloadProvider` do
 próprio arquivo (2026 fix: `AddonFile.downloadProvider` em `src/types.ts`).
+
+Imagens (lote 7): o parser do vendor agora marca como `video` o item da galeria
+que tem `[itemprop="embedUrl"]`/link do YouTube. O poster genérico
+`mods-video-600x400` (vídeo "How to install Mods" do MCPEDL) não entra mais como
+screenshot. Para fichas antigas que já tinham o poster, rodar
+`node scripts/fix-gallery-placeholder.mjs` (troca pelo próximo screenshot real da
+página; 29 addons corrigidos em 18/11/2026).
 
 ## Regra "sempre TeraBox" (lote 4)
 

@@ -1,0 +1,72 @@
+{
+ "id": "wither-storm",
+ "name": "Wither Storm Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "O chefe de seis estágios do Story Mode no celular: um milhão de corações no início, sem cura, e uma forma final gigantesca que exige time.",
+ "longDescription": "O Wither Storm é o boss mais cinematográfico que o Bedrock pode receber: começa com um milhão de pontos de vida, não regenera e atravessa seis fases, cada uma mais agressiva que a anterior. Entre uma etapa e outra dá tempo de reabastecer — sozinho é quase impossível, então chame os amigos. Na versão Crackers Mobs, invoque achando a casa em X 0 Z 0 e colocando uma caveira de wither na estrutura; cuidado com outros packs ativos, que podem transformar o bicho em Ender Dragon. Quatro variantes no TeraBox: New Wither Storm, Crackers Mobs, Wither Plus e Withered World.",
+ "category": "mobs",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.14.0"
+ ],
+ "thumbnail": "/images/addons/wither-storm/wither-storm-1.webp",
+ "screenshots": [
+  "/images/addons/wither-storm/wither-storm-1.webp",
+  "/images/addons/wither-storm/wither-storm-2.webp",
+  "/images/addons/wither-storm/wither-storm-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-08-29",
+ "updatedAt": "2026-08-29",
+ "sourceUrl": "https://mcpedl.org/wither-storm-mod-minecraft-pe/",
+ "sourceId": "wither-storm-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/181zmGqX8ZSIx9V1rd58rKA",
+ "fileSize": "6.5 MB",
+ "files": [
+  {
+   "label": "New Wither Storm",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1uW9rA2Boee5LocTp4KJC7Q",
+   "downloadProvider": "terabox",
+   "fileSize": "1.3 MB"
+  },
+  {
+   "label": "Crackers Mobs",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1nlslXM728Qa-rXy456paWg",
+   "downloadProvider": "terabox",
+   "fileSize": "36.7 MB"
+  },
+  {
+   "label": "Wither Plus",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1cdD10RLngiKx2WzJGmE3Qw",
+   "downloadProvider": "terabox",
+   "fileSize": "3.2 MB"
+  },
+  {
+   "label": "Withered World",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1_42SI66JCHIRpk-mV8nkAw",
+   "downloadProvider": "terabox",
+   "fileSize": "50.0 MB"
+  }
+ ]
+}

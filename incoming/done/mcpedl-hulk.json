@@ -1,0 +1,72 @@
+{
+ "id": "hulk",
+ "name": "Hulk Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vire o Hulk, pilote o Hulkbuster e enfrente o Red Hulk: socos, saltos absurdos e destruição em escala Marvel.",
+ "longDescription": "O Hulk Mod entrega o verdão em várias versões: o Hulk V3 cria o gigante com uma estrutura de Iron Golem adaptada (blocos verdes no lugar do ferro) e coloca o Hulkbuster no mapa — dá pra montar e voar nele. O addon v4 refina o visual do personagem, e a versão Hulk adiciona também o Red Hulk, que usa fogo e regenera vida durante a luta. Todos os arquivos da página estão no TeraBox: Hulk Addon V4, Hulk, New Hulk e Hulk Update.",
+ "category": "mobs",
+ "version": "1.0.1",
+ "minecraft_versions": [
+  "1.2.6"
+ ],
+ "thumbnail": "/images/addons/hulk/hulk-1.webp",
+ "screenshots": [
+  "/images/addons/hulk/hulk-1.webp",
+  "/images/addons/hulk/hulk-2.webp",
+  "/images/addons/hulk/hulk-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-11-12",
+ "updatedAt": "2026-11-12",
+ "sourceUrl": "https://mcpedl.org/hulk-mod-minecraft-pe/",
+ "sourceId": "hulk-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1f-09W_8YbTVDxv39fS8bwg",
+ "fileSize": "0.1 MB",
+ "files": [
+  {
+   "label": "Hulk Addon V4",
+   "version": "1.11.0",
+   "minecraft_versions": [
+    "1.11.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1zaMokx3BsaPZdTSeOmt2_Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Hulk",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1qiMQv0J5Sewvhg4aPspu9Q",
+   "downloadProvider": "terabox",
+   "fileSize": "3.8 MB"
+  },
+  {
+   "label": "New Hulk",
+   "version": "1.20.50",
+   "minecraft_versions": [
+    "1.20.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1vmPJX5BJHMBpc7fi6_DYFA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "Hulk Update",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1MWfg447loidgwFYyX54buQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.9 MB"
+  }
+ ]
+}

@@ -303,16 +303,18 @@ export class McpedlAPI {
     const gallery: GalleryItem[] = [];
     $('.entry-gallery div div div').each((_, el) => {
       const $el = $(el);
-      const isVideo = el.attribs?.itemtype?.includes('Video');
-      
+      const embed = $el.find('[itemprop="embedUrl"]');
+      const onclick = $el.find('a[onclick]').attr('onclick') || $el.find('a[itemprop="embedUrl"]').attr('onclick') || '';
+      const isVideo = Boolean(embed.length) || Boolean(el.attribs?.itemtype?.includes('Video')) || /youtube|youtu\.be/.test(onclick);
+
       gallery.push({
         type: isVideo ? 'video' : 'image',
         img: $el.find('img').attr('src') || '',
         ...(isVideo ? {
-          name: $el.find('[itemprop="name"]').attr('content') || '',
+          name: $el.find('img').attr('alt') || $el.find('[itemprop="name"]').attr('content') || '',
           postTime: $el.find('[itemprop="uploadDate"]').attr('content') || '',
           duration: $el.find('[itemprop="duration"]').attr('content') || null,
-          video: $el.find('a[itemprop="embedUrl"]').attr('onclick')?.match(/src: '(.*?)'/)?.[1] || null
+          video: onclick.match(/src: '(.*?)'/)?.[1] || null
         } : {})
       });
     });

@@ -1,0 +1,62 @@
+{
+ "id": "fnaf",
+ "name": "FNAF Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Animatronics, câmeras e a pizzaria assombrada: horror de Five Nights at Freddy's com mais de duas dúzias de criaturas.",
+ "longDescription": "O FNAF Mod leva o clima de Five Nights at Freddy's pro Minecraft PE: mais de duas dúzias de animatronics agressivos, alguns brilhando no escuro, além de decoração de pizzaria, câmeras, máscaras e fantasias. A máscara do Freddy ajuda a evitar ataques em certas situações, e as versões FNAF 2, 3 e 4 acrescentam cenários próprios — Springtrap e a criança fantasma aparecem na terceira. Monte a pizzaria no criativo, teste os mobs e só depois abra o mundo no survival. Tudo no TeraBox.",
+ "category": "horror",
+ "version": "0.0.7",
+ "minecraft_versions": [
+  "1.10.0"
+ ],
+ "thumbnail": "/images/addons/fnaf/fnaf-1.webp",
+ "screenshots": [
+  "/images/addons/fnaf/fnaf-1.webp",
+  "/images/addons/fnaf/fnaf-2.webp",
+  "/images/addons/fnaf/fnaf-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-18",
+ "updatedAt": "2026-09-18",
+ "sourceUrl": "https://mcpedl.org/fnaf-mod-minecraft-pe/",
+ "sourceId": "fnaf-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1L9lwniuMzUZf1obH6jXZzg",
+ "fileSize": "10.8 MB",
+ "files": [
+  {
+   "label": "FNAF 2",
+   "version": "1.21.80",
+   "minecraft_versions": [
+    "1.21.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1zUySmkQicwcuOSwIj5689Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.3 MB"
+  },
+  {
+   "label": "FNAF 3",
+   "version": "1.21.80",
+   "minecraft_versions": [
+    "1.21.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1aNc9KM9T8YQ3IG9yEAWXCg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.7 MB"
+  },
+  {
+   "label": "FNAF 4",
+   "version": "1.21.80",
+   "minecraft_versions": [
+    "1.21.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1U7hkmZEHn9vHVNJ1dfWGqg",
+   "downloadProvider": "terabox",
+   "fileSize": "29.6 MB"
+  }
+ ]
+}

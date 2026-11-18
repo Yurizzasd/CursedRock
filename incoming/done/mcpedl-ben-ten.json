@@ -1,0 +1,72 @@
+{
+ "id": "ben-ten",
+ "name": "Ben Ten Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Omnitrix no inventário: vire aliens com poderes diferentes, encontre o Ben Tennyson e cace DNA pelo mundo.",
+ "longDescription": "O Ben Ten Mod traz o Omnitrix pro Bedrock: o dispositivo transforma o jogador em aliens com estilos de combate diferentes — força bruta, velocidade e ataques de energia. O próprio Ben Tennyson pode aparecer pelo mundo com 60 corações e ajuda contra mobs hostis; derrotá-lo pode render o Omnitrix. No criativo o item sai direto do inventário. Variantes no TeraBox: Ben 10, DNA Hunt, Talking Ben e OmniBound.",
+ "category": "mobs",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.16.0"
+ ],
+ "thumbnail": "/images/addons/ben-ten/ben-ten-1.webp",
+ "screenshots": [
+  "/images/addons/ben-ten/ben-ten-1.webp",
+  "/images/addons/ben-ten/ben-ten-2.webp",
+  "/images/addons/ben-ten/ben-ten-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-11-07",
+ "updatedAt": "2026-11-07",
+ "sourceUrl": "https://mcpedl.org/ben-ten-mod-minecraft-pe/",
+ "sourceId": "ben-ten-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1uAcQoH3fPcI0ir61zY02aw",
+ "fileSize": "16.1 MB",
+ "files": [
+  {
+   "label": "Ben 10",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1b2F9g172QbgW_OVRheAwBA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.4 MB"
+  },
+  {
+   "label": "DNA Hunt",
+   "version": "1.21.41",
+   "minecraft_versions": [
+    "1.21.41"
+   ],
+   "download_url": "https://1024terabox.com/s/10l4mtOXFTkpByzLRITIe2w",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Talking Ben",
+   "version": "1.21.41",
+   "minecraft_versions": [
+    "1.21.41"
+   ],
+   "download_url": "https://1024terabox.com/s/1HUrujdBPmvRgSh-KivNz-g",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "OmniBound",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1xM1PRhAnIqSlkpbmenFIxA",
+   "downloadProvider": "terabox",
+   "fileSize": "20.3 MB"
+  }
+ ]
+}

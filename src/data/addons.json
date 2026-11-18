@@ -1907,5 +1907,423 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/ben-ten/ben-ten-1.webp",
+      "/images/addons/ben-ten/ben-ten-2.webp",
+      "/images/addons/ben-ten/ben-ten-3.webp"
+    ],
+    "id": "ben-ten",
+    "name": "Ben Ten Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Omnitrix no inventário: vire aliens com poderes diferentes, encontre o Ben Tennyson e cace DNA pelo mundo.",
+    "longDescription": "O Ben Ten Mod traz o Omnitrix pro Bedrock: o dispositivo transforma o jogador em aliens com estilos de combate diferentes — força bruta, velocidade e ataques de energia. O próprio Ben Tennyson pode aparecer pelo mundo com 60 corações e ajuda contra mobs hostis; derrotá-lo pode render o Omnitrix. No criativo o item sai direto do inventário. Variantes no TeraBox: Ben 10, DNA Hunt, Talking Ben e OmniBound.",
+    "category": "mobs",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.16.0"
+    ],
+    "thumbnail": "/images/addons/ben-ten/ben-ten-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-11-07",
+    "updatedAt": "2026-11-07",
+    "sourceUrl": "https://mcpedl.org/ben-ten-mod-minecraft-pe/",
+    "sourceId": "ben-ten-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1uAcQoH3fPcI0ir61zY02aw",
+    "fileSize": "16.1 MB",
+    "files": [
+      {
+        "label": "Ben 10",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1b2F9g172QbgW_OVRheAwBA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      },
+      {
+        "label": "DNA Hunt",
+        "version": "1.21.41",
+        "minecraft_versions": [
+          "1.21.41"
+        ],
+        "download_url": "https://1024terabox.com/s/10l4mtOXFTkpByzLRITIe2w",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Talking Ben",
+        "version": "1.21.41",
+        "minecraft_versions": [
+          "1.21.41"
+        ],
+        "download_url": "https://1024terabox.com/s/1HUrujdBPmvRgSh-KivNz-g",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "OmniBound",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1xM1PRhAnIqSlkpbmenFIxA",
+        "downloadProvider": "terabox",
+        "fileSize": "20.3 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/fnaf/fnaf-1.webp",
+      "/images/addons/fnaf/fnaf-2.webp",
+      "/images/addons/fnaf/fnaf-3.webp"
+    ],
+    "id": "fnaf",
+    "name": "FNAF Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Animatronics, câmeras e a pizzaria assombrada: horror de Five Nights at Freddy's com mais de duas dúzias de criaturas.",
+    "longDescription": "O FNAF Mod leva o clima de Five Nights at Freddy's pro Minecraft PE: mais de duas dúzias de animatronics agressivos, alguns brilhando no escuro, além de decoração de pizzaria, câmeras, máscaras e fantasias. A máscara do Freddy ajuda a evitar ataques em certas situações, e as versões FNAF 2, 3 e 4 acrescentam cenários próprios — Springtrap e a criança fantasma aparecem na terceira. Monte a pizzaria no criativo, teste os mobs e só depois abra o mundo no survival. Tudo no TeraBox.",
+    "category": "horror",
+    "version": "0.0.7",
+    "minecraft_versions": [
+      "1.10.0"
+    ],
+    "thumbnail": "/images/addons/fnaf/fnaf-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "sourceUrl": "https://mcpedl.org/fnaf-mod-minecraft-pe/",
+    "sourceId": "fnaf-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1L9lwniuMzUZf1obH6jXZzg",
+    "fileSize": "10.8 MB",
+    "files": [
+      {
+        "label": "FNAF 2",
+        "version": "1.21.80",
+        "minecraft_versions": [
+          "1.21.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1zUySmkQicwcuOSwIj5689Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.3 MB"
+      },
+      {
+        "label": "FNAF 3",
+        "version": "1.21.80",
+        "minecraft_versions": [
+          "1.21.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1aNc9KM9T8YQ3IG9yEAWXCg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.7 MB"
+      },
+      {
+        "label": "FNAF 4",
+        "version": "1.21.80",
+        "minecraft_versions": [
+          "1.21.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1U7hkmZEHn9vHVNJ1dfWGqg",
+        "downloadProvider": "terabox",
+        "fileSize": "29.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/hulk/hulk-1.webp",
+      "/images/addons/hulk/hulk-2.webp",
+      "/images/addons/hulk/hulk-3.webp"
+    ],
+    "id": "hulk",
+    "name": "Hulk Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vire o Hulk, pilote o Hulkbuster e enfrente o Red Hulk: socos, saltos absurdos e destruição em escala Marvel.",
+    "longDescription": "O Hulk Mod entrega o verdão em várias versões: o Hulk V3 cria o gigante com uma estrutura de Iron Golem adaptada (blocos verdes no lugar do ferro) e coloca o Hulkbuster no mapa — dá pra montar e voar nele. O addon v4 refina o visual do personagem, e a versão Hulk adiciona também o Red Hulk, que usa fogo e regenera vida durante a luta. Todos os arquivos da página estão no TeraBox: Hulk Addon V4, Hulk, New Hulk e Hulk Update.",
+    "category": "mobs",
+    "version": "1.0.1",
+    "minecraft_versions": [
+      "1.2.6"
+    ],
+    "thumbnail": "/images/addons/hulk/hulk-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-11-12",
+    "updatedAt": "2026-11-12",
+    "sourceUrl": "https://mcpedl.org/hulk-mod-minecraft-pe/",
+    "sourceId": "hulk-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1f-09W_8YbTVDxv39fS8bwg",
+    "fileSize": "0.1 MB",
+    "files": [
+      {
+        "label": "Hulk Addon V4",
+        "version": "1.11.0",
+        "minecraft_versions": [
+          "1.11.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1zaMokx3BsaPZdTSeOmt2_Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Hulk",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1qiMQv0J5Sewvhg4aPspu9Q",
+        "downloadProvider": "terabox",
+        "fileSize": "3.8 MB"
+      },
+      {
+        "label": "New Hulk",
+        "version": "1.20.50",
+        "minecraft_versions": [
+          "1.20.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1vmPJX5BJHMBpc7fi6_DYFA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "Hulk Update",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1MWfg447loidgwFYyX54buQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.9 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/iron-man/iron-man-1.webp",
+      "/images/addons/iron-man/iron-man-2.webp",
+      "/images/addons/iron-man/iron-man-3.webp"
+    ],
+    "id": "iron-man",
+    "name": "Iron Man Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armaduras, voo e armas de energia do Homem de Ferro: colete os Mark, monte o laboratório e encare os vilões da Marvel.",
+    "longDescription": "O Iron Man Mod coloca o kit do Tony Stark no Bedrock: armaduras com voo, armas de energia e minérios próprios pra montar o laboratório — as receitas quase não usam minério vanilla. A página reúne várias versões: Iron-Man Legends, as botas de velocidade (Boots), Nidos Iron Man Project e o v3, que soma Mark XXXIX a XLVII e o Hulkbuster Mark XLIV. Tudo no TeraBox.",
+    "category": "technology",
+    "version": "2.0.2",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/iron-man/iron-man-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-21",
+    "updatedAt": "2026-08-21",
+    "sourceUrl": "https://mcpedl.org/iron-man-mod-minecraft-pe/",
+    "sourceId": "iron-man-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1qZ2O09socg4tJi-BeodY-Q",
+    "fileSize": "0.8 MB",
+    "files": [
+      {
+        "label": "Iron-Man Legends",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1jDEVQGkdwJ7ErS-7lGbxmg",
+        "downloadProvider": "terabox",
+        "fileSize": "1.9 MB"
+      },
+      {
+        "label": "Boots",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1HqGPm-QXNVqICIGS8IAyPQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Nidos Iron Man Project",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/13AuPaamifWKaMOiZQREEIQ",
+        "downloadProvider": "terabox",
+        "fileSize": "4.2 MB"
+      },
+      {
+        "label": "Nidos Iron Man Project v3",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1nx4zz6RqVWYWfwJqXGvq_A",
+        "downloadProvider": "terabox",
+        "fileSize": "5.4 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/mutant-creatures/mutant-creatures-1.webp",
+      "/images/addons/mutant-creatures/mutant-creatures-2.webp",
+      "/images/addons/mutant-creatures/mutant-creatures-3.webp"
+    ],
+    "id": "mutant-creatures",
+    "name": "Mutant Creatures Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Zumbis, creepers e esqueletos mutantes: monstros enormes com centenas de corações, explosões devastadoras e flechas em rajada.",
+    "longDescription": "O Mutant Creatures transforma os hostis de sempre em mini-chefes: são nove criaturas, todas maiores e muito mais resistentes que o original. O Mutant Zombie tem 130 corações e invoca reforços; o Mutant Creeper chega a 180 de vida, explode muito mais e não tem medo de gato; os esqueletos atiram cinco flechas de uma vez e, na segunda fase, disparam TNT. Armadura boa e escudo são obrigatórios — ou um Iron Golem do seu lado. No TeraBox também estão Rhex Mutant Creatures, New Mutant Creatures e Classic Mutants Extended.",
+    "category": "mobs",
+    "version": "1.14.0",
+    "minecraft_versions": [
+      "1.2.0"
+    ],
+    "thumbnail": "/images/addons/mutant-creatures/mutant-creatures-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-11-18",
+    "updatedAt": "2026-11-18",
+    "sourceUrl": "https://mcpedl.org/mutant-creatures-mod-minecraft-pe/",
+    "sourceId": "mutant-creatures-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1lOsOC_GM6vbsPEbQt9Yuqw",
+    "fileSize": "8.2 MB",
+    "files": [
+      {
+        "label": "Rhex Mutant Creatures",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1xKbUzmyjrO3WlUREorWxLA",
+        "downloadProvider": "terabox",
+        "fileSize": "7.6 MB"
+      },
+      {
+        "label": "New Mutant Creatures",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/13M_Mu4F3hBeoKtgg8D0bjA",
+        "downloadProvider": "terabox",
+        "fileSize": "10.9 MB"
+      },
+      {
+        "label": "Classic Mutants Extended",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Xcx44RDo2x6ACds67C5csw",
+        "downloadProvider": "terabox",
+        "fileSize": "10.3 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/wither-storm/wither-storm-1.webp",
+      "/images/addons/wither-storm/wither-storm-2.webp",
+      "/images/addons/wither-storm/wither-storm-3.webp"
+    ],
+    "id": "wither-storm",
+    "name": "Wither Storm Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "O chefe de seis estágios do Story Mode no celular: um milhão de corações no início, sem cura, e uma forma final gigantesca que exige time.",
+    "longDescription": "O Wither Storm é o boss mais cinematográfico que o Bedrock pode receber: começa com um milhão de pontos de vida, não regenera e atravessa seis fases, cada uma mais agressiva que a anterior. Entre uma etapa e outra dá tempo de reabastecer — sozinho é quase impossível, então chame os amigos. Na versão Crackers Mobs, invoque achando a casa em X 0 Z 0 e colocando uma caveira de wither na estrutura; cuidado com outros packs ativos, que podem transformar o bicho em Ender Dragon. Quatro variantes no TeraBox: New Wither Storm, Crackers Mobs, Wither Plus e Withered World.",
+    "category": "mobs",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.14.0"
+    ],
+    "thumbnail": "/images/addons/wither-storm/wither-storm-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-29",
+    "updatedAt": "2026-08-29",
+    "sourceUrl": "https://mcpedl.org/wither-storm-mod-minecraft-pe/",
+    "sourceId": "wither-storm-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/181zmGqX8ZSIx9V1rd58rKA",
+    "fileSize": "6.5 MB",
+    "files": [
+      {
+        "label": "New Wither Storm",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1uW9rA2Boee5LocTp4KJC7Q",
+        "downloadProvider": "terabox",
+        "fileSize": "1.3 MB"
+      },
+      {
+        "label": "Crackers Mobs",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1nlslXM728Qa-rXy456paWg",
+        "downloadProvider": "terabox",
+        "fileSize": "36.7 MB"
+      },
+      {
+        "label": "Wither Plus",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1cdD10RLngiKx2WzJGmE3Qw",
+        "downloadProvider": "terabox",
+        "fileSize": "3.2 MB"
+      },
+      {
+        "label": "Withered World",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1_42SI66JCHIRpk-mV8nkAw",
+        "downloadProvider": "terabox",
+        "fileSize": "50.0 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

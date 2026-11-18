@@ -1,0 +1,72 @@
+{
+ "id": "iron-man",
+ "name": "Iron Man Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Armaduras, voo e armas de energia do Homem de Ferro: colete os Mark, monte o laboratório e encare os vilões da Marvel.",
+ "longDescription": "O Iron Man Mod coloca o kit do Tony Stark no Bedrock: armaduras com voo, armas de energia e minérios próprios pra montar o laboratório — as receitas quase não usam minério vanilla. A página reúne várias versões: Iron-Man Legends, as botas de velocidade (Boots), Nidos Iron Man Project e o v3, que soma Mark XXXIX a XLVII e o Hulkbuster Mark XLIV. Tudo no TeraBox.",
+ "category": "technology",
+ "version": "2.0.2",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/iron-man/iron-man-1.webp",
+ "screenshots": [
+  "/images/addons/iron-man/iron-man-1.webp",
+  "/images/addons/iron-man/iron-man-2.webp",
+  "/images/addons/iron-man/iron-man-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-08-21",
+ "updatedAt": "2026-08-21",
+ "sourceUrl": "https://mcpedl.org/iron-man-mod-minecraft-pe/",
+ "sourceId": "iron-man-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1qZ2O09socg4tJi-BeodY-Q",
+ "fileSize": "0.8 MB",
+ "files": [
+  {
+   "label": "Iron-Man Legends",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1jDEVQGkdwJ7ErS-7lGbxmg",
+   "downloadProvider": "terabox",
+   "fileSize": "1.9 MB"
+  },
+  {
+   "label": "Boots",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1HqGPm-QXNVqICIGS8IAyPQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "Nidos Iron Man Project",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/13AuPaamifWKaMOiZQREEIQ",
+   "downloadProvider": "terabox",
+   "fileSize": "4.2 MB"
+  },
+  {
+   "label": "Nidos Iron Man Project v3",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1nx4zz6RqVWYWfwJqXGvq_A",
+   "downloadProvider": "terabox",
+   "fileSize": "5.4 MB"
+  }
+ ]
+}
