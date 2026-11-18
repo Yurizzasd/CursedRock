@@ -1,0 +1,85 @@
+{
+ "id": "poppy-playtime",
+ "name": "Poppy Playtime Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "bring horror characters, animated GrabPack tools, factory objects, and creepy roleplay features into your mobile world.\nWhat is interesting in Poppy Playtime Mod?\nThe Poppy Playtime mod adds the atmosphere of the famous horror franchise to ",
+ "longDescription": "bring horror characters, animated GrabPack tools, factory objects, and creepy roleplay features into your mobile world.\nWhat is interesting in Poppy Playtime Mod?\nThe Poppy Playtime mod adds the atmosphere of the famous horror franchise to the block world. Instead of ordinary monsters, players meet toy-like creatures, themed objects, and factory-style decorations.\nThe addon focuses on fear, exploration, and roleplay. Players can build dark locations, create chase scenes, decorate abandoned rooms, and use recognizable characters from the horror universe.\nThere are much more horror mods for Minecraft Bedrock Edition that can add monsters to the game.\nPoppy Playtime\nThe main character of the Poppy Playtime mod is the blue monster with a wide toothy smile and long limbs. This creature can chase players and make survival feel more dangerous.\nOther characters also appear in the world. Players can meet different toy monsters, dolls, and themed figures that fit horror maps, factory builds, and custom adventures.\nThe addon is built around recognizable horror characters. It works best for themed maps, roleplay, and chase scenes.\nThe character variety makes the world feel closer to an abandoned toy factory. Some mobs are useful for scares, while others are better for decoration or story scenes.\nNew dangers\nThe Poppy Playtime addon adds more tension to Minecraft PE by placing dangerous creatures into familiar locations. A normal corridor, room, or base can become part of a horror scenario.\nSome monsters are made for direct encounters, while others work well as living decorations for custom maps. This helps creators build scenes with suspense instead of relying only on vanilla mobs.\nThe mod does not need to replace the whole survival system. It adds a specific horror layer that players can use when they want a scarier world.\nTransformation\nSome versions of the Poppy Playtime mod for Minecraft PE allow players to transform into famous characters. This gives roleplay worlds more flexibility and makes custom horror events more interactive.\nTransformations are useful for players who want to act as the monster during multiplayer sessions. One user can become the threat, while others explore, escape, or complete themed challenges.\nThis feature also fits video scenes and map testing. It helps recreate the feeling of a chase without needing complicated commands.\nNew Poppy Playtime\nAt first glance, some objects may look like statues, but they can become active after interaction. Players can see characters such as Huggy Wuggy, Yarnaby, Boxy Boo, Kissy Missy, and others.\nThere are also decorative items for building horror locations. Doors, props, factory objects, posters, cardboard elements, televisions, and toys help create a more complete setting.\nDecorative objects make ",
+ "category": "horror",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.16.100"
+ ],
+ "requirements": [
+  "Faixa de versões declarada na origem: 1.17.0 - 1.26.60"
+ ],
+ "thumbnail": "/images/addons/poppy-playtime/poppy-playtime-1.webp",
+ "screenshots": [
+  "/images/addons/poppy-playtime/poppy-playtime-1.webp",
+  "/images/addons/poppy-playtime/poppy-playtime-2.webp",
+  "/images/addons/poppy-playtime/poppy-playtime-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-09",
+ "updatedAt": "2026-07-09",
+ "sourceUrl": "https://mcpedl.org/poppy-playtime-mod-minecraft-pe/",
+ "sourceId": "poppy-playtime-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1MkF_mgvKCEZPGvlulI125w",
+ "fileSize": "0.9 MB",
+ "files": [
+  {
+   "label": "New dangers",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1Nq6qN3RT55EYu8n9EReSWQ",
+   "downloadProvider": "terabox",
+   "fileSize": "14.0 MB"
+  },
+  {
+   "label": "Transformation",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1dgvJRvs_g0BX1nn-SMu13w",
+   "downloadProvider": "terabox",
+   "fileSize": "10.2 MB"
+  },
+  {
+   "label": "New Poppy Playtime",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1f5Fui-4p1zLzxG8Ubh2g5Q",
+   "downloadProvider": "terabox",
+   "fileSize": "42.4 MB"
+  },
+  {
+   "label": "Playtime by MeBesm",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1U4Oe0JiE8ZWrW55Q4NP3RA",
+   "downloadProvider": "terabox",
+   "fileSize": "43.1 MB"
+  },
+  {
+   "label": "Me Poppy Playtime",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1dh7FFTjneQpe0S_rZ4H6Yw",
+   "downloadProvider": "terabox",
+   "fileSize": "7.6 MB"
+  }
+ ]
+}

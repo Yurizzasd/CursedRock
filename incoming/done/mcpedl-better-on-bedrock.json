@@ -1,0 +1,42 @@
+{
+ "id": "better-on-bedrock",
+ "name": "Better on Bedrock Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Um overhaul completo no survival: biomas repaginados, chefes, armaduras, itens e até esqueleto no lugar da morte.",
+ "longDescription": "O Better on Bedrock é pra quem quer melhorar tudo de uma vez: florestas, planícies, praias, pântanos e selvas ganham visual e habitantes novos, e o pacote soma blocos, armaduras (incluindo uma que segura piglins), itens e chefes. Uma das mudanças mais legais: ao morrer, seu esqueleto fica no mundo com o loot. Tudo convive com o vanilla, sem trocar a base do jogo. Principal 56.8 MB (manifest 2.0.9, MC 1.20.50) + variante Much Better no TeraBox.",
+ "category": "survival",
+ "version": "2.0.9",
+ "minecraft_versions": [
+  "1.20.50"
+ ],
+ "thumbnail": "/images/addons/better-on-bedrock/better-on-bedrock-1.webp",
+ "screenshots": [
+  "/images/addons/better-on-bedrock/better-on-bedrock-1.webp",
+  "/images/addons/better-on-bedrock/better-on-bedrock-2.webp",
+  "/images/addons/better-on-bedrock/better-on-bedrock-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-07-31",
+ "updatedAt": "2025-07-31",
+ "sourceUrl": "https://mcpedl.org/better-on-bedrock-mod-minecraft-pe/",
+ "sourceId": "better-on-bedrock-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1aj89Uaxt2DBtx2ryfq8Jug",
+ "fileSize": "56.8 MB",
+ "files": [
+  {
+   "label": "Much Better",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1aekQjPq6ABYBUYJvLuJO-A",
+   "downloadProvider": "terabox",
+   "fileSize": "73.2 MB"
+  }
+ ]
+}

@@ -64,7 +64,7 @@ painel não é servido pelo Cloudflare e não lê credenciais (ndus nunca passa 
 
 | Proposta do documento | Campo real (schema `src/types.ts`) | Origem |
 |---|---|---|
-| id | `id` (slug curto) | derivado do postId da origem (sufixos -mod-minecraft-pe removidos) |
+| id | `id` (slug curto) | derivado do postId da origem (sufixos -mod-minecraft-pe removidos; guarda de conectivo evita "better-on" em "better-on-bedrock-…", lote 8) |
 | title | `name` | página da origem |
 | description / longDescription | `description` / `longDescription` | texto da ficha |
 | thumbnail | `thumbnail` + `screenshots` (até 3) | imagem da origem (hash dedupe; vídeos de instalação são descartados) |

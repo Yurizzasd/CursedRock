@@ -1,0 +1,72 @@
+{
+ "id": "skibidi-toilet",
+ "name": "Skibidi Toilet Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Skibidi Toilet, Cameraman, Speakerman e o Titan no seu mundo — com a música icônica tocando quando você chega perto.",
+ "longDescription": "O Skibidi Toilet Mod traz os personagens da série pro Bedrock: três mobs básicos (Skibidi Toilet, Camera-man e Speaker-man) e o Titan Speakerman, gigante de jaqueta vermelha baseado no episódio 18. Spawn pelo ovo no criativo; o Skibidi Toilet tem barra de vida e toca a música quando você se aproxima — afasta e para. Cameraman e Speakerman seguem o jogador em paz, e alguns mobs se atacam sozinhos. Variantes no TeraBox: Titan Speakerman, Skibidi Dip Dop, New Skibidi Characters e Skibidi Raids.",
+ "category": "mobs",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.19.0"
+ ],
+ "thumbnail": "/images/addons/skibidi-toilet/skibidi-toilet-1.webp",
+ "screenshots": [
+  "/images/addons/skibidi-toilet/skibidi-toilet-1.webp",
+  "/images/addons/skibidi-toilet/skibidi-toilet-2.webp",
+  "/images/addons/skibidi-toilet/skibidi-toilet-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-05-20",
+ "updatedAt": "2026-05-20",
+ "sourceUrl": "https://mcpedl.org/skibidi-toilet-mod-minecraft-pe/",
+ "sourceId": "skibidi-toilet-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1SYd2Lo8uSiSI_UCoKSqr_A",
+ "fileSize": "0.4 MB",
+ "files": [
+  {
+   "label": "Titan Speakerman",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/13c7OEhI-mKd0tJ0JieNM8Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Skibidi Dip Dop",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1sJWfxoZxGE2hw2ZiQYKhkw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.4 MB"
+  },
+  {
+   "label": "New Skibidi Characters",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1BmobtEWly3UWzmbqV8kT7w",
+   "downloadProvider": "terabox",
+   "fileSize": "3.6 MB"
+  },
+  {
+   "label": "Skibidi Raids",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1Ar3Ntxd2_cV19HHuXi7UEw",
+   "downloadProvider": "terabox",
+   "fileSize": "12.8 MB"
+  }
+ ]
+}

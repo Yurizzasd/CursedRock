@@ -1,0 +1,45 @@
+{
+ "id": "origins",
+ "name": "Origins Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Reencarne em outra criatura: cada origem tem poderes e fraquezas próprios, do Enderian que teleporta ao ser que não respira na terra.",
+ "longDescription": "O Origins transforma o começo do jogo numa escolha de raça: você nasce como uma criatura com habilidades únicas e limitações de verdade. O Enderian teleporta, outros têm dano por água ou não respiram em terra firme; o menu mostra prós e contras antes da escolha. Dá pra montar times com origens complementares no multiplayer ou desafiar o survival solo com uma build esquisita. Principal 0.2 MB + variante Merged (1.6 MB) no TeraBox.",
+ "category": "magic",
+ "version": "1.3.0",
+ "minecraft_versions": [
+  "1.16.200"
+ ],
+ "requirements": [
+  "Faixa de versões declarada na origem: 1.16.0 - 1.26.60"
+ ],
+ "thumbnail": "/images/addons/origins/origins-1.webp",
+ "screenshots": [
+  "/images/addons/origins/origins-1.webp",
+  "/images/addons/origins/origins-2.webp",
+  "/images/addons/origins/origins-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-06-20",
+ "updatedAt": "2025-06-20",
+ "sourceUrl": "https://mcpedl.org/origins-mod-minecraft-pe/",
+ "sourceId": "origins-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1proJZHJEhAXrLMsZdcn-Lg",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Merged",
+   "version": "1.21.80",
+   "minecraft_versions": [
+    "1.21.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1wE96ktqqXejRwAzZvhUcXQ",
+   "downloadProvider": "terabox",
+   "fileSize": "1.6 MB"
+  }
+ ]
+}

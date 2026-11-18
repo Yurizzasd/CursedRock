@@ -71,7 +71,17 @@ export function logState(type, message) {
 const SLUFIXOS = /-(?:mod|addon|addons|resource|texture|map|mapa)?-?(?:mcpe-)?(?:minecraft-)?(?:pe|bedrock|edition)(?:-.*)?$/i;
 
 export function takeId(slug, usedIds, addedIds) {
-  const base = slug.toLowerCase().replace(SLUFIXOS, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'addon';
+  let base = slug.toLowerCase().replace(SLUFIXOS, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'addon';
+  // 2026 fix (lote 8): "better-on-bedrock-mod-minecraft-pe" virava "better-on"
+  // porque o strip do sufixo começava no "-bedrock". Se sobrar um conectivo
+  // solto no fim, remove apenas o sufixo técnico completo.
+  if (/-(?:on|for|of|with|to|in|and)$/.test(base)) {
+    base = slug
+      .toLowerCase()
+      .replace(/-(?:mod|addon|addons|resource|texture|map|mapa)?-?(?:mcpe-)?minecraft-pe$/, '')
+      .replace(/[^a-z0-9]+/g, '-')
+      .replace(/^-|-$/g, '') || base;
+  }
   let id = base;
   if ([...usedIds, ...addedIds].includes(id)) {
     id = `${base}-m${createHash('sha1').update(slug).digest('hex').slice(0, 4)}`;

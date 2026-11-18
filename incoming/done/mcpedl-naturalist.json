@@ -1,0 +1,52 @@
+{
+ "id": "naturalist",
+ "name": "Naturalist Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Fauna de verdade no Bedrock: dezenas de animais, insetos e criaturas marinhas que ocupam cada bioma, com direito a bichos domesticáveis.",
+ "longDescription": "O Naturalist é sobre biodiversidade: dezenas de criaturas novas aparecem nos habitats certos — floresta, savana, oceano — sem substituir os mobs vanilla. Tem inseto, animal terrestre, espécie marinha e bichos domesticáveis, com animações e comportamentos próprios. É o tipo de addon que faz o mundo parecer vivo enquanto você explora. Arquivo principal validado (24.1 MB, manifest 1.0.25, MC 1.21.60) e as variantes Naturalist 3.2 e 26.1 no TeraBox.",
+ "category": "mobs",
+ "version": "1.0.25",
+ "minecraft_versions": [
+  "1.21.60"
+ ],
+ "thumbnail": "/images/addons/naturalist/naturalist-1.webp",
+ "screenshots": [
+  "/images/addons/naturalist/naturalist-1.webp",
+  "/images/addons/naturalist/naturalist-2.webp",
+  "/images/addons/naturalist/naturalist-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-20",
+ "updatedAt": "2026-07-20",
+ "sourceUrl": "https://mcpedl.org/naturalist-mod-minecraft-pe/",
+ "sourceId": "naturalist-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1-XdlwPDVt-BFzbgS8ZYvYg",
+ "fileSize": "24.1 MB",
+ "files": [
+  {
+   "label": "Naturalist 3.2",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1oEuuLnkSIwduQN4WVa4MhQ",
+   "downloadProvider": "terabox",
+   "fileSize": "28.7 MB"
+  },
+  {
+   "label": "Naturalist 26.1",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1zUzOS2vWKWEeKCOcLMrRhw",
+   "downloadProvider": "terabox",
+   "fileSize": "21.1 MB"
+  }
+ ]
+}

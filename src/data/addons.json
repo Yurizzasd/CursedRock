@@ -2325,5 +2325,359 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/better-on-bedrock/better-on-bedrock-1.webp",
+      "/images/addons/better-on-bedrock/better-on-bedrock-2.webp",
+      "/images/addons/better-on-bedrock/better-on-bedrock-3.webp"
+    ],
+    "id": "better-on-bedrock",
+    "name": "Better on Bedrock Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Um overhaul completo no survival: biomas repaginados, chefes, armaduras, itens e até esqueleto no lugar da morte.",
+    "longDescription": "O Better on Bedrock é pra quem quer melhorar tudo de uma vez: florestas, planícies, praias, pântanos e selvas ganham visual e habitantes novos, e o pacote soma blocos, armaduras (incluindo uma que segura piglins), itens e chefes. Uma das mudanças mais legais: ao morrer, seu esqueleto fica no mundo com o loot. Tudo convive com o vanilla, sem trocar a base do jogo. Principal 56.8 MB (manifest 2.0.9, MC 1.20.50) + variante Much Better no TeraBox.",
+    "category": "survival",
+    "version": "2.0.9",
+    "minecraft_versions": [
+      "1.20.50"
+    ],
+    "thumbnail": "/images/addons/better-on-bedrock/better-on-bedrock-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-07-31",
+    "updatedAt": "2025-07-31",
+    "sourceUrl": "https://mcpedl.org/better-on-bedrock-mod-minecraft-pe/",
+    "sourceId": "better-on-bedrock-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1aj89Uaxt2DBtx2ryfq8Jug",
+    "fileSize": "56.8 MB",
+    "files": [
+      {
+        "label": "Much Better",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1aekQjPq6ABYBUYJvLuJO-A",
+        "downloadProvider": "terabox",
+        "fileSize": "73.2 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/naturalist/naturalist-1.webp",
+      "/images/addons/naturalist/naturalist-2.webp",
+      "/images/addons/naturalist/naturalist-3.webp"
+    ],
+    "id": "naturalist",
+    "name": "Naturalist Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Fauna de verdade no Bedrock: dezenas de animais, insetos e criaturas marinhas que ocupam cada bioma, com direito a bichos domesticáveis.",
+    "longDescription": "O Naturalist é sobre biodiversidade: dezenas de criaturas novas aparecem nos habitats certos — floresta, savana, oceano — sem substituir os mobs vanilla. Tem inseto, animal terrestre, espécie marinha e bichos domesticáveis, com animações e comportamentos próprios. É o tipo de addon que faz o mundo parecer vivo enquanto você explora. Arquivo principal validado (24.1 MB, manifest 1.0.25, MC 1.21.60) e as variantes Naturalist 3.2 e 26.1 no TeraBox.",
+    "category": "mobs",
+    "version": "1.0.25",
+    "minecraft_versions": [
+      "1.21.60"
+    ],
+    "thumbnail": "/images/addons/naturalist/naturalist-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-20",
+    "updatedAt": "2026-07-20",
+    "sourceUrl": "https://mcpedl.org/naturalist-mod-minecraft-pe/",
+    "sourceId": "naturalist-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1-XdlwPDVt-BFzbgS8ZYvYg",
+    "fileSize": "24.1 MB",
+    "files": [
+      {
+        "label": "Naturalist 3.2",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1oEuuLnkSIwduQN4WVa4MhQ",
+        "downloadProvider": "terabox",
+        "fileSize": "28.7 MB"
+      },
+      {
+        "label": "Naturalist 26.1",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1zUzOS2vWKWEeKCOcLMrRhw",
+        "downloadProvider": "terabox",
+        "fileSize": "21.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/origins/origins-1.webp",
+      "/images/addons/origins/origins-2.webp",
+      "/images/addons/origins/origins-3.webp"
+    ],
+    "id": "origins",
+    "name": "Origins Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Reencarne em outra criatura: cada origem tem poderes e fraquezas próprios, do Enderian que teleporta ao ser que não respira na terra.",
+    "longDescription": "O Origins transforma o começo do jogo numa escolha de raça: você nasce como uma criatura com habilidades únicas e limitações de verdade. O Enderian teleporta, outros têm dano por água ou não respiram em terra firme; o menu mostra prós e contras antes da escolha. Dá pra montar times com origens complementares no multiplayer ou desafiar o survival solo com uma build esquisita. Principal 0.2 MB + variante Merged (1.6 MB) no TeraBox.",
+    "category": "magic",
+    "version": "1.3.0",
+    "minecraft_versions": [
+      "1.16.200"
+    ],
+    "requirements": [
+      "Faixa de versões declarada na origem: 1.16.0 - 1.26.60"
+    ],
+    "thumbnail": "/images/addons/origins/origins-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-06-20",
+    "updatedAt": "2025-06-20",
+    "sourceUrl": "https://mcpedl.org/origins-mod-minecraft-pe/",
+    "sourceId": "origins-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1proJZHJEhAXrLMsZdcn-Lg",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Merged",
+        "version": "1.21.80",
+        "minecraft_versions": [
+          "1.21.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1wE96ktqqXejRwAzZvhUcXQ",
+        "downloadProvider": "terabox",
+        "fileSize": "1.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/poppy-playtime/poppy-playtime-1.webp",
+      "/images/addons/poppy-playtime/poppy-playtime-2.webp",
+      "/images/addons/poppy-playtime/poppy-playtime-3.webp"
+    ],
+    "id": "poppy-playtime",
+    "name": "Poppy Playtime Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "bring horror characters, animated GrabPack tools, factory objects, and creepy roleplay features into your mobile world.\nWhat is interesting in Poppy Playtime Mod?\nThe Poppy Playtime mod adds the atmosphere of the famous horror franchise to ",
+    "longDescription": "bring horror characters, animated GrabPack tools, factory objects, and creepy roleplay features into your mobile world.\nWhat is interesting in Poppy Playtime Mod?\nThe Poppy Playtime mod adds the atmosphere of the famous horror franchise to the block world. Instead of ordinary monsters, players meet toy-like creatures, themed objects, and factory-style decorations.\nThe addon focuses on fear, exploration, and roleplay. Players can build dark locations, create chase scenes, decorate abandoned rooms, and use recognizable characters from the horror universe.\nThere are much more horror mods for Minecraft Bedrock Edition that can add monsters to the game.\nPoppy Playtime\nThe main character of the Poppy Playtime mod is the blue monster with a wide toothy smile and long limbs. This creature can chase players and make survival feel more dangerous.\nOther characters also appear in the world. Players can meet different toy monsters, dolls, and themed figures that fit horror maps, factory builds, and custom adventures.\nThe addon is built around recognizable horror characters. It works best for themed maps, roleplay, and chase scenes.\nThe character variety makes the world feel closer to an abandoned toy factory. Some mobs are useful for scares, while others are better for decoration or story scenes.\nNew dangers\nThe Poppy Playtime addon adds more tension to Minecraft PE by placing dangerous creatures into familiar locations. A normal corridor, room, or base can become part of a horror scenario.\nSome monsters are made for direct encounters, while others work well as living decorations for custom maps. This helps creators build scenes with suspense instead of relying only on vanilla mobs.\nThe mod does not need to replace the whole survival system. It adds a specific horror layer that players can use when they want a scarier world.\nTransformation\nSome versions of the Poppy Playtime mod for Minecraft PE allow players to transform into famous characters. This gives roleplay worlds more flexibility and makes custom horror events more interactive.\nTransformations are useful for players who want to act as the monster during multiplayer sessions. One user can become the threat, while others explore, escape, or complete themed challenges.\nThis feature also fits video scenes and map testing. It helps recreate the feeling of a chase without needing complicated commands.\nNew Poppy Playtime\nAt first glance, some objects may look like statues, but they can become active after interaction. Players can see characters such as Huggy Wuggy, Yarnaby, Boxy Boo, Kissy Missy, and others.\nThere are also decorative items for building horror locations. Doors, props, factory objects, posters, cardboard elements, televisions, and toys help create a more complete setting.\nDecorative objects make ",
+    "category": "horror",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.16.100"
+    ],
+    "requirements": [
+      "Faixa de versões declarada na origem: 1.17.0 - 1.26.60"
+    ],
+    "thumbnail": "/images/addons/poppy-playtime/poppy-playtime-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-09",
+    "updatedAt": "2026-07-09",
+    "sourceUrl": "https://mcpedl.org/poppy-playtime-mod-minecraft-pe/",
+    "sourceId": "poppy-playtime-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1MkF_mgvKCEZPGvlulI125w",
+    "fileSize": "0.9 MB",
+    "files": [
+      {
+        "label": "New dangers",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Nq6qN3RT55EYu8n9EReSWQ",
+        "downloadProvider": "terabox",
+        "fileSize": "14.0 MB"
+      },
+      {
+        "label": "Transformation",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1dgvJRvs_g0BX1nn-SMu13w",
+        "downloadProvider": "terabox",
+        "fileSize": "10.2 MB"
+      },
+      {
+        "label": "New Poppy Playtime",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1f5Fui-4p1zLzxG8Ubh2g5Q",
+        "downloadProvider": "terabox",
+        "fileSize": "42.4 MB"
+      },
+      {
+        "label": "Playtime by MeBesm",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1U4Oe0JiE8ZWrW55Q4NP3RA",
+        "downloadProvider": "terabox",
+        "fileSize": "43.1 MB"
+      },
+      {
+        "label": "Me Poppy Playtime",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1dh7FFTjneQpe0S_rZ4H6Yw",
+        "downloadProvider": "terabox",
+        "fileSize": "7.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/skibidi-toilet/skibidi-toilet-1.webp",
+      "/images/addons/skibidi-toilet/skibidi-toilet-2.webp",
+      "/images/addons/skibidi-toilet/skibidi-toilet-3.webp"
+    ],
+    "id": "skibidi-toilet",
+    "name": "Skibidi Toilet Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Skibidi Toilet, Cameraman, Speakerman e o Titan no seu mundo — com a música icônica tocando quando você chega perto.",
+    "longDescription": "O Skibidi Toilet Mod traz os personagens da série pro Bedrock: três mobs básicos (Skibidi Toilet, Camera-man e Speaker-man) e o Titan Speakerman, gigante de jaqueta vermelha baseado no episódio 18. Spawn pelo ovo no criativo; o Skibidi Toilet tem barra de vida e toca a música quando você se aproxima — afasta e para. Cameraman e Speakerman seguem o jogador em paz, e alguns mobs se atacam sozinhos. Variantes no TeraBox: Titan Speakerman, Skibidi Dip Dop, New Skibidi Characters e Skibidi Raids.",
+    "category": "mobs",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.19.0"
+    ],
+    "thumbnail": "/images/addons/skibidi-toilet/skibidi-toilet-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-05-20",
+    "updatedAt": "2026-05-20",
+    "sourceUrl": "https://mcpedl.org/skibidi-toilet-mod-minecraft-pe/",
+    "sourceId": "skibidi-toilet-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1SYd2Lo8uSiSI_UCoKSqr_A",
+    "fileSize": "0.4 MB",
+    "files": [
+      {
+        "label": "Titan Speakerman",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/13c7OEhI-mKd0tJ0JieNM8Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Skibidi Dip Dop",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1sJWfxoZxGE2hw2ZiQYKhkw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      },
+      {
+        "label": "New Skibidi Characters",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1BmobtEWly3UWzmbqV8kT7w",
+        "downloadProvider": "terabox",
+        "fileSize": "3.6 MB"
+      },
+      {
+        "label": "Skibidi Raids",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Ar3Ntxd2_cV19HHuXi7UEw",
+        "downloadProvider": "terabox",
+        "fileSize": "12.8 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/utility-craft/utility-craft-1.webp",
+      "/images/addons/utility-craft/utility-craft-2.webp",
+      "/images/addons/utility-craft/utility-craft-3.webp"
+    ],
+    "id": "utility-craft",
+    "name": "Utility Craft Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Automação de verdade no celular: bancada própria, aço, máquinas e cultivos que tiram o trabalho manual do survival.",
+    "longDescription": "O Utility Craft é focado em automatizar a rotina: uma bancada nova libera componentes mecânicos, o aço vira a base das máquinas e os blocos técnicos cuidam de processar recursos. As máquinas pedem energia e posicionamento pensado, então rende mais pra quem gosta de montar linha de produção. Também entram ferramentas, plantas úteis e equipamentos. Principal 2.2 MB (UtilityCraft 2.8) + Weapons and Tools e Tiered Machinery no TeraBox.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.20.12"
+    ],
+    "thumbnail": "/images/addons/utility-craft/utility-craft-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-03-20",
+    "updatedAt": "2026-03-20",
+    "sourceUrl": "https://mcpedl.org/utility-craft-mod-minecraft-pe/",
+    "sourceId": "utility-craft-mod-minecraft-pe",
+    "importedAt": "2026-11-18",
+    "download_url": "https://1024terabox.com/s/1ienn_Sv6Ck50_c92bhpQ5Q",
+    "fileSize": "2.2 MB",
+    "files": [
+      {
+        "label": "Weapons and Tools",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1sMyiBcWyKH6AY3azLugE9A",
+        "downloadProvider": "terabox",
+        "fileSize": "0.7 MB"
+      },
+      {
+        "label": "Utility Craft: Tiered Machinery",
+        "version": "1.20.12",
+        "minecraft_versions": [
+          "1.20.12"
+        ],
+        "download_url": "https://1024terabox.com/s/1USl_JsCcy45aVT-7iOkG6Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

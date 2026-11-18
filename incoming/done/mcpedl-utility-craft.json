@@ -1,0 +1,52 @@
+{
+ "id": "utility-craft",
+ "name": "Utility Craft Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Automação de verdade no celular: bancada própria, aço, máquinas e cultivos que tiram o trabalho manual do survival.",
+ "longDescription": "O Utility Craft é focado em automatizar a rotina: uma bancada nova libera componentes mecânicos, o aço vira a base das máquinas e os blocos técnicos cuidam de processar recursos. As máquinas pedem energia e posicionamento pensado, então rende mais pra quem gosta de montar linha de produção. Também entram ferramentas, plantas úteis e equipamentos. Principal 2.2 MB (UtilityCraft 2.8) + Weapons and Tools e Tiered Machinery no TeraBox.",
+ "category": "utility",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.20.12"
+ ],
+ "thumbnail": "/images/addons/utility-craft/utility-craft-1.webp",
+ "screenshots": [
+  "/images/addons/utility-craft/utility-craft-1.webp",
+  "/images/addons/utility-craft/utility-craft-2.webp",
+  "/images/addons/utility-craft/utility-craft-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-03-20",
+ "updatedAt": "2026-03-20",
+ "sourceUrl": "https://mcpedl.org/utility-craft-mod-minecraft-pe/",
+ "sourceId": "utility-craft-mod-minecraft-pe",
+ "importedAt": "2026-11-18",
+ "download_url": "https://1024terabox.com/s/1ienn_Sv6Ck50_c92bhpQ5Q",
+ "fileSize": "2.2 MB",
+ "files": [
+  {
+   "label": "Weapons and Tools",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1sMyiBcWyKH6AY3azLugE9A",
+   "downloadProvider": "terabox",
+   "fileSize": "0.7 MB"
+  },
+  {
+   "label": "Utility Craft: Tiered Machinery",
+   "version": "1.20.12",
+   "minecraft_versions": [
+    "1.20.12"
+   ],
+   "download_url": "https://1024terabox.com/s/1USl_JsCcy45aVT-7iOkG6Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  }
+ ]
+}
