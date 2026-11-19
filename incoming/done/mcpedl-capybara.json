@@ -1,0 +1,42 @@
+{
+ "id": "capybara",
+ "name": "Capybara Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Capivaras domesticáveis, montáveis e com roupinhas: o animal mais tranquilo da internet agora vive no seu mundo.",
+ "longDescription": "O Capybara Mod adiciona capivaras com 35 de vida que aparecem em pântanos, selvas e manguezais. Dá pra domesticar, criar, montar e até vestir com roupas e acessórios — vira pet, transporte e decoração ao mesmo tempo. É um addon leve e safe pra jogar com amigos ou crianças. Principal 2.4 MB (manifest 1.0.3, MC 1.19.0) + variante Capybara Addon no TeraBox.",
+ "category": "mobs",
+ "version": "1.0.3",
+ "minecraft_versions": [
+  "1.19.0"
+ ],
+ "thumbnail": "/images/addons/capybara/capybara-1.webp",
+ "screenshots": [
+  "/images/addons/capybara/capybara-1.webp",
+  "/images/addons/capybara/capybara-2.webp",
+  "/images/addons/capybara/capybara-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-29",
+ "updatedAt": "2026-10-29",
+ "sourceUrl": "https://mcpedl.org/capybara-mod-minecraft-pe/",
+ "sourceId": "capybara-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/17XGTp1qN03bHeydc0jtAew",
+ "fileSize": "2.4 MB",
+ "files": [
+  {
+   "label": "Capybara Addon",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1pZKM8gu4vBe_-CbWEy6xNw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.9 MB"
+  }
+ ]
+}

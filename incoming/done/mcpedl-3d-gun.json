@@ -1,0 +1,71 @@
+{
+ "id": "3d-gun",
+ "name": "3D Gun Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Armas 3D com modelos detalhados: pistolas, metralhadoras e armamento de guerra pra arenas e mapas de PvP.",
+ "longDescription": "O 3D Gun Mod troca as armas quadradas por modelos 3D detalhados: pistolas, automáticas, submetralhadoras e equipamento militar com munição própria. Boa parte do pack exige as configurações experimentais ativadas, então teste num mundo separado antes de levar pro principal. Rende mais em arena, roleplay de guerra e multiplayer do que em survival puro. Arquivos no TeraBox: Realistic Weapons, 3D Guns e Simple Arsenal; o pacote Peters Guns Original 3D passa do limite de 150 MB do upload e fica no link da origem.",
+ "category": "weapons",
+ "version": "0.1.5",
+ "minecraft_versions": [
+  "1.1.0"
+ ],
+ "thumbnail": "/images/addons/3d-gun/3d-gun-1.webp",
+ "screenshots": [
+  "/images/addons/3d-gun/3d-gun-1.webp",
+  "/images/addons/3d-gun/3d-gun-2.webp",
+  "/images/addons/3d-gun/3d-gun-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-19",
+ "updatedAt": "2026-09-19",
+ "sourceUrl": "https://mcpedl.org/3d-gun-mod-minecraft-pe/",
+ "sourceId": "3d-gun-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1B3egFDzz9sNCakQhDVnJ5Q",
+ "fileSize": "0.3 MB",
+ "files": [
+  {
+   "label": "Realistic Weapons",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1WkNQfzwUbrwEGYSKxGXwig",
+   "downloadProvider": "terabox",
+   "fileSize": "2.5 MB"
+  },
+  {
+   "label": "3D Guns",
+   "version": "1.19.80",
+   "minecraft_versions": [
+    "1.19.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1CSIbtcNST3t1m3-jCabXrA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.9 MB"
+  },
+  {
+   "label": "Simple Arsenal",
+   "version": "1.21.50",
+   "minecraft_versions": [
+    "1.21.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1IyBczGVLkTURv8Yh-1W3mQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.5 MB"
+  },
+  {
+   "label": "Peters Guns Original 3D",
+   "version": "1.21.50",
+   "minecraft_versions": [
+    "1.21.50"
+   ],
+   "download_url": "https://file.mcpedl.org/uploads_files/19-09-2026/peters-guns-original-3d.mcaddon",
+   "downloadProvider": "original"
+  }
+ ]
+}

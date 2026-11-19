@@ -114,7 +114,10 @@ Pedido do dono: todo download do site deve levar ao TeraBox. Duas pontas:
 Validação e leitura de ZIP vivem em `scripts/package-lib.mjs` (compartilhado
 entre worker e migrador): `pack_manifest.json` aceito, ZIPs aninhados
 (`.mcpack` dentro de `.mcaddon`), offsets do central directory corrigidos,
-`header.uuid` exigível por opção (`exigirUuid`). Manifests com **comentários
+`header.uuid` exigível por opção (`exigirUuid`). `.zip` dentro de `.mcaddon`
+**não** é aceito como pacote válido (Item Physics, lote 9: o jogo não importa
+esse casulo; a linha cai pro link da origem ou usa `--principal-row`). Manifests
+com **comentários
 `//`/`/* */`, BOM e números com zero à esquerda** (`[4, 07, 19]`) também são
 aceitos — o parser do próprio Bedrock é leniente igual (casos reais: Ultra
 Farming no bridge.editor, Dungeons Content). Uploads grandes sofreram resets

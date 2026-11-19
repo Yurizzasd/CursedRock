@@ -2679,5 +2679,364 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/3d-gun/3d-gun-1.webp",
+      "/images/addons/3d-gun/3d-gun-2.webp",
+      "/images/addons/3d-gun/3d-gun-3.webp"
+    ],
+    "id": "3d-gun",
+    "name": "3D Gun Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas 3D com modelos detalhados: pistolas, metralhadoras e armamento de guerra pra arenas e mapas de PvP.",
+    "longDescription": "O 3D Gun Mod troca as armas quadradas por modelos 3D detalhados: pistolas, automáticas, submetralhadoras e equipamento militar com munição própria. Boa parte do pack exige as configurações experimentais ativadas, então teste num mundo separado antes de levar pro principal. Rende mais em arena, roleplay de guerra e multiplayer do que em survival puro. Arquivos no TeraBox: Realistic Weapons, 3D Guns e Simple Arsenal; o pacote Peters Guns Original 3D passa do limite de 150 MB do upload e fica no link da origem.",
+    "category": "weapons",
+    "version": "0.1.5",
+    "minecraft_versions": [
+      "1.1.0"
+    ],
+    "thumbnail": "/images/addons/3d-gun/3d-gun-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "sourceUrl": "https://mcpedl.org/3d-gun-mod-minecraft-pe/",
+    "sourceId": "3d-gun-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1B3egFDzz9sNCakQhDVnJ5Q",
+    "fileSize": "0.3 MB",
+    "files": [
+      {
+        "label": "Realistic Weapons",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1WkNQfzwUbrwEGYSKxGXwig",
+        "downloadProvider": "terabox",
+        "fileSize": "2.5 MB"
+      },
+      {
+        "label": "3D Guns",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1CSIbtcNST3t1m3-jCabXrA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.9 MB"
+      },
+      {
+        "label": "Simple Arsenal",
+        "version": "1.21.50",
+        "minecraft_versions": [
+          "1.21.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1IyBczGVLkTURv8Yh-1W3mQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.5 MB"
+      },
+      {
+        "label": "Peters Guns Original 3D",
+        "version": "1.21.50",
+        "minecraft_versions": [
+          "1.21.50"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/19-09-2026/peters-guns-original-3d.mcaddon",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/capybara/capybara-1.webp",
+      "/images/addons/capybara/capybara-2.webp",
+      "/images/addons/capybara/capybara-3.webp"
+    ],
+    "id": "capybara",
+    "name": "Capybara Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Capivaras domesticáveis, montáveis e com roupinhas: o animal mais tranquilo da internet agora vive no seu mundo.",
+    "longDescription": "O Capybara Mod adiciona capivaras com 35 de vida que aparecem em pântanos, selvas e manguezais. Dá pra domesticar, criar, montar e até vestir com roupas e acessórios — vira pet, transporte e decoração ao mesmo tempo. É um addon leve e safe pra jogar com amigos ou crianças. Principal 2.4 MB (manifest 1.0.3, MC 1.19.0) + variante Capybara Addon no TeraBox.",
+    "category": "mobs",
+    "version": "1.0.3",
+    "minecraft_versions": [
+      "1.19.0"
+    ],
+    "thumbnail": "/images/addons/capybara/capybara-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "sourceUrl": "https://mcpedl.org/capybara-mod-minecraft-pe/",
+    "sourceId": "capybara-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/17XGTp1qN03bHeydc0jtAew",
+    "fileSize": "2.4 MB",
+    "files": [
+      {
+        "label": "Capybara Addon",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1pZKM8gu4vBe_-CbWEy6xNw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.9 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/dino/dino-1.webp",
+      "/images/addons/dino/dino-2.webp",
+      "/images/addons/dino/dino-3.webp"
+    ],
+    "id": "dino",
+    "name": "Dino Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Dinossauros no survival: criaturas pré-históricas enormes, ovos, fósseis e até áreas congeladas da Era do Gelo.",
+    "longDescription": "O Dino Mod repovoa o mundo com criaturas pré-históricas de verdade: algumas domesticáveis, outras melhor evitar até ter equipamento. Entram ovos, ninhos, minérios e restos ligados à vida antiga, além de paisagens geladas com pegada de Era do Gelo. Funciona melhor como expedição em grupo — o mapa deixa de ser aquele passeio tranquilo. Principal 2.3 MB (Project PreHistoric v0.0.1) e três variantes no TeraBox: Dinosaurs, Dominion Project e Blast From The Past.",
+    "category": "mobs",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.13.0"
+    ],
+    "thumbnail": "/images/addons/dino/dino-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-09",
+    "updatedAt": "2026-10-09",
+    "sourceUrl": "https://mcpedl.org/dino-mod-for-minecraft-pe/",
+    "sourceId": "dino-mod-for-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1Tv11S4ytm7VsOK1zKXAPfQ",
+    "fileSize": "2.3 MB",
+    "files": [
+      {
+        "label": "Dinosaurs",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1fbU7CYgbNQ8w36mHdxb-Eg",
+        "downloadProvider": "terabox",
+        "fileSize": "7.9 MB"
+      },
+      {
+        "label": "Dominion Project",
+        "version": "1.21.50",
+        "minecraft_versions": [
+          "1.21.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1OF1JAwKdX18gu3zXYj2pEA",
+        "downloadProvider": "terabox",
+        "fileSize": "4.0 MB"
+      },
+      {
+        "label": "Blast From The Past",
+        "version": "1.21.50",
+        "minecraft_versions": [
+          "1.21.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1RXIjD4B2jV6yaOb8jIjSoA",
+        "downloadProvider": "terabox",
+        "fileSize": "1.7 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/item-physics/item-physics-1.webp",
+      "/images/addons/item-physics/item-physics-2.webp",
+      "/images/addons/item-physics/item-physics-3.webp"
+    ],
+    "id": "item-physics",
+    "name": "Item Physics Pro Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Física de verdade pros itens dropados: caem, rolam, assentam no chão — e os mobs tombam como ragdolls.",
+    "longDescription": "O Item Physics Pro conserta aquele detalhe que ninguém percebe até ver: itens dropados deixam de flutuar e passam a cair, girar e assentar no chão conforme o terreno. O pacote também adiciona ragdoll em mobs, física na morte do jogador e até TNT que arremessa blocos. É puro polimento visual, sem mudar progressão. Principal Physics Pro 1.0 (0.7 MB, manifest 1.0.8, MC 1.26.10) + Rayons Item Physics no TeraBox; a linha antiga \"Item Physics\" está empacotada com zips dentro do mcaddon e fica no link da origem.",
+    "category": "utility",
+    "version": "1.0.8",
+    "minecraft_versions": [
+      "1.26.10"
+    ],
+    "requirements": [
+      "Faixa de versões declarada na origem: 1.16.0 - 1.26.60"
+    ],
+    "thumbnail": "/images/addons/item-physics/item-physics-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-14",
+    "updatedAt": "2026-09-14",
+    "sourceUrl": "https://mcpedl.org/item-physics-mod-minecraft-pe/",
+    "sourceId": "item-physics-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/14C-DfNdJ82lHipPR1plXZw",
+    "fileSize": "0.7 MB",
+    "files": [
+      {
+        "label": "Item Physics",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/10-08-2022/items-physics.mcaddon",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Rayons Item Physics",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/14p980WuaU3V19N4zrbR7tg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/naruto/naruto-1.webp",
+      "/images/addons/naruto/naruto-2.webp",
+      "/images/addons/naruto/naruto-3.webp"
+    ],
+    "id": "naruto",
+    "name": "Naruto Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Ninjas, jutsu e armas da Vila da Folha no Bedrock: personagens reconhecíveis, combate com skills e exploração estilo anime.",
+    "longDescription": "O Naruto Mod leva o universo ninja pro Minecraft com personagens, armas e técnicas de jutsu que mudam o combate. Dá pra montar treinos, duelos e cenários da vila, ou simplesmente sair explorando com um kit ninja. As três linhas da página estão no TeraBox: Naruto Shippuden Survival (principal), Naruto Craft e Naruto Uzumaki. Bom pra servidores de anime e maps de PvP temático.",
+    "category": "anime",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/naruto/naruto-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-03-05",
+    "updatedAt": "2026-03-05",
+    "sourceUrl": "https://mcpedl.org/naruto-mod-minecraft-pe/",
+    "sourceId": "naruto-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1XGZU-3fGBCJBpLIb1Vnb3g",
+    "fileSize": "0.6 MB",
+    "files": [
+      {
+        "label": "Naruto Craft",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1vPPGeqHe1ihU_bdazd48xQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "Naruto Uzumaki",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1W39aanxK1n_tDqMODeS5CA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.3 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/new-structures/new-structures-1.webp",
+      "/images/addons/new-structures/new-structures-2.webp",
+      "/images/addons/new-structures/new-structures-3.webp"
+    ],
+    "id": "new-structures",
+    "name": "New Structures Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Mais de uma dúzia de construções novas aparecendo pelo mapa: casas, torres, castelos e fortalezas abandonadas com loot.",
+    "longDescription": "O New Structures espalha mais de 12 construções pelo mundo — casas, torres, castelos, fortalezas abandonadas e esconderijos com tesouro. Algumas surgem naturalmente durante a exploração; outras você posiciona com o structure block (/give @s structure_block). É o tipo de addon que dá motivo pra sair andando sem rumo no survival. Principal 0.1 MB + quatro variantes no TeraBox, incluindo 100 Structures (8.7 MB) e Structures and Stuff 2.2 (51.5 MB).",
+    "category": "world",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.13.0"
+    ],
+    "thumbnail": "/images/addons/new-structures/new-structures-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-19",
+    "updatedAt": "2026-10-19",
+    "sourceUrl": "https://mcpedl.org/new-structures-mod-minecraft-pe/",
+    "sourceId": "new-structures-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1kG8MoO8UbczP77wx8fJGtQ",
+    "fileSize": "0.1 MB",
+    "files": [
+      {
+        "label": "Unique Structures",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1vQC--GiUK0eWGXC8mwJXiA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "100 Structures",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1VuRGFzoYU_EwcFc2nCiA1A",
+        "downloadProvider": "terabox",
+        "fileSize": "8.7 MB"
+      },
+      {
+        "label": "Mayhem",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1JvuI5ZEYf18SjbH-kNIYWg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.7 MB"
+      },
+      {
+        "label": "Structures and Stuff 2.2",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1tlCUGPPEQ2RXcBcuK0E8Lw",
+        "downloadProvider": "terabox",
+        "fileSize": "51.5 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

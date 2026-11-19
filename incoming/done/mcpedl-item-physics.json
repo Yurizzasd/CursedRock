@@ -1,0 +1,54 @@
+{
+ "id": "item-physics",
+ "name": "Item Physics Pro Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Física de verdade pros itens dropados: caem, rolam, assentam no chão — e os mobs tombam como ragdolls.",
+ "longDescription": "O Item Physics Pro conserta aquele detalhe que ninguém percebe até ver: itens dropados deixam de flutuar e passam a cair, girar e assentar no chão conforme o terreno. O pacote também adiciona ragdoll em mobs, física na morte do jogador e até TNT que arremessa blocos. É puro polimento visual, sem mudar progressão. Principal Physics Pro 1.0 (0.7 MB, manifest 1.0.8, MC 1.26.10) + Rayons Item Physics no TeraBox; a linha antiga \"Item Physics\" está empacotada com zips dentro do mcaddon e fica no link da origem.",
+ "category": "utility",
+ "version": "1.0.8",
+ "minecraft_versions": [
+  "1.26.10"
+ ],
+ "requirements": [
+  "Faixa de versões declarada na origem: 1.16.0 - 1.26.60"
+ ],
+ "thumbnail": "/images/addons/item-physics/item-physics-1.webp",
+ "screenshots": [
+  "/images/addons/item-physics/item-physics-1.webp",
+  "/images/addons/item-physics/item-physics-2.webp",
+  "/images/addons/item-physics/item-physics-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-14",
+ "updatedAt": "2026-09-14",
+ "sourceUrl": "https://mcpedl.org/item-physics-mod-minecraft-pe/",
+ "sourceId": "item-physics-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/14C-DfNdJ82lHipPR1plXZw",
+ "fileSize": "0.7 MB",
+ "files": [
+  {
+   "label": "Item Physics",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://file.mcpedl.org/uploads_files/10-08-2022/items-physics.mcaddon",
+   "downloadProvider": "original"
+  },
+  {
+   "label": "Rayons Item Physics",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/14p980WuaU3V19N4zrbR7tg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

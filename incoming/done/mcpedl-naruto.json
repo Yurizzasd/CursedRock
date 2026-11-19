@@ -1,0 +1,52 @@
+{
+ "id": "naruto",
+ "name": "Naruto Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Ninjas, jutsu e armas da Vila da Folha no Bedrock: personagens reconhecíveis, combate com skills e exploração estilo anime.",
+ "longDescription": "O Naruto Mod leva o universo ninja pro Minecraft com personagens, armas e técnicas de jutsu que mudam o combate. Dá pra montar treinos, duelos e cenários da vila, ou simplesmente sair explorando com um kit ninja. As três linhas da página estão no TeraBox: Naruto Shippuden Survival (principal), Naruto Craft e Naruto Uzumaki. Bom pra servidores de anime e maps de PvP temático.",
+ "category": "anime",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/naruto/naruto-1.webp",
+ "screenshots": [
+  "/images/addons/naruto/naruto-1.webp",
+  "/images/addons/naruto/naruto-2.webp",
+  "/images/addons/naruto/naruto-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-03-05",
+ "updatedAt": "2026-03-05",
+ "sourceUrl": "https://mcpedl.org/naruto-mod-minecraft-pe/",
+ "sourceId": "naruto-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1XGZU-3fGBCJBpLIb1Vnb3g",
+ "fileSize": "0.6 MB",
+ "files": [
+  {
+   "label": "Naruto Craft",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1vPPGeqHe1ihU_bdazd48xQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "Naruto Uzumaki",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1W39aanxK1n_tDqMODeS5CA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.3 MB"
+  }
+ ]
+}

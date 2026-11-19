@@ -1,0 +1,72 @@
+{
+ "id": "new-structures",
+ "name": "New Structures Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Mais de uma dúzia de construções novas aparecendo pelo mapa: casas, torres, castelos e fortalezas abandonadas com loot.",
+ "longDescription": "O New Structures espalha mais de 12 construções pelo mundo — casas, torres, castelos, fortalezas abandonadas e esconderijos com tesouro. Algumas surgem naturalmente durante a exploração; outras você posiciona com o structure block (/give @s structure_block). É o tipo de addon que dá motivo pra sair andando sem rumo no survival. Principal 0.1 MB + quatro variantes no TeraBox, incluindo 100 Structures (8.7 MB) e Structures and Stuff 2.2 (51.5 MB).",
+ "category": "world",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.13.0"
+ ],
+ "thumbnail": "/images/addons/new-structures/new-structures-1.webp",
+ "screenshots": [
+  "/images/addons/new-structures/new-structures-1.webp",
+  "/images/addons/new-structures/new-structures-2.webp",
+  "/images/addons/new-structures/new-structures-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-19",
+ "updatedAt": "2026-10-19",
+ "sourceUrl": "https://mcpedl.org/new-structures-mod-minecraft-pe/",
+ "sourceId": "new-structures-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1kG8MoO8UbczP77wx8fJGtQ",
+ "fileSize": "0.1 MB",
+ "files": [
+  {
+   "label": "Unique Structures",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1vQC--GiUK0eWGXC8mwJXiA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "100 Structures",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1VuRGFzoYU_EwcFc2nCiA1A",
+   "downloadProvider": "terabox",
+   "fileSize": "8.7 MB"
+  },
+  {
+   "label": "Mayhem",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1JvuI5ZEYf18SjbH-kNIYWg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.7 MB"
+  },
+  {
+   "label": "Structures and Stuff 2.2",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1tlCUGPPEQ2RXcBcuK0E8Lw",
+   "downloadProvider": "terabox",
+   "fileSize": "51.5 MB"
+  }
+ ]
+}

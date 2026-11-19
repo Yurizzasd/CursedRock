@@ -1,0 +1,62 @@
+{
+ "id": "dino",
+ "name": "Dino Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Dinossauros no survival: criaturas pré-históricas enormes, ovos, fósseis e até áreas congeladas da Era do Gelo.",
+ "longDescription": "O Dino Mod repovoa o mundo com criaturas pré-históricas de verdade: algumas domesticáveis, outras melhor evitar até ter equipamento. Entram ovos, ninhos, minérios e restos ligados à vida antiga, além de paisagens geladas com pegada de Era do Gelo. Funciona melhor como expedição em grupo — o mapa deixa de ser aquele passeio tranquilo. Principal 2.3 MB (Project PreHistoric v0.0.1) e três variantes no TeraBox: Dinosaurs, Dominion Project e Blast From The Past.",
+ "category": "mobs",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.13.0"
+ ],
+ "thumbnail": "/images/addons/dino/dino-1.webp",
+ "screenshots": [
+  "/images/addons/dino/dino-1.webp",
+  "/images/addons/dino/dino-2.webp",
+  "/images/addons/dino/dino-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-09",
+ "updatedAt": "2026-10-09",
+ "sourceUrl": "https://mcpedl.org/dino-mod-for-minecraft-pe/",
+ "sourceId": "dino-mod-for-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1Tv11S4ytm7VsOK1zKXAPfQ",
+ "fileSize": "2.3 MB",
+ "files": [
+  {
+   "label": "Dinosaurs",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1fbU7CYgbNQ8w36mHdxb-Eg",
+   "downloadProvider": "terabox",
+   "fileSize": "7.9 MB"
+  },
+  {
+   "label": "Dominion Project",
+   "version": "1.21.50",
+   "minecraft_versions": [
+    "1.21.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1OF1JAwKdX18gu3zXYj2pEA",
+   "downloadProvider": "terabox",
+   "fileSize": "4.0 MB"
+  },
+  {
+   "label": "Blast From The Past",
+   "version": "1.21.50",
+   "minecraft_versions": [
+    "1.21.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1RXIjD4B2jV6yaOb8jIjSoA",
+   "downloadProvider": "terabox",
+   "fileSize": "1.7 MB"
+  }
+ ]
+}

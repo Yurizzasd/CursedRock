@@ -82,6 +82,8 @@ export function takeId(slug, usedIds, addedIds) {
       .replace(/[^a-z0-9]+/g, '-')
       .replace(/^-|-$/g, '') || base;
   }
+  // 2026 fix (lote 9): "...-mod-for-minecraft-pe" sobrava como "dino-mod-for".
+  base = base.replace(/-mod-for$/, '');
   let id = base;
   if ([...usedIds, ...addedIds].includes(id)) {
     id = `${base}-m${createHash('sha1').update(slug).digest('hex').slice(0, 4)}`;
