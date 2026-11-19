@@ -1,0 +1,52 @@
+{
+ "id": "parachute",
+ "name": "Parachute Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Paraquedas e asa-delta pra planar pelo mapa, com 10 modelos e versões motorizadas.",
+ "longDescription": "O Parachute Mod coloca asa-delta e paraquedas no jogo: você spawna com a mochila nas costas e sai planando, controlando a descida e pousando onde quiser. A página lista 10 tipos de planador, além de versões motorizadas e pacotes FWS. Precisa ativar os experimentais na criação do mundo. Variantes no TeraBox: Powered Parachutes e Parachutes FWS.",
+ "category": "vehicles",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.16.0"
+ ],
+ "thumbnail": "/images/addons/parachute/parachute-1.webp",
+ "screenshots": [
+  "/images/addons/parachute/parachute-1.webp",
+  "/images/addons/parachute/parachute-2.webp",
+  "/images/addons/parachute/parachute-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-01-15",
+ "updatedAt": "2025-01-15",
+ "sourceUrl": "https://mcpedl.org/parachute-mod-minecraft-pe/",
+ "sourceId": "parachute-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1LPy6jPcMkp_-aoEppMM_MA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Powered Parachutes",
+   "version": "1.18.20",
+   "minecraft_versions": [
+    "1.18.20"
+   ],
+   "download_url": "https://1024terabox.com/s/1e-nXI0rdGP8o5hdTXaINog",
+   "downloadProvider": "terabox",
+   "fileSize": "8.2 MB"
+  },
+  {
+   "label": "Parachutes FWS",
+   "version": "1.21.50",
+   "minecraft_versions": [
+    "1.21.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1ycxV0FQJB_QTVSXa3sf9Nw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

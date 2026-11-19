@@ -1,0 +1,30 @@
+{
+ "id": "simple-autosmelt",
+ "name": "Simple AutoSmelt Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Minério quebrado vira lingote na hora: ferro, ouro, cobre e até ancient debris sem fornalha nem carvão.",
+ "longDescription": "O Simple AutoSmelt transforma mineração em saque direto: ao quebrar ferro, cobre, ouro ou ancient debris, o drop já vem processado em lingote — sem fornalha, combustível ou espera. O efeito pode ser ligado e desligado quando quiser e funciona com shaders e texture packs. Só exige os experimentais ativados no mundo. Principal 0.0 MB (manifest 1.1.1) no TeraBox.",
+ "category": "utility",
+ "version": "1.1.1",
+ "minecraft_versions": [
+  "1.20.80"
+ ],
+ "thumbnail": "/images/addons/simple-autosmelt/simple-autosmelt-1.webp",
+ "screenshots": [
+  "/images/addons/simple-autosmelt/simple-autosmelt-1.webp",
+  "/images/addons/simple-autosmelt/simple-autosmelt-2.webp",
+  "/images/addons/simple-autosmelt/simple-autosmelt-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-12-05",
+ "updatedAt": "2025-12-05",
+ "sourceUrl": "https://mcpedl.org/simple-autosmelt-mod-minecraft-pe/",
+ "sourceId": "simple-autosmelt-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/193fBHx1gtm_w46Em2PLPlw",
+ "fileSize": "0.0 MB"
+}

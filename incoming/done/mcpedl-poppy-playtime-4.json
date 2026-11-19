@@ -1,0 +1,30 @@
+{
+ "id": "poppy-playtime-4",
+ "name": "Poppy Playtime 4 Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "A continuação do pesadelo: personagens do capítulo 4, a fábrica escura e monstros de brinquedo caçando você.",
+ "longDescription": "O Poppy Playtime 4 acompanha o gancho do terceiro jogo: você volta preso na fábrica abandonada, com os brinquedos perseguindo e uma nova leva de criaturas do capítulo 4. O pack foca em modelos e clima de horror — bom pra mapas temáticos, roleplay e sustos com amigos. Principal 3.9 MB validado e no TeraBox.",
+ "category": "horror",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.20.0"
+ ],
+ "thumbnail": "/images/addons/poppy-playtime-4/poppy-playtime-4-1.webp",
+ "screenshots": [
+  "/images/addons/poppy-playtime-4/poppy-playtime-4-1.webp",
+  "/images/addons/poppy-playtime-4/poppy-playtime-4-2.webp",
+  "/images/addons/poppy-playtime-4/poppy-playtime-4-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-02-05",
+ "updatedAt": "2025-02-05",
+ "sourceUrl": "https://mcpedl.org/poppy-playtime-4-mod-minecraft-pe/",
+ "sourceId": "poppy-playtime-4-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1XYM8fjIJbnzRU9pZ3IvBrw",
+ "fileSize": "3.9 MB"
+}

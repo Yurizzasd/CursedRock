@@ -1,0 +1,30 @@
+{
+ "id": "skill-points",
+ "name": "Skill Points Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Cada nível vira ponto de habilidade: árvore de RPG com upgrades permanentes pra combate, mineração e exploração.",
+ "longDescription": "O Skill Points transforma experiência em progressão de RPG: ao subir de nível você ganha pontos pra investir numa árvore de habilidades, com caminhos pra combate, mineração, mobilidade e sobrevivência longa. Os upgrades são permanentes, então dá pra montar builds bem diferentes no mesmo mundo. Principal 4.4 MB no TeraBox.",
+ "category": "utility",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.26.30"
+ ],
+ "thumbnail": "/images/addons/skill-points/skill-points-1.webp",
+ "screenshots": [
+  "/images/addons/skill-points/skill-points-1.webp",
+  "/images/addons/skill-points/skill-points-2.webp",
+  "/images/addons/skill-points/skill-points-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-29",
+ "updatedAt": "2026-09-29",
+ "sourceUrl": "https://mcpedl.org/skill-points-mod-minecraft-pe/",
+ "sourceId": "skill-points-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1oDB0gkEQcRfIj4gX_p01Lw",
+ "fileSize": "4.4 MB"
+}

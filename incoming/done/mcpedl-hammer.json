@@ -1,0 +1,72 @@
+{
+ "id": "hammer",
+ "name": "Hammer Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Martelos que quebram área em um golpe: do Stormbreaker do Thor aos martelos 3D com tiers de mineração.",
+ "longDescription": "O Hammer Mod adiciona martelos de verdade: alguns são armas com dano alto, outros abrem túneis e quebram áreas grandes de blocos de uma vez. Tem o Stormbreaker estilo Thor, martelos 3D e versões com tiers pra minerar mais rápido. Modelos detalhados na mão e na hotbar. Quatro variantes no TeraBox: MC Hammers, Weapons 3D, True Hammers e TC Hammer 3D.",
+ "category": "weapons",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.6.0"
+ ],
+ "thumbnail": "/images/addons/hammer/hammer-1.webp",
+ "screenshots": [
+  "/images/addons/hammer/hammer-1.webp",
+  "/images/addons/hammer/hammer-2.webp",
+  "/images/addons/hammer/hammer-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-10",
+ "updatedAt": "2026-10-10",
+ "sourceUrl": "https://mcpedl.org/hammer-mod-minecraft-pe/",
+ "sourceId": "hammer-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1U3ipJLFJw0RczKhHQr3s3A",
+ "fileSize": "0.3 MB",
+ "files": [
+  {
+   "label": "MC Hammers",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1sbftsMgEhsDSwIMjh0UyRw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "Weapons 3D",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1KluAkmXJalLFrnpVR-e-RA",
+   "downloadProvider": "terabox",
+   "fileSize": "2.9 MB"
+  },
+  {
+   "label": "True Hammers",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1qRtcfJErOyywhMJfb38evQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "TC Hammer 3D",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1nBsr8qVYAqYMzuoeC1tSdQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.5 MB"
+  }
+ ]
+}

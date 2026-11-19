@@ -1,0 +1,42 @@
+{
+ "id": "ore-finder",
+ "name": "Ore Finder Cheat Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Escâner de minérios com som, HUD e partículas: acha diamante, ouro e ancient debris sem cavar às cegas.",
+ "longDescription": "O Ore Finder adiciona um scanner que aponta veios próximos com sinais claros — som, feedback na tela e partículas opcionais — em vez de raio-x total. Detecta carvão, ferro, ouro, diamante, esmeralda, lápis, redstone, cobre, quartzo e ancient debris. É o meio-termo entre cheat e QoL: acelera a mineração sem entregar o mapa inteiro. Principal 0.2 MB + variante Advanced Ore Finder no TeraBox.",
+ "category": "utility",
+ "version": "1.1.0",
+ "minecraft_versions": [
+  "1.21.20"
+ ],
+ "thumbnail": "/images/addons/ore-finder/ore-finder-1.webp",
+ "screenshots": [
+  "/images/addons/ore-finder/ore-finder-1.webp",
+  "/images/addons/ore-finder/ore-finder-2.webp",
+  "/images/addons/ore-finder/ore-finder-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-07",
+ "updatedAt": "2026-07-07",
+ "sourceUrl": "https://mcpedl.org/ore-finder-mod-minecraft-pe/",
+ "sourceId": "ore-finder-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1VKbY3LNehOS_bP9LRX8jDA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Advanced Ore Finder",
+   "version": "1.21.80",
+   "minecraft_versions": [
+    "1.21.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1twiT0CPFk0nZrs-NAcobhw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  }
+ ]
+}

@@ -3038,5 +3038,267 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/hammer/hammer-1.webp",
+      "/images/addons/hammer/hammer-2.webp",
+      "/images/addons/hammer/hammer-3.webp"
+    ],
+    "id": "hammer",
+    "name": "Hammer Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Martelos que quebram área em um golpe: do Stormbreaker do Thor aos martelos 3D com tiers de mineração.",
+    "longDescription": "O Hammer Mod adiciona martelos de verdade: alguns são armas com dano alto, outros abrem túneis e quebram áreas grandes de blocos de uma vez. Tem o Stormbreaker estilo Thor, martelos 3D e versões com tiers pra minerar mais rápido. Modelos detalhados na mão e na hotbar. Quatro variantes no TeraBox: MC Hammers, Weapons 3D, True Hammers e TC Hammer 3D.",
+    "category": "weapons",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.6.0"
+    ],
+    "thumbnail": "/images/addons/hammer/hammer-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-10",
+    "updatedAt": "2026-10-10",
+    "sourceUrl": "https://mcpedl.org/hammer-mod-minecraft-pe/",
+    "sourceId": "hammer-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1U3ipJLFJw0RczKhHQr3s3A",
+    "fileSize": "0.3 MB",
+    "files": [
+      {
+        "label": "MC Hammers",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1sbftsMgEhsDSwIMjh0UyRw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Weapons 3D",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1KluAkmXJalLFrnpVR-e-RA",
+        "downloadProvider": "terabox",
+        "fileSize": "2.9 MB"
+      },
+      {
+        "label": "True Hammers",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1qRtcfJErOyywhMJfb38evQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "TC Hammer 3D",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1nBsr8qVYAqYMzuoeC1tSdQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.5 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/ore-finder/ore-finder-1.webp",
+      "/images/addons/ore-finder/ore-finder-2.webp",
+      "/images/addons/ore-finder/ore-finder-3.webp"
+    ],
+    "id": "ore-finder",
+    "name": "Ore Finder Cheat Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Escâner de minérios com som, HUD e partículas: acha diamante, ouro e ancient debris sem cavar às cegas.",
+    "longDescription": "O Ore Finder adiciona um scanner que aponta veios próximos com sinais claros — som, feedback na tela e partículas opcionais — em vez de raio-x total. Detecta carvão, ferro, ouro, diamante, esmeralda, lápis, redstone, cobre, quartzo e ancient debris. É o meio-termo entre cheat e QoL: acelera a mineração sem entregar o mapa inteiro. Principal 0.2 MB + variante Advanced Ore Finder no TeraBox.",
+    "category": "utility",
+    "version": "1.1.0",
+    "minecraft_versions": [
+      "1.21.20"
+    ],
+    "thumbnail": "/images/addons/ore-finder/ore-finder-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-07",
+    "updatedAt": "2026-07-07",
+    "sourceUrl": "https://mcpedl.org/ore-finder-mod-minecraft-pe/",
+    "sourceId": "ore-finder-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1VKbY3LNehOS_bP9LRX8jDA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Advanced Ore Finder",
+        "version": "1.21.80",
+        "minecraft_versions": [
+          "1.21.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1twiT0CPFk0nZrs-NAcobhw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/parachute/parachute-1.webp",
+      "/images/addons/parachute/parachute-2.webp",
+      "/images/addons/parachute/parachute-3.webp"
+    ],
+    "id": "parachute",
+    "name": "Parachute Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Paraquedas e asa-delta pra planar pelo mapa, com 10 modelos e versões motorizadas.",
+    "longDescription": "O Parachute Mod coloca asa-delta e paraquedas no jogo: você spawna com a mochila nas costas e sai planando, controlando a descida e pousando onde quiser. A página lista 10 tipos de planador, além de versões motorizadas e pacotes FWS. Precisa ativar os experimentais na criação do mundo. Variantes no TeraBox: Powered Parachutes e Parachutes FWS.",
+    "category": "vehicles",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.16.0"
+    ],
+    "thumbnail": "/images/addons/parachute/parachute-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-01-15",
+    "updatedAt": "2025-01-15",
+    "sourceUrl": "https://mcpedl.org/parachute-mod-minecraft-pe/",
+    "sourceId": "parachute-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1LPy6jPcMkp_-aoEppMM_MA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Powered Parachutes",
+        "version": "1.18.20",
+        "minecraft_versions": [
+          "1.18.20"
+        ],
+        "download_url": "https://1024terabox.com/s/1e-nXI0rdGP8o5hdTXaINog",
+        "downloadProvider": "terabox",
+        "fileSize": "8.2 MB"
+      },
+      {
+        "label": "Parachutes FWS",
+        "version": "1.21.50",
+        "minecraft_versions": [
+          "1.21.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1ycxV0FQJB_QTVSXa3sf9Nw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/poppy-playtime-4/poppy-playtime-4-1.webp",
+      "/images/addons/poppy-playtime-4/poppy-playtime-4-2.webp",
+      "/images/addons/poppy-playtime-4/poppy-playtime-4-3.webp"
+    ],
+    "id": "poppy-playtime-4",
+    "name": "Poppy Playtime 4 Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "A continuação do pesadelo: personagens do capítulo 4, a fábrica escura e monstros de brinquedo caçando você.",
+    "longDescription": "O Poppy Playtime 4 acompanha o gancho do terceiro jogo: você volta preso na fábrica abandonada, com os brinquedos perseguindo e uma nova leva de criaturas do capítulo 4. O pack foca em modelos e clima de horror — bom pra mapas temáticos, roleplay e sustos com amigos. Principal 3.9 MB validado e no TeraBox.",
+    "category": "horror",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.20.0"
+    ],
+    "thumbnail": "/images/addons/poppy-playtime-4/poppy-playtime-4-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-02-05",
+    "updatedAt": "2025-02-05",
+    "sourceUrl": "https://mcpedl.org/poppy-playtime-4-mod-minecraft-pe/",
+    "sourceId": "poppy-playtime-4-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1XYM8fjIJbnzRU9pZ3IvBrw",
+    "fileSize": "3.9 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/simple-autosmelt/simple-autosmelt-1.webp",
+      "/images/addons/simple-autosmelt/simple-autosmelt-2.webp",
+      "/images/addons/simple-autosmelt/simple-autosmelt-3.webp"
+    ],
+    "id": "simple-autosmelt",
+    "name": "Simple AutoSmelt Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Minério quebrado vira lingote na hora: ferro, ouro, cobre e até ancient debris sem fornalha nem carvão.",
+    "longDescription": "O Simple AutoSmelt transforma mineração em saque direto: ao quebrar ferro, cobre, ouro ou ancient debris, o drop já vem processado em lingote — sem fornalha, combustível ou espera. O efeito pode ser ligado e desligado quando quiser e funciona com shaders e texture packs. Só exige os experimentais ativados no mundo. Principal 0.0 MB (manifest 1.1.1) no TeraBox.",
+    "category": "utility",
+    "version": "1.1.1",
+    "minecraft_versions": [
+      "1.20.80"
+    ],
+    "thumbnail": "/images/addons/simple-autosmelt/simple-autosmelt-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-12-05",
+    "updatedAt": "2025-12-05",
+    "sourceUrl": "https://mcpedl.org/simple-autosmelt-mod-minecraft-pe/",
+    "sourceId": "simple-autosmelt-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/193fBHx1gtm_w46Em2PLPlw",
+    "fileSize": "0.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/skill-points/skill-points-1.webp",
+      "/images/addons/skill-points/skill-points-2.webp",
+      "/images/addons/skill-points/skill-points-3.webp"
+    ],
+    "id": "skill-points",
+    "name": "Skill Points Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Cada nível vira ponto de habilidade: árvore de RPG com upgrades permanentes pra combate, mineração e exploração.",
+    "longDescription": "O Skill Points transforma experiência em progressão de RPG: ao subir de nível você ganha pontos pra investir numa árvore de habilidades, com caminhos pra combate, mineração, mobilidade e sobrevivência longa. Os upgrades são permanentes, então dá pra montar builds bem diferentes no mesmo mundo. Principal 4.4 MB no TeraBox.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.26.30"
+    ],
+    "thumbnail": "/images/addons/skill-points/skill-points-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-29",
+    "updatedAt": "2026-09-29",
+    "sourceUrl": "https://mcpedl.org/skill-points-mod-minecraft-pe/",
+    "sourceId": "skill-points-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1oDB0gkEQcRfIj4gX_p01Lw",
+    "fileSize": "4.4 MB",
+    "downloads": 0
   }
 ]
