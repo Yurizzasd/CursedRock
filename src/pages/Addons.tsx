@@ -63,7 +63,28 @@ export function Addons() {
 
   const pages = Math.max(1, Math.ceil(results.length / PAGE_SIZE));
   const current = Math.min(page, pages);
-  const visible = results.slice(0, current * PAGE_SIZE);
+  const start = (current - 1) * PAGE_SIZE;
+  const visible = results.slice(start, start + PAGE_SIZE);
+
+  const goTo = (p: number) => {
+    const next = Math.min(Math.max(1, p), pages);
+    if (next === current) return;
+    setPage(next);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const pageList = (() => {
+    if (pages <= 7) return Array.from({ length: pages }, (_, i) => i + 1) as (number | 'gap')[];
+    const nums = [...new Set([1, pages, current - 1, current, current + 1])]
+      .filter((n) => n >= 1 && n <= pages)
+      .sort((a, b) => a - b);
+    const out: (number | 'gap')[] = [];
+    nums.forEach((n, i) => {
+      if (i > 0 && n - nums[i - 1] > 1) out.push('gap');
+      out.push(n);
+    });
+    return out;
+  })();
 
   return (
     <div className="container page">
@@ -94,7 +115,8 @@ export function Addons() {
         <div>
           <div className="toolbar">
             <span className="result-count">
-              {results.length} resultado{results.length === 1 ? '' : 's'} • pág. {current}/{pages}
+              {results.length ? `Mostrando ${start + 1}–${Math.min(start + PAGE_SIZE, results.length)} de ${results.length}` : '0 resultados'}
+              {' • '}pág. {current}/{pages}
             </span>
             <span className="spacer" />
             <ViewToggle mode={view} onChange={setView} />
@@ -107,28 +129,43 @@ export function Addons() {
           ) : (
             <>
               <AddonGrid addons={visible} cols3={view === 'grid'} layout={view} />
-              {current < pages ? (
-                <div className="load-more-wrap">
-                  <button className="btn btn-ghost" onClick={() => setPage((p) => p + 1)}>
-                    Carregar mais ({results.length - visible.length} restantes)
+              {pages > 1 && (
+                <nav className="pager" aria-label="Paginação dos addons">
+                  <button
+                    type="button"
+                    aria-label="Página anterior"
+                    disabled={current <= 1}
+                    onClick={() => goTo(current - 1)}
+                  >
+                    ←
                   </button>
-                </div>
-              ) : (
-                pages > 1 && (
-                  <div className="pager">
-                    <button disabled={current <= 1} onClick={() => setPage((p) => p - 1)}>
-                      ←
-                    </button>
-                    {Array.from({ length: pages }).map((_, i) => (
-                      <button key={i} className={current === i + 1 ? 'active' : ''} onClick={() => setPage(i + 1)}>
-                        {i + 1}
+                  {pageList.map((n, i) =>
+                    n === 'gap' ? (
+                      <span key={`gap-${i}`} className="pager-gap" aria-hidden="true">
+                        …
+                      </span>
+                    ) : (
+                      <button
+                        type="button"
+                        key={n}
+                        className={current === n ? 'active' : ''}
+                        aria-label={`Página ${n}`}
+                        aria-current={current === n ? 'page' : undefined}
+                        onClick={() => goTo(n)}
+                      >
+                        {n}
                       </button>
-                    ))}
-                    <button disabled={current >= pages} onClick={() => setPage((p) => p + 1)}>
-                      →
-                    </button>
-                  </div>
-                )
+                    ),
+                  )}
+                  <button
+                    type="button"
+                    aria-label="Próxima página"
+                    disabled={current >= pages}
+                    onClick={() => goTo(current + 1)}
+                  >
+                    →
+                  </button>
+                </nav>
               )}
             </>
           )}

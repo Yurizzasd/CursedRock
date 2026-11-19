@@ -1125,6 +1125,27 @@ h4 {
   cursor: default;
 }
 
+.pager-gap {
+  min-width: 24px;
+  text-align: center;
+  color: var(--muted);
+  font-weight: 600;
+  user-select: none;
+}
+
+@media (max-width: 560px) {
+  .pager {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .pager button {
+    min-width: 36px;
+    height: 36px;
+    padding: 0 9px;
+  }
+}
+
 .load-more-wrap {
   display: flex;
   justify-content: center;
