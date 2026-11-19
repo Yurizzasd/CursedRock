@@ -1,0 +1,30 @@
+{
+ "id": "pick-up-and-carry",
+ "name": "Pick Up and Carry Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Pegue mobs no colo e leve pra onde quiser: sem comandos, com agachar + pulo, e cuidado pra não cair no caminho.",
+ "longDescription": "O Pick Up and Carry resolve aquele problema de mover mob: chegue perto, agache e aperte pulo pra carregar a criatura nos braços. Não precisa de comando, e dá pra soltar do mesmo jeito. Enquanto carrega você anda mais devagar; se cair, tomar dano ou pegar um item, o mob escapa, e na água ele desce pro chão. Serve pra reorganizar fazenda, levar villager pra vila nova ou só zoar com os amigos no multiplayer. Principal 0.2 MB (1.2.0) no TeraBox.",
+ "category": "utility",
+ "version": "1.2.0",
+ "minecraft_versions": [
+  "1.19.0"
+ ],
+ "thumbnail": "/images/addons/pick-up-and-carry/pick-up-and-carry-1.webp",
+ "screenshots": [
+  "/images/addons/pick-up-and-carry/pick-up-and-carry-1.webp",
+  "/images/addons/pick-up-and-carry/pick-up-and-carry-2.webp",
+  "/images/addons/pick-up-and-carry/pick-up-and-carry-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2023-02-14",
+ "updatedAt": "2023-02-14",
+ "sourceUrl": "https://mcpedl.org/pick-up-and-carry-mod-minecraft-pe/",
+ "sourceId": "pick-up-and-carry-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1HxAWXueDBE9n9VR2xudCog",
+ "fileSize": "0.2 MB"
+}

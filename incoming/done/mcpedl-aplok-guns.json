@@ -1,0 +1,52 @@
+{
+ "id": "aplok-guns",
+ "name": "Aplok Guns Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Armas de fogo realistas com recarga animada, granadas, miras e armadura tática pra PvP e mundos militares.",
+ "longDescription": "O Aplok Guns é feito pra quem joga PvP com os amigos ou monta cenários militares: entram armas com modelos e animações próprias, recarga, sons novos, granadas, miras, armadura tática e blocos de apoio pro combate. Os itens aparecem no inventário do criativo pra testar tudo rápido, e o pacote foi desenhado pra aguentar multiplayer e arenas. As três linhas estão no TeraBox: Aplok Guns 1.0.5 (principal), New Aplok Guns (12.3 MB) e Aplok Guns v1.1.8 (12.6 MB).",
+ "category": "weapons",
+ "version": "1.0.5",
+ "minecraft_versions": [
+  "1.20.40"
+ ],
+ "thumbnail": "/images/addons/aplok-guns/aplok-guns-1.webp",
+ "screenshots": [
+  "/images/addons/aplok-guns/aplok-guns-1.webp",
+  "/images/addons/aplok-guns/aplok-guns-2.webp",
+  "/images/addons/aplok-guns/aplok-guns-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-08-06",
+ "updatedAt": "2026-08-06",
+ "sourceUrl": "https://mcpedl.org/aplok-guns-mod-minecraft-pe/",
+ "sourceId": "aplok-guns-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1TpFjhKk0AjWSkPS9DATlpw",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "New Aplok Guns",
+   "version": "1.20.90",
+   "minecraft_versions": [
+    "1.20.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1MYgZK9StXOtfReOv4PKlYQ",
+   "downloadProvider": "terabox",
+   "fileSize": "12.3 MB"
+  },
+  {
+   "label": "Aplok Guns v1.1.8",
+   "version": "1.20.40",
+   "minecraft_versions": [
+    "1.20.40"
+   ],
+   "download_url": "https://1024terabox.com/s/1HhBHQjel3ypATLdrerFndQ",
+   "downloadProvider": "terabox",
+   "fileSize": "12.6 MB"
+  }
+ ]
+}

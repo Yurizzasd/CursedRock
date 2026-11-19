@@ -3300,5 +3300,278 @@
     "download_url": "https://1024terabox.com/s/1oDB0gkEQcRfIj4gX_p01Lw",
     "fileSize": "4.4 MB",
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/aplok-guns/aplok-guns-1.webp",
+      "/images/addons/aplok-guns/aplok-guns-2.webp",
+      "/images/addons/aplok-guns/aplok-guns-3.webp"
+    ],
+    "id": "aplok-guns",
+    "name": "Aplok Guns Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas de fogo realistas com recarga animada, granadas, miras e armadura tática pra PvP e mundos militares.",
+    "longDescription": "O Aplok Guns é feito pra quem joga PvP com os amigos ou monta cenários militares: entram armas com modelos e animações próprias, recarga, sons novos, granadas, miras, armadura tática e blocos de apoio pro combate. Os itens aparecem no inventário do criativo pra testar tudo rápido, e o pacote foi desenhado pra aguentar multiplayer e arenas. As três linhas estão no TeraBox: Aplok Guns 1.0.5 (principal), New Aplok Guns (12.3 MB) e Aplok Guns v1.1.8 (12.6 MB).",
+    "category": "weapons",
+    "version": "1.0.5",
+    "minecraft_versions": [
+      "1.20.40"
+    ],
+    "thumbnail": "/images/addons/aplok-guns/aplok-guns-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-06",
+    "updatedAt": "2026-08-06",
+    "sourceUrl": "https://mcpedl.org/aplok-guns-mod-minecraft-pe/",
+    "sourceId": "aplok-guns-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1TpFjhKk0AjWSkPS9DATlpw",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "New Aplok Guns",
+        "version": "1.20.90",
+        "minecraft_versions": [
+          "1.20.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1MYgZK9StXOtfReOv4PKlYQ",
+        "downloadProvider": "terabox",
+        "fileSize": "12.3 MB"
+      },
+      {
+        "label": "Aplok Guns v1.1.8",
+        "version": "1.20.40",
+        "minecraft_versions": [
+          "1.20.40"
+        ],
+        "download_url": "https://1024terabox.com/s/1HhBHQjel3ypATLdrerFndQ",
+        "downloadProvider": "terabox",
+        "fileSize": "12.6 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/effortless-building/effortless-building-1.webp",
+      "/images/addons/effortless-building/effortless-building-2.webp",
+      "/images/addons/effortless-building/effortless-building-3.webp"
+    ],
+    "id": "effortless-building",
+    "name": "Effortless Building Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Construção em volume estilo Java: selecione áreas, copie, cole e apague formas inteiras sem clicar bloco por bloco.",
+    "longDescription": "O Effortless Building traz o construtor multi-bloco do Java pro Bedrock: modos de Construção e Destruição, presets de forma (paredes, pisos, esferas, cilindros), seleção por volume, posicionamento à distância e clipboard pra copiar e colar trechos inteiros. Os blocos continuam saindo do seu inventário, então a economia do survival fica intacta — ele só tira o trabalho repetitivo. A interface foi pensada pra toque, o que ajuda muito no celular. Principal 1.5.4 no TeraBox + variantes Effortless Building v1.2 e v3.1.",
+    "category": "utility",
+    "version": "1.5.4",
+    "minecraft_versions": [
+      "1.21.80"
+    ],
+    "thumbnail": "/images/addons/effortless-building/effortless-building-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-30",
+    "updatedAt": "2026-07-30",
+    "sourceUrl": "https://mcpedl.org/effortless-building-mod-minecraft-pe/",
+    "sourceId": "effortless-building-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1zukS8GuW1VRyw7hYA-riVQ",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Effortless Building v1.2",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1qmfWKRch0YYPXOBoh1Iw5w",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "Effortless Building v3.1",
+        "version": "1.21.90",
+        "minecraft_versions": [
+          "1.21.90"
+        ],
+        "download_url": "https://1024terabox.com/s/1V1s8QcYyIko3soO0tyIQkQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.5 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/modern-furniture/modern-furniture-1.webp",
+      "/images/addons/modern-furniture/modern-furniture-2.webp",
+      "/images/addons/modern-furniture/modern-furniture-3.webp"
+    ],
+    "id": "modern-furniture",
+    "name": "Modern Furniture Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Móveis modernos em massa: eletrodomésticos, instrumentos, esportes, iluminação e decoração pra montar a casa dos sonhos.",
+    "longDescription": "O Modern Furniture cobre o interior inteiro: são 750+ blocos entre móveis, eletrodomésticos (TV, geladeira, micro-ondas), armários, mesas, instrumentos musicais, itens de esporte, decoração e iluminação. Dá pra montar desde apartamento moderno até casa temática de Natal sem sair catando mod separado. Quatro linhas no TeraBox: Modern Furniture 12.1 MB (principal), Electrics Furniture, Furnicraft (dezenas de itens extras) e Lance Furniture (33.8 MB, design mais recente).",
+    "category": "furniture",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.0.0"
+    ],
+    "thumbnail": "/images/addons/modern-furniture/modern-furniture-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-11-13",
+    "updatedAt": "2025-11-13",
+    "sourceUrl": "https://mcpedl.org/modern-furniture-mod-minecraft-pe/",
+    "sourceId": "modern-furniture-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1ceMeRw2DViWSSmqgXGF2Og",
+    "fileSize": "8.9 MB",
+    "files": [
+      {
+        "label": "Furnicraft",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1yrz69gr-k8zr1ONVNg0DTA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.6 MB"
+      },
+      {
+        "label": "Lance Furniture",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1ObHR0x1ONxNKHnIoljT_qQ",
+        "downloadProvider": "terabox",
+        "fileSize": "33.8 MB"
+      },
+      {
+        "label": "Modern Furniture",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1vbO-bH5snUKnBSouYW42CQ",
+        "downloadProvider": "terabox",
+        "fileSize": "12.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/pick-up-and-carry/pick-up-and-carry-1.webp",
+      "/images/addons/pick-up-and-carry/pick-up-and-carry-2.webp",
+      "/images/addons/pick-up-and-carry/pick-up-and-carry-3.webp"
+    ],
+    "id": "pick-up-and-carry",
+    "name": "Pick Up and Carry Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Pegue mobs no colo e leve pra onde quiser: sem comandos, com agachar + pulo, e cuidado pra não cair no caminho.",
+    "longDescription": "O Pick Up and Carry resolve aquele problema de mover mob: chegue perto, agache e aperte pulo pra carregar a criatura nos braços. Não precisa de comando, e dá pra soltar do mesmo jeito. Enquanto carrega você anda mais devagar; se cair, tomar dano ou pegar um item, o mob escapa, e na água ele desce pro chão. Serve pra reorganizar fazenda, levar villager pra vila nova ou só zoar com os amigos no multiplayer. Principal 0.2 MB (1.2.0) no TeraBox.",
+    "category": "utility",
+    "version": "1.2.0",
+    "minecraft_versions": [
+      "1.19.0"
+    ],
+    "thumbnail": "/images/addons/pick-up-and-carry/pick-up-and-carry-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2023-02-14",
+    "updatedAt": "2023-02-14",
+    "sourceUrl": "https://mcpedl.org/pick-up-and-carry-mod-minecraft-pe/",
+    "sourceId": "pick-up-and-carry-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1HxAWXueDBE9n9VR2xudCog",
+    "fileSize": "0.2 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/pokebedrock/pokebedrock-1.webp",
+      "/images/addons/pokebedrock/pokebedrock-2.webp",
+      "/images/addons/pokebedrock/pokebedrock-3.webp"
+    ],
+    "id": "pokebedrock",
+    "name": "Pokebedrock Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Aventura Pokémon completa: escolha região e inicial, capture criaturas, batalhe em centros e evolua o time no survival.",
+    "longDescription": "O Pokebedrock monta uma aventura Pokémon de verdade no Bedrock: você escolhe a região e o inicial, recebe kit de começo e sai capturando, treinando e evoluindo criaturas. Tem Pokédex, centros que aparecem em planícies e desertos, berries, mochilas e montarias, além de batalhas com mega evolução, Dynamax e um boost que gasta XP pra subir todos os stats por três turnos. Se quiser recomeçar, é só usar /pokereset @s. Principal 3.7 MB (Pokebedrock 1.6.11, MC 1.20.70) no TeraBox; a linha \"SERP Pokedrock\" ficou no link da origem porque o pacote vem sem manifest.json e o jogo não importa.",
+    "category": "mobs",
+    "version": "1.6.11",
+    "minecraft_versions": [
+      "1.20.70"
+    ],
+    "thumbnail": "/images/addons/pokebedrock/pokebedrock-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-06-30",
+    "updatedAt": "2026-06-30",
+    "sourceUrl": "https://mcpedl.org/pokebedrock-mod-minecraft-pe/",
+    "sourceId": "pokebedrock-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1okDImDkQi6uHbQDeLW3XCA",
+    "fileSize": "3.7 MB",
+    "files": [
+      {
+        "label": "SERP Pokedrock",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/29-06-2026/serp-pokedrock.mcaddon",
+        "downloadProvider": "original"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/rise-and-survive/rise-and-survive-1.webp",
+      "/images/addons/rise-and-survive/rise-and-survive-2.webp",
+      "/images/addons/rise-and-survive/rise-and-survive-3.webp"
+    ],
+    "id": "rise-and-survive",
+    "name": "Rise and Survive Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Apocalipse zumbi progressivo: cada dia a horda fica mais forte, com classes especiais, infecção e defesa de base.",
+    "longDescription": "O Rise and Survive troca o survival comum por um apocalipse que escala com o tempo: uma barra de dificuldade sobe a cada dia e, a cada 8 dias, os infectados ficam mais rápidos e fortes. Os mobs hostis vanilla são desligados — o perigo é todo do sistema novo, que traz zumbis que quebram blocos, colocam blocos, constroem pontes, arremessam TNT, teleportam e usam poções. Armaduras, armas e efeitos aparecem nos inimigos conforme a dificuldade cresce, então abrigo early game deixa de ser garantia lá na frente. Principal 16.6 MB (1.2.0, MC 1.21.90) no TeraBox.",
+    "category": "survival",
+    "version": "1.2.0",
+    "minecraft_versions": [
+      "1.21.90"
+    ],
+    "thumbnail": "/images/addons/rise-and-survive/rise-and-survive-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-06-28",
+    "updatedAt": "2026-06-28",
+    "sourceUrl": "https://mcpedl.org/rise-and-survive-mod-minecraft-pe/",
+    "sourceId": "rise-and-survive-mod-minecraft-pe",
+    "importedAt": "2026-11-19",
+    "download_url": "https://1024terabox.com/s/1awV8d1sRo3eybdnUyWogOQ",
+    "fileSize": "16.6 MB",
+    "downloads": 0
   }
 ]

@@ -1,0 +1,52 @@
+{
+ "id": "effortless-building",
+ "name": "Effortless Building Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Construção em volume estilo Java: selecione áreas, copie, cole e apague formas inteiras sem clicar bloco por bloco.",
+ "longDescription": "O Effortless Building traz o construtor multi-bloco do Java pro Bedrock: modos de Construção e Destruição, presets de forma (paredes, pisos, esferas, cilindros), seleção por volume, posicionamento à distância e clipboard pra copiar e colar trechos inteiros. Os blocos continuam saindo do seu inventário, então a economia do survival fica intacta — ele só tira o trabalho repetitivo. A interface foi pensada pra toque, o que ajuda muito no celular. Principal 1.5.4 no TeraBox + variantes Effortless Building v1.2 e v3.1.",
+ "category": "utility",
+ "version": "1.5.4",
+ "minecraft_versions": [
+  "1.21.80"
+ ],
+ "thumbnail": "/images/addons/effortless-building/effortless-building-1.webp",
+ "screenshots": [
+  "/images/addons/effortless-building/effortless-building-1.webp",
+  "/images/addons/effortless-building/effortless-building-2.webp",
+  "/images/addons/effortless-building/effortless-building-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-30",
+ "updatedAt": "2026-07-30",
+ "sourceUrl": "https://mcpedl.org/effortless-building-mod-minecraft-pe/",
+ "sourceId": "effortless-building-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1zukS8GuW1VRyw7hYA-riVQ",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Effortless Building v1.2",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1qmfWKRch0YYPXOBoh1Iw5w",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "Effortless Building v3.1",
+   "version": "1.21.90",
+   "minecraft_versions": [
+    "1.21.90"
+   ],
+   "download_url": "https://1024terabox.com/s/1V1s8QcYyIko3soO0tyIQkQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.5 MB"
+  }
+ ]
+}

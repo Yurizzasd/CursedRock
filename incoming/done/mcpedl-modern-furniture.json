@@ -1,0 +1,62 @@
+{
+ "id": "modern-furniture",
+ "name": "Modern Furniture Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Móveis modernos em massa: eletrodomésticos, instrumentos, esportes, iluminação e decoração pra montar a casa dos sonhos.",
+ "longDescription": "O Modern Furniture cobre o interior inteiro: são 750+ blocos entre móveis, eletrodomésticos (TV, geladeira, micro-ondas), armários, mesas, instrumentos musicais, itens de esporte, decoração e iluminação. Dá pra montar desde apartamento moderno até casa temática de Natal sem sair catando mod separado. Quatro linhas no TeraBox: Modern Furniture 12.1 MB (principal), Electrics Furniture, Furnicraft (dezenas de itens extras) e Lance Furniture (33.8 MB, design mais recente).",
+ "category": "furniture",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.0.0"
+ ],
+ "thumbnail": "/images/addons/modern-furniture/modern-furniture-1.webp",
+ "screenshots": [
+  "/images/addons/modern-furniture/modern-furniture-1.webp",
+  "/images/addons/modern-furniture/modern-furniture-2.webp",
+  "/images/addons/modern-furniture/modern-furniture-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-11-13",
+ "updatedAt": "2025-11-13",
+ "sourceUrl": "https://mcpedl.org/modern-furniture-mod-minecraft-pe/",
+ "sourceId": "modern-furniture-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1ceMeRw2DViWSSmqgXGF2Og",
+ "fileSize": "8.9 MB",
+ "files": [
+  {
+   "label": "Furnicraft",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1yrz69gr-k8zr1ONVNg0DTA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.6 MB"
+  },
+  {
+   "label": "Lance Furniture",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1ObHR0x1ONxNKHnIoljT_qQ",
+   "downloadProvider": "terabox",
+   "fileSize": "33.8 MB"
+  },
+  {
+   "label": "Modern Furniture",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1vbO-bH5snUKnBSouYW42CQ",
+   "downloadProvider": "terabox",
+   "fileSize": "12.1 MB"
+  }
+ ]
+}

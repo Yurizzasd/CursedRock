@@ -1,0 +1,30 @@
+{
+ "id": "rise-and-survive",
+ "name": "Rise and Survive Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Apocalipse zumbi progressivo: cada dia a horda fica mais forte, com classes especiais, infecção e defesa de base.",
+ "longDescription": "O Rise and Survive troca o survival comum por um apocalipse que escala com o tempo: uma barra de dificuldade sobe a cada dia e, a cada 8 dias, os infectados ficam mais rápidos e fortes. Os mobs hostis vanilla são desligados — o perigo é todo do sistema novo, que traz zumbis que quebram blocos, colocam blocos, constroem pontes, arremessam TNT, teleportam e usam poções. Armaduras, armas e efeitos aparecem nos inimigos conforme a dificuldade cresce, então abrigo early game deixa de ser garantia lá na frente. Principal 16.6 MB (1.2.0, MC 1.21.90) no TeraBox.",
+ "category": "survival",
+ "version": "1.2.0",
+ "minecraft_versions": [
+  "1.21.90"
+ ],
+ "thumbnail": "/images/addons/rise-and-survive/rise-and-survive-1.webp",
+ "screenshots": [
+  "/images/addons/rise-and-survive/rise-and-survive-1.webp",
+  "/images/addons/rise-and-survive/rise-and-survive-2.webp",
+  "/images/addons/rise-and-survive/rise-and-survive-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-06-28",
+ "updatedAt": "2026-06-28",
+ "sourceUrl": "https://mcpedl.org/rise-and-survive-mod-minecraft-pe/",
+ "sourceId": "rise-and-survive-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1awV8d1sRo3eybdnUyWogOQ",
+ "fileSize": "16.6 MB"
+}

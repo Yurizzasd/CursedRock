@@ -1,0 +1,41 @@
+{
+ "id": "pokebedrock",
+ "name": "Pokebedrock Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Aventura Pokémon completa: escolha região e inicial, capture criaturas, batalhe em centros e evolua o time no survival.",
+ "longDescription": "O Pokebedrock monta uma aventura Pokémon de verdade no Bedrock: você escolhe a região e o inicial, recebe kit de começo e sai capturando, treinando e evoluindo criaturas. Tem Pokédex, centros que aparecem em planícies e desertos, berries, mochilas e montarias, além de batalhas com mega evolução, Dynamax e um boost que gasta XP pra subir todos os stats por três turnos. Se quiser recomeçar, é só usar /pokereset @s. Principal 3.7 MB (Pokebedrock 1.6.11, MC 1.20.70) no TeraBox; a linha \"SERP Pokedrock\" ficou no link da origem porque o pacote vem sem manifest.json e o jogo não importa.",
+ "category": "mobs",
+ "version": "1.6.11",
+ "minecraft_versions": [
+  "1.20.70"
+ ],
+ "thumbnail": "/images/addons/pokebedrock/pokebedrock-1.webp",
+ "screenshots": [
+  "/images/addons/pokebedrock/pokebedrock-1.webp",
+  "/images/addons/pokebedrock/pokebedrock-2.webp",
+  "/images/addons/pokebedrock/pokebedrock-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-06-30",
+ "updatedAt": "2026-06-30",
+ "sourceUrl": "https://mcpedl.org/pokebedrock-mod-minecraft-pe/",
+ "sourceId": "pokebedrock-mod-minecraft-pe",
+ "importedAt": "2026-11-19",
+ "download_url": "https://1024terabox.com/s/1okDImDkQi6uHbQDeLW3XCA",
+ "fileSize": "3.7 MB",
+ "files": [
+  {
+   "label": "SERP Pokedrock",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://file.mcpedl.org/uploads_files/29-06-2026/serp-pokedrock.mcaddon",
+   "downloadProvider": "original"
+  }
+ ]
+}
