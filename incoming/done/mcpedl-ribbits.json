@@ -1,0 +1,30 @@
+{
+ "id": "ribbits",
+ "name": "Ribbits Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vila de sapos no pântano: Ribbits amigáveis, insetos com rede, aquários, armadilhas de peixe e banda musical.",
+ "longDescription": "O Ribbits transforma o pântano num lugar habitado: uma pequena civilização de sapos com rotina pacífica, crafts próprios e visual acolhedor. Dá pra caçar inseto com rede, montar aquário decorativo, colocar armadilha de peixe e até formar uma bandinha com os bichos. É o oposto de addon de combate — feito pra survival tranquilo, construção e decoração. Principal 11.3 MB (1.0.9, MC 1.26.0) no TeraBox.",
+ "category": "mobs",
+ "version": "1.0.9",
+ "minecraft_versions": [
+  "1.26.0"
+ ],
+ "thumbnail": "/images/addons/ribbits/ribbits-1.webp",
+ "screenshots": [
+  "/images/addons/ribbits/ribbits-1.webp",
+  "/images/addons/ribbits/ribbits-2.webp",
+  "/images/addons/ribbits/ribbits-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-08-25",
+ "updatedAt": "2026-08-25",
+ "sourceUrl": "https://mcpedl.org/ribbits-mod-minecraft-pe/",
+ "sourceId": "ribbits-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1taPTKyMUF7YgBLa1W4Wzcg",
+ "fileSize": "11.3 MB"
+}

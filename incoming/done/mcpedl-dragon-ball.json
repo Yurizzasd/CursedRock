@@ -1,0 +1,52 @@
+{
+ "id": "dragon-ball",
+ "name": "Dragon Ball Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vinte personagens do Dragon Ball com texturas e golpes próprios: Bulma, Piccolo, chefes, animais e itens de luta.",
+ "longDescription": "O Dragon Ball Mod traz cerca de 20 mobs inspirados no anime, cada um com textura e habilidade própria: Bulma, Bandit Pirat, Giant Fish, Piccolo, chefes e até animais. Dá pra enfrentar os personagens, pegar os drops e usar armas temáticas no combate, o que rende maps de treino, torneios e roleplay. Três linhas no TeraBox: Dragon Ball (principal, 0.2 MB), Goku and Vegeta e Dragon Ball Evolution (49.1 MB).",
+ "category": "anime",
+ "version": "1.8.0",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/dragon-ball/dragon-ball-1.webp",
+ "screenshots": [
+  "/images/addons/dragon-ball/dragon-ball-1.webp",
+  "/images/addons/dragon-ball/dragon-ball-2.webp",
+  "/images/addons/dragon-ball/dragon-ball-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-06-13",
+ "updatedAt": "2025-06-13",
+ "sourceUrl": "https://mcpedl.org/dragon-ball-mod-minecraft-pe/",
+ "sourceId": "dragon-ball-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1K6p_M9dmZvL3UoAr90M9dA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Goku and Vegeta",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1a4s-YNnv6MO3bsRGaIOCRA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Dragon Ball Evolution",
+   "version": "1.20.80",
+   "minecraft_versions": [
+    "1.20.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1ZYk_Z8Ql6oHUJ6Pltkfo4Q",
+   "downloadProvider": "terabox",
+   "fileSize": "49.1 MB"
+  }
+ ]
+}

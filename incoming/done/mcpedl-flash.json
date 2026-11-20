@@ -1,0 +1,72 @@
+{
+ "id": "flash",
+ "name": "Flash Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Corra na velocidade do Flash: armadura, itens e variantes da Liga da Justiça, com direito a Batman 3D.",
+ "longDescription": "O Flash Mod deixa você vestir a armadura do velocista escarlate e se mover muito mais rápido pelo mapa — com custo de recursos, então não é velocidade infinita de graça. A página reúne várias linhas do universo DC: Justice League Evolve, 3D Batman Armor (53.4 MB), Flash Items e New Flash, além do principal. Dá pra montar mapa de super-herói, corrida e PvP temático. Todas as cinco linhas estão no TeraBox.",
+ "category": "adventure",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/flash/flash-1.webp",
+ "screenshots": [
+  "/images/addons/flash/flash-1.webp",
+  "/images/addons/flash/flash-2.webp",
+  "/images/addons/flash/flash-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-02-26",
+ "updatedAt": "2025-02-26",
+ "sourceUrl": "https://mcpedl.org/flash-mod-minecraft-pe/",
+ "sourceId": "flash-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/19af_wHsklaDilvGPJbOjfQ",
+ "fileSize": "1.4 MB",
+ "files": [
+  {
+   "label": "Justice League Evolve",
+   "version": "1.13.0",
+   "minecraft_versions": [
+    "1.13.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1ayoVDmDvhjLvhsYoUeNvTA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.4 MB"
+  },
+  {
+   "label": "3D Batman Armor",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1T1jx0ATrPwKN2uybjaXNeQ",
+   "downloadProvider": "terabox",
+   "fileSize": "53.4 MB"
+  },
+  {
+   "label": "Flash Items",
+   "version": "1.19.50",
+   "minecraft_versions": [
+    "1.19.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1BNG7YzF9QBPMt-H-j8w95A",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "New Flash",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1ZuoRgrCYuH-vrpXDh47udQ",
+   "downloadProvider": "terabox",
+   "fileSize": "1.3 MB"
+  }
+ ]
+}

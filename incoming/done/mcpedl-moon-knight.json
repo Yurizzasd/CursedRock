@@ -1,0 +1,30 @@
+{
+ "id": "moon-knight",
+ "name": "Moon Knight Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vire o Moon Knight: trajes, armas e templos no deserto com equipamento escondido pra saquear.",
+ "longDescription": "O Moon Knight traz o personagem da Marvel com trajes, armas e estruturas temáticas: no deserto aparecem templos onde dá pra encontrar item, arma e roupa do herói. É um addon de exploração e cosplay, bom pra mapas de super-herói, missões e coleção de traje. Principal 0.9 MB (1.0.0) no TeraBox.",
+ "category": "adventure",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.17.0"
+ ],
+ "thumbnail": "/images/addons/moon-knight/moon-knight-1.webp",
+ "screenshots": [
+  "/images/addons/moon-knight/moon-knight-1.webp",
+  "/images/addons/moon-knight/moon-knight-2.webp",
+  "/images/addons/moon-knight/moon-knight-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2024-04-19",
+ "updatedAt": "2024-04-19",
+ "sourceUrl": "https://mcpedl.org/moon-knight-mod-minecraft-pe/",
+ "sourceId": "moon-knight-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/19vK0Uj_oIRpLrxZjInHxDA",
+ "fileSize": "0.9 MB"
+}

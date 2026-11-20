@@ -1,0 +1,42 @@
+{
+ "id": "epic-knights",
+ "name": "Epic Knights Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Cerca de 30 armas medievais e armaduras: espadas, escudos e combate de cavaleiro pra survival e PvP.",
+ "longDescription": "O Epic Knights adiciona cerca de 30 armas medievais e um conjunto de armaduras pra montar o kit de cavaleiro: dá pra craftar com couro, lã e ferro, equipar o personagem e partir pro combate corpo a corpo. O foco é atmosfera medieval e variedade de opções, sem depender de arma mágica ou explosiva. Principal 5.1 MB (1.0.38) no TeraBox + variante Epic Knights Plus (3.3 MB).",
+ "category": "weapons",
+ "version": "1.0.38",
+ "minecraft_versions": [
+  "1.19.60"
+ ],
+ "thumbnail": "/images/addons/epic-knights/epic-knights-1.webp",
+ "screenshots": [
+  "/images/addons/epic-knights/epic-knights-1.webp",
+  "/images/addons/epic-knights/epic-knights-2.webp",
+  "/images/addons/epic-knights/epic-knights-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-08-01",
+ "updatedAt": "2025-08-01",
+ "sourceUrl": "https://mcpedl.org/epic-knights-mod-minecraft-pe/",
+ "sourceId": "epic-knights-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1HqTjDr42y7WmBM1xJgyQcA",
+ "fileSize": "5.1 MB",
+ "files": [
+  {
+   "label": "Epic Knights Plus",
+   "version": "1.21.70",
+   "minecraft_versions": [
+    "1.21.70"
+   ],
+   "download_url": "https://1024terabox.com/s/1DB59Hw4TRCveyIfPTbj0uQ",
+   "downloadProvider": "terabox",
+   "fileSize": "3.3 MB"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "id": "fabulous-furniture",
+ "name": "Fabulous Furniture Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Mais de 150 móveis decorativos e personalizáveis, com comida, eletrodomésticos e modelos animados pra montar ambientes.",
+ "longDescription": "O Fabulous Furniture é pra quem gosta de caprichar no interior: são mais de 150 blocos de mobília, decoração, comida e itens de cozinha, com modelos detalhados e animações, além de peças personalizáveis. Funciona em survival e criativo, combina com shaders e texture packs e dá pra decorar a base em multiplayer com os amigos. Principal 7.1 MB (2.2.25, MC 1.21.80) no TeraBox.",
+ "category": "furniture",
+ "version": "2.2.25",
+ "minecraft_versions": [
+  "1.21.80"
+ ],
+ "thumbnail": "/images/addons/fabulous-furniture/fabulous-furniture-1.webp",
+ "screenshots": [
+  "/images/addons/fabulous-furniture/fabulous-furniture-1.webp",
+  "/images/addons/fabulous-furniture/fabulous-furniture-2.webp",
+  "/images/addons/fabulous-furniture/fabulous-furniture-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-12-10",
+ "updatedAt": "2025-12-10",
+ "sourceUrl": "https://mcpedl.org/fabulous-furniture-mod-minecraft-pe/",
+ "sourceId": "fabulous-furniture-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1MpMjqHZiAxSseJOk0E2ujQ",
+ "fileSize": "7.1 MB"
+}

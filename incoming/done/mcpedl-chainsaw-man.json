@@ -1,0 +1,52 @@
+{
+ "id": "chainsaw-man",
+ "name": "Chainsaw Man Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vire o próprio instrumento: motosserra, personagens e itens do Chainsaw Man pra cortar árvores e encarar monstros.",
+ "longDescription": "O Chainsaw Man é um addon temático que brinca com a ideia do jogador virar ferramenta: entram itens de corte, personagens do anime e equipamento pra derrubar árvore e enfrentar monstro de um jeito nada convencional. Serve tanto pra survival quanto pra mapas de roleplay e cosplay do visual da série. Principal no TeraBox, com as variantes Chainsaw Man (1.3 MB) e Chainsaw Man Characters.",
+ "category": "anime",
+ "version": "1.16.100",
+ "minecraft_versions": [
+  "1.16.0"
+ ],
+ "thumbnail": "/images/addons/chainsaw-man/chainsaw-man-1.webp",
+ "screenshots": [
+  "/images/addons/chainsaw-man/chainsaw-man-1.webp",
+  "/images/addons/chainsaw-man/chainsaw-man-2.webp",
+  "/images/addons/chainsaw-man/chainsaw-man-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-01-10",
+ "updatedAt": "2025-01-10",
+ "sourceUrl": "https://mcpedl.org/chainsaw-man-mod-minecraft-pe/",
+ "sourceId": "chainsaw-man-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1ZITLDJ8COfS2V9G0fBWsww",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Chainsaw Man",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1nE3RIsSAZYwS1fnoUMBrPQ",
+   "downloadProvider": "terabox",
+   "fileSize": "1.3 MB"
+  },
+  {
+   "label": "Chainsaw Man Characters",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1F8PV8hkr1QVWYcqOnHnRug",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

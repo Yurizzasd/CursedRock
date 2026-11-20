@@ -1,0 +1,71 @@
+{
+ "id": "one-piece",
+ "name": "One Piece Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Luffy, espadas e aliados: personagens de One Piece, armas com aura e efeitos, e mobs domesticáveis no survival.",
+ "longDescription": "O One Piece Mod leva o bando do chapéu de palha pro Bedrock: personagens reconhecíveis, oito tipos de espada com aura e efeito (algumas congelam inimigo), e mobs que podem ser domesticados pra defender você. As armas também dropam de piratas derrotados, e dá pra pegar item específico por comando. Principal 0.6 MB (One Piece Evolve) no TeraBox, mais Luffy (0.8 MB), Skins e New Options. A linha \"Pirates from One Piece\" ficou no link da origem porque o upload não retornou SHARE_URL validado.",
+ "category": "anime",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/one-piece/one-piece-1.webp",
+ "screenshots": [
+  "/images/addons/one-piece/one-piece-1.webp",
+  "/images/addons/one-piece/one-piece-2.webp",
+  "/images/addons/one-piece/one-piece-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-03-28",
+ "updatedAt": "2025-03-28",
+ "sourceUrl": "https://mcpedl.org/one-piece-mod-minecraft-pe/",
+ "sourceId": "one-piece-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/18vB_1kUMOYEzwvvGKhIgAw",
+ "fileSize": "0.6 MB",
+ "files": [
+  {
+   "label": "Pirates from One Piece",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/pirates-from-one-piece-mod.mcpack",
+   "downloadProvider": "original"
+  },
+  {
+   "label": "Luffy",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1khp1lp5vjnYH8_LCDxA7jA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.8 MB"
+  },
+  {
+   "label": "Skins",
+   "version": "1.19.10",
+   "minecraft_versions": [
+    "1.19.10"
+   ],
+   "download_url": "https://1024terabox.com/s/17nfKG1Gq4eQFznf76QO_ug",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "New Options",
+   "version": "1.21.20",
+   "minecraft_versions": [
+    "1.21.20"
+   ],
+   "download_url": "https://1024terabox.com/s/1G3r10VqVsgT8pLORxRiC8Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

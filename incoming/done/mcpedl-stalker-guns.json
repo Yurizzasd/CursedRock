@@ -1,0 +1,30 @@
+{
+ "id": "stalker-guns",
+ "name": "Stalker Guns Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Armas e clima de STALKER: NPCs, armadilhas e anomalias de fogo/fumaça num mundo apocalíptico.",
+ "longDescription": "O Stalker Guns traz o universo STALKER pro Bedrock: armas com visual realista, NPCs, armaduras e itens temáticos pra montar um mundo apocalíptico. O diferencial são as anomalias — colunas de fogo e fumaça que aparecem pelo mapa e mudam a leitura do terreno. Rende mapas de sobrevivência, PvP militar e exploração de zona contaminada. Principal 57.1 MB (14.1.15) no TeraBox.",
+ "category": "weapons",
+ "version": "14.1.15",
+ "minecraft_versions": [
+  "1.19.51"
+ ],
+ "thumbnail": "/images/addons/stalker-guns/stalker-guns-1.webp",
+ "screenshots": [
+  "/images/addons/stalker-guns/stalker-guns-1.webp",
+  "/images/addons/stalker-guns/stalker-guns-2.webp",
+  "/images/addons/stalker-guns/stalker-guns-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2024-10-28",
+ "updatedAt": "2024-10-28",
+ "sourceUrl": "https://mcpedl.org/stalker-guns-mod-minecraft-pe/",
+ "sourceId": "stalker-guns-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1TnSGdwjStWtDSry0T01HHg",
+ "fileSize": "57.1 MB"
+}

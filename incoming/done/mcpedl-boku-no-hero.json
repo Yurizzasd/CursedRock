@@ -1,0 +1,42 @@
+{
+ "id": "boku-no-hero",
+ "name": "Boku No Hero Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Heróis de My Hero Academia com Quirks, armas e cenários: use poderes e enfrente vilões no estilo anime.",
+ "longDescription": "O Boku No Hero leva o universo de My Hero Academia pro Bedrock: os personagens usam Quirks (as habilidades do anime), entram armas e inimigos temáticos, e dá pra montar treino, arena ou roleplay de academia de heróis. É focado em poderes e combate estilizado, com visuais reconhecíveis pra fã da série. Principal 0.2 MB (7.0.0) no TeraBox + variante New Heroes.",
+ "category": "anime",
+ "version": "7.0.0",
+ "minecraft_versions": [
+  "1.20.0"
+ ],
+ "thumbnail": "/images/addons/boku-no-hero/boku-no-hero-1.webp",
+ "screenshots": [
+  "/images/addons/boku-no-hero/boku-no-hero-1.webp",
+  "/images/addons/boku-no-hero/boku-no-hero-2.webp",
+  "/images/addons/boku-no-hero/boku-no-hero-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2024-08-09",
+ "updatedAt": "2024-08-09",
+ "sourceUrl": "https://mcpedl.org/boku-no-hero-mod-minecraft-pe/",
+ "sourceId": "boku-no-hero-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1TcEoB6wwyGDvTNF4eqSJoA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "New Heroes",
+   "version": "1.20.12",
+   "minecraft_versions": [
+    "1.20.12"
+   ],
+   "download_url": "https://1024terabox.com/s/1xi2dssA2rH7IkMrJvc2qeA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

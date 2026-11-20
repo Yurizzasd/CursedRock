@@ -1,0 +1,52 @@
+{
+ "id": "graves",
+ "name": "Graves Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Morreu? Seus itens ficam guardados num túmulo no local da morte, em vez de sumir — funciona em multiplayer.",
+ "longDescription": "O Graves resolve a perda mais frustrante do survival: ao morrer, seus itens ficam num túmulo no ponto da morte em vez de espalhar ou desaparecer. Algumas variantes exigem chave pra abrir o cofre, então dá pra usar como mecânica de risco em servidor. Funciona em multiplayer, com o dono do mundo liberando a galera, e pede as opções experimentais ativadas. Principal no TeraBox + Stone Tombs e Graves (0.2 MB).",
+ "category": "utility",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.13.0"
+ ],
+ "thumbnail": "/images/addons/graves/graves-1.webp",
+ "screenshots": [
+  "/images/addons/graves/graves-1.webp",
+  "/images/addons/graves/graves-2.webp",
+  "/images/addons/graves/graves-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2024-04-04",
+ "updatedAt": "2024-04-04",
+ "sourceUrl": "https://mcpedl.org/graves-mod-minecraft-pe/",
+ "sourceId": "graves-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1GOtbRtC94zMd1OGlb4-NsQ",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Stone Tombs",
+   "version": "1.19.80",
+   "minecraft_versions": [
+    "1.19.80"
+   ],
+   "download_url": "https://1024terabox.com/s/1PlyjfqXTUvZVkhIka0Z4mw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "Graves",
+   "version": "1.20.50",
+   "minecraft_versions": [
+    "1.20.50"
+   ],
+   "download_url": "https://1024terabox.com/s/1KOXc9rK62c3tEYxAOgQw9Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  }
+ ]
+}

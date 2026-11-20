@@ -1,0 +1,62 @@
+{
+ "id": "pirates",
+ "name": "Pirates Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Navios, saqueadores e tesouros: boss pirata, masmorras fantásticas e o encontro de horror Pirate Clark.",
+ "longDescription": "O Pirates Mod transforma o oceano em área de risco e recompensa: entram navios, saqueadores hostis, baús enterrados e equipamento temático, com direito a boss pirata e masmorras flutuantes. A variante Pirate Clark puxa pro lado horror, com um encontro sinistro à parte. É conteúdo pra quem gosta de velejar, invadir e caçar tesouro em vez de só cruzar o mapa. Quatro linhas no TeraBox: Pirates Life (principal, 0.2 MB), Pirate Boss, Pirate Fantasy Dungeons (1.2 MB) e Pirate Clark.",
+ "category": "adventure",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/pirates/pirates-1.webp",
+ "screenshots": [
+  "/images/addons/pirates/pirates-1.webp",
+  "/images/addons/pirates/pirates-2.webp",
+  "/images/addons/pirates/pirates-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-13",
+ "updatedAt": "2026-09-13",
+ "sourceUrl": "https://mcpedl.org/pirates-mod-minecraft-pe/",
+ "sourceId": "pirates-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1pxJobaCMiK9QX_UGiz9jOQ",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Pirate Fantasy Dungeons",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1nx14ihv3E7TBnRa5b4LS-g",
+   "downloadProvider": "terabox",
+   "fileSize": "1.2 MB"
+  },
+  {
+   "label": "Pirate Clark",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1mjGUjlVqIlM3PMcma_o7Zw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  },
+  {
+   "label": "Pirates Life",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1-KcUJK6sJqoitHxBpVy-gw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.4 MB"
+  }
+ ]
+}

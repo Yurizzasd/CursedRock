@@ -3835,5 +3835,929 @@
       }
     ],
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/ai-player/ai-player-1.webp",
+      "/images/addons/ai-player/ai-player-2.webp",
+      "/images/addons/ai-player/ai-player-3.webp"
+    ],
+    "id": "ai-player",
+    "name": "AI Player Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Bots que jogam como gente: seguem alvos, exploram o mapa, entram em PvP e acompanham você no survival.",
+    "longDescription": "O AI Player coloca personagens controlados por IA que se comportam mais como jogadores do que como mobs: andam pelo terreno, reagem a ameaças, perseguem alvos e participam de combate. Serve pra treinar PvP sozinho, testar arena ou só deixar o single-player menos vazio, com aliados que acompanham a exploração. Três linhas no TeraBox: Better AI Player (principal, 0.4 MB), Hexbyte PvB AI Addon (10.4 MB) e AI Girl Multiplayer.",
+    "category": "mobs",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.20.80"
+    ],
+    "thumbnail": "/images/addons/ai-player/ai-player-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-27",
+    "updatedAt": "2026-10-27",
+    "sourceUrl": "https://mcpedl.org/ai-player-mod-minecraft-pe/",
+    "sourceId": "ai-player-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1a8uFwgi3Rh1OY0YjELzZ5w",
+    "fileSize": "0.4 MB",
+    "files": [
+      {
+        "label": "Hexbyte PvB AI Addon",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Ndcpw1iGm4OhpXgx62RAtA",
+        "downloadProvider": "terabox",
+        "fileSize": "10.4 MB"
+      },
+      {
+        "label": "AI Girl Multiplayer",
+        "version": "1.19.0",
+        "minecraft_versions": [
+          "1.19.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1GOx9Y_JLFGginnMT58kkDQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/aliens-vs-predator/aliens-vs-predator-1.webp",
+      "/images/addons/aliens-vs-predator/aliens-vs-predator-2.webp",
+      "/images/addons/aliens-vs-predator/aliens-vs-predator-3.webp"
+    ],
+    "id": "aliens-vs-predator",
+    "name": "Aliens vs Predator Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Xenomorfos, Predador e chefes sci-fi: criaturas hostis, armas e armaduras pra sobreviver ao AVP no Bedrock.",
+    "longDescription": "O Aliens vs Predator traz o clima da franquia pro Minecraft: Xenomorfos, Predadores e chefes extraterrestres que exigem armadura boa e arma confiável. As criaturas têm modelos e comportamentos próprios, e o pacote inclui itens e equipamento temático pra montar cenários de ficção científica, arenas e maps de sobrevivência. Principal 2.8 MB no TeraBox, mais as variantes Predator (0.3 MB) e Xenocraft (15.9 MB).",
+    "category": "mobs",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.12.0"
+    ],
+    "thumbnail": "/images/addons/aliens-vs-predator/aliens-vs-predator-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-11-19",
+    "updatedAt": "2025-11-19",
+    "sourceUrl": "https://mcpedl.org/aliens-vs-predator-mod-minecraft-pe/",
+    "sourceId": "aliens-vs-predator-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1p746DrfkToG3oNQ79FHnWA",
+    "fileSize": "2.8 MB",
+    "files": [
+      {
+        "label": "Predator",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/14RyL__zkwQpJc3WHAImh5A",
+        "downloadProvider": "terabox",
+        "fileSize": "0.3 MB"
+      },
+      {
+        "label": "Xenocraft",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/15iEGiaHo9N9cPKEiw8_6Ng",
+        "downloadProvider": "terabox",
+        "fileSize": "15.9 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/archaeology/archaeology-1.webp",
+      "/images/addons/archaeology/archaeology-2.webp",
+      "/images/addons/archaeology/archaeology-3.webp"
+    ],
+    "id": "archaeology",
+    "name": "Archaeology Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Escove blocos suspeitos, desenterre artefatos, cerâmica e fósseis, e explore ruínas subterrâneas com loot.",
+    "longDescription": "O Archaeology Mod coloca escavação de verdade no survival: você usa pincel em blocos suspeitos, recupera fragmentos de cerâmica, fósseis e artefatos, e explora ruínas subterrâneas com tesouro escondido. Em vez de só minerar minério, passa a valer investigar estrutura antiga e localizar achado raro. Cinco linhas no TeraBox: Archaeology (principal), Warden and Archaeology (7.3 MB), Better Archaeological Loot, Improved Archaeology e Overhauled Arheology (10.0 MB).",
+    "category": "adventure",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.14.0"
+    ],
+    "thumbnail": "/images/addons/archaeology/archaeology-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-11-08",
+    "updatedAt": "2026-11-08",
+    "sourceUrl": "https://mcpedl.org/archaeology-mod-minecraft-pe/",
+    "sourceId": "archaeology-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1V-sGu-1ryFt72Pjjd5kOuA",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Warden and Archaeology",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1sOguOaU77yMGyb3LwLEN7A",
+        "downloadProvider": "terabox",
+        "fileSize": "7.3 MB"
+      },
+      {
+        "label": "Better Archaeological Loot",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1bctrxu6zfnsEJ2vkOn0x9A",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Improved Archaeology",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/17-tp1_6y755VWBmadO1e6g",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Overhauled Arheology",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/13MFTxe9mX-6ujAxrYdJM-Q",
+        "downloadProvider": "terabox",
+        "fileSize": "10.0 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/boku-no-hero/boku-no-hero-1.webp",
+      "/images/addons/boku-no-hero/boku-no-hero-2.webp",
+      "/images/addons/boku-no-hero/boku-no-hero-3.webp"
+    ],
+    "id": "boku-no-hero",
+    "name": "Boku No Hero Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Heróis de My Hero Academia com Quirks, armas e cenários: use poderes e enfrente vilões no estilo anime.",
+    "longDescription": "O Boku No Hero leva o universo de My Hero Academia pro Bedrock: os personagens usam Quirks (as habilidades do anime), entram armas e inimigos temáticos, e dá pra montar treino, arena ou roleplay de academia de heróis. É focado em poderes e combate estilizado, com visuais reconhecíveis pra fã da série. Principal 0.2 MB (7.0.0) no TeraBox + variante New Heroes.",
+    "category": "anime",
+    "version": "7.0.0",
+    "minecraft_versions": [
+      "1.20.0"
+    ],
+    "thumbnail": "/images/addons/boku-no-hero/boku-no-hero-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-08-09",
+    "updatedAt": "2024-08-09",
+    "sourceUrl": "https://mcpedl.org/boku-no-hero-mod-minecraft-pe/",
+    "sourceId": "boku-no-hero-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1TcEoB6wwyGDvTNF4eqSJoA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "New Heroes",
+        "version": "1.20.12",
+        "minecraft_versions": [
+          "1.20.12"
+        ],
+        "download_url": "https://1024terabox.com/s/1xi2dssA2rH7IkMrJvc2qeA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/chainsaw-man/chainsaw-man-1.webp",
+      "/images/addons/chainsaw-man/chainsaw-man-2.webp",
+      "/images/addons/chainsaw-man/chainsaw-man-3.webp"
+    ],
+    "id": "chainsaw-man",
+    "name": "Chainsaw Man Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vire o próprio instrumento: motosserra, personagens e itens do Chainsaw Man pra cortar árvores e encarar monstros.",
+    "longDescription": "O Chainsaw Man é um addon temático que brinca com a ideia do jogador virar ferramenta: entram itens de corte, personagens do anime e equipamento pra derrubar árvore e enfrentar monstro de um jeito nada convencional. Serve tanto pra survival quanto pra mapas de roleplay e cosplay do visual da série. Principal no TeraBox, com as variantes Chainsaw Man (1.3 MB) e Chainsaw Man Characters.",
+    "category": "anime",
+    "version": "1.16.100",
+    "minecraft_versions": [
+      "1.16.0"
+    ],
+    "thumbnail": "/images/addons/chainsaw-man/chainsaw-man-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-01-10",
+    "updatedAt": "2025-01-10",
+    "sourceUrl": "https://mcpedl.org/chainsaw-man-mod-minecraft-pe/",
+    "sourceId": "chainsaw-man-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1ZITLDJ8COfS2V9G0fBWsww",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Chainsaw Man",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1nE3RIsSAZYwS1fnoUMBrPQ",
+        "downloadProvider": "terabox",
+        "fileSize": "1.3 MB"
+      },
+      {
+        "label": "Chainsaw Man Characters",
+        "version": "1.20.0",
+        "minecraft_versions": [
+          "1.20.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1F8PV8hkr1QVWYcqOnHnRug",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/cheat-menu/cheat-menu-1.webp",
+      "/images/addons/cheat-menu/cheat-menu-2.webp",
+      "/images/addons/cheat-menu/cheat-menu-3.webp"
+    ],
+    "id": "cheat-menu",
+    "name": "Cheat Menu",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Menu de cheats por item: renomeie um graveto pra UCM e controle teleporte, modos, clima, encantamentos e mineração.",
+    "longDescription": "O Cheat Menu troca comando digitado por um menu de botões: renomeie um graveto pra UCM, segure o item (ou pressione longo na tela no celular) e abre a interface. De lá dá pra teleportar, trocar modo de jogo, mudar hora e clima, abrir gamerules, rodar comandos, encantar item, achar minério, automatizar fazenda e controlar inventário. Funciona em survival, hardcore e multiplayer onde o pack é permitido — ótimo pra testar mundo e mapa sem decorar sintaxe. Principal 0.1 MB (1.1.8) no TeraBox.",
+    "category": "utility",
+    "version": "1.1.8",
+    "minecraft_versions": [
+      "1.21.0"
+    ],
+    "thumbnail": "/images/addons/cheat-menu/cheat-menu-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-06-23",
+    "updatedAt": "2026-06-23",
+    "sourceUrl": "https://mcpedl.org/cheat-menu-minecraft-pe/",
+    "sourceId": "cheat-menu-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1GsdVtYWPVTtlT_a0i57rEA",
+    "fileSize": "0.1 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/dragon-ball/dragon-ball-1.webp",
+      "/images/addons/dragon-ball/dragon-ball-2.webp",
+      "/images/addons/dragon-ball/dragon-ball-3.webp"
+    ],
+    "id": "dragon-ball",
+    "name": "Dragon Ball Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vinte personagens do Dragon Ball com texturas e golpes próprios: Bulma, Piccolo, chefes, animais e itens de luta.",
+    "longDescription": "O Dragon Ball Mod traz cerca de 20 mobs inspirados no anime, cada um com textura e habilidade própria: Bulma, Bandit Pirat, Giant Fish, Piccolo, chefes e até animais. Dá pra enfrentar os personagens, pegar os drops e usar armas temáticas no combate, o que rende maps de treino, torneios e roleplay. Três linhas no TeraBox: Dragon Ball (principal, 0.2 MB), Goku and Vegeta e Dragon Ball Evolution (49.1 MB).",
+    "category": "anime",
+    "version": "1.8.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/dragon-ball/dragon-ball-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-06-13",
+    "updatedAt": "2025-06-13",
+    "sourceUrl": "https://mcpedl.org/dragon-ball-mod-minecraft-pe/",
+    "sourceId": "dragon-ball-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1K6p_M9dmZvL3UoAr90M9dA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Goku and Vegeta",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1a4s-YNnv6MO3bsRGaIOCRA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Dragon Ball Evolution",
+        "version": "1.20.80",
+        "minecraft_versions": [
+          "1.20.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1ZYk_Z8Ql6oHUJ6Pltkfo4Q",
+        "downloadProvider": "terabox",
+        "fileSize": "49.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/epic-knights/epic-knights-1.webp",
+      "/images/addons/epic-knights/epic-knights-2.webp",
+      "/images/addons/epic-knights/epic-knights-3.webp"
+    ],
+    "id": "epic-knights",
+    "name": "Epic Knights Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Cerca de 30 armas medievais e armaduras: espadas, escudos e combate de cavaleiro pra survival e PvP.",
+    "longDescription": "O Epic Knights adiciona cerca de 30 armas medievais e um conjunto de armaduras pra montar o kit de cavaleiro: dá pra craftar com couro, lã e ferro, equipar o personagem e partir pro combate corpo a corpo. O foco é atmosfera medieval e variedade de opções, sem depender de arma mágica ou explosiva. Principal 5.1 MB (1.0.38) no TeraBox + variante Epic Knights Plus (3.3 MB).",
+    "category": "weapons",
+    "version": "1.0.38",
+    "minecraft_versions": [
+      "1.19.60"
+    ],
+    "thumbnail": "/images/addons/epic-knights/epic-knights-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-08-01",
+    "updatedAt": "2025-08-01",
+    "sourceUrl": "https://mcpedl.org/epic-knights-mod-minecraft-pe/",
+    "sourceId": "epic-knights-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1HqTjDr42y7WmBM1xJgyQcA",
+    "fileSize": "5.1 MB",
+    "files": [
+      {
+        "label": "Epic Knights Plus",
+        "version": "1.21.70",
+        "minecraft_versions": [
+          "1.21.70"
+        ],
+        "download_url": "https://1024terabox.com/s/1DB59Hw4TRCveyIfPTbj0uQ",
+        "downloadProvider": "terabox",
+        "fileSize": "3.3 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/fabulous-furniture/fabulous-furniture-1.webp",
+      "/images/addons/fabulous-furniture/fabulous-furniture-2.webp",
+      "/images/addons/fabulous-furniture/fabulous-furniture-3.webp"
+    ],
+    "id": "fabulous-furniture",
+    "name": "Fabulous Furniture Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Mais de 150 móveis decorativos e personalizáveis, com comida, eletrodomésticos e modelos animados pra montar ambientes.",
+    "longDescription": "O Fabulous Furniture é pra quem gosta de caprichar no interior: são mais de 150 blocos de mobília, decoração, comida e itens de cozinha, com modelos detalhados e animações, além de peças personalizáveis. Funciona em survival e criativo, combina com shaders e texture packs e dá pra decorar a base em multiplayer com os amigos. Principal 7.1 MB (2.2.25, MC 1.21.80) no TeraBox.",
+    "category": "furniture",
+    "version": "2.2.25",
+    "minecraft_versions": [
+      "1.21.80"
+    ],
+    "thumbnail": "/images/addons/fabulous-furniture/fabulous-furniture-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-12-10",
+    "updatedAt": "2025-12-10",
+    "sourceUrl": "https://mcpedl.org/fabulous-furniture-mod-minecraft-pe/",
+    "sourceId": "fabulous-furniture-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1MpMjqHZiAxSseJOk0E2ujQ",
+    "fileSize": "7.1 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/flash/flash-1.webp",
+      "/images/addons/flash/flash-2.webp",
+      "/images/addons/flash/flash-3.webp"
+    ],
+    "id": "flash",
+    "name": "Flash Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Corra na velocidade do Flash: armadura, itens e variantes da Liga da Justiça, com direito a Batman 3D.",
+    "longDescription": "O Flash Mod deixa você vestir a armadura do velocista escarlate e se mover muito mais rápido pelo mapa — com custo de recursos, então não é velocidade infinita de graça. A página reúne várias linhas do universo DC: Justice League Evolve, 3D Batman Armor (53.4 MB), Flash Items e New Flash, além do principal. Dá pra montar mapa de super-herói, corrida e PvP temático. Todas as cinco linhas estão no TeraBox.",
+    "category": "adventure",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/flash/flash-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-02-26",
+    "updatedAt": "2025-02-26",
+    "sourceUrl": "https://mcpedl.org/flash-mod-minecraft-pe/",
+    "sourceId": "flash-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/19af_wHsklaDilvGPJbOjfQ",
+    "fileSize": "1.4 MB",
+    "files": [
+      {
+        "label": "Justice League Evolve",
+        "version": "1.13.0",
+        "minecraft_versions": [
+          "1.13.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1ayoVDmDvhjLvhsYoUeNvTA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      },
+      {
+        "label": "3D Batman Armor",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1T1jx0ATrPwKN2uybjaXNeQ",
+        "downloadProvider": "terabox",
+        "fileSize": "53.4 MB"
+      },
+      {
+        "label": "Flash Items",
+        "version": "1.19.50",
+        "minecraft_versions": [
+          "1.19.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1BNG7YzF9QBPMt-H-j8w95A",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "New Flash",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1ZuoRgrCYuH-vrpXDh47udQ",
+        "downloadProvider": "terabox",
+        "fileSize": "1.3 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/goku/goku-1.webp",
+      "/images/addons/goku/goku-2.webp",
+      "/images/addons/goku/goku-3.webp"
+    ],
+    "id": "goku",
+    "name": "Goku Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Guerreiros do Dragon Ball com ataques de ki, duelos, chefes e Ultra Instinct — modelos e efeitos próprios.",
+    "longDescription": "O Goku Mod traz o clima de combate do Dragon Ball pro Bedrock: personagens com modelos e texturas próprios, ataques de ki, efeitos visuais, chefes de vida alta e loot de combate. Dá pra montar arena, duelo e desafio de survival, com progressão em algumas versões pra desbloquear arma e equipamento. Três linhas no TeraBox: Goku (principal, 0.2 MB), Goku and Vegeta e Goku Ultra Instinct (0.4 MB).",
+    "category": "anime",
+    "version": "1.8.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/goku/goku-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-23",
+    "updatedAt": "2026-09-23",
+    "sourceUrl": "https://mcpedl.org/goku-mod-minecraft-pe/",
+    "sourceId": "goku-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1PcCqKRtCO1yWenPt5M11iA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Goku and Vegeta",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1zbHoPoP464ptR9uSdU0fVQ",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Goku",
+        "version": "1.20.30",
+        "minecraft_versions": [
+          "1.20.30"
+        ],
+        "download_url": "https://1024terabox.com/s/1GcQOP68cumd3AWI4rA_9Bg",
+        "downloadProvider": "terabox",
+        "fileSize": "1.0 MB"
+      },
+      {
+        "label": "Goku Ultra Instinct",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1EwsM2kKmTqac9-KuYEypIg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/graves/graves-1.webp",
+      "/images/addons/graves/graves-2.webp",
+      "/images/addons/graves/graves-3.webp"
+    ],
+    "id": "graves",
+    "name": "Graves Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Morreu? Seus itens ficam guardados num túmulo no local da morte, em vez de sumir — funciona em multiplayer.",
+    "longDescription": "O Graves resolve a perda mais frustrante do survival: ao morrer, seus itens ficam num túmulo no ponto da morte em vez de espalhar ou desaparecer. Algumas variantes exigem chave pra abrir o cofre, então dá pra usar como mecânica de risco em servidor. Funciona em multiplayer, com o dono do mundo liberando a galera, e pede as opções experimentais ativadas. Principal no TeraBox + Stone Tombs e Graves (0.2 MB).",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.13.0"
+    ],
+    "thumbnail": "/images/addons/graves/graves-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-04-04",
+    "updatedAt": "2024-04-04",
+    "sourceUrl": "https://mcpedl.org/graves-mod-minecraft-pe/",
+    "sourceId": "graves-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1GOtbRtC94zMd1OGlb4-NsQ",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Stone Tombs",
+        "version": "1.19.80",
+        "minecraft_versions": [
+          "1.19.80"
+        ],
+        "download_url": "https://1024terabox.com/s/1PlyjfqXTUvZVkhIka0Z4mw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "Graves",
+        "version": "1.20.50",
+        "minecraft_versions": [
+          "1.20.50"
+        ],
+        "download_url": "https://1024terabox.com/s/1KOXc9rK62c3tEYxAOgQw9Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/gravestone/gravestone-1.webp",
+      "/images/addons/gravestone/gravestone-2.webp",
+      "/images/addons/gravestone/gravestone-3.webp"
+    ],
+    "id": "gravestone",
+    "name": "Gravestone Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Túmulo com todos os itens no local da morte e chave automática: ao quebrar, o equipamento volta pros slots originais.",
+    "longDescription": "O Gravestone resolve a morte de um jeito limpo: aparece uma lápide no ponto exato com todo o seu inventário, e você recebe automaticamente a chave pra abrir. Ao quebrar ou usar a chave, os itens voltam pros slots originais — inventário, armadura, mão e offhand ficam como estavam antes de morrer, sem precisar reorganizar nada. É o tipo de utilidade que devia ser vanilla. Principal 0.2 MB (2.1.0) no TeraBox.",
+    "category": "utility",
+    "version": "2.1.0",
+    "minecraft_versions": [
+      "1.21.60"
+    ],
+    "thumbnail": "/images/addons/gravestone/gravestone-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-07-30",
+    "updatedAt": "2025-07-30",
+    "sourceUrl": "https://mcpedl.org/gravestone-mod-minecraft-pe/",
+    "sourceId": "gravestone-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1cg11HnK9OSLkluBOgX7yMg",
+    "fileSize": "0.2 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/moon-knight/moon-knight-1.webp",
+      "/images/addons/moon-knight/moon-knight-2.webp",
+      "/images/addons/moon-knight/moon-knight-3.webp"
+    ],
+    "id": "moon-knight",
+    "name": "Moon Knight Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vire o Moon Knight: trajes, armas e templos no deserto com equipamento escondido pra saquear.",
+    "longDescription": "O Moon Knight traz o personagem da Marvel com trajes, armas e estruturas temáticas: no deserto aparecem templos onde dá pra encontrar item, arma e roupa do herói. É um addon de exploração e cosplay, bom pra mapas de super-herói, missões e coleção de traje. Principal 0.9 MB (1.0.0) no TeraBox.",
+    "category": "adventure",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.17.0"
+    ],
+    "thumbnail": "/images/addons/moon-knight/moon-knight-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-04-19",
+    "updatedAt": "2024-04-19",
+    "sourceUrl": "https://mcpedl.org/moon-knight-mod-minecraft-pe/",
+    "sourceId": "moon-knight-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/19vK0Uj_oIRpLrxZjInHxDA",
+    "fileSize": "0.9 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/one-piece/one-piece-1.webp",
+      "/images/addons/one-piece/one-piece-2.webp",
+      "/images/addons/one-piece/one-piece-3.webp"
+    ],
+    "id": "one-piece",
+    "name": "One Piece Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Luffy, espadas e aliados: personagens de One Piece, armas com aura e efeitos, e mobs domesticáveis no survival.",
+    "longDescription": "O One Piece Mod leva o bando do chapéu de palha pro Bedrock: personagens reconhecíveis, oito tipos de espada com aura e efeito (algumas congelam inimigo), e mobs que podem ser domesticados pra defender você. As armas também dropam de piratas derrotados, e dá pra pegar item específico por comando. Principal 0.6 MB (One Piece Evolve) no TeraBox, mais Luffy (0.8 MB), Skins e New Options. A linha \"Pirates from One Piece\" ficou no link da origem porque o upload não retornou SHARE_URL validado.",
+    "category": "anime",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/one-piece/one-piece-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-03-28",
+    "updatedAt": "2025-03-28",
+    "sourceUrl": "https://mcpedl.org/one-piece-mod-minecraft-pe/",
+    "sourceId": "one-piece-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/18vB_1kUMOYEzwvvGKhIgAw",
+    "fileSize": "0.6 MB",
+    "files": [
+      {
+        "label": "Pirates from One Piece",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://file.mcpedl.org/uploads_files/19-11-2022/pirates-from-one-piece-mod.mcpack",
+        "downloadProvider": "original"
+      },
+      {
+        "label": "Luffy",
+        "version": "1.17.0",
+        "minecraft_versions": [
+          "1.17.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1khp1lp5vjnYH8_LCDxA7jA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.8 MB"
+      },
+      {
+        "label": "Skins",
+        "version": "1.19.10",
+        "minecraft_versions": [
+          "1.19.10"
+        ],
+        "download_url": "https://1024terabox.com/s/17nfKG1Gq4eQFznf76QO_ug",
+        "downloadProvider": "terabox",
+        "fileSize": "0.0 MB"
+      },
+      {
+        "label": "New Options",
+        "version": "1.21.20",
+        "minecraft_versions": [
+          "1.21.20"
+        ],
+        "download_url": "https://1024terabox.com/s/1G3r10VqVsgT8pLORxRiC8Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/pirates/pirates-1.webp",
+      "/images/addons/pirates/pirates-2.webp",
+      "/images/addons/pirates/pirates-3.webp"
+    ],
+    "id": "pirates",
+    "name": "Pirates Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Navios, saqueadores e tesouros: boss pirata, masmorras fantásticas e o encontro de horror Pirate Clark.",
+    "longDescription": "O Pirates Mod transforma o oceano em área de risco e recompensa: entram navios, saqueadores hostis, baús enterrados e equipamento temático, com direito a boss pirata e masmorras flutuantes. A variante Pirate Clark puxa pro lado horror, com um encontro sinistro à parte. É conteúdo pra quem gosta de velejar, invadir e caçar tesouro em vez de só cruzar o mapa. Quatro linhas no TeraBox: Pirates Life (principal, 0.2 MB), Pirate Boss, Pirate Fantasy Dungeons (1.2 MB) e Pirate Clark.",
+    "category": "adventure",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/pirates/pirates-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-13",
+    "updatedAt": "2026-09-13",
+    "sourceUrl": "https://mcpedl.org/pirates-mod-minecraft-pe/",
+    "sourceId": "pirates-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1pxJobaCMiK9QX_UGiz9jOQ",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "Pirate Fantasy Dungeons",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1nx14ihv3E7TBnRa5b4LS-g",
+        "downloadProvider": "terabox",
+        "fileSize": "1.2 MB"
+      },
+      {
+        "label": "Pirate Clark",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1mjGUjlVqIlM3PMcma_o7Zw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      },
+      {
+        "label": "Pirates Life",
+        "version": "1.18.0",
+        "minecraft_versions": [
+          "1.18.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1-KcUJK6sJqoitHxBpVy-gw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.4 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/ribbits/ribbits-1.webp",
+      "/images/addons/ribbits/ribbits-2.webp",
+      "/images/addons/ribbits/ribbits-3.webp"
+    ],
+    "id": "ribbits",
+    "name": "Ribbits Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vila de sapos no pântano: Ribbits amigáveis, insetos com rede, aquários, armadilhas de peixe e banda musical.",
+    "longDescription": "O Ribbits transforma o pântano num lugar habitado: uma pequena civilização de sapos com rotina pacífica, crafts próprios e visual acolhedor. Dá pra caçar inseto com rede, montar aquário decorativo, colocar armadilha de peixe e até formar uma bandinha com os bichos. É o oposto de addon de combate — feito pra survival tranquilo, construção e decoração. Principal 11.3 MB (1.0.9, MC 1.26.0) no TeraBox.",
+    "category": "mobs",
+    "version": "1.0.9",
+    "minecraft_versions": [
+      "1.26.0"
+    ],
+    "thumbnail": "/images/addons/ribbits/ribbits-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-08-25",
+    "updatedAt": "2026-08-25",
+    "sourceUrl": "https://mcpedl.org/ribbits-mod-minecraft-pe/",
+    "sourceId": "ribbits-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1taPTKyMUF7YgBLa1W4Wzcg",
+    "fileSize": "11.3 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/stalker-guns/stalker-guns-1.webp",
+      "/images/addons/stalker-guns/stalker-guns-2.webp",
+      "/images/addons/stalker-guns/stalker-guns-3.webp"
+    ],
+    "id": "stalker-guns",
+    "name": "Stalker Guns Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas e clima de STALKER: NPCs, armadilhas e anomalias de fogo/fumaça num mundo apocalíptico.",
+    "longDescription": "O Stalker Guns traz o universo STALKER pro Bedrock: armas com visual realista, NPCs, armaduras e itens temáticos pra montar um mundo apocalíptico. O diferencial são as anomalias — colunas de fogo e fumaça que aparecem pelo mapa e mudam a leitura do terreno. Rende mapas de sobrevivência, PvP militar e exploração de zona contaminada. Principal 57.1 MB (14.1.15) no TeraBox.",
+    "category": "weapons",
+    "version": "14.1.15",
+    "minecraft_versions": [
+      "1.19.51"
+    ],
+    "thumbnail": "/images/addons/stalker-guns/stalker-guns-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2024-10-28",
+    "updatedAt": "2024-10-28",
+    "sourceUrl": "https://mcpedl.org/stalker-guns-mod-minecraft-pe/",
+    "sourceId": "stalker-guns-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1TnSGdwjStWtDSry0T01HHg",
+    "fileSize": "57.1 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/venom/venom-1.webp",
+      "/images/addons/venom/venom-2.webp",
+      "/images/addons/venom/venom-3.webp"
+    ],
+    "id": "venom",
+    "name": "Venom Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Vire o Venom: simbionte, poderes e transformação pra aterrorizar mobs — precisa de experimentais.",
+    "longDescription": "O Venom Mod aposta no lado monstro do personagem: ao ativar a transformação, você ganha força e habilidades do simbionte pra encarar as criaturas mais perigosas do jogo. É um addon de poder e visual, bom pra mapa de vilão, arena e roleplay Marvel. A variante Mutated Monsters acrescenta criaturas mutantes extras. Principal no TeraBox + Mutated Monsters (0.2 MB); ative as opções experimentais no mundo.",
+    "category": "mobs",
+    "version": "5.0.0",
+    "minecraft_versions": [
+      "1.8.0"
+    ],
+    "thumbnail": "/images/addons/venom/venom-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-03-11",
+    "updatedAt": "2025-03-11",
+    "sourceUrl": "https://mcpedl.org/venom-mod-minecraft-pe/",
+    "sourceId": "venom-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1qoZ_QP5WNt4_lK2afww6KQ",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Mutated Monsters",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/19cbATN72fJfkGBHDouEcrg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

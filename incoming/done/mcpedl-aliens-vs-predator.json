@@ -1,0 +1,52 @@
+{
+ "id": "aliens-vs-predator",
+ "name": "Aliens vs Predator Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Xenomorfos, Predador e chefes sci-fi: criaturas hostis, armas e armaduras pra sobreviver ao AVP no Bedrock.",
+ "longDescription": "O Aliens vs Predator traz o clima da franquia pro Minecraft: Xenomorfos, Predadores e chefes extraterrestres que exigem armadura boa e arma confiável. As criaturas têm modelos e comportamentos próprios, e o pacote inclui itens e equipamento temático pra montar cenários de ficção científica, arenas e maps de sobrevivência. Principal 2.8 MB no TeraBox, mais as variantes Predator (0.3 MB) e Xenocraft (15.9 MB).",
+ "category": "mobs",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.12.0"
+ ],
+ "thumbnail": "/images/addons/aliens-vs-predator/aliens-vs-predator-1.webp",
+ "screenshots": [
+  "/images/addons/aliens-vs-predator/aliens-vs-predator-1.webp",
+  "/images/addons/aliens-vs-predator/aliens-vs-predator-2.webp",
+  "/images/addons/aliens-vs-predator/aliens-vs-predator-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-11-19",
+ "updatedAt": "2025-11-19",
+ "sourceUrl": "https://mcpedl.org/aliens-vs-predator-mod-minecraft-pe/",
+ "sourceId": "aliens-vs-predator-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1p746DrfkToG3oNQ79FHnWA",
+ "fileSize": "2.8 MB",
+ "files": [
+  {
+   "label": "Predator",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/14RyL__zkwQpJc3WHAImh5A",
+   "downloadProvider": "terabox",
+   "fileSize": "0.3 MB"
+  },
+  {
+   "label": "Xenocraft",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/15iEGiaHo9N9cPKEiw8_6Ng",
+   "downloadProvider": "terabox",
+   "fileSize": "15.9 MB"
+  }
+ ]
+}

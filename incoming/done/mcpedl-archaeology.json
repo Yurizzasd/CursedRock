@@ -1,0 +1,72 @@
+{
+ "id": "archaeology",
+ "name": "Archaeology Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Escove blocos suspeitos, desenterre artefatos, cerâmica e fósseis, e explore ruínas subterrâneas com loot.",
+ "longDescription": "O Archaeology Mod coloca escavação de verdade no survival: você usa pincel em blocos suspeitos, recupera fragmentos de cerâmica, fósseis e artefatos, e explora ruínas subterrâneas com tesouro escondido. Em vez de só minerar minério, passa a valer investigar estrutura antiga e localizar achado raro. Cinco linhas no TeraBox: Archaeology (principal), Warden and Archaeology (7.3 MB), Better Archaeological Loot, Improved Archaeology e Overhauled Arheology (10.0 MB).",
+ "category": "adventure",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.14.0"
+ ],
+ "thumbnail": "/images/addons/archaeology/archaeology-1.webp",
+ "screenshots": [
+  "/images/addons/archaeology/archaeology-1.webp",
+  "/images/addons/archaeology/archaeology-2.webp",
+  "/images/addons/archaeology/archaeology-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-11-08",
+ "updatedAt": "2026-11-08",
+ "sourceUrl": "https://mcpedl.org/archaeology-mod-minecraft-pe/",
+ "sourceId": "archaeology-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1V-sGu-1ryFt72Pjjd5kOuA",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Warden and Archaeology",
+   "version": "1.17.0",
+   "minecraft_versions": [
+    "1.17.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1sOguOaU77yMGyb3LwLEN7A",
+   "downloadProvider": "terabox",
+   "fileSize": "7.3 MB"
+  },
+  {
+   "label": "Better Archaeological Loot",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1bctrxu6zfnsEJ2vkOn0x9A",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "Improved Archaeology",
+   "version": "1.20.0",
+   "minecraft_versions": [
+    "1.20.0"
+   ],
+   "download_url": "https://1024terabox.com/s/17-tp1_6y755VWBmadO1e6g",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  },
+  {
+   "label": "Overhauled Arheology",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/13MFTxe9mX-6ujAxrYdJM-Q",
+   "downloadProvider": "terabox",
+   "fileSize": "10.0 MB"
+  }
+ ]
+}

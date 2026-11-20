@@ -1,0 +1,30 @@
+{
+ "id": "gravestone",
+ "name": "Gravestone Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Túmulo com todos os itens no local da morte e chave automática: ao quebrar, o equipamento volta pros slots originais.",
+ "longDescription": "O Gravestone resolve a morte de um jeito limpo: aparece uma lápide no ponto exato com todo o seu inventário, e você recebe automaticamente a chave pra abrir. Ao quebrar ou usar a chave, os itens voltam pros slots originais — inventário, armadura, mão e offhand ficam como estavam antes de morrer, sem precisar reorganizar nada. É o tipo de utilidade que devia ser vanilla. Principal 0.2 MB (2.1.0) no TeraBox.",
+ "category": "utility",
+ "version": "2.1.0",
+ "minecraft_versions": [
+  "1.21.60"
+ ],
+ "thumbnail": "/images/addons/gravestone/gravestone-1.webp",
+ "screenshots": [
+  "/images/addons/gravestone/gravestone-1.webp",
+  "/images/addons/gravestone/gravestone-2.webp",
+  "/images/addons/gravestone/gravestone-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-07-30",
+ "updatedAt": "2025-07-30",
+ "sourceUrl": "https://mcpedl.org/gravestone-mod-minecraft-pe/",
+ "sourceId": "gravestone-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1cg11HnK9OSLkluBOgX7yMg",
+ "fileSize": "0.2 MB"
+}

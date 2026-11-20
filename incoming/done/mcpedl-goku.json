@@ -1,0 +1,62 @@
+{
+ "id": "goku",
+ "name": "Goku Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Guerreiros do Dragon Ball com ataques de ki, duelos, chefes e Ultra Instinct — modelos e efeitos próprios.",
+ "longDescription": "O Goku Mod traz o clima de combate do Dragon Ball pro Bedrock: personagens com modelos e texturas próprios, ataques de ki, efeitos visuais, chefes de vida alta e loot de combate. Dá pra montar arena, duelo e desafio de survival, com progressão em algumas versões pra desbloquear arma e equipamento. Três linhas no TeraBox: Goku (principal, 0.2 MB), Goku and Vegeta e Goku Ultra Instinct (0.4 MB).",
+ "category": "anime",
+ "version": "1.8.0",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/goku/goku-1.webp",
+ "screenshots": [
+  "/images/addons/goku/goku-1.webp",
+  "/images/addons/goku/goku-2.webp",
+  "/images/addons/goku/goku-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-23",
+ "updatedAt": "2026-09-23",
+ "sourceUrl": "https://mcpedl.org/goku-mod-minecraft-pe/",
+ "sourceId": "goku-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1PcCqKRtCO1yWenPt5M11iA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "Goku and Vegeta",
+   "version": "1.18.0",
+   "minecraft_versions": [
+    "1.18.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1zbHoPoP464ptR9uSdU0fVQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Goku",
+   "version": "1.20.30",
+   "minecraft_versions": [
+    "1.20.30"
+   ],
+   "download_url": "https://1024terabox.com/s/1GcQOP68cumd3AWI4rA_9Bg",
+   "downloadProvider": "terabox",
+   "fileSize": "1.0 MB"
+  },
+  {
+   "label": "Goku Ultra Instinct",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1EwsM2kKmTqac9-KuYEypIg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.4 MB"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "id": "cheat-menu",
+ "name": "Cheat Menu",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Menu de cheats por item: renomeie um graveto pra UCM e controle teleporte, modos, clima, encantamentos e mineração.",
+ "longDescription": "O Cheat Menu troca comando digitado por um menu de botões: renomeie um graveto pra UCM, segure o item (ou pressione longo na tela no celular) e abre a interface. De lá dá pra teleportar, trocar modo de jogo, mudar hora e clima, abrir gamerules, rodar comandos, encantar item, achar minério, automatizar fazenda e controlar inventário. Funciona em survival, hardcore e multiplayer onde o pack é permitido — ótimo pra testar mundo e mapa sem decorar sintaxe. Principal 0.1 MB (1.1.8) no TeraBox.",
+ "category": "utility",
+ "version": "1.1.8",
+ "minecraft_versions": [
+  "1.21.0"
+ ],
+ "thumbnail": "/images/addons/cheat-menu/cheat-menu-1.webp",
+ "screenshots": [
+  "/images/addons/cheat-menu/cheat-menu-1.webp",
+  "/images/addons/cheat-menu/cheat-menu-2.webp",
+  "/images/addons/cheat-menu/cheat-menu-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-06-23",
+ "updatedAt": "2026-06-23",
+ "sourceUrl": "https://mcpedl.org/cheat-menu-minecraft-pe/",
+ "sourceId": "cheat-menu-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1GsdVtYWPVTtlT_a0i57rEA",
+ "fileSize": "0.1 MB"
+}

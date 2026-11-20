@@ -1,0 +1,42 @@
+{
+ "id": "venom",
+ "name": "Venom Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Vire o Venom: simbionte, poderes e transformação pra aterrorizar mobs — precisa de experimentais.",
+ "longDescription": "O Venom Mod aposta no lado monstro do personagem: ao ativar a transformação, você ganha força e habilidades do simbionte pra encarar as criaturas mais perigosas do jogo. É um addon de poder e visual, bom pra mapa de vilão, arena e roleplay Marvel. A variante Mutated Monsters acrescenta criaturas mutantes extras. Principal no TeraBox + Mutated Monsters (0.2 MB); ative as opções experimentais no mundo.",
+ "category": "mobs",
+ "version": "5.0.0",
+ "minecraft_versions": [
+  "1.8.0"
+ ],
+ "thumbnail": "/images/addons/venom/venom-1.webp",
+ "screenshots": [
+  "/images/addons/venom/venom-1.webp",
+  "/images/addons/venom/venom-2.webp",
+  "/images/addons/venom/venom-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-03-11",
+ "updatedAt": "2025-03-11",
+ "sourceUrl": "https://mcpedl.org/venom-mod-minecraft-pe/",
+ "sourceId": "venom-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1qoZ_QP5WNt4_lK2afww6KQ",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Mutated Monsters",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/19cbATN72fJfkGBHDouEcrg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  }
+ ]
+}

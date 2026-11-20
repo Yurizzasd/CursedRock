@@ -1,0 +1,52 @@
+{
+ "id": "ai-player",
+ "name": "AI Player Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Bots que jogam como gente: seguem alvos, exploram o mapa, entram em PvP e acompanham você no survival.",
+ "longDescription": "O AI Player coloca personagens controlados por IA que se comportam mais como jogadores do que como mobs: andam pelo terreno, reagem a ameaças, perseguem alvos e participam de combate. Serve pra treinar PvP sozinho, testar arena ou só deixar o single-player menos vazio, com aliados que acompanham a exploração. Três linhas no TeraBox: Better AI Player (principal, 0.4 MB), Hexbyte PvB AI Addon (10.4 MB) e AI Girl Multiplayer.",
+ "category": "mobs",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.20.80"
+ ],
+ "thumbnail": "/images/addons/ai-player/ai-player-1.webp",
+ "screenshots": [
+  "/images/addons/ai-player/ai-player-1.webp",
+  "/images/addons/ai-player/ai-player-2.webp",
+  "/images/addons/ai-player/ai-player-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-27",
+ "updatedAt": "2026-10-27",
+ "sourceUrl": "https://mcpedl.org/ai-player-mod-minecraft-pe/",
+ "sourceId": "ai-player-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1a8uFwgi3Rh1OY0YjELzZ5w",
+ "fileSize": "0.4 MB",
+ "files": [
+  {
+   "label": "Hexbyte PvB AI Addon",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1Ndcpw1iGm4OhpXgx62RAtA",
+   "downloadProvider": "terabox",
+   "fileSize": "10.4 MB"
+  },
+  {
+   "label": "AI Girl Multiplayer",
+   "version": "1.19.0",
+   "minecraft_versions": [
+    "1.19.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1GOx9Y_JLFGginnMT58kkDQ",
+   "downloadProvider": "terabox",
+   "fileSize": "0.0 MB"
+  }
+ ]
+}
