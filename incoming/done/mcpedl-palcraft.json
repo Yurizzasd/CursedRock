@@ -1,0 +1,30 @@
+{
+ "id": "palcraft",
+ "name": "Palcraft Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Palworld no Minecraft: Pals únicos pra encontrar, coletar e enfrentar, com combate e exploração no survival.",
+ "longDescription": "O Palcraft traz a ideia do Palworld pro Bedrock: criaturas únicas aparecem pelo mundo como companheiras ou ameaças, cada encontro podendo render exploração, coleta ou uma briga que testa seu equipamento. Não é uma cópia do jogo inteiro — o foco são os Pals e o clima de aventura que eles trazem pro survival comum. Bom pra quem gosta de addons de criaturas e quer um objetivo novo além de minerar e construir. Principal 2.0 MB (0.5.2, MC 1.26.40) no TeraBox.",
+ "category": "mobs",
+ "version": "0.5.2",
+ "minecraft_versions": [
+  "1.26.40"
+ ],
+ "thumbnail": "/images/addons/palcraft/palcraft-1.webp",
+ "screenshots": [
+  "/images/addons/palcraft/palcraft-1.webp",
+  "/images/addons/palcraft/palcraft-2.webp",
+  "/images/addons/palcraft/palcraft-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-09-28",
+ "updatedAt": "2026-09-28",
+ "sourceUrl": "https://mcpedl.org/palcraft-mod-minecraft-pe/",
+ "sourceId": "palcraft-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1epaNFL-srSWTONP8437jRQ",
+ "fileSize": "2.0 MB"
+}

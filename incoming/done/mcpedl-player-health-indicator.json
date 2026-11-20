@@ -1,0 +1,30 @@
+{
+ "id": "player-health-indicator",
+ "name": "Player Health Indicator Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Barra de vida no HUD: veja seu HP e o dos outros jogadores acima da cabeça, sem abrir o inventário.",
+ "longDescription": "O Player Health Indicator coloca uma barra de vida direta na interface: dá pra ver quantos corações restam sem abrir inventário, e o mesmo indicador aparece acima do nome dos outros jogadores. Em PvP, raid ou mineração em grupo isso muda a coordenação — você sabe quem precisa de cura antes de alguém cair. A versão Bedrock foi otimizada pra tela de celular, leve e sem poluir o HUD, e ajuda iniciante a entender o ritmo de combate. Principal 0.0 MB (1.0.2) no TeraBox.",
+ "category": "utility",
+ "version": "0.0.1",
+ "minecraft_versions": [
+  "1.17.0"
+ ],
+ "thumbnail": "/images/addons/player-health-indicator/player-health-indicator-1.webp",
+ "screenshots": [
+  "/images/addons/player-health-indicator/player-health-indicator-1.webp",
+  "/images/addons/player-health-indicator/player-health-indicator-2.webp",
+  "/images/addons/player-health-indicator/player-health-indicator-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-12-08",
+ "updatedAt": "2025-12-08",
+ "sourceUrl": "https://mcpedl.org/player-health-indicator-mod-minecraft-pe/",
+ "sourceId": "player-health-indicator-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1OqcrahEpTpTwWo_tiTbGLw",
+ "fileSize": "0.0 MB"
+}

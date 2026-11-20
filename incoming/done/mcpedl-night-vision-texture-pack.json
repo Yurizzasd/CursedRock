@@ -1,0 +1,52 @@
+{
+ "id": "night-vision-texture-pack",
+ "name": "Night Vision Texture Pack",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Clareia a noite e as cavernas sem tocha: pack de gamma alto que deixa o mundo visível sem mudar blocos.",
+ "longDescription": "O Night Vision resolve iluminação do jeito mais direto: a noite fica clara como o dia e as cavernas deixam de ser um breu, sem tocha, lanterna ou comando. Os blocos e o terreno continuam com a aparência normal — só a escuridão some; mobs e jogadores seguem escuros. A variante Maximum Gamma vai além e ilumina até os cantos mais fundos de caverna. Três linhas no TeraBox: Night Vision Pack (principal), Maximum Gamma (0.6 MB) e Night Vision Pack 1.21.0 (0.1 MB).",
+ "category": "utility",
+ "version": "1.0.1",
+ "minecraft_versions": [
+  "1.13.0"
+ ],
+ "thumbnail": "/images/addons/night-vision-texture-pack/night-vision-texture-pack-1.webp",
+ "screenshots": [
+  "/images/addons/night-vision-texture-pack/night-vision-texture-pack-1.webp",
+  "/images/addons/night-vision-texture-pack/night-vision-texture-pack-2.webp",
+  "/images/addons/night-vision-texture-pack/night-vision-texture-pack-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2025-08-13",
+ "updatedAt": "2025-08-13",
+ "sourceUrl": "https://mcpedl.org/night-vision-texture-pack-minecraft-pe/",
+ "sourceId": "night-vision-texture-pack-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1stWph2Z0VXM-qv08vWrCGA",
+ "fileSize": "0.0 MB",
+ "files": [
+  {
+   "label": "Maximum Gamma",
+   "version": "1.16.0",
+   "minecraft_versions": [
+    "1.16.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1kKPLzA5nyL7ikUIkWNSJJg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.6 MB"
+  },
+  {
+   "label": "Night Vision Pack",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1KAkeKdcM06XTtZCvPmcNdA",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

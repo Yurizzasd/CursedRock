@@ -1,0 +1,62 @@
+{
+ "id": "dynamic-light",
+ "name": "Dynamic Light Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Luz em movimento: tochas, lanternas e itens brilhantes iluminam enquanto você anda, inclusive na offhand e em mobs.",
+ "longDescription": "O Dynamic Light adiciona iluminação em tempo real pra itens e entidades: tocha na mão, lanterna, bloco brilhante, capacete e até mob iluminam por perto enquanto se movem. A luz é temporária e some quando a fonte sai de cena, então o terreno não fica alterado — é só visibilidade melhor em cavernas, túneis, fundo do mar e estradas à noite. Quatro linhas no TeraBox: System Dynamic Light (principal), Dynamic Light Addon, Raiyon's Dynamic Lightning (0.5 MB) e System Dynamic Light v3.",
+ "category": "utility",
+ "version": "1.0.0",
+ "minecraft_versions": [
+  "1.20.30"
+ ],
+ "thumbnail": "/images/addons/dynamic-light/dynamic-light-1.webp",
+ "screenshots": [
+  "/images/addons/dynamic-light/dynamic-light-1.webp",
+  "/images/addons/dynamic-light/dynamic-light-2.webp",
+  "/images/addons/dynamic-light/dynamic-light-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-28",
+ "updatedAt": "2026-07-28",
+ "sourceUrl": "https://mcpedl.org/dynamic-light-mod-minecraft-pe/",
+ "sourceId": "dynamic-light-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1moS6OuEAUVxjT4su1bxTFA",
+ "fileSize": "0.1 MB",
+ "files": [
+  {
+   "label": "Dynamic Light Addon",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1s14zvuTq_enIQBKEd0Vm-w",
+   "downloadProvider": "terabox",
+   "fileSize": "0.2 MB"
+  },
+  {
+   "label": "Raiyons Dynamic Lightning",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1hBK84byl36CtwAnusP9nEg",
+   "downloadProvider": "terabox",
+   "fileSize": "0.5 MB"
+  },
+  {
+   "label": "System Dynamic Light v3",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1Os3nKClgJhkWJ7IzOalH-Q",
+   "downloadProvider": "terabox",
+   "fileSize": "0.1 MB"
+  }
+ ]
+}

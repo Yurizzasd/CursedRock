@@ -3573,5 +3573,267 @@
     "download_url": "https://1024terabox.com/s/1awV8d1sRo3eybdnUyWogOQ",
     "fileSize": "16.6 MB",
     "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/dynamic-light/dynamic-light-1.webp",
+      "/images/addons/dynamic-light/dynamic-light-2.webp",
+      "/images/addons/dynamic-light/dynamic-light-3.webp"
+    ],
+    "id": "dynamic-light",
+    "name": "Dynamic Light Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Luz em movimento: tochas, lanternas e itens brilhantes iluminam enquanto você anda, inclusive na offhand e em mobs.",
+    "longDescription": "O Dynamic Light adiciona iluminação em tempo real pra itens e entidades: tocha na mão, lanterna, bloco brilhante, capacete e até mob iluminam por perto enquanto se movem. A luz é temporária e some quando a fonte sai de cena, então o terreno não fica alterado — é só visibilidade melhor em cavernas, túneis, fundo do mar e estradas à noite. Quatro linhas no TeraBox: System Dynamic Light (principal), Dynamic Light Addon, Raiyon's Dynamic Lightning (0.5 MB) e System Dynamic Light v3.",
+    "category": "utility",
+    "version": "1.0.0",
+    "minecraft_versions": [
+      "1.20.30"
+    ],
+    "thumbnail": "/images/addons/dynamic-light/dynamic-light-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-28",
+    "updatedAt": "2026-07-28",
+    "sourceUrl": "https://mcpedl.org/dynamic-light-mod-minecraft-pe/",
+    "sourceId": "dynamic-light-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1moS6OuEAUVxjT4su1bxTFA",
+    "fileSize": "0.1 MB",
+    "files": [
+      {
+        "label": "Dynamic Light Addon",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1s14zvuTq_enIQBKEd0Vm-w",
+        "downloadProvider": "terabox",
+        "fileSize": "0.2 MB"
+      },
+      {
+        "label": "Raiyons Dynamic Lightning",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1hBK84byl36CtwAnusP9nEg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.5 MB"
+      },
+      {
+        "label": "System Dynamic Light v3",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1Os3nKClgJhkWJ7IzOalH-Q",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/night-vision-texture-pack/night-vision-texture-pack-1.webp",
+      "/images/addons/night-vision-texture-pack/night-vision-texture-pack-2.webp",
+      "/images/addons/night-vision-texture-pack/night-vision-texture-pack-3.webp"
+    ],
+    "id": "night-vision-texture-pack",
+    "name": "Night Vision Texture Pack",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Clareia a noite e as cavernas sem tocha: pack de gamma alto que deixa o mundo visível sem mudar blocos.",
+    "longDescription": "O Night Vision resolve iluminação do jeito mais direto: a noite fica clara como o dia e as cavernas deixam de ser um breu, sem tocha, lanterna ou comando. Os blocos e o terreno continuam com a aparência normal — só a escuridão some; mobs e jogadores seguem escuros. A variante Maximum Gamma vai além e ilumina até os cantos mais fundos de caverna. Três linhas no TeraBox: Night Vision Pack (principal), Maximum Gamma (0.6 MB) e Night Vision Pack 1.21.0 (0.1 MB).",
+    "category": "utility",
+    "version": "1.0.1",
+    "minecraft_versions": [
+      "1.13.0"
+    ],
+    "thumbnail": "/images/addons/night-vision-texture-pack/night-vision-texture-pack-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-08-13",
+    "updatedAt": "2025-08-13",
+    "sourceUrl": "https://mcpedl.org/night-vision-texture-pack-minecraft-pe/",
+    "sourceId": "night-vision-texture-pack-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1stWph2Z0VXM-qv08vWrCGA",
+    "fileSize": "0.0 MB",
+    "files": [
+      {
+        "label": "Maximum Gamma",
+        "version": "1.16.0",
+        "minecraft_versions": [
+          "1.16.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1kKPLzA5nyL7ikUIkWNSJJg",
+        "downloadProvider": "terabox",
+        "fileSize": "0.6 MB"
+      },
+      {
+        "label": "Night Vision Pack",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1KAkeKdcM06XTtZCvPmcNdA",
+        "downloadProvider": "terabox",
+        "fileSize": "0.1 MB"
+      }
+    ],
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/palcraft/palcraft-1.webp",
+      "/images/addons/palcraft/palcraft-2.webp",
+      "/images/addons/palcraft/palcraft-3.webp"
+    ],
+    "id": "palcraft",
+    "name": "Palcraft Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Palworld no Minecraft: Pals únicos pra encontrar, coletar e enfrentar, com combate e exploração no survival.",
+    "longDescription": "O Palcraft traz a ideia do Palworld pro Bedrock: criaturas únicas aparecem pelo mundo como companheiras ou ameaças, cada encontro podendo render exploração, coleta ou uma briga que testa seu equipamento. Não é uma cópia do jogo inteiro — o foco são os Pals e o clima de aventura que eles trazem pro survival comum. Bom pra quem gosta de addons de criaturas e quer um objetivo novo além de minerar e construir. Principal 2.0 MB (0.5.2, MC 1.26.40) no TeraBox.",
+    "category": "mobs",
+    "version": "0.5.2",
+    "minecraft_versions": [
+      "1.26.40"
+    ],
+    "thumbnail": "/images/addons/palcraft/palcraft-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-09-28",
+    "updatedAt": "2026-09-28",
+    "sourceUrl": "https://mcpedl.org/palcraft-mod-minecraft-pe/",
+    "sourceId": "palcraft-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1epaNFL-srSWTONP8437jRQ",
+    "fileSize": "2.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/player-health-indicator/player-health-indicator-1.webp",
+      "/images/addons/player-health-indicator/player-health-indicator-2.webp",
+      "/images/addons/player-health-indicator/player-health-indicator-3.webp"
+    ],
+    "id": "player-health-indicator",
+    "name": "Player Health Indicator Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Barra de vida no HUD: veja seu HP e o dos outros jogadores acima da cabeça, sem abrir o inventário.",
+    "longDescription": "O Player Health Indicator coloca uma barra de vida direta na interface: dá pra ver quantos corações restam sem abrir inventário, e o mesmo indicador aparece acima do nome dos outros jogadores. Em PvP, raid ou mineração em grupo isso muda a coordenação — você sabe quem precisa de cura antes de alguém cair. A versão Bedrock foi otimizada pra tela de celular, leve e sem poluir o HUD, e ajuda iniciante a entender o ritmo de combate. Principal 0.0 MB (1.0.2) no TeraBox.",
+    "category": "utility",
+    "version": "0.0.1",
+    "minecraft_versions": [
+      "1.17.0"
+    ],
+    "thumbnail": "/images/addons/player-health-indicator/player-health-indicator-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2025-12-08",
+    "updatedAt": "2025-12-08",
+    "sourceUrl": "https://mcpedl.org/player-health-indicator-mod-minecraft-pe/",
+    "sourceId": "player-health-indicator-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1OqcrahEpTpTwWo_tiTbGLw",
+    "fileSize": "0.0 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/tacz/tacz-1.webp",
+      "/images/addons/tacz/tacz-2.webp",
+      "/images/addons/tacz/tacz-3.webp"
+    ],
+    "id": "tacz",
+    "name": "TACZ Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Armas de fogo com pegada de FPS: mirar, recuar, recarregar e inspecionar — ARs, snipers, shotguns e pistolas com handling próprio.",
+    "longDescription": "O TACZ (Timeless and Classics Zero Guns) refaz o ciclo de tiro inteiro no Bedrock: mira com ADS, recuo controlável, tempo de recarga e até animação de inspeção da arma. Cada classe se comporta diferente — rifle de assalto, SMG, sniper, shotgun e pistola mudam de verdade a forma de encarar um tiroteio. Os controles foram ajustados pra toque, então funciona bem no celular sem virar aquele point-and-click. Principal 32.8 MB (1.0.2, MC 1.20.0) no TeraBox.",
+    "category": "weapons",
+    "version": "1.0.2",
+    "minecraft_versions": [
+      "1.20.0"
+    ],
+    "thumbnail": "/images/addons/tacz/tacz-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-07-16",
+    "updatedAt": "2026-07-16",
+    "sourceUrl": "https://mcpedl.org/tacz-mod-minecraft-pe/",
+    "sourceId": "tacz-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1MO2QEkJwa5srofpR6LGA2g",
+    "fileSize": "32.8 MB",
+    "downloads": 0
+  },
+  {
+    "featured": false,
+    "screenshots": [
+      "/images/addons/the-sift/the-sift-1.webp",
+      "/images/addons/the-sift/the-sift-2.webp",
+      "/images/addons/the-sift/the-sift-3.webp"
+    ],
+    "id": "the-sift",
+    "name": "The Sift Mod",
+    "author": "unknown",
+    "authorDisplay": "Brandon Taylor",
+    "description": "Nova dimensão sombria em beta: portal na Ancient City, terreno estranho e exploração no escuro — prévia do update 27.",
+    "longDescription": "O The Sift recria em beta a dimensão que deve chegar no Minecraft 27: você sai dos biomas conhecidos e entra num lugar mais escuro, com terreno e rota de sobrevivência diferentes do padrão. A entrada é ligada ao portal da Ancient City, o que dá um motivo novo pra caçar estrutura no Deep Dark. Como é conteúdo beta, o conselho é testar num mundo separado e manter backup. Principal 0.2 MB (1.0.1, MC 1.26.10) no TeraBox, mais as variantes The Swift (6.3 MB) e The Sift Echoes of The Deep (0.7 MB).",
+    "category": "world",
+    "version": "1.0.1",
+    "minecraft_versions": [
+      "1.26.10"
+    ],
+    "thumbnail": "/images/addons/the-sift/the-sift-1.webp",
+    "tags": [
+      "Bedrock"
+    ],
+    "createdAt": "2026-10-13",
+    "updatedAt": "2026-10-13",
+    "sourceUrl": "https://mcpedl.org/the-sift-mod-minecraft-pe/",
+    "sourceId": "the-sift-mod-minecraft-pe",
+    "importedAt": "2026-11-20",
+    "download_url": "https://1024terabox.com/s/1eUu_opwC0ocVXGSUHMkUsA",
+    "fileSize": "0.2 MB",
+    "files": [
+      {
+        "label": "The Swift",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/13cBpNmess1acNLjbCxoCAg",
+        "downloadProvider": "terabox",
+        "fileSize": "6.3 MB"
+      },
+      {
+        "label": "The Sift Echoes of The Deep",
+        "version": "1.21.0",
+        "minecraft_versions": [
+          "1.21.0"
+        ],
+        "download_url": "https://1024terabox.com/s/1unWp-N1U5i7KpXwNG7WNrw",
+        "downloadProvider": "terabox",
+        "fileSize": "0.7 MB"
+      }
+    ],
+    "downloads": 0
   }
 ]

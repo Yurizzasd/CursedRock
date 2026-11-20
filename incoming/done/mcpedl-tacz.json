@@ -1,0 +1,30 @@
+{
+ "id": "tacz",
+ "name": "TACZ Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Armas de fogo com pegada de FPS: mirar, recuar, recarregar e inspecionar — ARs, snipers, shotguns e pistolas com handling próprio.",
+ "longDescription": "O TACZ (Timeless and Classics Zero Guns) refaz o ciclo de tiro inteiro no Bedrock: mira com ADS, recuo controlável, tempo de recarga e até animação de inspeção da arma. Cada classe se comporta diferente — rifle de assalto, SMG, sniper, shotgun e pistola mudam de verdade a forma de encarar um tiroteio. Os controles foram ajustados pra toque, então funciona bem no celular sem virar aquele point-and-click. Principal 32.8 MB (1.0.2, MC 1.20.0) no TeraBox.",
+ "category": "weapons",
+ "version": "1.0.2",
+ "minecraft_versions": [
+  "1.20.0"
+ ],
+ "thumbnail": "/images/addons/tacz/tacz-1.webp",
+ "screenshots": [
+  "/images/addons/tacz/tacz-1.webp",
+  "/images/addons/tacz/tacz-2.webp",
+  "/images/addons/tacz/tacz-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-07-16",
+ "updatedAt": "2026-07-16",
+ "sourceUrl": "https://mcpedl.org/tacz-mod-minecraft-pe/",
+ "sourceId": "tacz-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1MO2QEkJwa5srofpR6LGA2g",
+ "fileSize": "32.8 MB"
+}

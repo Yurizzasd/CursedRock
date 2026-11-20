@@ -1,0 +1,52 @@
+{
+ "id": "the-sift",
+ "name": "The Sift Mod",
+ "author": "unknown",
+ "authorDisplay": "Brandon Taylor",
+ "description": "Nova dimensão sombria em beta: portal na Ancient City, terreno estranho e exploração no escuro — prévia do update 27.",
+ "longDescription": "O The Sift recria em beta a dimensão que deve chegar no Minecraft 27: você sai dos biomas conhecidos e entra num lugar mais escuro, com terreno e rota de sobrevivência diferentes do padrão. A entrada é ligada ao portal da Ancient City, o que dá um motivo novo pra caçar estrutura no Deep Dark. Como é conteúdo beta, o conselho é testar num mundo separado e manter backup. Principal 0.2 MB (1.0.1, MC 1.26.10) no TeraBox, mais as variantes The Swift (6.3 MB) e The Sift Echoes of The Deep (0.7 MB).",
+ "category": "world",
+ "version": "1.0.1",
+ "minecraft_versions": [
+  "1.26.10"
+ ],
+ "thumbnail": "/images/addons/the-sift/the-sift-1.webp",
+ "screenshots": [
+  "/images/addons/the-sift/the-sift-1.webp",
+  "/images/addons/the-sift/the-sift-2.webp",
+  "/images/addons/the-sift/the-sift-3.webp"
+ ],
+ "tags": [
+  "Bedrock"
+ ],
+ "featured": false,
+ "createdAt": "2026-10-13",
+ "updatedAt": "2026-10-13",
+ "sourceUrl": "https://mcpedl.org/the-sift-mod-minecraft-pe/",
+ "sourceId": "the-sift-mod-minecraft-pe",
+ "importedAt": "2026-11-20",
+ "download_url": "https://1024terabox.com/s/1eUu_opwC0ocVXGSUHMkUsA",
+ "fileSize": "0.2 MB",
+ "files": [
+  {
+   "label": "The Swift",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/13cBpNmess1acNLjbCxoCAg",
+   "downloadProvider": "terabox",
+   "fileSize": "6.3 MB"
+  },
+  {
+   "label": "The Sift Echoes of The Deep",
+   "version": "1.21.0",
+   "minecraft_versions": [
+    "1.21.0"
+   ],
+   "download_url": "https://1024terabox.com/s/1unWp-N1U5i7KpXwNG7WNrw",
+   "downloadProvider": "terabox",
+   "fileSize": "0.7 MB"
+  }
+ ]
+}
